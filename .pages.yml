@@ -1,0 +1,314 @@
+# Pages CMS configuration (https://pagescms.org/docs/configuration/).
+# Only keys documented in the Pages CMS docs (read 2026-11-19) are used; see docs/OWNER-OPERATIONS.md for the list.
+# STATUS: NOT yet opened in the real Pages CMS app (needs the owner's GitHub login). See docs/OWNER-REAL-TEST.md.
+#
+# Every save is a commit. Open the CMS on the branch `content-edits` (branch picker): saves there never touch the
+# live site. Pages CMS reads this file per branch, so keep it identical on main and content-edits.
+
+# Keep any value this form does not know about (for example `related` in an article) instead of deleting it.
+settings:
+  content:
+    merge: true
+
+# Pictures you upload go to public/images and are used on the site as /images/<file name>.
+media:
+  input: public/images
+  output: /images
+  categories: [image]
+  rename: safe
+
+# Repository buttons (they run the workflows in .github/workflows; both need a `payload` input).
+actions:
+  - name: publish-site
+    label: Publish site
+    workflow: publish-content.yml
+    ref: main
+    cancelable: false
+    confirm:
+      title: Publish your saved edits to the live website?
+      message: "Everything is checked first. If a check fails, nothing changes. Have you looked at the preview?"
+      button: Publish now
+  - name: undo-last-publish
+    label: Undo last publish
+    workflow: undo-last-publish.yml
+    ref: main
+    cancelable: false
+    confirm:
+      title: Undo the most recent publish?
+      message: "This puts the live website back to how it was before the last publish."
+      button: Undo it
+
+content:
+  # ------------------------------------------------------------------ Articles
+  - name: articles
+    label: Articles
+    type: collection
+    path: src/content/articles
+    format: yaml-frontmatter
+    filename:
+      template: "{primary}.md"
+      field: create
+    view:
+      fields: [title, status, publishedAt]
+      primary: title
+      sort: [publishedAt, title]
+      default:
+        sort: publishedAt
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+        description: "Lead with the words people would search for. About 50 to 65 characters."
+      - name: status
+        label: Status
+        type: select
+        required: true
+        description: "Draft = never shown on the website. Published = goes live at the next Publish."
+        options:
+          values:
+            - name: draft
+              label: Draft (not on the website)
+            - name: published
+              label: Published
+      - name: description
+        label: Search summary
+        type: text
+        description: "One or two sentences shown in Google and when shared. Required to publish."
+      - name: dek
+        label: Standfirst (the line under the title)
+        type: text
+        description: "One or two warm sentences. Required to publish."
+      - name: publishedAt
+        label: Publish date
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: updatedAt
+        label: Updated on (only when you change facts)
+        type: date
+        default: ""
+        options:
+          format: yyyy-MM-dd
+      - name: hero
+        label: Top picture
+        type: object
+        description: "All six boxes are required to publish, and Rights must be Cleared."
+        fields:
+          - name: image
+            label: Picture
+            type: image
+            description: "Upload it here, or pick one already uploaded."
+          - name: alt
+            label: Description for screen readers (alt text)
+            type: string
+          - name: credit
+            label: Credit line shown under the picture
+            type: string
+          - name: source
+            label: Where the picture came from
+            type: string
+          - name: licence
+            label: Licence or permission (what lets us use it)
+            type: text
+          - name: rights
+            label: Rights
+            type: select
+            options:
+              values:
+                - name: pending
+                  label: Pending (not yet cleared)
+                - name: cleared
+                  label: Cleared (we may use it)
+      - name: picks
+        label: Products to show in "Shop this story"
+        type: reference
+        description: "Only verified products can be picked. An article that points at an unverified product will not publish."
+        options:
+          collection: products
+          multiple: true
+          search: "name,brand"
+          value: "{id}"
+          label: "{name}"
+      - name: body
+        label: Article text
+        type: rich-text
+        description: "Write in the normal way. To mention a product inline type {{product:product-id}}; to place a product card type {{pick:product-id}} on its own line. Use the Source tab if the editor changes the curly brackets."
+        options:
+          format: markdown
+          switcher: true
+
+  # ------------------------------------------------------------------ Products
+  - name: products
+    label: Products
+    type: collection
+    path: src/content/products
+    format: json
+    filename: "{id}.json"
+    view:
+      fields: [name, brand, status, collection]
+      primary: name
+      sort: [name, status]
+      default:
+        sort: name
+        order: asc
+    fields:
+      - name: id
+        label: Short name for the product (used in links and articles)
+        type: string
+        required: true
+        pattern: "^[a-z0-9]+(-[a-z0-9]+)*$"
+        description: "Lowercase words joined by hyphens, e.g. tombow-mono-permanent. Never change it after creating the product."
+      - name: name
+        label: Product name
+        type: string
+        required: true
+      - name: brand
+        label: Brand
+        type: string
+        required: true
+      - name: asin
+        label: Amazon ASIN (10 letters and digits)
+        type: string
+        required: true
+        pattern: "^[A-Z0-9]{10}$"
+        description: "Find it on the Amazon page under Product details. Do not paste a web address."
+        options:
+          minlength: 10
+          maxlength: 10
+      - name: status
+        label: Status
+        type: select
+        required: true
+        description: "Only Verified products are shown on the website. Candidate = idea, not checked yet."
+        options:
+          values:
+            - name: candidate
+              label: Candidate (not checked yet, never shown)
+            - name: verified
+              label: Verified (checked against the Amazon listing, shown)
+            - name: held
+              label: Held (paused, never shown)
+            - name: discontinued
+              label: Discontinued (no longer sold)
+      - name: statusReason
+        label: Reason (required for Held or Discontinued)
+        type: text
+      - name: replacedBy
+        label: Replaced by (optional)
+        type: reference
+        description: "If this product is discontinued, choose its replacement. Articles then show the replacement automatically."
+        options:
+          collection: products
+          search: "name,brand"
+          value: "{id}"
+          label: "{name}"
+      - name: collection
+        label: Shop section
+        type: select
+        required: true
+        options:
+          values:
+            - name: paper
+              label: The Paper Edit
+            - name: creative
+              label: The Creative Corner
+            - name: cozy
+              label: The Cozy Edit
+            - name: hosting
+              label: The Hosting Edit
+            - name: sporty
+              label: The Movement Edit
+            - name: little-adventures
+              label: Little Adventures
+      - name: descriptionOriginal
+        label: Short description (your own words, not copied from Amazon)
+        type: text
+      - name: whyWeLikeIt
+        label: Why we like it
+        type: text
+      - name: whoItsFor
+        label: Who it is for
+        type: text
+      - name: limitations
+        label: Worth knowing (honest limits)
+        type: text
+      - name: verifiedOn
+        label: Date you checked the Amazon listing
+        type: date
+        default: ""
+        options:
+          format: yyyy-MM-dd
+      - name: verificationSource
+        label: Where you checked it (a note)
+        type: text
+        description: "Example: Amazon page read on that date; seller Amazon.com; in stock."
+      - name: image
+        label: Product picture (optional, only if you own the rights; never from Amazon)
+        type: object
+        fields:
+          - name: file
+            label: Picture
+            type: image
+          - name: alt
+            label: Description for screen readers
+            type: string
+          - name: source
+            label: Where it came from
+            type: string
+          - name: licence
+            label: Licence or permission
+            type: text
+          - name: rights
+            label: Rights
+            type: select
+            options:
+              values:
+                - name: pending
+                  label: Pending
+                - name: cleared
+                  label: Cleared
+
+  # ------------------------------------------------------------------ Settings
+  - name: settings
+    label: Site settings
+    type: file
+    path: src/content/settings.json
+    format: json
+    fields:
+      - name: siteName
+        label: Site name
+        type: string
+      - name: tagline
+        label: Tagline
+        type: string
+      - name: siteUrl
+        label: Web address (no slash at the end)
+        type: string
+      - name: contactEmail
+        label: Contact email
+        type: string
+      - name: amazonTrackingEnabled
+        label: Switch Amazon affiliate tracking on
+        type: boolean
+        description: "Leave OFF until your Amazon Associates account is approved and the tracking ID below is yours."
+      - name: amazonTrackingId
+        label: Amazon tracking ID
+        type: string
+        description: "Looks like yourname-20. This is the only place it is stored."
+      - name: amazonMarketplace
+        label: Amazon marketplace
+        type: string
+        description: "Keep as amazon.com."
+      - name: amazonDisclosure
+        label: Amazon disclosure sentence
+        type: text
+        description: "Use the exact sentence in your Associates agreement. Do not change it unless Amazon changes it."
+      - name: ga4MeasurementId
+        label: Google Analytics ID (optional)
+        type: string
+        description: "Looks like G-XXXXXXXXXX. Empty = no analytics."
+      - name: searchConsoleVerification
+        label: Google Search Console verification code (optional)
+        type: string
