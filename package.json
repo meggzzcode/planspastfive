@@ -1,0 +1,25 @@
+{
+  "name": "plans-past-five-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Plans Past Five: a static lifestyle magazine with a small curated Amazon shop.",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "dev": "astro dev",
+    "check:content": "node scripts/check-content.mjs",
+    "check:dist": "node scripts/check-dist.mjs",
+    "build": "node scripts/check-content.mjs && astro build && node scripts/check-dist.mjs",
+    "check": "npm run build",
+    "preview": "node scripts/preview.mjs",
+    "test": "node --test test/"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "3.7.4",
+    "astro": "5.18.2",
+    "yaml": "2.9.1"
+  },
+  "devDependencies": {
+    "axe-core": "4.11.0"
+  }
+}
