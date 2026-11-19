@@ -1,0 +1,25 @@
+# Netlify settings for Plans Past Five (static Astro site).
+#
+# BUILD: `npm run build` runs the content check, builds the site into dist/, then checks every link.
+# If a check fails the build fails and the live site stays as it was.
+#
+# CREDITS (facts verified 2026-11-19 on the owner's Personal plan: 1,000 credits a month, 15 credits per
+# production deploy; see docs/COSTS.md). Production therefore builds ONLY when the newest commit message on
+# main contains the marker [deploy] (the Publish button adds it). Deploy previews and branch deploys (for
+# example the content-edits branch) always build; the earlier project's notes list them at 0 credits
+# (from Netlify's documentation, not re-verified here).
+#
+# `ignore`: exit 0 = skip the build, exit 1 = build. Syntax carried over from the earlier site, where it
+# was seen working in a real Netlify build log (2026-11-19). NOT verified in THIS repository until the real
+# test in docs/OWNER-REAL-TEST.md. Keep the marker equal to scripts/publish.sh (tested).
+# UNKNOWN: whether Netlify's "Trigger deploy" button honours this rule; whether a skipped build costs credits.
+[build]
+  command = "npm run build"
+  publish = "dist"
+  ignore = '''
+case "$CONTEXT" in deploy-preview|branch-deploy) exit 1;; esac
+! git log -1 --pretty=%B HEAD | grep -q '\[deploy\]'
+'''
+
+[build.environment]
+  NODE_VERSION = "22"

@@ -1,0 +1,53 @@
+# Undo the last publish: reverses the newest "Publish: content edits" merge on `main` with a new commit
+# (history kept, no force-push) and, by default, lets Netlify build the undo. The content-edits branch is not
+# touched. All logic is in scripts/undo-publish.sh (tested). Guide: docs/OWNER-OPERATIONS.md ("Roll back").
+# Faster alternative with no credits: Netlify > Deploys > an earlier deploy > Publish deploy.
+name: Undo last publish
+
+on:
+  workflow_dispatch:
+    inputs:
+      payload:
+        description: "Sent by the Pages CMS button. Leave empty when running by hand."
+        required: false
+        default: ""
+        type: string
+      deploy:
+        description: "Also build the live website from the undo (uses 15 Netlify credits)."
+        required: false
+        default: true
+        type: boolean
+
+permissions: {}
+
+concurrency:
+  group: publish-content
+  cancel-in-progress: false
+
+jobs:
+  undo:
+    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Get the repository
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          cred="$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)"
+          echo "::add-mask::$cred"
+          git -c "http.extraheader=Authorization: Basic $cred" clone --quiet "https://github.com/$REPO.git" repo
+          cd repo
+          git config --local http.extraheader "Authorization: Basic $cred"
+      - name: Undo
+        working-directory: repo
+        env:
+          DEPLOY: ${{ inputs.deploy }}
+        run: bash scripts/undo-publish.sh
