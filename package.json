@@ -4,12 +4,12 @@
   "private": true,
   "type": "module",
   "description": "Plans Past Five: a static lifestyle magazine with a small curated Amazon shop.",
-  "engines": { "node": ">=22.12.0" },
+  "engines": { "node": ">=20.3.0" },
   "scripts": {
     "dev": "astro dev",
     "check:content": "node scripts/check-content.mjs",
     "check:dist": "node scripts/check-dist.mjs",
-    "build": "node scripts/check-content.mjs && astro build && node scripts/check-dist.mjs",
+    "build": "node scripts/clean-cache.mjs && node scripts/check-content.mjs && astro build && node scripts/check-dist.mjs",
     "check": "npm run build",
     "preview": "node scripts/preview.mjs",
     "test": "node --test test/"

@@ -10,7 +10,7 @@ const TYPES = { ".html": "text/html; charset=utf-8", ".css": "text/css", ".js": 
 export function startServer(dist, port = 0) {
   const server = http.createServer((req, res) => {
     let p = decodeURIComponent(new URL(req.url, "http://x").pathname);
-    if (p === "/sitemap.xml") p = "/sitemap-index.xml"; // mirrors public/_redirects
+    if (p === "/sitemap.xml") p = "/sitemap-index.xml"; // the real hosts answer with a 301 to this file (public/_redirects)
     let file = path.join(dist, p);
     if (!file.startsWith(dist)) { res.writeHead(403).end("Forbidden"); return; }
     if (fs.existsSync(file) && fs.statSync(file).isDirectory()) file = path.join(file, "index.html");

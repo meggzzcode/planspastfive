@@ -13,6 +13,10 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const d = entry.data;
 const { Content, remarkPluginFrontmatter } = await render(entry);
+// Astro's content loader only LOGS a Markdown error and carries on with an empty body. Never publish that.
+if (!Array.isArray(remarkPluginFrontmatter?.productRefs)) {
+  throw new Error(`src/content/articles/${entry.id}.md: the article text could not be turned into a page (see the error printed above, usually a {{product:...}} marker that cannot be shown). Nothing was built.`);
+}
 
 const published = await getCollection("articles", (a) => a.data.status === "published");
 const products = await getCollection("products");
