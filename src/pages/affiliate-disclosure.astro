@@ -1,0 +1,29 @@
+---
+import Prose from "../layouts/Prose.astro";
+import { settings, legalUpdated } from "../lib/site.mjs";
+import { trackingActive } from "../lib/affiliate.mjs";
+const live = trackingActive(settings);
+---
+<Prose title="Affiliate disclosure" description="How our shopping links work: they go to Amazon, we show no prices, and we explain plainly whether we earn anything from them." path="/affiliate-disclosure/" dek="Plain-English details about our shopping links.">
+  <p class="callout"><strong>{settings.amazonDisclosure}</strong></p>
+  {live
+    ? <p>Some links on this site are affiliate links to Amazon. If you click one and buy something, we may earn a small commission at no extra cost to you. Amazon sets the price, shipping and returns.</p>
+    : <p>Our shopping links go to Amazon. At the moment they are ordinary links and we earn nothing from them. When we switch on affiliate tracking, the links will carry our tracking tag, we may earn a small commission on qualifying purchases at no extra cost to you, and we will say so here.</p>}
+
+  <h2>What the buttons do</h2>
+  <ul>
+    <li>"See it on Amazon" opens the Amazon page of one named product, in a new tab. Those links are marked as sponsored links.</li>
+    <li>We show no prices, star ratings or review counts. Amazon and the seller set price, stock, shipping and returns.</li>
+    <li>We do not use Amazon's pictures. Where a product has a picture here, we have the right to use it.</li>
+  </ul>
+
+  <h2>How we recommend things</h2>
+  <ul>
+    <li>We include a product only after checking its Amazon listing, and we record the date we checked it.</li>
+    <li>We write our own descriptions, and we say who each item suits and what to know first.</li>
+    <li>We have not tested products ourselves unless a page says so.</li>
+    <li>Whether we earn a commission never changes which products we choose.</li>
+  </ul>
+  <p>More about how we work is on the <a href="/about/#standards">About page</a>. Questions: <a href={`mailto:${settings.contactEmail}`}>{settings.contactEmail}</a>.</p>
+  <p class="small">Last updated {legalUpdated}.</p>
+</Prose>

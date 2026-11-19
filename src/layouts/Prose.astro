@@ -1,0 +1,12 @@
+---
+import Base from "./Base.astro";
+const { title, description, path, eyebrow = "The fine print", dek, image } = Astro.props;
+---
+<Base title={title} description={description} path={path} image={image}>
+  <div class="wrap page-head page-head--narrow">
+    <p class="eyebrow">{eyebrow}</p>
+    <h1>{title}</h1>
+    {dek && <p class="page-head__dek">{dek}</p>}
+  </div>
+  <div class="prose prose--page"><slot /></div>
+</Base>

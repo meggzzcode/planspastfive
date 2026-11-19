@@ -1,0 +1,27 @@
+---
+import Prose from "../layouts/Prose.astro";
+import { settings, legalUpdated } from "../lib/site.mjs";
+const analytics = settings.ga4MeasurementId !== "";
+---
+<Prose title="Privacy policy" description={`What ${settings.siteName} collects (very little) and how to reach us.`} path="/privacy/" dek="Short version: this is a simple website that reads like a magazine. We collect very little.">
+  <h2>What we collect</h2>
+  <p>{settings.siteName} has no accounts, no forms and no newsletter. We do not ask you for personal information, and nothing you do on the site is saved to your device by us.</p>
+
+  <h2>Analytics</h2>
+  {analytics
+    ? <p>This site uses Google Analytics to count visits and see which pages are read. Google may set cookies or identifiers in your browser for this, and receives your IP address as part of the request. We use the counts only to understand what readers enjoy.</p>
+    : <p>No analytics or tracking tools are active at the moment, and we set no analytics cookies. If that changes, we will update this page first.</p>}
+
+  <h2>Shopping links and cookies</h2>
+  <p>Some stories and the shop link to products on Amazon. When you click one, Amazon may set its own cookies to record that you came from us. That is done by Amazon under its own privacy policy, not by us. Read more in our <a href="/affiliate-disclosure/">affiliate disclosure</a>.</p>
+
+  <h2>Other websites</h2>
+  <p>Links to other websites, including Amazon and Pinterest, are governed by those sites' own privacy policies.</p>
+
+  <h2>Fonts and images</h2>
+  <p>Fonts and pictures are served from this website itself. We do not load fonts or images from other companies, so they do not receive your address when you read.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy: <a href={`mailto:${settings.contactEmail}`}>{settings.contactEmail}</a>.</p>
+  <p class="small">Last updated {legalUpdated}.</p>
+</Prose>

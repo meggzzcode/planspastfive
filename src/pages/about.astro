@@ -1,0 +1,36 @@
+---
+import Prose from "../layouts/Prose.astro";
+import { settings, siteImage } from "../lib/site.mjs";
+const pic = siteImage("weekend-picnic");
+---
+<Prose title="Making a life, not just a living." eyebrow="About" description={`${settings.siteName} is an independent lifestyle journal for the hours after work: small hobbies, easy plans and a short, honest shopping list.`} path="/about/" image={pic.src}
+  dek="Helping women fall in love with the life they live outside of work.">
+  <p class="lede-serif">Your career can be a big part of your life without being your whole life.</p>
+  <p>{settings.siteName} is for the woman who closes her laptop at 5:01 and wants something to look forward to. We write about hobbies to try, plans to make for an evening or a weekend, and the simple things to pick up so you can begin. We love a good career. We just think your life gets to be bigger than it.</p>
+
+  <h2>What we believe</h2>
+  <ul>
+    <li>Hobbies do not have to be profitable, productive, impressive or photogenic to be worthwhile.</li>
+    <li>Being a beginner is a joy, not an embarrassment.</li>
+    <li>A good life outside work should not need a big budget, a car, a partner or a huge friend group.</li>
+    <li>Having something to look forward to changes how the whole week feels.</li>
+  </ul>
+
+  <figure class="prose__figure">
+    <img src={pic.src} alt={pic.alt} loading="lazy" width="1152" height="896" />
+    <figcaption>Image: {pic.credit}</figcaption>
+  </figure>
+
+  <h2 id="standards">How we work: our editorial standards</h2>
+  <ul>
+    <li><strong>Written by the editors.</strong> Stories are published under the name of the editorial team, with no single named author.</li>
+    <li><strong>No invented experience.</strong> We do not make up personal anecdotes, product tests, reviews or reader numbers. We do not claim to have tested a product unless a page says so.</li>
+    <li><strong>Checked picks.</strong> Before a product appears, we check its Amazon listing: that it is the right item, in stock, and sold by Amazon or by the maker. We write our own descriptions and say who each item is not for.</li>
+    <li><strong>No prices or star ratings.</strong> Amazon sets those, and they change. We show neither.</li>
+    <li><strong>Commerce, in the open.</strong> Some shopping links may earn us a commission. It never changes what we recommend. Details are in our <a href="/affiliate-disclosure/">affiliate disclosure</a>.</li>
+    <li><strong>How we use AI.</strong> We use AI tools to help with research, drafting, organisation and the running of the site. We do not claim firsthand experience, personal testing or human review that did not happen. The pictures on this site were made with AI tools and show no real people or brands; they are never used to show what a particular product looks like. Please confirm important details, such as cost, safety and availability, with the provider before you rely on them.</li>
+    <li><strong>Corrections.</strong> If we got something wrong, write to <a href={`mailto:${settings.contactEmail}`}>{settings.contactEmail}</a> and we will fix it.</li>
+  </ul>
+
+  <p class="hand-sign">Plans Past Five. Making a life, not just a living.</p>
+</Prose>

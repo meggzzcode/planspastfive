@@ -1,0 +1,4 @@
+# Netlify redirects (starter). Format: from  to  status.  Add one line per moved page.
+# Why: if you ever change an article's web address, add a line so old links and Google results keep working.
+# Example:  /journal/old-name/  /journal/new-name/  301
+/sitemap.xml  /sitemap-index.xml  200

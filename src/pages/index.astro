@@ -1,0 +1,90 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+import ArticleCard from "../components/ArticleCard.astro";
+import { settings, siteImage, abs } from "../lib/site.mjs";
+import { shopGroups } from "../lib/catalog.mjs";
+
+const articles = (await getCollection("articles", (a) => a.data.status === "published")).sort(
+  (a, b) => +new Date(b.data.publishedAt) - +new Date(a.data.publishedAt),
+);
+const [lead, ...rest] = articles;
+const products = (await getCollection("products")).map((p) => p.data);
+const groups = shopGroups(products);
+const teaser = groups.flatMap((g) => g.products.slice(0, 1).map((p) => ({ ...p, groupLabel: g.label }))).slice(0, 3);
+const hero = siteImage("girls-night-crafts");
+const cozy = siteImage("cozy-corner");
+const jsonLd = [{
+  "@context": "https://schema.org", "@type": "WebSite", name: settings.siteName, url: abs("/"), description: settings.tagline,
+}];
+---
+<Base home title={settings.tagline} description="An independent lifestyle journal for the hours after work: small hobbies, easy plans, and a short list of things worth buying to get started." path="/" image={hero.src} jsonLd={jsonLd}>
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div class="hero__text">
+        <p class="eyebrow">An independent lifestyle journal</p>
+        <h1 class="hero__title">Plans Past <em>Five.</em></h1>
+        <p class="hero__sub">Making a life, not just a living.</p>
+        <p class="hero__lede">For the woman who closes her laptop at 5:01 and wants something to look forward to. Small hobbies, easy plans, and a short, honest list of what to buy to get started.</p>
+        <p class="hero__actions">
+          <a class="button" href="/journal/">Read the Journal</a>
+          {groups.length > 0 && <a class="button button--ghost" href="/shop/">Browse the shop</a>}
+        </p>
+      </div>
+      <figure class="postcard">
+        <span class="tape" aria-hidden="true"></span>
+        <img src={hero.src} alt={hero.alt} width="1152" height="896" fetchpriority="high" decoding="async" />
+        <figcaption class="hand">saturday, with a storyline.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  {lead && (
+    <section class="section" aria-labelledby="latest">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="latest">Latest from the Journal</h2>
+          <a class="more" href="/journal/">All stories <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <ArticleCard entry={lead} lead />
+        {rest.length > 0 && <div class="card-grid">{rest.slice(0, 3).map((e) => <ArticleCard entry={e} />)}</div>}
+      </div>
+    </section>
+  )}
+
+  <section class="band band--strawberry" aria-labelledby="belief">
+    <div class="wrap band__grid">
+      <div>
+        <p class="eyebrow">What we believe</p>
+        <h2 id="belief" class="band__quote">Your career can be a big part of your life without being your whole life.</h2>
+        <p>Hobbies do not have to be profitable, productive or impressive to be worthwhile. Being a beginner is a joy. And having something to look forward to changes how the whole week feels.</p>
+        <p><a class="more" href="/about/">More about us <span aria-hidden="true">&rarr;</span></a></p>
+      </div>
+      <figure class="frame">
+        <img src={cozy.src} alt={cozy.alt} loading="lazy" decoding="async" width="1600" height="1205" />
+      </figure>
+    </div>
+  </section>
+
+  {teaser.length > 0 && (
+    <section class="section" aria-labelledby="shop-teaser">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="shop-teaser">From the shop</h2>
+          <a class="more" href="/shop/">The whole shop <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <p class="section-lede">A short, curated list. Every item has been checked against its Amazon listing, and we say plainly who it is for and what to know first.</p>
+        <ul class="teaser-grid plain">
+          {teaser.map((p) => (
+            <li class="teaser">
+              <p class="eyebrow">{p.groupLabel}</p>
+              <h3>{p.name}</h3>
+              <p>{p.descriptionOriginal}</p>
+              <a class="more" href={`/shop/#${p.collection}`}>See it in the shop <span aria-hidden="true">&rarr;</span></a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+</Base>

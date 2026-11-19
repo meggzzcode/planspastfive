@@ -1,0 +1,95 @@
+---
+import { getCollection, render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import ArticleCard from "../../components/ArticleCard.astro";
+import { settings, abs, fmtDate, isoDate, readMinutes } from "../../lib/site.mjs";
+import { resolveProduct, imageUrl } from "../../lib/catalog.mjs";
+import { productCardHtml, disclosureHtml } from "../../lib/render-product.mjs";
+
+export async function getStaticPaths() {
+  const all = await getCollection("articles");
+  return all.filter((a) => a.data.status === "published").map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const d = entry.data;
+const { Content, remarkPluginFrontmatter } = await render(entry);
+
+const published = await getCollection("articles", (a) => a.data.status === "published");
+const products = await getCollection("products");
+const byId = new Map(products.map((p) => [p.data.id, p.data]));
+const picks = [];
+for (const id of d.picks) {
+  const r = resolveProduct(byId, id);
+  if (r.error) throw new Error(`src/content/articles/${entry.id}.md, field "picks": cannot show "${id}" because ${r.error}.`);
+  if (!picks.some((p) => p.id === r.product.id)) picks.push(r.product);
+}
+const shownInline = new Set(remarkPluginFrontmatter.productRefs ?? []);
+const inlineDisclosed = remarkPluginFrontmatter.disclosureShown === true;
+
+const related = d.related.length
+  ? d.related.map((s) => published.find((a) => a.id === s)).filter(Boolean)
+  : published.filter((a) => a.id !== entry.id).slice(0, 2);
+
+const url = abs(`/journal/${entry.id}/`);
+const heroSrc = imageUrl(d.hero.image);
+const shareText = encodeURIComponent(d.title);
+const pin = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(url)}&media=${encodeURIComponent(abs(heroSrc))}&description=${shareText}`;
+const mail = `mailto:?subject=${shareText}&body=${encodeURIComponent(`${d.dek}\n\n${url}`)}`;
+const jsonLd = [{
+  "@context": "https://schema.org", "@type": "Article", headline: d.title, description: d.description,
+  image: [abs(heroSrc)], datePublished: isoDate(d.publishedAt), dateModified: isoDate(d.updatedAt ?? d.publishedAt),
+  author: { "@type": "Organization", name: `The ${settings.siteName} Editors` },
+  publisher: { "@type": "Organization", name: settings.siteName },
+  mainEntityOfPage: url,
+}];
+---
+<Base title={d.title} description={d.description} path={`/journal/${entry.id}/`} image={heroSrc} type="article" jsonLd={jsonLd}>
+  <article class="article">
+    <header class="wrap article__head">
+      <p class="eyebrow"><a href="/journal/">The Journal</a> &middot; {readMinutes(entry.body)} min read</p>
+      <h1 class="article__title">{d.title}</h1>
+      <p class="article__dek">{d.dek}</p>
+      <p class="article__byline">By The {settings.siteName} Editors &middot; <time datetime={isoDate(d.publishedAt)}>{fmtDate(d.publishedAt)}</time>{d.updatedAt && <> &middot; Updated <time datetime={isoDate(d.updatedAt)}>{fmtDate(d.updatedAt)}</time></>}</p>
+    </header>
+
+    <figure class="article__hero">
+      <img src={heroSrc} alt={d.hero.alt} width="1152" height="896" fetchpriority="high" decoding="async" />
+      <figcaption>Image: {d.hero.credit}</figcaption>
+    </figure>
+
+    <div class="prose">
+      <Content />
+    </div>
+
+    <div class="article__tail">
+      {picks.length > 0 && (
+        <section class="shop-story" aria-labelledby="shop-this-story">
+          <p class="eyebrow">The short list</p>
+          <h2 id="shop-this-story">Shop this story</h2>
+          <p class="section-lede">Everything mentioned above, in one place, with a link to each.</p>
+          {!inlineDisclosed && <Fragment set:html={disclosureHtml(settings)} />}
+          <div class="pick-list">
+            {picks.map((p) => <Fragment set:html={productCardHtml(p, settings, { compact: shownInline.has(p.id) })} />)}
+          </div>
+        </section>
+      )}
+
+      <section class="share" aria-labelledby="share-h">
+        <h2 id="share-h" class="share__h">Share this story</h2>
+        <ul class="plain share__links">
+          <li><a href={pin} target="_blank" rel="noopener noreferrer">Pin it<span class="sr-only"> on Pinterest (opens in a new tab)</span></a></li>
+          <li><a href={mail}>Email it to a friend</a></li>
+        </ul>
+      </section>
+    </div>
+  </article>
+
+  {related.length > 0 && (
+    <section class="band band--butter" aria-labelledby="related-h">
+      <div class="wrap">
+        <h2 id="related-h">Keep reading</h2>
+        <div class="card-grid">{related.map((e) => <ArticleCard entry={e} />)}</div>
+      </div>
+    </section>
+  )}
+</Base>

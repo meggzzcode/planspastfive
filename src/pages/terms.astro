@@ -1,0 +1,21 @@
+---
+import Prose from "../layouts/Prose.astro";
+import { settings, legalUpdated } from "../lib/site.mjs";
+---
+<Prose title="Terms of use" description={`The plain-English ground rules for using ${settings.siteName}.`} path="/terms/" dek="The ground rules for using this site.">
+  <h2>Content</h2>
+  <p>Stories, images and design on {settings.siteName} are for your personal, non-commercial use. Please do not republish them without permission. Sharing links and pinning pages is very welcome.</p>
+
+  <h2>Ideas, not instructions</h2>
+  <p>Our hobby and activity suggestions are general ideas. Use your own judgment about safety, cost and suitability, and check details with any shop or venue before you go. Nothing here is medical, financial or professional advice.</p>
+
+  <h2>Links and affiliate relationships</h2>
+  <p>We link to third-party websites, mainly Amazon. Some of those links may earn us a commission, as explained in our <a href="/affiliate-disclosure/">affiliate disclosure</a>. We do not control those sites and are not responsible for their content, prices, products or policies.</p>
+
+  <h2>No warranty</h2>
+  <p>The site is provided as it is. We try to keep information accurate, but we do not promise that it is complete or current, and we are not liable for decisions you make based on it. Product availability and details can change at any time on Amazon.</p>
+
+  <h2>Changes</h2>
+  <p>We may update these terms. The date below shows the latest version. Questions: <a href={`mailto:${settings.contactEmail}`}>{settings.contactEmail}</a>.</p>
+  <p class="small">Last updated {legalUpdated}.</p>
+</Prose>

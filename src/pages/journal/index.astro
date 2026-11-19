@@ -1,0 +1,22 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import ArticleCard from "../../components/ArticleCard.astro";
+import { imageUrl } from "../../lib/catalog.mjs";
+
+const articles = (await getCollection("articles", (a) => a.data.status === "published")).sort(
+  (a, b) => +new Date(b.data.publishedAt) - +new Date(a.data.publishedAt),
+);
+const [lead, ...rest] = articles;
+---
+<Base title="The Journal" description="Stories and easy plans for the hours after work: small hobbies, gentle weekends and the few things worth buying to start." path="/journal/" image={lead ? imageUrl(lead.data.hero.image) : undefined}>
+  <div class="wrap page-head">
+    <p class="eyebrow">The Journal</p>
+    <h1>Stories for the hours after five</h1>
+    <p class="page-head__dek">Small hobbies, easy plans and the few things worth buying to begin.</p>
+  </div>
+  <div class="wrap section section--tight">
+    {lead ? <ArticleCard entry={lead} lead /> : <p>The first stories are on their way.</p>}
+    {rest.length > 0 && <div class="card-grid">{rest.map((e) => <ArticleCard entry={e} />)}</div>}
+  </div>
+</Base>
