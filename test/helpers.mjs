@@ -36,7 +36,7 @@ const run = (cmd, args, cwd, env = {}) => {
 /** The real pipeline: content check, Astro build, link check. */
 export const npmBuild = (dir) => run("npm", ["run", "build", "--silent"], dir);
 export const checkContentCli = (dir) => run("node", ["scripts/check-content.mjs"], dir);
-export const astroBuildOnly = (dir) => run("node", ["scripts/clean-cache.mjs"], dir).ok && run("node", ["node_modules/astro/astro.js", "build"], dir);
+export const astroBuildOnly = (dir) => run("node", ["scripts/clean-cache.mjs"], dir).ok && run("node", ["node_modules/astro/bin/astro.mjs", "build"], dir);
 
 export const read = (dir, f) => fs.readFileSync(path.join(dir, f), "utf8");
 export const write = (dir, f, s) => { fs.mkdirSync(path.dirname(path.join(dir, f)), { recursive: true }); fs.writeFileSync(path.join(dir, f), s); };
