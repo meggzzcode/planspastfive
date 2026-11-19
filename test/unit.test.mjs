@@ -69,3 +69,14 @@ describe("real repository content", () => {
     for (const p of content.products) { assert.equal(p.data.status, "verified"); assert.ok(p.data.verifiedOn && p.data.verificationSource); }
   });
 });
+
+describe("empty boxes saved by the CMS are treated as not filled in", () => {
+  test("empty strings and an empty image group do not break a candidate product or a draft", async () => {
+    const { productSchema, articleSchema } = await import("../src/lib/schemas.mjs");
+    const p = productSchema.safeParse({ id: "a", name: "A", brand: "B", asin: "B000XAHF7S", status: "candidate", collection: "paper", statusReason: "", replacedBy: "", verifiedOn: "", verificationSource: "", image: { file: "", alt: "", source: "", licence: "", rights: "" } });
+    assert.ok(p.success, JSON.stringify(p.error?.issues));
+    assert.equal(p.data.image, undefined); assert.equal(p.data.verifiedOn, undefined);
+    const a = articleSchema.safeParse({ title: "Draft title", status: "draft", publishedAt: "", updatedAt: "", hero: { image: "", alt: "", credit: "", source: "", licence: "", rights: "" } });
+    assert.ok(a.success, JSON.stringify(a.error?.issues));
+  });
+});

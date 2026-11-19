@@ -17,6 +17,9 @@ export const ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 export const ASIN_PATTERN = /^[A-Z0-9]{10}$/;
 
 const text = z.string().trim();
+// Pages CMS may save an empty box as "" (or an untouched group as empty boxes). Treat that as "not filled in".
+const blank = (v) => v === "" || v === null || (typeof v === "object" && !Array.isArray(v) && !(v instanceof Date) && Object.values(v).every((x) => x === "" || x === null || x === undefined));
+const optional = (schema) => z.preprocess((v) => (blank(v) ? undefined : v), schema.optional());
 const date = z.coerce.date();
 
 const imageRecord = z.object({
@@ -25,17 +28,17 @@ const imageRecord = z.object({
   credit: text.optional(),
   source: text.optional(),
   licence: text.optional(),
-  rights: z.enum(["cleared", "pending"]).optional(),
+  rights: optional(z.enum(["cleared", "pending"])),
 });
 
 export const articleSchema = z.object({
   title: text.min(3, "Title is required"),
   description: text.optional(),
   dek: text.optional(),
-  publishedAt: date.optional(),
-  updatedAt: date.optional(),
+  publishedAt: optional(date),
+  updatedAt: optional(date),
   status: z.enum(["draft", "published"]),
-  hero: imageRecord.optional(),
+  hero: optional(imageRecord),
   picks: z.array(text).default([]),
   related: z.array(text).default([]),
 });
@@ -62,8 +65,8 @@ export const productSchema = z
     limitations: text.optional(),
     descriptionOriginal: text.optional(),
     collection: z.enum(COLLECTION_IDS),
-    image: productImageSchema.optional(),
-    verifiedOn: date.optional(),
+    image: optional(productImageSchema),
+    verifiedOn: optional(date),
     verificationSource: text.optional(),
   })
   .superRefine((p, ctx) => {

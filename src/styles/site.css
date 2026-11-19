@@ -135,6 +135,7 @@ ul.plain { list-style: none; padding: 0; margin: 0; }
 .story-card--lead .story-card__title { font-size: clamp(1.9rem, 4vw, 2.9rem); }
 .story-card--lead .story-card__dek { font-family: var(--serif); font-size: 1.15rem; line-height: 1.5; }
 .story-card--lead .story-card__text { align-self: center; }
+.story-card--lead .story-card__title { margin-bottom: 0.7rem; }
 .card-grid { display: grid; gap: 2.5rem 2rem; grid-template-columns: 1fr; margin-top: 2.5rem; }
 
 /* bands */
