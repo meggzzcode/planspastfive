@@ -51,7 +51,7 @@ export const distHtml = (dir, f) => read(dir, `dist/${f}`);
 
 export const newProduct = (over = {}) => ({
   id: "washi-tape-demo", name: "Demo Washi Tape", brand: "Demo Brand", asin: "B0TESTAAAA", status: "candidate",
-  whyWeLikeIt: "A soft matte finish that tears by hand.", whoItsFor: "Journal makers who like a neat edge.",
+  whyWeLikeIt: "A soft matte finish that tears by hand.", bestUse: "Best for neat page edges",
   limitations: "The adhesive is light, so it suits paper and not fabric.", descriptionOriginal: "A roll of matte decorative paper tape.",
   collection: "creative", ...over,
 });

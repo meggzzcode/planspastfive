@@ -3,7 +3,7 @@ import { getCollection, render } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import ArticleCard from "../../components/ArticleCard.astro";
 import { settings, abs, fmtDate, isoDate, readMinutes } from "../../lib/site.mjs";
-import { resolveProduct, imageUrl } from "../../lib/catalog.mjs";
+import { resolveProduct, imageUrl, categorySlug } from "../../lib/catalog.mjs";
 import { productCardHtml, disclosureHtml } from "../../lib/render-product.mjs";
 
 export async function getStaticPaths() {
@@ -50,7 +50,7 @@ const jsonLd = [{
 <Base title={d.title} description={d.description} path={`/journal/${entry.id}/`} image={heroSrc} type="article" jsonLd={jsonLd}>
   <article class="article">
     <header class="wrap article__head">
-      <p class="eyebrow"><a href="/journal/">The Journal</a> &middot; {readMinutes(entry.body)} min read</p>
+      <p class="eyebrow"><a href={`/journal/category/${categorySlug(d.category)}/`}>{d.category}</a> &middot; {readMinutes(entry.body)} min read</p>
       <h1 class="article__title">{d.title}</h1>
       <p class="article__dek">{d.dek}</p>
       <p class="article__byline">By The {settings.siteName} Editors &middot; <time datetime={isoDate(d.publishedAt)}>{fmtDate(d.publishedAt)}</time>{d.updatedAt && <> &middot; Updated <time datetime={isoDate(d.updatedAt)}>{fmtDate(d.updatedAt)}</time></>}</p>
@@ -58,7 +58,7 @@ const jsonLd = [{
 
     <figure class="article__hero">
       <img src={heroSrc} alt={d.hero.alt} width="1152" height="896" fetchpriority="high" decoding="async" />
-      <figcaption>Image: {d.hero.credit}</figcaption>
+      <figcaption>Illustrative image &middot; {d.hero.credit}</figcaption>
     </figure>
 
     <div class="prose">
@@ -73,7 +73,7 @@ const jsonLd = [{
           <p class="section-lede">Everything mentioned above, in one place, with a link to each.</p>
           {!inlineDisclosed && <Fragment set:html={disclosureHtml(settings)} />}
           <div class="pick-list">
-            {picks.map((p) => <Fragment set:html={productCardHtml(p, settings, { compact: shownInline.has(p.id) })} />)}
+            {picks.map((p) => <Fragment set:html={productCardHtml(p, settings, { compact: shownInline.has(p.id), ctx: { article: entry.id }, placement: "story-end" })} />)}
           </div>
         </section>
       )}

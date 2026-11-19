@@ -189,8 +189,8 @@ describe(".pages.yml", () => {
   });
   test("every product and article field the site needs has a form field, and actions point at real workflows", () => {
     const names = (n) => y.content.find((c) => c.name === n).fields.map((f) => f.name);
-    for (const f of ["id", "name", "brand", "asin", "status", "statusReason", "replacedBy", "whyWeLikeIt", "whoItsFor", "limitations", "descriptionOriginal", "collection", "image", "verifiedOn", "verificationSource"]) assert.ok(names("products").includes(f), f);
-    for (const f of ["title", "description", "dek", "publishedAt", "updatedAt", "status", "hero", "picks", "body"]) assert.ok(names("articles").includes(f), f);
+    for (const f of ["id", "name", "brand", "asin", "status", "statusReason", "replacedBy", "whyWeLikeIt", "bestUse", "cta", "limitations", "descriptionOriginal", "collection", "image", "verifiedOn", "verificationSource"]) assert.ok(names("products").includes(f), f);
+    for (const f of ["title", "description", "dek", "publishedAt", "updatedAt", "status", "category", "format", "featured", "hero", "picks", "body"]) assert.ok(names("articles").includes(f), f);
     for (const a of y.actions) assert.ok(fs.existsSync(path.join(REPO, ".github/workflows", a.workflow)));
     assert.equal(y.content.find((c) => c.name === "settings").path, "src/content/settings.json");
   });

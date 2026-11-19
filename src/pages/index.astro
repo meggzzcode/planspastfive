@@ -3,41 +3,59 @@ import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
 import ArticleCard from "../components/ArticleCard.astro";
 import { settings, siteImage, abs } from "../lib/site.mjs";
-import { shopGroups } from "../lib/catalog.mjs";
+import { shopGroups, imageUrl } from "../lib/catalog.mjs";
 
 const articles = (await getCollection("articles", (a) => a.data.status === "published")).sort(
   (a, b) => +new Date(b.data.publishedAt) - +new Date(a.data.publishedAt),
 );
-const [lead, ...rest] = articles;
+const featured = articles.filter((a) => a.data.featured).slice(0, 3);
+const latest = articles.filter((a) => !a.data.featured).slice(0, 4);
+const [lead, ...rest] = latest;
 const products = (await getCollection("products")).map((p) => p.data);
 const groups = shopGroups(products);
-const teaser = groups.flatMap((g) => g.products.slice(0, 1).map((p) => ({ ...p, groupLabel: g.label }))).slice(0, 3);
+const picks = groups.flatMap((g) => g.products.slice(0, 1).map((p) => ({ ...p, group: g }))).slice(0, 3);
 const hero = siteImage("girls-night-crafts");
 const cozy = siteImage("cozy-corner");
-const jsonLd = [{
-  "@context": "https://schema.org", "@type": "WebSite", name: settings.siteName, url: abs("/"), description: settings.tagline,
-}];
+const jsonLd = [{ "@context": "https://schema.org", "@type": "WebSite", name: settings.siteName, url: abs("/"), description: settings.tagline }];
 ---
-<Base home title={settings.tagline} description="An independent lifestyle journal for the hours after work: small hobbies, easy plans, and a short list of things worth buying to get started." path="/" image={hero.src} jsonLd={jsonLd}>
-  <section class="hero">
+<Base home title={settings.tagline} description="Your next favorite thing starts here. Fun hobbies, pretty little projects and thoughtfully chosen supplies for making the most of life after five." path="/" image={hero.src} jsonLd={jsonLd}>
+  <section class="hero" aria-labelledby="hero-h">
     <div class="wrap hero__grid">
       <div class="hero__text">
         <p class="eyebrow">An independent lifestyle journal</p>
-        <h1 class="hero__title">Plans Past <em>Five.</em></h1>
+        <h1 id="hero-h" class="hero__title">Plans Past <em>Five.</em></h1>
         <p class="hero__sub">Making a life, not just a living.</p>
-        <p class="hero__lede">For the woman who closes her laptop at 5:01 and wants something to look forward to. Small hobbies, easy plans, and a short, honest list of what to buy to get started.</p>
+        <p class="hero__lede">Your next favorite thing starts here. Discover fun hobbies, pretty little projects and thoughtfully chosen supplies for making the most of life after five.</p>
         <p class="hero__actions">
-          <a class="button" href="/journal/">Read the Journal</a>
-          {groups.length > 0 && <a class="button button--ghost" href="/shop/">Browse the shop</a>}
+          <a class="button" href="/journal/">Explore the Journal</a>
+          {groups.length > 0 && <a class="button button--ghost" href="/shop/">Shop Our Favorites</a>}
         </p>
       </div>
       <figure class="postcard">
         <span class="tape" aria-hidden="true"></span>
         <img src={hero.src} alt={hero.alt} width="1152" height="896" fetchpriority="high" decoding="async" />
-        <figcaption class="hand">saturday, with a storyline.</figcaption>
+        <figcaption><span class="hand">saturday, with a storyline.</span><span class="illus">Illustrative image</span></figcaption>
       </figure>
     </div>
   </section>
+
+  {featured.length > 0 && (
+    <section class="section section--flush" aria-labelledby="featured-h">
+      <div class="wrap">
+        <div class="section-head"><h2 id="featured-h">Featured experiences</h2></div>
+        <ul class="plain feature-grid">
+          {featured.map((e) => (
+            <li class="feature">
+              <a class="feature__media" href={`/journal/${e.id}/`} tabindex="-1" aria-hidden="true"><img src={imageUrl(e.data.hero.image)} alt="" loading="lazy" decoding="async" width="1152" height="896" /></a>
+              <p class="eyebrow">{e.data.category}</p>
+              <h3 class="feature__title"><a href={`/journal/${e.id}/`}>{e.data.title}</a></h3>
+              <p>{e.data.description}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
 
   {lead && (
     <section class="section" aria-labelledby="latest">
@@ -47,44 +65,45 @@ const jsonLd = [{
           <a class="more" href="/journal/">All stories <span aria-hidden="true">&rarr;</span></a>
         </div>
         <ArticleCard entry={lead} lead />
-        {rest.length > 0 && <div class="card-grid">{rest.slice(0, 3).map((e) => <ArticleCard entry={e} />)}</div>}
+        {rest.length > 0 && <div class="card-grid">{rest.map((e) => <ArticleCard entry={e} />)}</div>}
       </div>
     </section>
   )}
 
-  <section class="band band--strawberry" aria-labelledby="belief">
-    <div class="wrap band__grid">
-      <div>
-        <p class="eyebrow">What we believe</p>
-        <h2 id="belief" class="band__quote">Your career can be a big part of your life without being your whole life.</h2>
-        <p>Hobbies do not have to be profitable, productive or impressive to be worthwhile. Being a beginner is a joy. And having something to look forward to changes how the whole week feels.</p>
-        <p><a class="more" href="/about/">More about us <span aria-hidden="true">&rarr;</span></a></p>
-      </div>
-      <figure class="frame">
-        <img src={cozy.src} alt={cozy.alt} loading="lazy" decoding="async" width="1600" height="1205" />
-      </figure>
-    </div>
-  </section>
-
-  {teaser.length > 0 && (
-    <section class="section" aria-labelledby="shop-teaser">
+  {picks.length > 0 && (
+    <section class="band band--butter" aria-labelledby="shop-teaser">
       <div class="wrap">
         <div class="section-head">
-          <h2 id="shop-teaser">From the shop</h2>
+          <h2 id="shop-teaser">A little shopping inspiration</h2>
           <a class="more" href="/shop/">The whole shop <span aria-hidden="true">&rarr;</span></a>
         </div>
-        <p class="section-lede">A short, curated list. Every item has been checked against its Amazon listing, and we say plainly who it is for and what to know first.</p>
+        <p class="section-lede">A short shelf, chosen with care. Every item is checked against its Amazon listing before it gets a place here.</p>
         <ul class="teaser-grid plain">
-          {teaser.map((p) => (
+          {picks.map((p) => (
             <li class="teaser">
-              <p class="eyebrow">{p.groupLabel}</p>
+              <p class="eyebrow">{p.group.plain}</p>
               <h3>{p.name}</h3>
+              <p class="teaser__brand">{p.brand}</p>
               <p>{p.descriptionOriginal}</p>
-              <a class="more" href={`/shop/#${p.collection}`}>See it in the shop <span aria-hidden="true">&rarr;</span></a>
             </li>
           ))}
         </ul>
       </div>
     </section>
   )}
+
+  <section class="band band--strawberry" aria-labelledby="story">
+    <div class="wrap band__grid">
+      <div>
+        <p class="eyebrow">Our story</p>
+        <h2 id="story" class="band__quote">Your career can be a big part of your life without being your whole life.</h2>
+        <p>That is the whole idea. Plans Past Five is an independent little magazine about what happens once the laptop closes: the junk journal on a Tuesday, the mahjong night with too many strawberries, the first gloriously lopsided pot. We write the plans, and we point to the supplies that make them easier.</p>
+        <p>Shopping is tucked in where it genuinely helps, and always labelled. <a class="more" href="/about/">How we work <span aria-hidden="true">&rarr;</span></a></p>
+      </div>
+      <figure class="frame">
+        <img src={cozy.src} alt={cozy.alt} loading="lazy" decoding="async" width="1600" height="1205" />
+        <figcaption class="illus-cap">Illustrative image</figcaption>
+      </figure>
+    </div>
+  </section>
 </Base>

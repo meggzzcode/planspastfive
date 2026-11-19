@@ -8,11 +8,11 @@ import { productCardHtml, disclosureHtml } from "../lib/render-product.mjs";
 const products = (await getCollection("products")).map((p) => p.data);
 const groups = shopGroups(products);
 ---
-<Base title="The Shop" description="A short, curated list of things worth buying for the hobbies and plans in the Journal. Each one is checked against its Amazon listing." path="/shop/">
+<Base title="The Shop" description="A small, curated shelf of supplies for the hobbies and plans in the Journal, each checked against its Amazon listing with our reasons and one honest caveat." path="/shop/">
   <div class="wrap page-head">
     <p class="eyebrow">The Shop</p>
-    <h1>A short list, chosen with care</h1>
-    <p class="page-head__dek">Not everything. Just the few things we would point a friend to, each one checked against its Amazon listing, with an honest note on who it suits and what to know first.</p>
+    <h1>Small on purpose</h1>
+    <p class="page-head__dek">Every item here has been checked against its Amazon listing, comes with our reasons, and carries one honest caveat. We write our own descriptions, because &ldquo;high quality, great value&rdquo; has never told anyone anything.</p>
   </div>
   <div class="wrap section section--tight">
     {groups.length === 0 ? (
@@ -28,8 +28,9 @@ const groups = shopGroups(products);
         {groups.map((g) => (
           <section class="shop-group" id={g.id} aria-labelledby={`h-${g.id}`}>
             <h2 id={`h-${g.id}`}>{g.label}</h2>
+            <p class="shop-group__plain">{g.plain}</p>
             <div class="pick-list pick-list--grid">
-              {g.products.map((p) => <Fragment set:html={productCardHtml(p, settings)} />)}
+              {g.products.map((p) => <Fragment set:html={productCardHtml(p, settings, { ctx: { page: "shop" }, placement: "shop" })} />)}
             </div>
           </section>
         ))}

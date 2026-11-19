@@ -7,23 +7,23 @@ import { settings } from "../lib/site.mjs";
     <div>
       <p class="site-footer__brand">{settings.siteName}</p>
       <p class="hand site-footer__tag">Making a life, not just a living.</p>
-      <p class="small">An independent lifestyle journal for the hours after work.</p>
+      <p class="small">An independent lifestyle journal for life after five.</p>
     </div>
     <nav aria-label="Explore">
       <p class="eyebrow">Explore</p>
       <ul class="plain">
-        <li><a href="/journal/">The Journal</a></li>
-        <li><a href="/shop/">The Shop</a></li>
+        <li><a href="/journal/">Journal</a></li>
+        <li><a href="/shop/">Shop</a></li>
         <li><a href="/about/">About</a></li>
+        <li><a href={`mailto:${settings.contactEmail}`}>Contact</a></li>
       </ul>
     </nav>
     <nav aria-label="Fine print">
       <p class="eyebrow">The fine print</p>
       <ul class="plain">
-        <li><a href="/affiliate-disclosure/">Affiliate disclosure</a></li>
         <li><a href="/privacy/">Privacy</a></li>
         <li><a href="/terms/">Terms</a></li>
-        <li><a href={`mailto:${settings.contactEmail}`}>{settings.contactEmail}</a></li>
+        <li><a href="/affiliate-disclosure/">Affiliate Disclosure</a></li>
       </ul>
     </nav>
   </div>

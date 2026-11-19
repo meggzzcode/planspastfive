@@ -73,7 +73,7 @@ export function checkDist(root) {
       else pageUrls.add(canon.a.href);
     }
     if (!/property="og:title"/.test(h)) err("the page has no Open Graph title.");
-    if (f.startsWith("journal/") && f !== "journal/index.html" && !/"@type":"Article"/.test(h)) err("the article has no Article structured data (JSON-LD).");
+    if (f.startsWith("journal/") && f !== "journal/index.html" && !f.startsWith("journal/category/") && !/"@type":"Article"/.test(h)) err("the article has no Article structured data (JSON-LD).");
 
     // images: alt text, self-hosted
     for (const t of tagsOf(h, "img")) {

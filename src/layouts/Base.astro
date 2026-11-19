@@ -32,7 +32,7 @@ const ga = settings.ga4MeasurementId;
     <link rel="preload" href="/fonts/dm-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
     {jsonLd.map((j) => <script type="application/ld+json" set:html={JSON.stringify(j)} />)}
     {ga && <script async src={`https://www.googletagmanager.com/gtag/js?id=${ga}`}></script>}
-    {ga && <script is:inline define:vars={{ ga }}>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config",ga);</script>}
+    {ga && <script is:inline define:vars={{ ga }}>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config",ga);document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[data-product-id]");if(!a)return;gtag("event","amazon_click",{product_id:a.dataset.productId,article:a.dataset.article||"",page:a.dataset.page||"",placement:a.dataset.placement||"",transport_type:"beacon"})});</script>}
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to the content</a>

@@ -15,6 +15,7 @@ export default function remarkProduct() {
 
   return (tree, file) => {
     const where = (file.path || "an article").replace(ROOT, "");
+    const ctx = { article: (file.path || "").split("/").pop().replace(/\.md$/, "") };
     const refs = [];
     let disclosed = false;
 
@@ -35,7 +36,7 @@ export default function remarkProduct() {
           const only = new RegExp(`^\\s*${MARKER.source}\\s*$`).exec(child.children[0].value);
           if (only && only[1] === "pick") {
             const p = get("pick", only[2]);
-            node.children[i] = { type: "html", value: productCardHtml(p, settings, { disclosure: !disclosed }) };
+            node.children[i] = { type: "html", value: productCardHtml(p, settings, { disclosure: !disclosed, ctx }) };
             disclosed = true;
             continue;
           }
@@ -47,7 +48,7 @@ export default function remarkProduct() {
           while ((m = MARKER.exec(child.value))) {
             if (m.index > last) parts.push({ type: "text", value: child.value.slice(last, m.index) });
             const p = get(m[1], m[2]);
-            parts.push({ type: "html", value: productMentionHtml(p, settings) });
+            parts.push({ type: "html", value: productMentionHtml(p, settings, ctx) });
             last = m.index + m[0].length;
           }
           if (last < child.value.length) parts.push({ type: "text", value: child.value.slice(last) });

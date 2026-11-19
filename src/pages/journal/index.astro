@@ -2,21 +2,28 @@
 import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import ArticleCard from "../../components/ArticleCard.astro";
-import { imageUrl } from "../../lib/catalog.mjs";
+import { imageUrl, categorySlug } from "../../lib/catalog.mjs";
+import { CATEGORIES } from "../../lib/schemas.mjs";
 
 const articles = (await getCollection("articles", (a) => a.data.status === "published")).sort(
   (a, b) => +new Date(b.data.publishedAt) - +new Date(a.data.publishedAt),
 );
 const [lead, ...rest] = articles;
+const cats = CATEGORIES.filter((c) => articles.some((a) => a.data.category === c));
 ---
-<Base title="The Journal" description="Stories and easy plans for the hours after work: small hobbies, gentle weekends and the few things worth buying to start." path="/journal/" image={lead ? imageUrl(lead.data.hero.image) : undefined}>
+<Base title="The Journal" description="Hobbies worth trying, plans worth making and the occasional glue-related opinion: stories for life after five." path="/journal/" image={lead ? imageUrl(lead.data.hero.image) : undefined}>
   <div class="wrap page-head">
     <p class="eyebrow">The Journal</p>
-    <h1>Stories for the hours after five</h1>
-    <p class="page-head__dek">Small hobbies, easy plans and the few things worth buying to begin.</p>
+    <h1>Stories for life after five</h1>
+    <p class="page-head__dek">Hobbies worth trying, plans worth making, and the occasional glue-related opinion.</p>
+    {cats.length > 0 && (
+      <nav class="chips" aria-label="Categories">
+        <ul class="plain">{cats.map((c) => <li><a href={`/journal/category/${categorySlug(c)}/`}>{c}</a></li>)}</ul>
+      </nav>
+    )}
   </div>
   <div class="wrap section section--tight">
-    {lead ? <ArticleCard entry={lead} lead heading="h2" /> : <p>The first stories are on their way.</p>}
+    {lead && <ArticleCard entry={lead} lead heading="h2" />}
     {rest.length > 0 && <div class="card-grid">{rest.map((e) => <ArticleCard entry={e} heading="h2" />)}</div>}
   </div>
 </Base>

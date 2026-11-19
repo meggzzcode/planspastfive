@@ -28,7 +28,7 @@ export const verifiedProducts = (products) => products.filter((p) => p.status ==
 export function shopGroups(products) {
   const v = verifiedProducts(products);
   return Object.entries(COLLECTIONS)
-    .map(([id, label]) => ({ id, label, products: v.filter((p) => p.collection === id).sort((a, b) => a.name.localeCompare(b.name)) }))
+    .map(([id, c]) => ({ id, label: c.name, plain: c.plain, products: v.filter((p) => p.collection === id).sort((a, b) => a.name.localeCompare(b.name)) }))
     .filter((g) => g.products.length > 0);
 }
 
@@ -42,3 +42,6 @@ export function imageUrl(p) {
   s = s.replace(/^public\//, "").replace(/^images\//, "");
   return `/images/${s}`;
 }
+
+/** "A Little Movement" -> "a-little-movement" (web address of a category page). */
+export const categorySlug = (c) => String(c).toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");

@@ -35,6 +35,9 @@ npm run dev        # live development server
 | Publish / undo | `.github/workflows/*.yml`, `scripts/publish.sh`, `scripts/undo-publish.sh` |
 | Hosting | `netlify.toml`, `public/_redirects`, `public/_headers` |
 
+## Site shape
+Header: Home, The Journal, The Shop, About. Footer: Journal, Shop, About, Contact, Privacy, Terms, Affiliate Disclosure. Home sections (each is omitted when it would be empty): hero, Featured experiences, Latest from the Journal, A little shopping inspiration, Our story. Journal category pages are generated only for categories with a published story. The shop shows only collections with a verified product. Optional GA4 (off unless an ID is set in settings) sends one Amazon-click event with product, article/page and placement.
+
 ## Product rules (enforced by the checks)
 
 Only products whose status is `verified` (with a verification date and source) can appear. A published article that mentions a candidate, held, discontinued or unknown product fails the build, unless the product has a `replacedBy` chain that ends at a verified product. No prices, no ratings, no Amazon pictures, no testing claims, no stored tags or Amazon addresses in content.

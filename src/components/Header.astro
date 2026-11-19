@@ -1,7 +1,8 @@
 ---
 import { settings } from "../lib/site.mjs";
 const here = Astro.url.pathname;
-const links = [["Journal", "/journal/"], ["Shop", "/shop/"], ["About", "/about/"]];
+const links = [["Home", "/"], ["The Journal", "/journal/"], ["The Shop", "/shop/"], ["About", "/about/"]];
+const current = (href) => (href === "/" ? here === "/" : here.startsWith(href));
 ---
 <div class="gingham-strip" aria-hidden="true"></div>
 <header class="site-header">
@@ -12,7 +13,7 @@ const links = [["Journal", "/journal/"], ["Shop", "/shop/"], ["About", "/about/"
     <nav aria-label="Main">
       <ul class="nav">
         {links.map(([label, href]) => (
-          <li><a href={href} aria-current={here.startsWith(href) ? "page" : undefined}>{label}</a></li>
+          <li><a href={href} aria-current={current(href) ? "page" : undefined}>{label}</a></li>
         ))}
       </ul>
     </nav>

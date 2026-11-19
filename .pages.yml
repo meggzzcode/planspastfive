@@ -49,7 +49,7 @@ content:
       template: "{primary}.md"
       field: create
     view:
-      fields: [title, status, publishedAt]
+      fields: [title, category, status, publishedAt]
       primary: title
       sort: [publishedAt, title]
       default:
@@ -72,6 +72,42 @@ content:
               label: Draft (not on the website)
             - name: published
               label: Published
+      - name: category
+        label: Category
+        type: select
+        description: "Required to publish."
+        options:
+          values:
+            - name: Creative Corner
+              label: Creative Corner
+            - name: After Hours
+              label: After Hours
+            - name: Better Together
+              label: Better Together
+            - name: The Weekend Edit
+              label: The Weekend Edit
+            - name: Table for One
+              label: Table for One
+            - name: A Little Movement
+              label: A Little Movement
+      - name: format
+        label: Kind of story
+        type: select
+        description: "Required to publish."
+        options:
+          values:
+            - name: starter-guide
+              label: Starter guide
+            - name: shopping-edit
+              label: Shopping edit
+            - name: experience-guide
+              label: Experience guide
+            - name: discovery
+              label: Discovery
+      - name: featured
+        label: Feature on the home page ("Featured experiences")
+        type: boolean
+        default: false
       - name: description
         label: Search summary
         type: text
@@ -211,26 +247,40 @@ content:
         options:
           values:
             - name: paper
-              label: The Paper Edit
+              label: The Paper Edit (journaling and stationery)
             - name: creative
-              label: The Creative Corner
+              label: The Creative Edit (painting, clay and making)
             - name: cozy
-              label: The Cozy Edit
+              label: The Cozy Edit (slow evenings in)
             - name: hosting
-              label: The Hosting Edit
+              label: The Hosting Edit (game nights and gatherings)
             - name: sporty
-              label: The Movement Edit
+              label: The Sporty Edit (moving a little more)
             - name: little-adventures
-              label: Little Adventures
+              label: The Little Adventures Edit (days out and small trips)
       - name: descriptionOriginal
         label: Short description (your own words, not copied from Amazon)
         type: text
       - name: whyWeLikeIt
-        label: Why we like it
+        label: Why we picked it
         type: text
-      - name: whoItsFor
-        label: Who it is for
-        type: text
+      - name: bestUse
+        label: Best-use label (optional, a few words, e.g. "Best for junk journals")
+        type: string
+      - name: cta
+        label: Button wording
+        type: select
+        description: "Which words go on the button. Never imply you sell the product."
+        options:
+          values:
+            - name: See It on Amazon
+              label: See It on Amazon
+            - name: Explore This Starter Kit
+              label: Explore This Starter Kit
+            - name: Shop the Supplies
+              label: Shop the Supplies
+            - name: See Our Pick
+              label: See Our Pick
       - name: limitations
         label: Worth knowing (honest limits)
         type: text

@@ -2,17 +2,17 @@
 import { fmtDate, readMinutes } from "../lib/site.mjs";
 import { imageUrl } from "../lib/catalog.mjs";
 const { entry, lead = false, heading = "h3" } = Astro.props;
-const H = heading;
 const d = entry.data;
+const H = heading;
 ---
 <article class:list={["story-card", { "story-card--lead": lead }]}>
   <a class="story-card__media" href={`/journal/${entry.id}/`} tabindex="-1" aria-hidden="true">
     <img src={imageUrl(d.hero.image)} alt="" loading={lead ? "eager" : "lazy"} decoding="async" width="1152" height="896" />
   </a>
   <div class="story-card__text">
-    <p class="eyebrow">The Journal &middot; {readMinutes(entry.body)} min read</p>
+    <p class="eyebrow">{d.category} &middot; {readMinutes(entry.body)} min read</p>
     <H class="story-card__title"><a href={`/journal/${entry.id}/`}>{d.title}</a></H>
-    <p class="story-card__dek">{d.dek}</p>
+    <p class="story-card__dek">{d.description}</p>
     <p class="story-card__meta"><time datetime={new Date(d.publishedAt).toISOString().slice(0, 10)}>{fmtDate(d.publishedAt)}</time></p>
   </div>
 </article>

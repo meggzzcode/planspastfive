@@ -25,7 +25,7 @@ describe("baseline: the real repo content passes every check (item 7)", () => {
   });
   test("article page has hero credit, inline product, pick card, one disclosure beside the first product, shop section", () => {
     const h = distHtml(dir, `journal/${SLUG}/index.html`);
-    assert.match(h, /Image: Plans Past Five/);
+    assert.match(h, /Illustrative image &middot; Plans Past Five/);
     assert.match(h, /class="product-mention"/);
     assert.match(h, /class="product-card/);
     assert.match(h, /Shop this story/);
@@ -44,7 +44,7 @@ describe("baseline: the real repo content passes every check (item 7)", () => {
   test("shop shows only collections that have verified products", () => {
     const s = distHtml(dir, "shop/index.html");
     assert.match(s, /The Paper Edit/); assert.match(s, /The Hosting Edit/);
-    assert.doesNotMatch(s, /The Cozy Edit|The Movement Edit|Little Adventures|The Creative Corner/);
+    assert.doesNotMatch(s, /The Cozy Edit|The Sporty Edit|Little Adventures|The Creative Edit/);
   });
 });
 
@@ -155,7 +155,7 @@ describe("(3) add a product, then replace a product", () => {
     assert.match(shop, /Demo Washi Tape/);
     assert.ok(amazonLinks(shop).includes("https://www.amazon.com/dp/B0TESTAAAA?tag=planspastfive-20"));
     assert.match(distHtml(dir, `journal/${SLUG}/index.html`), /dp\/B0TESTAAAA\?tag=planspastfive-20/);
-    assert.match(shop, /The Creative Corner/, "a new group appears when it gets its first verified product");
+    assert.match(shop, /The Creative Edit/, "a new group appears when it gets its first verified product");
   });
   test("replace a product: new id, old one discontinued with replacedBy; every reference shows the new product", () => {
     addProduct(dir, newProduct({ id: "washi-tape-demo-2", name: "Demo Washi Tape Mk2", asin: "B0TESTBBBB", status: "verified", verifiedOn: "2026-11-21", verificationSource: "Test: re-checked." }));
@@ -303,5 +303,74 @@ describe("(5) preview, screenshots, mobile layout and accessibility", () => {
       }
       for (const n of ["home-1280", "journal-1280", "article-1280", "shop-1280", "home-390", "journal-390", "article-390", "shop-390"]) assert.ok(fs.statSync(path.join(out, `${n}.png`)).size > 10000, n);
     } finally { await browser.close(); fs.rmSync(out, { recursive: true, force: true }); }
+  });
+});
+
+describe("shell rules from the owner's master brief", () => {
+  let dir;
+  const fresh = () => { if (dir) cleanup(dir); dir = makeCopy("ppf-shell"); };
+  before(fresh);
+  after(() => dir && cleanup(dir));
+  const navLinks = (h) => [...(/<nav aria-label="Main">([\s\S]*?)<\/nav>/.exec(h)[1]).matchAll(/<a [^>]*>([^<]+)<\/a>/g)].map((m) => m[1]);
+  test("header has exactly four destinations; footer has the seven required links", () => {
+    assert.ok(npmBuild(dir).ok);
+    const h = distHtml(dir, "index.html");
+    assert.deepEqual(navLinks(h), ["Home", "The Journal", "The Shop", "About"]);
+    const foot = /<footer[\s\S]*<\/footer>/.exec(h)[0];
+    for (const t of ["Journal", "Shop", "About", "Contact", "Privacy", "Terms", "Affiliate Disclosure"]) assert.match(foot, new RegExp(`>${t}</a>`));
+  });
+  test("home: hero wording and CTAs; no Featured section when nothing is featured; no placeholder text anywhere", () => {
+    const h = distHtml(dir, "index.html");
+    assert.match(h, /Explore the Journal/); assert.match(h, /Shop Our Favorites/);
+    assert.match(h, /Your next favorite thing starts here\. Discover fun hobbies, pretty little projects and thoughtfully chosen supplies for making the most of life after five\./);
+    assert.doesNotMatch(h, /Featured experiences/);
+    for (const f of ["index.html", "journal/index.html", "shop/index.html", "about/index.html"]) assert.doesNotMatch(distHtml(dir, f), /coming soon|lorem|placeholder/i);
+    assert.ok(h.indexOf("Latest from the Journal") < h.indexOf("A little shopping inspiration"));
+    assert.ok(h.indexOf("A little shopping inspiration") < h.indexOf("Our story"));
+  });
+  test("featuring an article adds the Featured experiences section", () => {
+    editArticle(dir, (x) => x.replace("featured: false", "featured: true"));
+    assert.ok(npmBuild(dir).ok);
+    const h = distHtml(dir, "index.html");
+    assert.match(h, /Featured experiences/);
+    assert.doesNotMatch(h, /Latest from the Journal/, "the same story is not shown twice");
+  });
+  test("category pages exist only for categories with published articles, and the index links them", () => {
+    assert.ok(exists(dir, "dist/journal/category/creative-corner/index.html"));
+    assert.ok(!exists(dir, "dist/journal/category/after-hours/index.html"));
+    assert.match(distHtml(dir, "journal/index.html"), /href="\/journal\/category\/creative-corner\/"/);
+    assert.match(read(dir, "dist/sitemap-0.xml"), /journal\/category\/creative-corner/);
+  });
+  test("a published article without category or format fails", () => {
+    editArticle(dir, (x) => x.replace(/^category:.*\n/m, "").replace(/^format:.*\n/m, ""));
+    const r = checkContentCli(dir);
+    assert.match(r.out, /field "category": a published article needs this/); assert.match(r.out, /field "format"/);
+  });
+  test("shop: no verified products means no shop teaser, no shop button and no empty collection", () => {
+    fresh();
+    for (const f of fs.readdirSync(path.join(dir, "src/content/products"))) editJson(dir, `src/content/products/${f}`, (p) => { p.status = "held"; p.statusReason = "paused for test"; });
+    editArticle(dir, (x) => x.replace(/\n  - tombow-mono-permanent/, "").replace(/\{\{product:tombow-mono-permanent\}\}/, "dry adhesive runner").replace("{{pick:tombow-mono-permanent}}", ""));
+    const r = npmBuild(dir);
+    assert.ok(r.ok, r.out);
+    const h = distHtml(dir, "index.html");
+    assert.doesNotMatch(h, /A little shopping inspiration|Shop Our Favorites/);
+    assert.doesNotMatch(distHtml(dir, "shop/index.html"), /product-card|The Paper Edit/);
+  });
+  test("analytics: off by default (no Google script, no click handler); on only with an ID, with one click event carrying product, article and placement", () => {
+    fresh();
+    assert.ok(npmBuild(dir).ok);
+    const off = distHtml(dir, `journal/${SLUG}/index.html`);
+    assert.doesNotMatch(off, /googletagmanager|gtag/);
+    assert.match(off, /data-article="your-first-junk-journal-spread" data-placement="inline"/);
+    editJson(dir, SETTINGS, (s) => { s.ga4MeasurementId = "G-TEST123456"; });
+    assert.ok(npmBuild(dir).ok);
+    const on = distHtml(dir, `journal/${SLUG}/index.html`);
+    assert.match(on, /googletagmanager\.com\/gtag\/js\?id=G-TEST123456/);
+    assert.equal((on.match(/gtag\("event"/g) || []).length, 1);
+    assert.match(on, /amazon_click/);
+    for (const p of ["inline", "card", "story-end"]) assert.match(on, new RegExp(`data-placement="${p}"`));
+    assert.match(distHtml(dir, "shop/index.html"), /data-page="shop" data-placement="shop"/);
+    editJson(dir, SETTINGS, (s) => { s.ga4MeasurementId = "not-an-id"; });
+    assert.match(checkContentCli(dir).out, /field "ga4MeasurementId"/);
   });
 });

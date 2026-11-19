@@ -43,7 +43,7 @@ export function checkContent(root) {
         if (r.error && p.status !== "verified") errors.push(`${file}, field "replacedBy": ${r.error}.`);
       }
     }
-    for (const f of ["name", "brand", "statusReason", "whyWeLikeIt", "whoItsFor", "limitations", "descriptionOriginal"]) scan(file, f, p[f]);
+    for (const f of ["name", "brand", "statusReason", "bestUse", "whyWeLikeIt", "limitations", "descriptionOriginal"]) scan(file, f, p[f]);
     if (p.status === "verified" && p.image) {
       if (p.image.rights !== "cleared") errors.push(`${file}, field "image.rights": the picture is not marked as cleared, so it cannot be shown. Remove the picture or clear the rights.`);
       else if (!exists(imageUrl(p.image.file))) errors.push(`${file}, field "image.file": the picture file ${imageUrl(p.image.file)} is not in public/images/.`);
@@ -59,6 +59,8 @@ export function checkContent(root) {
     need("description", d.description);
     need("dek", d.dek);
     need("publishedAt", d.publishedAt);
+    need("category", d.category);
+    need("format", d.format);
     const h = d.hero || {};
     need("hero.image", h.image); need("hero.alt", h.alt); need("hero.credit", h.credit);
     need("hero.source", h.source); need("hero.licence", h.licence);

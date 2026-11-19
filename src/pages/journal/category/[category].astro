@@ -1,0 +1,24 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../../layouts/Base.astro";
+import ArticleCard from "../../../components/ArticleCard.astro";
+import { categorySlug } from "../../../lib/catalog.mjs";
+
+export async function getStaticPaths() {
+  const all = (await getCollection("articles", (a) => a.data.status === "published")).sort(
+    (a, b) => +new Date(b.data.publishedAt) - +new Date(a.data.publishedAt),
+  );
+  const cats = [...new Set(all.map((a) => a.data.category))];
+  return cats.map((c) => ({ params: { category: categorySlug(c) }, props: { name: c, items: all.filter((a) => a.data.category === c) } }));
+}
+const { name, items } = Astro.props;
+---
+<Base title={name} description={`Stories from ${name} in the Plans Past Five Journal.`} path={`/journal/category/${categorySlug(name)}/`}>
+  <div class="wrap page-head">
+    <p class="eyebrow"><a href="/journal/">The Journal</a></p>
+    <h1>{name}</h1>
+  </div>
+  <div class="wrap section section--tight">
+    <div class="card-grid card-grid--first">{items.map((e) => <ArticleCard entry={e} heading="h2" />)}</div>
+  </div>
+</Base>

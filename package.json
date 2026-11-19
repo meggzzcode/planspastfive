@@ -12,7 +12,7 @@
     "build": "node scripts/clean-cache.mjs && node scripts/check-content.mjs && astro build && node scripts/check-dist.mjs",
     "check": "npm run build",
     "preview": "node scripts/preview.mjs",
-    "test": "node --test test/"
+    "test": "node --test test/*.test.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.7.4",

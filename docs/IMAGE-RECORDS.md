@@ -15,3 +15,5 @@ Alt text for each is in `src/content/images.json` and the demo article's frontma
 
 ## Fonts
 Fraunces, DM Sans and Caveat (SIL Open Font License 1.1), self-hosted in `public/fonts/` from the `@fontsource-variable` packages (version 5.3.0, Latin subset). No requests to Google Fonts.
+
+Every picture on the site is captioned "Illustrative image" so no one mistakes it for a photo of a tested outcome or of a product.

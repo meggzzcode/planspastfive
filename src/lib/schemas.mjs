@@ -3,13 +3,16 @@
 import { z } from "astro/zod";
 
 export const COLLECTIONS = {
-  paper: "The Paper Edit",
-  creative: "The Creative Corner",
-  cozy: "The Cozy Edit",
-  hosting: "The Hosting Edit",
-  sporty: "The Movement Edit",
-  "little-adventures": "Little Adventures",
+  paper: { name: "The Paper Edit", plain: "Journaling and stationery" },
+  creative: { name: "The Creative Edit", plain: "Painting, clay and making" },
+  cozy: { name: "The Cozy Edit", plain: "Slow evenings in" },
+  hosting: { name: "The Hosting Edit", plain: "Game nights and gatherings" },
+  sporty: { name: "The Sporty Edit", plain: "Moving a little more" },
+  "little-adventures": { name: "The Little Adventures Edit", plain: "Days out and small trips" },
 };
+export const CATEGORIES = ["Creative Corner", "After Hours", "Better Together", "The Weekend Edit", "Table for One", "A Little Movement"];
+export const FORMATS = ["starter-guide", "shopping-edit", "experience-guide", "discovery"];
+export const CTA_LABELS = ["See It on Amazon", "Explore This Starter Kit", "Shop the Supplies", "See Our Pick"];
 export const COLLECTION_IDS = Object.keys(COLLECTIONS);
 
 export const PRODUCT_STATUSES = ["candidate", "verified", "held", "discontinued"];
@@ -38,9 +41,12 @@ export const articleSchema = z.object({
   publishedAt: optional(date),
   updatedAt: optional(date),
   status: z.enum(["draft", "published"]),
+  category: optional(z.enum(CATEGORIES)),
+  format: optional(z.enum(FORMATS)),
+  featured: z.boolean().default(false),
   hero: optional(imageRecord),
-  picks: z.array(text).default([]),
-  related: z.array(text).default([]),
+  picks: z.preprocess((v) => (v == null || v === "" ? [] : v), z.array(text)),
+  related: z.preprocess((v) => (v == null || v === "" ? [] : v), z.array(text)),
 });
 
 export const productImageSchema = z.object({
@@ -61,7 +67,8 @@ export const productSchema = z
     statusReason: text.optional(),
     replacedBy: text.optional(),
     whyWeLikeIt: text.optional(),
-    whoItsFor: text.optional(),
+    bestUse: text.optional(),
+    cta: optional(z.enum(CTA_LABELS)),
     limitations: text.optional(),
     descriptionOriginal: text.optional(),
     collection: z.enum(COLLECTION_IDS),
@@ -81,7 +88,7 @@ export const productSchema = z
     if (p.status === "verified") {
       need("verifiedOn", "A verified product needs the date it was verified");
       need("verificationSource", "A verified product needs a note saying where it was verified");
-      for (const f of ["whyWeLikeIt", "whoItsFor", "limitations", "descriptionOriginal"]) {
+      for (const f of ["whyWeLikeIt", "limitations", "descriptionOriginal"]) {
         need(f, "A verified product needs this text before it can be shown");
       }
     }
