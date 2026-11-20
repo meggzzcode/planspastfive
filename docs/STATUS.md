@@ -17,8 +17,9 @@ Updated 2026-11-20. "UNVERIFIED" means nobody has confirmed it.
 - **Photography:** shortlist of 8 Pexels photos (IDs 1906606, 18277854, 17042499, 1261182, 8534381, 8250948, 36598106, 7014482) in `PHOTO-RESEARCH.md`. Text only was read; a person must open each for logos, readable text and faces, then approve. Pexels licence does not say whether the images pass to a buyer of the site.
 
 ## Production blockers right now (`launchMode` is `preview`)
+Rule (WP-TEC): in production, unused provisional/candidate products are left out silently (info line only); a provisional product used by a published article blocks. Verified on the real content: production now fails only on the 4 pending pictures (the one published article uses Tombow, which is verified).
 The build log prints these as a LAUNCH WARNING. In `production` mode each would fail the build.
-- **3 provisional products:** `tombow-mono-permanent`, `nmjl-2026-large-print-cards-four-pack`, `nmjl-2026-standard-cards-four-pack`.
+- **Provisional products:** none block (11 unused research products are ignored in production, including the two NMJL 2026 packs).
 - **4 pending pictures:** `girls-night-crafts` and `cozy-corner` (home), `weekend-picnic` (about), `junk-journal-flatlay` (demo article). All AI-generated; commercial use unverified; most lack source address, licence and approval date.
 - Owner step when ready: switch `launchMode` to `production` (`docs/OWNER-OPERATIONS.md`). Nothing yet ties the Netlify production deploy to this setting, so it is a manual step.
 
