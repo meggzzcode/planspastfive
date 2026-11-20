@@ -24,6 +24,12 @@ Most hobby lists start with what sounds interesting. This one starts with what y
 2. **Do I want company?** Some hobbies are better with a friend, and some are better with nobody.
 3. **What do I need to find out?** Each card lists the few items a first session calls for. Plenty can be borrowed or done for free: library books, a park, a public court, a community craft night or a friend's spare set.
 
+<div class="energy-guide" role="group" aria-label="Pick by energy">
+<div><p class="energy-guide__label">Nothing left</p><p>Reading, junk journaling, embroidery, crochet</p></div>
+<div><p class="energy-guide__label">A little left</p><p>Watercolor, clay, flower arranging</p></div>
+<div><p class="energy-guide__label">Ready for plans</p><p>Craft nights, mahjong, picnics, pickleball, tennis</p></div>
+</div>
+
 ## Nothing left: start in your work clothes
 
 These need a surface the size of a tray and about 45 minutes. None of them asks you to make a decision you would call a decision.
@@ -32,6 +38,7 @@ These need a surface the size of a tray and about 45 minutes. None of them asks 
 
 - **Time:** 30 minutes
 - **Company:** solo
+- **Buying commitment:** free if you borrow from the library
 - **You need:** a book, ideally from the library
 - **First step:** put the shortest book you own where your phone usually lands, and put the phone on charge in another room. The first ten pages feel slow next to a screen. Give it ten, then decide.
 
@@ -39,13 +46,15 @@ These need a surface the size of a tray and about 45 minutes. None of them asks 
 
 - **Time:** 45 minutes
 - **Company:** solo
+- **Buying commitment:** free if you already have the basics; a small supply purchase if not
 - **You need:** an old notebook, a glue stick and a drawer of paper scraps
-- **First step:** empty your bag and wallet, pick three bits from this week (a ticket, a receipt, a coffee sleeve) and make one page. It will look chaotic. That is the format. Our [first junk journal spread guide](/journal/your-first-junk-journal-spread/) has three layouts to copy.
+- **First step:** empty your bag and wallet, pick three bits from this week (a ticket, a receipt, a coffee sleeve) and make one page. It will look chaotic. That is the format. Our [first junk journal spread guide](/journal/your-first-junk-journal-spread/) has three layouts to copy, and the [supplies guide](/journal/junk-journal-supplies-for-beginners/) lists what to buy.
 
 ### Embroidery
 
 - **Time:** 45 minutes
 - **Company:** solo
+- **Buying commitment:** small supply purchase
 - **You need:** a small hoop, a piece of cotton fabric, embroidery floss, a needle and small scissors
 - **First step:** learn one stitch, backstitch, and stitch your initial. Your first stitches will wobble, and a hoop in a tote bag counts as a plan for the train.
 
@@ -53,6 +62,7 @@ These need a surface the size of a tray and about 45 minutes. None of them asks 
 
 - **Time:** 45 minutes
 - **Company:** solo
+- **Buying commitment:** small supply purchase
 - **You need:** a hook, a ball of worsted-weight yarn, a yarn needle and small scissors
 - **First step:** the first hour is fiddly, so queue a beginner video before you sit down and aim for one granny square that does not have to be square. A light-coloured yarn makes the stitches easier to see.
 
@@ -64,6 +74,7 @@ You can set something up and put it away again. Thirty to sixty minutes, one fla
 
 - **Time:** 30 minutes
 - **Company:** solo or a friend
+- **Buying commitment:** small supply purchase
 - **You need:** a small paint set, a brush or two, watercolor paper and a jar of water
 - **First step:** paint whatever is on your counter in three colours only. Fewer colours keeps it calm, and you can add a fourth if you miss it.
 
@@ -71,13 +82,15 @@ You can set something up and put it away again. Thirty to sixty minutes, one fla
 
 - **Time:** about an hour, over two evenings
 - **Company:** solo or a friend
+- **Buying commitment:** small supply purchase
 - **You need:** a pack of air-dry clay, something to roll it with, and later a pot of paint and a brush
-- **First step:** roll a ball, press your thumb in and pinch a ring dish. Clay needs time to dry, so follow the instructions on the pack and paint it another night.
+- **First step:** roll a ball, press your thumb in and pinch a ring dish. Clay needs time to dry, so follow the instructions on the pack and paint it another night. Our [air-dry clay guide](/journal/air-dry-clay-for-beginners/) has three small projects.
 
 ### Flower arranging
 
 - **Time:** 30 minutes
 - **Company:** solo or a friend
+- **Buying commitment:** recurring materials
 - **You need:** one bunch of grocery-store flowers, three small jars and scissors
 - **First step:** split the bunch into the jars and trim the stems at an angle. Flowers are a repeat purchase, so decide whether a weekly bunch is a treat or a chore before it becomes a habit.
 
@@ -89,6 +102,7 @@ These take an evening or an afternoon and, mostly, a second person. They are the
 
 - **Time:** about 2.5 hours
 - **Company:** friends
+- **Buying commitment:** shared supplies, split between you
 - **You need:** one agreed craft and a share of the supplies, split between you. Check whether your library or community centre runs a craft night first
 - **First step:** pick the craft before you invite anybody (bracelets are the classic) so the invitation names a plan. You are the host, so choose something that survives a crowded table and a glass of wine.
 
@@ -96,13 +110,15 @@ These take an evening or an afternoon and, mostly, a second person. They are the
 
 - **Time:** 2 hours
 - **Company:** friends
+- **Buying commitment:** borrow a set first; buying one is an equipment investment
 - **You need:** a set (borrow one if anyone in your circle has it), a table and a beginner card or rules sheet
-- **First step:** plan the first night as practice with the tiles face up. It has a real learning curve, and nobody minds once they know that going in.
+- **First step:** plan the first night as practice with the tiles face up. It has a real learning curve, and nobody minds once they know that going in. Our [mahjong night guide](/journal/how-to-host-a-mahjong-night/) walks through hosting it.
 
 ### Picnicking
 
 - **Time:** 2 hours
 - **Company:** a friend, or alone with a book
+- **Buying commitment:** free if you have a blanket and food you already like
 - **You need:** a blanket, a bag you can carry in one hand and food you already like
 - **First step:** claim a patch of grass in a park on the next dry day, and name a backup evening for when the weather has other ideas.
 
@@ -110,6 +126,7 @@ These take an evening or an afternoon and, mostly, a second person. They are the
 
 - **Time:** about an hour
 - **Company:** with people
+- **Buying commitment:** borrow or rent first; equipment is a later purchase
 - **You need:** a paddle and balls, and a court. Many rec centres let you borrow or rent the paddle and balls, and courts are often at a park or school
 - **First step:** ask at the rec centre or your local parks page whether open play is on and whether equipment can be borrowed. Courts and policies vary by town, so check before you go, and arrive with a friend.
 
@@ -117,6 +134,7 @@ These take an evening or an afternoon and, mostly, a second person. They are the
 
 - **Time:** about an hour
 - **Company:** a friend
+- **Buying commitment:** borrow or buy secondhand first; equipment is a later purchase
 - **You need:** a racket (borrowed or secondhand is a sensible way to find out), balls and a public court
 - **First step:** rally for thirty minutes with no score. This is the highest-effort option here, which makes it a Saturday pick more than a Thursday one.
 
@@ -132,27 +150,10 @@ If you would like to try before you buy, start with reading, junk journaling, fl
 
 A hobby does not have to be impressive, finished or shareable. It has to be easy enough to begin on a night when you would rather do nothing, and pleasant enough that you want to begin again.
 
-Choose three cards that made you think "maybe", and leave out the one you think you ought to like. Write them on a sticky note and stick it to the fridge. Then take the one with the smallest first step and do only that step on the next evening you have an hour. Lopsided results count.
+Choose three cards that made you think "maybe", and leave out the one you think you ought to like. Write them on a sticky note and stick it to the fridge. Then take the one with the smallest first step and do only that step on the next evening you have an hour. Lopsided results count. Want a head start? Begin with the [junk journal supplies guide](/journal/junk-journal-supplies-for-beginners/), the [air-dry clay guide](/journal/air-dry-clay-for-beginners/) or the [mahjong night guide](/journal/how-to-host-a-mahjong-night/), or browse [the Shop](/shop/).
 
 <!--
-LINKS TO ADD WHEN PUBLISHED
-Add in one editing pass, and only when the target is status: published (check-content fails on links to drafts).
-Published and already linked: /journal/your-first-junk-journal-spread/ and /shop/.
-"draft today" = file exists in src/content/articles but status: draft. "(old plan)" = slug from the old pilot plan, NOT confirmed to exist.
-
-Reading:               /journal/how-to-start-a-reading-journal/ (old plan)
-Junk journaling:       /journal/junk-journal-supplies-for-beginners/ (draft today; publish first)
-Embroidery:            /journal/how-to-start-embroidery/ (old plan)
-Crochet:               /journal/how-to-start-crocheting/ (old plan)
-Watercolor:            /journal/watercolor-painting-for-beginners/ (old plan)
-Air-dry clay:          /journal/air-dry-clay-for-beginners/ (draft today; publish first)
-Flower arranging:      /journal/flower-arranging-for-beginners/ (planned)
-Craft and paint nights:/journal/how-to-host-a-craft-night/ and /journal/how-to-host-a-paint-night-at-home/ (old plan)
-Mahjong:               /journal/how-to-host-a-mahjong-night/ (draft today; publish first; replaces the earlier guess host-a-mahjong-night)
-Picnicking:            /journal/how-to-plan-a-perfect-picnic/ (old plan)
-Pickleball:            /journal/pickleball-for-beginners/ (old plan)
-Tennis:                /journal/how-to-start-playing-tennis-as-an-adult/ (old plan)
-Then add this article to the related: list of those articles.
+Links to other hobby guides: add only when the target is published (check-content fails on links to drafts). Planned, not written: reading journal, embroidery, crochet, watercolor, flower arranging, craft night, picnic, pickleball, tennis.
 
 PRICE BASIS (no dollar figures are stated in this article; the "You need" lists are item lists only)
 Sources read 2026-11-20:

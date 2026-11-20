@@ -13,7 +13,8 @@ hero:
   alt: "A small hand-bound journal with a blue floral cloth cover and navy elastic band, a pressed leaf laid across it, on pink faux fur among old handwritten papers."
 picks:
   - tombow-mono-permanent
-related: []
+related:
+  - junk-journal-supplies-for-beginners
 ---
 
 It is 5:40 on a Tuesday. The laptop is shut, the kettle is on, and somewhere in the kitchen there is a drawer you have been politely ignoring. It holds a cinema ticket, a postcard from a friend, the label off a genuinely excellent jam, and four takeaway menus. Congratulations. That drawer is your first spread.
@@ -50,3 +51,5 @@ Wet glue wrinkles thin paper, and a wrinkled ticket looks like it has had a long
 Write a single line: a date, a place, a small joy. "Tuesday. Jam on toast. Better things are coming." Leave the rest of the white space alone, because a page that breathes looks more finished than one filled to the edges.
 
 Leave the book open on the side table overnight so anything curling has time to calm down. Then look at the page on Thursday and see what the next one wants.
+
+When you are ready to buy a proper book, adhesive and pen, our [junk journal supplies guide](/journal/junk-journal-supplies-for-beginners/) has the short list.

@@ -40,7 +40,11 @@ Put something soft under the tiles. A felt cloth, a folded blanket or a thick ta
 
 Keep food and drink on that side table, fetched as needed and never set down among the tiles. Say it once, kindly, at 6:50: "Snacks live over there, and hands get wiped before we pick up a tile."
 
+<figure class="prose__figure" style="max-width:26rem;margin-inline:auto"><svg viewBox="0 0 320 300" role="img" aria-labelledby="seat-t seat-d" xmlns="http://www.w3.org/2000/svg"><title id="seat-t">Table layout for four players</title><desc id="seat-d">A square table with one player and one tile rack at each of the four sides, the tiles in the centre, and a separate side table with snacks and drinks away from the tiles.</desc><rect x="70" y="70" width="180" height="160" rx="8" fill="#e9efe3" stroke="#6b7f5e" stroke-width="2"/><text x="160" y="155" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#3b2f2a">Tiles in the centre</text><rect x="120" y="76" width="80" height="14" rx="3" fill="#fff8ef" stroke="#a53a3a"/><rect x="120" y="210" width="80" height="14" rx="3" fill="#fff8ef" stroke="#a53a3a"/><rect x="76" y="110" width="14" height="80" rx="3" fill="#fff8ef" stroke="#a53a3a"/><rect x="230" y="110" width="14" height="80" rx="3" fill="#fff8ef" stroke="#a53a3a"/><text x="160" y="50" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#3b2f2a">Player (rack and card)</text><text x="160" y="258" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#3b2f2a">Player (rack and card)</text><text x="38" y="150" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#3b2f2a">Player</text><text x="282" y="150" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#3b2f2a">Player</text><rect x="250" y="262" width="62" height="30" rx="5" fill="#fbe9ec" stroke="#a53a3a" stroke-dasharray="4 3"/><text x="281" y="281" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#3b2f2a">Snacks</text></svg><figcaption>A simple layout: one rack and one card at each seat, tiles in the middle, snacks and drinks on a separate side table.</figcaption></figure>
+
 For seating, put the player who knows the game best beside the one who knows it least, so questions get whispered across a corner rather than called across the table. East, the dealer, is chosen by a roll of the dice.
+
+<figure class="prose__figure"><img src="/images/american-mahjong-table-tiles-and-racks.jpg" alt="A hand holding a mahjong tile over a table of scattered tiles, with tile racks, walls of tiles and a green playing mat printed with Charleston instructions, set for American mahjong." loading="lazy" decoding="async" width="1152" height="896"><figcaption>Photo: Mahoney Fotos</figcaption></figure>
 
 ## Welcoming beginners: a short teaching flow
 
@@ -95,7 +99,7 @@ If a friend owns a set, borrowing it is the easiest start. If you are buying, th
 
 {{pick:ymi-sapphire-american-mahjong-set}}
 
-Racks matched to the tiles save the most fuss on the night, and a case means the set can travel to whoever hosts next.
+Racks matched to the tiles save the most fuss on the night, and a case means the set can travel to whoever hosts next. The set itself covers the tiles, four racks, dice, scoring coins and an instruction book; the League's current card is a separate purchase, and the maker says scorecards are not included.
 
 **The card.** Every player needs the current year's card from the National Mah Jongg League, and the card changes every year, so check the League's website for the current one before you buy. The League sells standard and large sizes, and large print is kind to anyone who squints at the lines. The four-pack below gives every seat the same card. The card below is the 2026 edition; if the League has issued a newer one, buy that instead.
 

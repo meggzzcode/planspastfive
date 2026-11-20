@@ -1,7 +1,7 @@
 ---
 title: "Air-Dry Clay for Beginners: Three Small Projects to Start With"
 description: "A friendly first-time guide to air-dry clay: what to look for in clay and paint, three small projects (ring dish, scalloped trinket dish, tray), drying times and fixes for cracks."
-dek: "No kiln, no wheel and no studio. Just a block of clay, a kitchen table and an evening, and by Sunday there is a small dish waiting on the windowsill."
+dek: "No kiln, no wheel and no studio. Just a block of clay, a kitchen table and an evening, and by Sunday there is a small dish waiting on the dresser."
 publishedAt: 2026-11-20
 status: published
 category: Creative Corner
@@ -34,9 +34,9 @@ These pieces are **decorative only**. Air-dry clay is not food-safe, and it is n
 
 ## What you need
 
-Clay, paint and, if you like, a clear finish. The rest is in your kitchen drawer. Both picks below also live in [the Shop's creative shelf](/shop/#creative).
+**Essential:** clay and paint. **From home:** a rolling pin or smooth bottle, a paper template, a toothpick, a damp cloth and soft brushes. **Optional:** a clear finish. Both picks below also live in [the Shop's creative shelf](/shop/#creative).
 
-**Clay.** Look for a white, air-hardening clay from a maker that explains drying, painting and cracks. White takes soft colours best. The tray takes about half a kilo on its own, and the two small dishes need roughly the rest, so a 1 kg block covers all three if you keep them small. Leftover clay dries out fast, so wrap it tightly, and buy a second block if you want room to start over. Our pick is a white 1 kg block from DAS, a long-established art-supply name:
+**Clay.** Look for a white, air-hardening clay from a maker that explains drying, painting and cracks. White takes soft colours best. By our rough estimate, which we have not tested, the tray takes about half a kilo and the two small dishes need roughly the rest, so a 1 kg block should cover all three if you keep them close to the sizes here. Larger dishes, or making a project twice, will need a second block. Leftover clay dries out fast, so wrap it tightly. Our pick is a white 1 kg block from DAS, a long-established art-supply name:
 
 {{pick:das-air-hardening-clay-white-1kg}}
 
@@ -87,7 +87,7 @@ Mont Marte publishes a free trinket-dish project for its own clay, a good place 
 
 ## Drying, painting and finishing
 
-Dry each piece somewhere cool and quiet, away from radiators and direct sun. Do not use the oven: Sculpd says not to apply heat to its clay. Makers' own timings:
+Dry each piece somewhere cool and quiet, away from radiators and direct sun. Do not use the oven: Sculpd says not to apply heat to its clay. The pack on your clay has the final word on drying; for a sense of the range, here is what other makers say about their own clay:
 
 - **Mont Marte:** about 24 hours to reach earthenware hardness, longer for thicker pieces. For its tray, 24 to 48 hours before painting.
 - **Crayola:** about 24 hours dry to the touch and 72 hours to dry completely, depending on conditions and size.
@@ -111,4 +111,4 @@ So the honest answer is a day or two, maybe longer, and the instructions on your
 
 ## Your next step
 
-Pick up a block of white clay and a few acrylics this week. Make the ring dish on Sunday, leave it on the windowsill, and paint it when it is dry. By midweek you will have something small, pretty and entirely yours.
+Pick up a block of white clay and a few acrylics this week. Make the ring dish on Sunday, leave it on a cool indoor surface away from heat and direct sun, and paint it when it is dry. By midweek you will have something small, pretty and entirely yours.

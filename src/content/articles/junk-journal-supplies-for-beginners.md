@@ -50,7 +50,7 @@ These three looks are inspiration, not three shopping lists. All of them start f
 
 ## The starter basket
 
-One basket, whichever look you choose: a heavy-paper book, dry adhesive, a pigment-ink pen, a roll of tape and small scissors. Everything else is paper.
+Start with these four supplies, whichever look you choose: a heavy-paper book, dry adhesive, a pigment-ink pen and a roll of tape. Add scissors if you don't already have a pair. Everything else is paper, and the pretty extras further down are optional.
 
 ### 1. A book that can take glue
 
@@ -58,7 +58,7 @@ Layered paper and adhesive make a page swell, and a thin writing notebook ripple
 
 {{pick:canson-graduate-mixed-media-5-5x8-5}}
 
-The tan page does half the styling for you: one envelope and a line of ink already look like a spread. Fill it from the front and let the spine fatten slowly.
+Fill it from the front and let the spine fatten slowly. One envelope and a line of ink on a heavy white page already look like the start of a spread.
 
 ### 2. Something to stick with
 
@@ -78,7 +78,7 @@ Write your captions last, once everything is stuck down, so the words fit the ga
 
 This set is assorted and modern in feel, a good all-round extra and the cleanest-looking choice if your book leans modern rather than vintage. Press it down from one end, smoothing as you go, and pick the shade that answers the colour of your envelope or ticket. Look at the colours on the listing first; they may not suit every palette.
 
-Last, a small pair of scissors for trimming tape ends and cutting out pieces.
+Finally, if you don't already have a small pair of scissors, this one is for trimming tape ends and cutting out pieces.
 
 {{pick:fiskars-micro-tip-non-stick-scissors-5in}}
 

@@ -300,3 +300,10 @@ ul.plain { list-style: none; padding: 0; margin: 0; }
 .shop-group__image figcaption { font-size: 0.8rem; color: var(--muted); margin-top: 0.3rem; }
 .shop-group__tier { font-family: var(--sans); font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--cherry); margin: 1.6rem 0 0.8rem; }
 @media (min-width: 760px) { .shop-group__head--with-image { grid-template-columns: 1fr 1.1fr; gap: 2rem; } .shop-group__head--with-image .shop-group__image { order: 2; } }
+
+/* Hobbies guide: pick by energy */
+.energy-guide { display: grid; gap: 0.8rem; grid-template-columns: 1fr; margin: 1.5rem 0 2rem; }
+.energy-guide > div { background: var(--warm-white); border: 1px solid var(--line); border-top: 4px solid var(--cherry); border-radius: 6px; padding: 0.9rem 1.1rem; }
+.energy-guide p { margin: 0; }
+.energy-guide__label { font-family: var(--serif); font-size: 1.15rem; font-weight: 600; color: var(--cherry); margin-bottom: 0.2rem !important; }
+@media (min-width: 760px) { .energy-guide { grid-template-columns: repeat(3, 1fr); } }

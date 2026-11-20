@@ -3,6 +3,7 @@ import Prose from "../layouts/Prose.astro";
 import { settings, images, siteImage } from "../lib/site.mjs";
 const pic = siteImage("clay-ring-dish-painted-blossoms");
 const aiInUse = Object.values(images).some((r) => r.kind === "ai-illustration");
+const photoInUse = Object.values(images).some((r) => r.kind === "photograph");
 ---
 <Prose title="Making a life, not just a living." eyebrow="About" description={`${settings.siteName} is an independent lifestyle journal for the hours after work: small hobbies, easy plans and a short, honest shopping list.`} path="/about/" image={pic.src}
   dek="Helping women fall in love with the life they live outside of work.">
@@ -29,7 +30,7 @@ const aiInUse = Object.values(images).some((r) => r.kind === "ai-illustration");
     <li><strong>Checked picks.</strong> Before a product appears, we check its Amazon listing: that it is the right item, in stock, and sold by Amazon or by the maker. We write our own descriptions and say who each item is not for.</li>
     <li><strong>No prices or star ratings.</strong> Amazon sets those, and they change. We show neither.</li>
     <li><strong>Commerce, in the open.</strong> Some shopping links may earn us a commission. It never changes what we recommend. Details are in our <a href="/affiliate-disclosure/">affiliate disclosure</a>.</li>
-    <li><strong>How we use AI.</strong> We use AI tools to help with research, drafting, organisation and the running of the site. We do not claim firsthand experience, personal testing or human review that did not happen.{aiInUse && ' Some pictures on this site are AI-generated illustrations; each one is labelled as such and none is used to show what a particular product looks like.'} Please confirm important details, such as cost, safety and availability, with the provider before you rely on them.</li>
+    <li><strong>How we use AI.</strong> We use AI tools to help with research, drafting, organisation and the running of the site. We do not claim firsthand experience, personal testing or human review that did not happen.{aiInUse && (photoInUse ? ' The pictures here are a mix of licensed photographs and AI-generated illustrations. Each is labelled, and the AI illustrations are ideas for inspiration: never photographs of products we recommend, and never proof that we made or tested something.' : ' The pictures on this site are AI-generated illustrations. Each is labelled, and none shows what a particular product looks like or proves that we made or tested something.')} Please confirm important details, such as cost, safety and availability, with the provider before you rely on them.</li>
     <li><strong>Corrections.</strong> If we got something wrong, write to <a href={`mailto:${settings.contactEmail}`}>{settings.contactEmail}</a> and we will fix it.</li>
   </ul>
 
