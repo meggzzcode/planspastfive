@@ -198,13 +198,9 @@ ul.plain { list-style: none; padding: 0; margin: 0; }
 .product-card__media figcaption { font-size: 0.75rem; color: var(--muted); text-align: center; padding-top: 0.35rem; }
 .product-card__brand { font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 700; color: var(--cherry); margin-bottom: 0.3rem; }
 .product-card__name { font-size: 1.4rem; margin-bottom: 0.5rem; }
-.product-card__desc { color: var(--espresso); font-family: var(--serif); font-style: italic; }
-.product-card__facts { margin: 1rem 0; display: grid; gap: 0.7rem; }
-.product-card__facts div { display: grid; gap: 0.1rem; }
-.product-card__facts dt { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--garden); }
-.product-card__facts dd { margin: 0; }
+.product-card__why { color: var(--espresso); margin: 0 0 0.6rem; }
+.product-card__note { font-size: 0.9rem; color: var(--muted); margin: 0 0 0.4rem; }
 .product-card--compact { padding-block: 1.1rem 1rem; }
-.product-card--compact .product-card__desc { margin-bottom: 0.4rem; }
 .product-card__action { margin: 1.1rem 0 0.2rem; }
 .product-card .disclosure { margin-bottom: 0; }
 .prose .product-card { margin-inline: 0; }
@@ -276,19 +272,17 @@ ul.plain { list-style: none; padding: 0; margin: 0; }
 .feature__title a::after { content: ""; position: absolute; inset: 0; }
 .teaser__brand { font-size: 0.85rem; color: var(--muted); margin-bottom: 0.4rem; }
 .shop-group__plain { font-family: var(--serif); font-style: italic; color: var(--muted); margin-top: -0.9rem; margin-bottom: 1.4rem; }
-.product-card__use { display: inline-block; margin-left: 0.5rem; padding: 0.1rem 0.6rem; background: var(--butter); color: var(--ink); border-radius: 999px; letter-spacing: 0.02em; text-transform: none; font-weight: 600; font-size: 0.78rem; }
 .card-grid--first { margin-top: 0; }
 @media (min-width: 720px) { .feature-grid { grid-template-columns: repeat(3, 1fr); } }
 
 /* shopping journey: teaser links, readable product cards on small screens */
 .teaser__links { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; margin: 0.8rem 0 0.4rem; font-size: 0.95rem; }
 .teaser__links .more { padding-block: 0.35rem; }
-.product-card__desc, .product-card__facts dd { max-width: 62ch; }
+.product-card__why, .product-card__note { max-width: 62ch; }
 .product-card__action .button { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; }
 @media (max-width: 599px) {
   .product-card { padding: 1.2rem 1.1rem 1rem; line-height: 1.6; }
   .product-card__name { font-size: 1.25rem; }
-  .product-card__facts { gap: 0.9rem; }
   .product-card__action .button { display: flex; width: 100%; }
 }
 @media (max-width: 599px) {
@@ -296,4 +290,3 @@ ul.plain { list-style: none; padding: 0; margin: 0; }
   .product-card__photo { width: 160px; }
 }
 .product-card__brand { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.5rem; }
-.product-card__use { margin-left: 0; }

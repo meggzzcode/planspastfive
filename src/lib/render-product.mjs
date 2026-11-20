@@ -22,6 +22,9 @@ export function productMentionHtml(p, settings, ctx) {
   return `<a class="product-mention" ${linkAttrs(p, settings, ctx, "inline")}>${esc(p.name)}<span class="sr-only"> (Amazon, opens in a new tab)</span></a>`;
 }
 
+// Cards show one short reason and one caveat; the full evidence stays in the product record.
+const firstSentence = (t) => { const m = String(t ?? "").trim().match(/^.*?[.!?](?=\s|$)/); return m ? m[0] : String(t ?? "").trim(); };
+
 export function productCardHtml(p, settings, { heading = "h3", compact = false, ctx = {}, placement = "card", images = {} } = {}) {
   // A picture is shown only when its record in images.json is approved (see productImageFor).
   const rec = productImageFor(p, images);
@@ -31,14 +34,11 @@ export function productCardHtml(p, settings, { heading = "h3", compact = false, 
     : "";
   return `<article class="product-card${img ? " product-card--with-image" : ""}${compact ? " product-card--compact" : ""}" data-product-id="${esc(p.id)}">
 ${img}<div class="product-card__body">
-<p class="product-card__brand">${esc(p.brand)}${p.bestUse ? ` <span class="product-card__use">${esc(p.bestUse)}</span>` : ""}</p>
+<p class="product-card__brand">${esc(p.brand)}</p>
 <${heading} class="product-card__name">${esc(p.name)}</${heading}>
-<p class="product-card__desc">${esc(p.descriptionOriginal)}</p>
-${compact ? "" : `<dl class="product-card__facts">
-<div><dt>Why we picked it</dt><dd>${esc(p.whyWeLikeIt)}</dd></div>
-${p.limitations ? `<div><dt>Worth knowing</dt><dd>${esc(p.limitations)}</dd></div>` : ""}
-</dl>`}
-<p class="product-card__action"><a class="button" ${linkAttrs(p, settings, ctx, placement)}>${esc(p.cta || "See It on Amazon")}<span class="sr-only"> (opens in a new tab)</span></a></p>
+${compact ? "" : `<p class="product-card__why">${esc(firstSentence(p.whyWeLikeIt))}</p>
+${p.limitations ? `<p class="product-card__note"><strong>Worth knowing:</strong> ${esc(firstSentence(p.limitations))}</p>` : ""}
+`}<p class="product-card__action"><a class="button" ${linkAttrs(p, settings, ctx, placement)}>${esc(p.cta || "See It on Amazon")}<span class="sr-only"> (opens in a new tab)</span></a></p>
 </div>
 </article>`;
 }

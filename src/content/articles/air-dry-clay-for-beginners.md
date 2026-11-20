@@ -33,7 +33,7 @@ These pieces are **decorative only**. Air-dry clay is not food-safe, and it is n
 
 ## What you need
 
-Clay, paint and, if you like, a clear finish. The rest is in your kitchen drawer.
+Clay, paint and, if you like, a clear finish. The rest is in your kitchen drawer. Both picks below also live in [the Shop's creative shelf](/shop/#creative).
 
 **Clay.** Look for a white, air-hardening clay from a maker that explains drying, painting and cracks. White takes soft colours best. The tray takes about half a kilo on its own, and the two small dishes need roughly the rest, so a 1 kg block covers all three if you keep them small. Leftover clay dries out fast, so wrap it tightly, and buy a second block if you want room to start over. Our pick is a white 1 kg block from DAS, a long-established art-supply name:
 

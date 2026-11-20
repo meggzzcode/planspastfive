@@ -100,7 +100,7 @@ Racks matched to the tiles save the most fuss on the night, and a case means the
 
 {{pick:nmjl-2026-large-print-cards-four-pack}}
 
-The evening works without either product on this page. A borrowed set and a card from the League are enough.
+You can see both picks together on [the hosting shelf in the Shop](/shop/#hosting). The evening works without either product on this page. A borrowed set and a card from the League are enough.
 
 ## Questions
 

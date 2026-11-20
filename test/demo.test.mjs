@@ -301,7 +301,7 @@ describe("price rule: product prices blocked, editorial budget estimates in arti
     const { checkDist } = await import(path.join(REPO, "scripts/check-dist.mjs"));
     const f = path.join(dir, `dist/journal/${SLUG}/index.html`);
     const good = fs.readFileSync(f, "utf8");
-    fs.writeFileSync(f, good.replace("class=\"product-card__desc\">", "class=\"product-card__desc\">$6 "));
+    fs.writeFileSync(f, good.replace("class=\"product-card__why\">", "class=\"product-card__why\">$6 "));
     assert.ok(checkDist(dir).errors.some((e) => /dollar amount appears in a product card/.test(e)));
     fs.writeFileSync(f, good.replace("<div class=\"prose", "<div class=\"prose"));
     assert.deepEqual(checkDist(dir).errors, []);
