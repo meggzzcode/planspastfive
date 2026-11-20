@@ -27,8 +27,6 @@ That is air-dry clay. It hardens in the open air, so there is no kiln, no oven a
 
 **The coil-lip tray.** A small oval with a low rolled edge and a pattern pressed into the base, painted in olive or sage. It holds earrings, keys and the odd button.
 
-(Illustrations of these three will go here. They are ideas, not photographs of finished pieces.)
-
 ## One honest note
 
 These pieces are **decorative only**. Air-dry clay is not food-safe, and it is not waterproof. Keep it for trinkets, not for snacks, drinks or flowers in water.
@@ -37,7 +35,7 @@ These pieces are **decorative only**. Air-dry clay is not food-safe, and it is n
 
 Clay, paint and, if you like, a clear finish. The rest is in your kitchen drawer.
 
-**Clay.** Look for a white, air-hardening clay from a maker that explains drying, painting and cracks. White takes soft colours best. A 500 g block covers a ring dish and a trinket dish, and a small tray too if you keep everything small. Buy a second block for room to start over. Our pick is Mont Marte's white block, from a maker that publishes drying guidance and project ideas for its clay:
+**Clay.** Look for a white, air-hardening clay from a maker that explains drying, painting and cracks. White takes soft colours best. The tray takes about half a kilo on its own, and the two small dishes need roughly the rest, so a 1 kg block covers all three if you keep them small. Leftover clay dries out fast, so wrap it tightly, and buy a second block if you want room to start over. Our pick is a white 1 kg block from DAS, a long-established art-supply name:
 
 {{pick:das-air-hardening-clay-white-1kg}}
 
@@ -55,7 +53,7 @@ If you would rather buy one box than several parts, a boxed beginner kit is an o
 
 ## The one rule: even thickness
 
-Keep each piece the same thickness all over. Makers differ on the minimum: Mont Marte rolls its tray to 1 cm, Crayola says at least 1/4 inch, and Sculpd says at least 1/2 inch in all places. Follow the maker of the clay you buy. Makers also name too much water and uneven drying as the usual causes of cracks.
+Keep each piece the same thickness all over. Makers differ on the minimum: Mont Marte rolls its tray to 1 cm, Crayola says at least 1/4 inch, and Sculpd says at least 1/2 inch in all places. Follow the pack of the clay you buy. Makers also name too much water and uneven drying as the usual causes of cracks.
 
 ## Project 1: pinch-pot ring dish
 
@@ -82,7 +80,7 @@ Keep each piece the same thickness all over. Makers differ on the minimum: Mont 
 4. Press a pattern into the base with a toothpick or the back of a spoon.
 5. Leave to dry.
 
-This is the shape of Mont Marte's own trinket-dish project, a good place to see it done.
+Mont Marte publishes a free trinket-dish project for its own clay, a good place to see this shape made.
 
 ## Drying, painting and finishing
 
@@ -92,7 +90,7 @@ Dry each piece somewhere cool and quiet, away from radiators and direct sun. Do 
 - **Crayola:** about 24 hours dry to the touch and 72 hours to dry completely, depending on conditions and size.
 - **Sculpd:** 24 to 48 hours, longer for thicker pieces.
 
-So the honest answer is a day or two, maybe longer, and your clay's own instructions win. When a piece is completely dry, sand any rough edge lightly, wipe off the dust and paint. If you seal, Mont Marte advises waiting at least 24 to 72 hours after painting, then two or three even coats.
+So the honest answer is a day or two, maybe longer, and the instructions on your clay's pack win. When a piece is completely dry, sand any rough edge lightly, wipe off the dust and paint. If you seal, Mont Marte advises waiting at least 24 to 72 hours after painting, then two or three even coats.
 
 ## When it goes a bit wrong
 
