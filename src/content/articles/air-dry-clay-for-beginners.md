@@ -8,7 +8,9 @@ format: starter-guide
 featured: false
 # No hero yet. DRAFT: add an original photograph of real finished pieces (or a newly cleared image) before publishing.
 # None of the pending image records in images.json shows clay, so none is borrowed. Do not edit images.json from here.
-picks: []
+picks:
+  - mont-marte-air-hardening-clay-white-500g
+  - winsor-newton-galeria-acrylic-set
 related: []
 ---
 
@@ -34,7 +36,9 @@ These pieces are **decorative only**. Air-dry clay is not food-safe, and it is n
 
 Clay, paint and, if you like, a clear finish. The rest is in your kitchen drawer.
 
-**Clay.** Look for a white, air-hardening clay from a maker that explains drying, painting and cracks. White takes soft colours best. A 500 g block covers a ring dish and a trinket dish, and a small tray too if you keep everything small. Buy a second block for room to start over.
+**Clay.** Look for a white, air-hardening clay from a maker that explains drying, painting and cracks. White takes soft colours best. A 500 g block covers a ring dish and a trinket dish, and a small tray too if you keep everything small. Buy a second block for room to start over. Our pick is Mont Marte's white block, from a maker that publishes drying guidance and project ideas for its clay:
+
+{{pick:mont-marte-air-hardening-clay-white-500g}}
 
 **Paint.** Ordinary acrylics do the job, applied once the clay is completely dry. For soft shades with no mixing, we like this set:
 
@@ -42,7 +46,7 @@ Clay, paint and, if you like, a clear finish. The rest is in your kitchen drawer
 
 If you would rather mix your own tints from white, {{product:liquitex-basics-acrylic-12}} is an alternative, though its finish is satin and every pastel is yours to mix.
 
-**A kit, if you want one box.** If you would rather not shop for parts, a boxed beginner kit such as Sculpd's brings clay, tools, a guide and a few extras together. Follow the maker's drying advice.
+If you would rather buy one box than several parts, a boxed beginner kit is an option; check what it includes and follow the clay maker's drying advice.
 
 **A finish (optional).** Look for a matte, water-based clay sealer from the clay's own maker, brushed on with a soft, wide synthetic brush in a ventilated room. It protects the surface but does not turn a dish into tableware. Crayola says sealing will not waterproof clay, so keep every piece dry either way, and try the sealer on a spare scrap first.
 

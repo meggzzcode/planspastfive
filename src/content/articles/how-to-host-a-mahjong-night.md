@@ -96,7 +96,7 @@ If a friend owns a set, borrowing it is the easiest start. If you are buying, th
 
 Racks matched to the tiles save the most fuss on the night, and a case means the set can travel to whoever hosts next.
 
-**The card.** Every player needs the current year's card from the National Mah Jongg League, and the card changes every year, so check the League's website for the current one before you buy. The League sells standard and large sizes, and large print is kind to anyone who squints at the lines. The four-pack below gives every seat the same card.
+**The card.** Every player needs the current year's card from the National Mah Jongg League, and the card changes every year, so check the League's website for the current one before you buy. The League sells standard and large sizes, and large print is kind to anyone who squints at the lines. The four-pack below gives every seat the same card. The card below is the 2026 edition; if the League has issued a newer one, buy that instead.
 
 {{pick:nmjl-2026-large-print-cards-four-pack}}
 

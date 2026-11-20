@@ -52,6 +52,10 @@ The evidence fields on a product (all in the Products form):
 
 **Verified needs all of these:** `checkedOn` filled; `listingAvailable` = yes; `sellerType` = Amazon or the brand/maker; `affiliateLinkEligible` = yes; `specsEvidence`; `suitability`; plus `verificationSource` (where you checked), `whyWeLikeIt`, `limitations` and `descriptionOriginal`. If any is missing the build refuses "verified": use `provisional` or `candidate` until it is known. A `provisional` product needs the check date and the same text fields, and cannot be shown if the listing is unavailable or not eligible for affiliate links (hold it instead).
 
+### Each year: the League card
+When the National Mah Jongg League issues the new card, add a new product record for it, then on the old record set Discontinued and `replacedBy` to the new id; the mahjong articles follow automatically.
+Check the League's website in January: cards ship around spring. Then edit the one-sentence "2026 edition" note in the mahjong article.
+
 ## Change a picture
 Each picture has **one record** in `src/content/images.json`, matched to the article or product by file name. The article's **Top picture** form only takes the picture (it goes to `public/images`) and the description for screen readers. Who made it, the licence and the approval live in the record, not in the article. Any old `credit`, `source`, `licence` or `rights` lines in an article are ignored.
 

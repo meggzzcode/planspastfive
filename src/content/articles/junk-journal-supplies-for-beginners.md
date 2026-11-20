@@ -18,7 +18,6 @@ picks:
   - scotch-expressions-washi-abstract-modern-8
   - fiskars-micro-tip-non-stick-scissors-5in
   - tim-holtz-idea-ology-snippets-ephemera
-  - rifle-paper-co-planner-sticker-set
 related:
   - your-first-junk-journal-spread
 ---
@@ -37,11 +36,11 @@ A book that sticks to one palette looks designed, even when it is chaos undernea
 
 **Garden Press.** A pressed-flower book. Cream and tan pages, a lot of green and a little sunshine.
 - *Collect:* seed packets, plant tags, catalogue pages, a pressed leaf or two.
-- *Buy:* the illustrated stickers below, and soft tape colours from your washi set.
+- *Buy:* nothing special. This is a lighter, found-paper look: gather your own seed packets and leaves, and let the core kit below do the rest.
 
 **Tea Rose.** Soft, romantic and old-fashioned. Pale pages and a lot of blush.
 - *Collect:* love-letter paper, old valentines, floral wrapping, tissue paper, a scrap of lace.
-- *Buy:* soft pink or cream tape if your washi set includes any, and fine pen lines with plenty of white space.
+- *Buy:* this look is built from paper, lace and tape you choose yourself, with the core kit below underneath it: the journal, adhesive, pen and scissors. Keep to blush and cream, and leave plenty of white space.
 
 ## The four things to buy
 
@@ -71,7 +70,7 @@ Write your captions last, once everything is stuck down, so the words fit the ga
 
 {{pick:scotch-expressions-washi-abstract-modern-8}}
 
-Press it down from one end, smoothing as you go, and pick the shade that answers the colour of your envelope or ticket.
+This set is assorted and modern in feel, a good all-round extra and the cleanest-looking choice if your book leans modern rather than vintage. Press it down from one end, smoothing as you go, and pick the shade that answers the colour of your envelope or ticket. Look at the colours on the listing first; they may not suit every palette.
 
 Last, a small pair of scissors for trimming tape ends and cutting out pieces.
 
@@ -83,13 +82,7 @@ Last, a small pair of scissors for trimming tape ends and cutting out pieces.
 
 {{pick:tim-holtz-idea-ology-snippets-ephemera}}
 
-Layer them over your own scraps: a label under a ticket stub, a frame around a photograph. A few go a long way, and they suit this look far better than the other two.
-
-**For Garden Press:**
-
-{{pick:rifle-paper-co-planner-sticker-set}}
-
-Tuck one or two among your seed packets and pressed leaves rather than covering a page. They give Garden Press its illustrated touch.
+Layer them over your own scraps: a label under a ticket stub, a frame around a photograph. A few go a long way, and they suit this look far better than the other two. Garden Press and Tea Rose stay with your own paper, so spend nothing extra on them.
 
 ## Paper worth saving
 
