@@ -36,9 +36,11 @@ Clay, paint and, if you like, a clear finish. The rest is in your kitchen drawer
 
 **Clay.** Look for a white, air-hardening clay from a maker that explains drying, painting and cracks. White takes soft colours best. A 500 g block covers a ring dish and a trinket dish, and a small tray too if you keep everything small. Buy a second block for room to start over.
 
-**Paint.** Ordinary acrylics do the job, applied once the clay is completely dry. For soft shades with no mixing, a 20-tube set like Winsor & Newton's Galeria range has blush, Naples yellow and olive ready-made, plus white and a strong red for the cherry rim.
+**Paint.** Ordinary acrylics do the job, applied once the clay is completely dry. For soft shades with no mixing, we like this 20-tube set, which has blush, Naples yellow and olive ready-made, plus white and a strong red for the cherry rim:
 
-If you would rather mix your own tints from white, Liquitex's 12-tube BASICS set is an alternative, though its finish is satin and every pastel is yours to mix.
+{{pick:winsor-newton-galeria-acrylic-20}}
+
+If you would rather mix your own tints from white, {{product:liquitex-basics-acrylic-12}} is an alternative, though its finish is satin and every pastel is yours to mix.
 
 **A kit, if you want one box.** If you would rather not shop for parts, a boxed beginner kit such as Sculpd's brings clay, tools, a guide and a few extras together. Check what is in your version, and follow the maker's drying advice.
 
