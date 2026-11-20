@@ -314,5 +314,22 @@
     "attribution": "none required (Pexels licence: credit optional); photographer recorded in credit",
     "rightsStatus": "approved",
     "approvedOn": "2026-11-20"
+  },
+  "junk-journal-shoebox-post": {
+    "file": "junk-journal-shoebox-post.jpg",
+    "alt": "Illustration of an open handmade junk journal with tan pages layered with an airmail-style envelope, torn aged papers, a kraft envelope, twine and washi tape, on a wooden table.",
+    "kind": "ai-illustration",
+    "credit": "Generated with Canva AI",
+    "source": {
+      "name": "Canva AI image generator",
+      "url": "https://www.canva.com/M/MAHbeiBiCII"
+    },
+    "licenceName": "Canva AI Product Terms / Terms of Use",
+    "licenceUrl": "https://www.canva.com/policies/ai-product-terms/",
+    "commercialUse": "unverified",
+    "transferWithSite": "unverified",
+    "attribution": "none",
+    "rightsStatus": "pending",
+    "notes": "Generated 2026-11-20 with Canva AI (Canva connector, text-to-image). Prompt: Premium lifestyle photograph, overhead, of a handmade junk journal open to a Shoebox Post spread: tan kraft pages layered with airmail-style envelopes, torn aged paper, black ink handwriting lines, a strip of washi tape, twine, soft warm window light, shallow natural shadows, realistic, no readable text, no logos, no people. Exported at 2000 px and cropped to 3:2. Conceptual illustration only: not a product photo and not a project we made or tested. Owner to read Canva's terms once, then set commercialUse yes, licenceCheckedOn, approvedOn and rightsStatus approved."
   }
 }

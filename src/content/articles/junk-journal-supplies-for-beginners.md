@@ -33,7 +33,7 @@ These three looks are inspiration, not three shopping lists. All of them start f
 - *Collect:* airmail envelopes, postmarks, boarding passes, the receipt from a very good lunch.
 - *Add:* the optional Tim Holtz snippets below suit this look best.
 
-<figure class="prose__figure"><img src="/images/junk-journal-envelopes-hero.jpg" alt="Vintage postcards and envelopes tied with twine, with a red dip pen, old stamps and postmarks, laid flat on more old handwritten postcards." loading="lazy" decoding="async" width="2000" height="1333"><figcaption>Photo: Ylanite Koppens</figcaption></figure>
+<figure class="prose__figure"><img src="/images/junk-journal-shoebox-post.jpg" alt="Illustration of an open handmade junk journal with tan pages layered with an airmail-style envelope, torn aged papers, a kraft envelope, twine and washi tape, on a wooden table." loading="lazy" decoding="async" width="2000" height="1333"><figcaption>Illustrative image (AI-generated)</figcaption></figure>
 
 **Garden Press.** A pressed-flower book. Cream and tan pages, a lot of green and a little sunshine.
 - *Collect:* seed packets, plant tags, catalogue pages, a pressed leaf or two.
