@@ -15,9 +15,9 @@
     "variant": "1/3 in x 472 in (model 62106)",
     "listingAvailable": "yes",
     "sellerType": "amazon",
-    "affiliateLinkEligible": "unknown"
+    "affiliateLinkEligible": "yes"
   },
   "qualityNote": "Customers say it is easy to use, easier than glue or tape. No concerns seen when checked.",
   "imageStatus": "none",
-  "verificationSource": "Cowork Amazon listing check, docs/commerce/buy-plan/PILOT-VERIFICATION-V2.csv in the earlier repository (decision keep; seller Amazon.com; in stock; title matches model 62106)."
+  "verificationSource": "Cowork Amazon listing check, docs/commerce/buy-plan/PILOT-VERIFICATION-V2.csv in the earlier repository (decision keep; seller Amazon.com; in stock; title matches model 62106). Affiliate check 2026-11-20: listing sold by Amazon.com, in stock; SiteStripe present and Link Checker accepted the planspastfive-20 tag. This does not prove commission; a real sale in Associates reports does."
 }
