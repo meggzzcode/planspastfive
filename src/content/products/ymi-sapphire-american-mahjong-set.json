@@ -1,27 +1,26 @@
 {
   "id": "ymi-sapphire-american-mahjong-set",
-  "name": "American Mahjong Set, Sapphire with Blue Soft Case",
+  "name": "American Mahjong Set, Sapphire with Blue Case",
   "brand": "Yellow Mountain Imports",
   "asin": "B09VGX38JV",
-  "status": "provisional",
+  "status": "verified",
   "editorialDecision": "approve",
   "order": 1,
   "bestUse": "Best for a first complete set for a table of four",
-  "descriptionOriginal": "A complete American mahjong set in ivory-coloured melamine, with four wooden racks that have detachable magnetic pushers, scoring coins, dice, a wind indicator and an instruction book, in a soft blue carrying case.",
+  "descriptionOriginal": "A complete American mahjong set in ivory-coloured melamine, with four wooden racks that have detachable magnetic pushers, scoring coins, dice, a wind indicator and an instruction book, in a blue carrying case.",
   "whyWeLikeIt": "Everything a table of four sits down with is in one box, so a host does not have to match racks to tiles, and the zippered case carries easily to a friend's house.",
   "limitations": "It does not include the League's yearly hand card, and the maker says scorecards are not included. Buyers' opinions on the wooden pushers vary. The tiles are plain ivory rather than patterned, despite the name.",
   "collection": "hosting",
   "listingChecked": {
-    "checkedOn": "2026-11-19",
-    "variant": "Sapphire with Blue Case",
+    "checkedOn": "2026-11-20",
+    "variant": "Sapphire with blue case; 4 racks with detachable pushers, 3 dice, scoring coins",
     "listingAvailable": "yes",
     "sellerType": "brand",
-    "affiliateLinkEligible": "unknown"
+    "affiliateLinkEligible": "yes"
   },
   "qualityNote": "Buyers praise the look and say it is easy to carry; opinions vary on the pushers. No other concerns recorded when checked.",
   "imageStatus": "none",
-  "verificationSource": "Cowork Amazon listing check in the owner's browser, 2026-11-19: PRIORITY-VERIFICATION.csv on the old repository's branch cowork/priority-verification (decision keep; sold by Yellow Mountain Imports, ships from Amazon; in stock; title matches; SiteStripe bar shown, so commission eligibility is indicated but NOT confirmed by the Associates Link Checker or in Associates reports). Maker page read 2026-11-20. No Amazon image or text is used.",
+  "verificationSource": "Listing: sold by Yellow Mountain Imports, ships from Amazon, in stock on 2026-11-20 (the maker's own site showed it backordered the same day). Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID' for the product's tagged address (Cowork, owner's account, 2026-11-20). That validates the tag only; real commission is confirmed only in Associates reports. Earlier listing check: Cowork, 2026-11-19.",
   "specsEvidence": "Maker page, read 2026-11-20: https://www.ymimports.com/products/fx-am005-a (item FX-AM005-A). States 166 melamine tiles (36 circles, 36 bamboos, 36 characters, 12 dragons, 16 winds, 16 flowers, 10 jokers, 4 blank spares); 4 all-in-one wooden racks with detachable magnetic pushers; wooden wind indicator; scoring coins; 3 dice; illustrated instruction book; zippered blue fabric case; playable with American and Chinese rules; scorecards not included. Tile 1.2 x 0.9 x 0.5 in, rack 18.2 x 2.4 x 1 in. The page says nothing about the League card or about fit with other makers' racks. The maker page showed the set as backordered on 2026-11-20; Cowork recorded the Amazon listing in stock on 2026-11-19.",
-  "suitability": "A complete first set for four players who want racks, tiles and a carrying case in one purchase, and who will source the League card separately.",
-  "statusReason": "Provisional until Cowork runs the Associates Link Checker on this ASIN and confirms the Amazon listing is back in stock (the maker page showed it backordered on 2026-11-20): then set affiliateLinkEligible to yes and status to verified."
+  "suitability": "A complete first set for four players who want racks, tiles and a carrying case in one purchase, and who will source the League card separately."
 }

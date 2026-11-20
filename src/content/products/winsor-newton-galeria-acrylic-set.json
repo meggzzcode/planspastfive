@@ -3,24 +3,23 @@
   "name": "Galeria Acrylic Paint, 20 x 12 ml Tube Set",
   "brand": "Winsor & Newton",
   "asin": "B08NJZPZG6",
-  "status": "provisional",
+  "status": "verified",
   "editorialDecision": "approve",
-  "statusReason": "Provisional until Cowork runs the Associates Link Checker on this ASIN (and, for Liquitex, re-reads the seller): then set affiliateLinkEligible to yes and status to verified.",
   "bestUse": "Best for painting small decorative clay dishes in soft, matching colours",
   "descriptionOriginal": "A box of twenty small tubes of acrylic paint that runs from white and black through brights to soft shades such as Pale Rose Blush, Naples Yellow and Olive Green.",
   "whyWeLikeIt": "The soft shades are already in the box, so a blush, a butter yellow and an olive need no mixing, and a single stronger red can supply the cherry rim.",
   "limitations": "There are more colours than three small projects use, and the tubes are small. The maker's page does not mention clay or name a finish, so paint once the clay is completely dry, as the clay maker advises, and test a colour on a scrap first.",
   "collection": "creative",
   "listingChecked": {
-    "checkedOn": "2026-11-19",
+    "checkedOn": "2026-11-20",
     "variant": "20 x 12 ml tubes",
     "listingAvailable": "yes",
     "sellerType": "amazon",
-    "affiliateLinkEligible": "unknown"
+    "affiliateLinkEligible": "yes"
   },
   "qualityNote": "Customers call it a good starter set with top-notch quality. No concerns seen when checked.",
   "imageStatus": "none",
-  "verificationSource": "Cowork, owner's browser, 2026-11-19: PRIORITY-VERIFICATION.csv in the old repository (branch cowork/priority-verification), decision keep, in stock, matches description, sold by Amazon.com. Affiliate Link Checker not yet run for this product, so affiliate eligibility is unknown.",
+  "verificationSource": "Listing: sold by Amazon.com; size reads 20 x 12 ml. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID' for the product's tagged address (Cowork, owner's account, 2026-11-20). That validates the tag only; real commission is confirmed only in Associates reports. Earlier listing check: Cowork, 2026-11-19.",
   "specsEvidence": "Winsor & Newton product page https://winsornewton.com/products/galeria-acrylic-set-20x12ml (read 2026-11-20): 20 colours in 12 ml tubes made with fine art pigments, including Pale Rose Blush, Naples Yellow, Olive Green, Permanent Rose, Titanium White and Mars Black; carries the ACMI AP (Approved Product) Seal. The page names no surface or finish and does not mention clay.",
   "suitability": "A first-timer who wants soft, coordinated colours for a few small decorative dishes without mixing."
 }

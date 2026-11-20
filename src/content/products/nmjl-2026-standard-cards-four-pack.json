@@ -3,7 +3,7 @@
   "name": "2026 Standard Size Mah Jongg Cards, Four-Pack",
   "brand": "National Mah Jongg League",
   "asin": "B0GRCCTYJ5",
-  "status": "provisional",
+  "status": "verified",
   "editorialDecision": "approve",
   "bestUse": "Best for a travel set or a small bag",
   "descriptionOriginal": "Four standard-size copies of the National Mah Jongg League's official 2026 hand card for American mahjong.",
@@ -11,7 +11,7 @@
   "limitations": "The type is smaller than the large-print edition, and, like every League card, it is only good for the 2026 season. It does not include tiles.",
   "collection": "hosting",
   "listingChecked": {
-    "checkedOn": "2026-11-19",
+    "checkedOn": "2026-11-20",
     "variant": "4 standard cards, 2026",
     "listingAvailable": "yes",
     "sellerType": "brand",
@@ -19,5 +19,7 @@
   },
   "qualityNote": "Buyers confirm they are official cards and good value. No concerns seen when checked.",
   "imageStatus": "none",
-  "verificationSource": "Cowork Amazon listing check, docs/commerce/buy-plan/PILOT-VERIFICATION-V2.csv in the earlier repository (decision keep; seller The National Mah Jongg League, Inc., ships from Amazon; in stock). Affiliate check 2026-11-20: listing sold by the brand (The National Mah Jongg League, Inc.), in stock; SiteStripe present and Link Checker accepted the site's tracking-ID tag. This does not prove commission; a real sale in Associates reports does."
+  "verificationSource": "Listing: sold by The National Mah Jongg League, Inc., ships from Amazon. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID' for the product's tagged address (Cowork, owner's account, 2026-11-20). That validates the tag only; real commission is confirmed only in Associates reports. Earlier listing check: Cowork, 2026-11-19.",
+  "specsEvidence": "National Mah Jongg League store page https://www.nationalmahjonggleague.org/store.aspx (read 2026-11-20): the League sells its official card in standard and large print. The Amazon listing is sold by The National Mah Jongg League, Inc. and ships from Amazon (Cowork, 2026-11-19 and 2026-11-20).",
+  "suitability": "A table of four needs one current-year card per player. This is the standard size four-pack, for players who want the usual card size, easy to tuck into a game bag."
 }

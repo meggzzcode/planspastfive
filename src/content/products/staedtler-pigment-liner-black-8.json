@@ -3,7 +3,7 @@
   "name": "Pigment Liner Fineliner Set, Black, 8 Pens in Assorted Tip Sizes",
   "brand": "Staedtler",
   "asin": "B0C922C7WT",
-  "status": "provisional",
+  "status": "verified",
   "editorialDecision": "approve",
   "order": 20,
   "collection": "paper",
@@ -14,15 +14,14 @@
   "limitations": "Black only, so this is not a colour set. Waterproof is the maker's claim for writing on paper; as with most pens, try it on a glossy sticker before committing a page.",
   "qualityNote": "Customers say it is among their favourites and works well with watercolour. No concerns seen when checked.",
   "listingChecked": {
-    "checkedOn": "2026-11-19",
-    "variant": "Black, 8 pens, assorted tip sizes",
+    "checkedOn": "2026-11-20",
+    "variant": "1 pack of 8 black pens, tip sizes 0.05 to 1.2 mm",
     "listingAvailable": "yes",
     "sellerType": "amazon",
-    "affiliateLinkEligible": "unknown"
+    "affiliateLinkEligible": "yes"
   },
   "specsEvidence": "Staedtler Pigment Liner 308 black 8-box page, https://www.staedtler.com/nz/en/products/products-for-colouring/fineliners/pigment-liner-308-fineliner-308-sb8/ (read 2026-11-20): pigment ink, indelible, lightfast, waterproof on paper; 8-pen black box in assorted line widths (0.05 to 1.2 mm plus a 0.3-2.0 mm tip); can stay uncapped at least 12 hours. Regional box contents differ, so the exact US box is the one on the listing (8 black pens, assorted tips). 'Acid-free' appears only on retailer pages, not Staedtler's, and is not used. Amazon listing sold by Amazon.com, in stock, per Cowork 2026-11-19.",
   "suitability": "A black pigment-ink fineliner set for captions, dates and small handwriting in a first junk journal; not a colour set.",
   "imageStatus": "none",
-  "verificationSource": "Cowork read-only research in the owner's browser, 2026-11-19, JUNK-JOURNAL-RESEARCH.md/.csv on origin/cowork/junk-journal-research (docs/commerce/buy-plan); also PRIORITY-VERIFICATION.csv on origin/cowork/priority-verification (decision keep, seller Amazon.com). Maker page read by the site team 2026-11-20. Cowork confirmed the SiteStripe toolbar is present but recorded no Associates Link Checker success for this ASIN, so affiliate eligibility is unknown. No Amazon image or text is used. Needed to become verified: a Link Checker success for B0C922C7WT.",
-  "statusReason": "Internal note: Associates Link Checker success not yet recorded for B0C922C7WT."
+  "verificationSource": "Listing: Buy New offer sold by Amazon.com (link the new item, not the separate used offer). Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID' for the product's tagged address (Cowork, owner's account, 2026-11-20). That validates the tag only; real commission is confirmed only in Associates reports. Earlier listing check: Cowork, 2026-11-19."
 }

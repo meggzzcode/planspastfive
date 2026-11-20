@@ -3,7 +3,7 @@
   "name": "5 in Non-Stick Micro-Tip Scissors for Sticky Materials, No. 5",
   "brand": "Fiskars",
   "asin": "B0DLFLZFGK",
-  "status": "provisional",
+  "status": "verified",
   "editorialDecision": "approve",
   "order": 40,
   "collection": "paper",
@@ -14,15 +14,14 @@
   "limitations": "The scissors are small, so they are not for long cuts or thick card. The coating helps with sticky materials but does not replace wiping the blades.",
   "qualityNote": "Customers say the quality is excellent and the blades are sharp and effective. No concerns seen when checked.",
   "listingChecked": {
-    "checkedOn": "2026-11-19",
-    "variant": "1 pair, 5 in micro-tip, non-stick, white",
+    "checkedOn": "2026-11-20",
+    "variant": "No. 5, white, 5 in micro-tip with non-stick coating",
     "listingAvailable": "yes",
     "sellerType": "amazon",
-    "affiliateLinkEligible": "unknown"
+    "affiliateLinkEligible": "yes"
   },
   "specsEvidence": "Fiskars non-stick detail scissors (No. 5) pages, https://www2.fiskars.com/Products/Crafting-and-Sewing/Scissors-and-Shears/Non-stick-Detail-Scissors-No.-5 (fetch failed 2026-11-20; content seen in search summary): Micro-Tip blades for precision, non-stick, lifetime warranty, length about 4.9 in. Retailers describe a non-stick coating for tape, vinyl, stickers and glue. Whether the white B0DLFLZFGK is identical to that page's model is unconfirmed.",
   "suitability": "A small, sharp, non-stick pair for trimming tape and cutting out small paper pieces for a first junk journal.",
   "imageStatus": "none",
-  "verificationSource": "Cowork read-only research in the owner's browser, 2026-11-19, JUNK-JOURNAL-RESEARCH.md/.csv on origin/cowork/junk-journal-research (docs/commerce/buy-plan) (primary pick; sold by Amazon.com, in stock, none seen); the Fiskars 5 in scissors were also checked in the earlier priority check. Cowork confirmed the SiteStripe toolbar is present but recorded no Associates Link Checker success for this ASIN, so affiliate eligibility is unknown. No Amazon image or text is used.",
-  "statusReason": "Internal note: Fiskars' own page for this exact white 5 in version could not be read on 2026-11-20, so the description follows its Non-stick Detail Scissors (No. 5) page; identity with B0DLFLZFGK is unconfirmed. Associates Link Checker success not yet recorded."
+  "verificationSource": "Listing: sold by Amazon.com; title and bullets confirm the No. 5 micro-tip non-stick model. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID' for the product's tagged address (Cowork, owner's account, 2026-11-20). That validates the tag only; real commission is confirmed only in Associates reports. Earlier listing check: Cowork, 2026-11-19."
 }

@@ -3,24 +3,23 @@
   "name": "BASICS Acrylic Paint Set, 12 x 22 ml",
   "brand": "Liquitex",
   "asin": "B07VSZM41G",
-  "status": "provisional",
+  "status": "verified",
   "editorialDecision": "approve",
-  "statusReason": "Internal note: the maker's page counts the colours two ways (six in the text, twelve in the specifications), so box contents are unconfirmed. Provisional until Cowork runs the Associates Link Checker on this ASIN (and, for Liquitex, re-reads the seller): then set affiliateLinkEligible to yes and status to verified.",
   "bestUse": "Best for mixing your own tints for small decorative clay pieces",
   "descriptionOriginal": "Twelve 22 ml tubes of medium-viscosity, satin-finish acrylic in primaries, earth tones, black and white.",
   "whyWeLikeIt": "With a proper white and a handful of strong colours you can mix your own blush, butter and sage, and the tubes keep going into later projects.",
   "limitations": "There are no ready-made pastels, so soft shades mean mixing from white, and the finish is satin, not matte. The maker lists surfaces such as stone and ceramics but does not name air-dry clay, so try a colour on a scrap first.",
   "collection": "creative",
   "listingChecked": {
-    "checkedOn": "2026-11-19",
+    "checkedOn": "2026-11-20",
     "variant": "12 x 22 ml tubes",
     "listingAvailable": "yes",
-    "sellerType": "unverified",
-    "affiliateLinkEligible": "unknown"
+    "sellerType": "amazon",
+    "affiliateLinkEligible": "yes"
   },
   "qualityNote": "Customers like the colour variety and the blending; some say the amount of paint varies.",
   "imageStatus": "none",
-  "verificationSource": "Cowork, owner's browser, 2026-11-19: PILOT-VERIFICATION-V2.csv in the old repository (branch cowork/editorial-tasks), decision keep, in stock, matches description. Seller was not re-read (earlier read said Amazon). Affiliate Link Checker not yet run.",
+  "verificationSource": "Listing: sold by Amazon.com; 12 tubes stated. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID' for the product's tagged address (Cowork, owner's account, 2026-11-20). That validates the tag only; real commission is confirmed only in Associates reports. Earlier listing check: Cowork, 2026-11-19.",
   "specsEvidence": "Liquitex product page https://www.liquitex.com/products/basics-acrylic-set-12x22ml (read 2026-11-20): 12 tubes of 22 ml, medium viscosity, satin finish, lists canvas, paper and board, wood, metal, stone and ceramics, textiles among its surfaces, AP certified. Does not mention clay.",
   "suitability": "Someone who likes to mix colours from a few tubes and does not mind a satin finish."
 }

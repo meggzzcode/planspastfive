@@ -14,15 +14,15 @@
   "limitations": "Only 48 pages, so a keen collager will fill it quickly, and heavy layering will still thicken the spine. The tan is a warm, mid tone that will not suit a cool, pale palette.",
   "qualityNote": "Customers say they love the colour and the toned paper. Concern: the listing showed no availability line when checked.",
   "listingChecked": {
-    "checkedOn": "2026-11-19",
+    "checkedOn": "2026-11-20",
     "variant": "Tan, 8.5 x 5.5 in, 48 pages (469-305)",
     "listingAvailable": "unverified",
     "sellerType": "amazon",
-    "affiliateLinkEligible": "unknown"
+    "affiliateLinkEligible": "yes"
   },
   "specsEvidence": "Strathmore, https://strathmoreartist.com/mixed-media/400-series-toned-mixed-media-hardbound-art-journal (read 2026-11-20): 300 g/m2 (184 lb), medium surface, Smyth-sewn binding that allows pages to lay flatter, acid free with 30% post-consumer fibre, 48 pages, 8.5 x 5.5 in in Warm Tan (469-305) and Cool Gray (469-405), matte dark brown cover, suited to graphite, coloured pencil, markers, acrylic, watercolour, gouache, pen and ink, charcoal and gel pens. Retailers disagree on page count (48 versus 128 for a different sketch edition); we use the maker's 48.",
   "suitability": "A small, toned, sewn-bound heavy-paper book for layering collage and adhesive in a first junk journal.",
   "imageStatus": "none",
-  "verificationSource": "Cowork read-only research in the owner's browser, 2026-11-19, JUNK-JOURNAL-RESEARCH.md/.csv on origin/cowork/junk-journal-research (docs/commerce/buy-plan) (stock line NOT FOUND, listed 'recheck before featuring'); PRIORITY-VERIFICATION.csv (origin/cowork/priority-verification): hold, recheck stock. Kept provisional until stock is confirmed. Cowork confirmed the SiteStripe toolbar is present but recorded no Associates Link Checker success for this ASIN, so affiliate eligibility is unknown. No Amazon image or text is used.",
-  "statusReason": "Internal note: no stock line was seen on the listing when checked (2026-11-19); recheck availability before featuring. Associates Link Checker success not yet recorded."
+  "verificationSource": "Cowork, 2026-11-20 (see statusReason). Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID' for the product's tagged address (Cowork, owner's account, 2026-11-20). That validates the tag only; real commission is confirmed only in Associates reports.",
+  "statusReason": "Provisional: Cowork 2026-11-20: sold by Amazon.com, Add to Cart present, Link Checker success, but no 'In Stock' line and the Tan style shows a mid-to-late December delivery estimate (Gray shows next-day). Re-check before launch; if still delayed, swap or hold."
 }
