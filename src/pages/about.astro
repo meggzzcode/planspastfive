@@ -1,7 +1,8 @@
 ---
 import Prose from "../layouts/Prose.astro";
-import { settings, siteImage } from "../lib/site.mjs";
+import { settings, images, siteImage } from "../lib/site.mjs";
 const pic = siteImage("weekend-picnic");
+const aiInUse = Object.values(images).some((r) => r.kind === "ai-illustration");
 ---
 <Prose title="Making a life, not just a living." eyebrow="About" description={`${settings.siteName} is an independent lifestyle journal for the hours after work: small hobbies, easy plans and a short, honest shopping list.`} path="/about/" image={pic.src}
   dek="Helping women fall in love with the life they live outside of work.">
@@ -18,7 +19,7 @@ const pic = siteImage("weekend-picnic");
 
   <figure class="prose__figure">
     <img src={pic.src} alt={pic.alt} loading="lazy" width="1152" height="896" />
-    <figcaption>Illustrative image &middot; {pic.credit}</figcaption>
+    <figcaption>{pic.caption}</figcaption>
   </figure>
 
   <h2 id="standards">How we work: our editorial standards</h2>
@@ -28,7 +29,7 @@ const pic = siteImage("weekend-picnic");
     <li><strong>Checked picks.</strong> Before a product appears, we check its Amazon listing: that it is the right item, in stock, and sold by Amazon or by the maker. We write our own descriptions and say who each item is not for.</li>
     <li><strong>No prices or star ratings.</strong> Amazon sets those, and they change. We show neither.</li>
     <li><strong>Commerce, in the open.</strong> Some shopping links may earn us a commission. It never changes what we recommend. Details are in our <a href="/affiliate-disclosure/">affiliate disclosure</a>.</li>
-    <li><strong>How we use AI.</strong> We use AI tools to help with research, drafting, organisation and the running of the site. We do not claim firsthand experience, personal testing or human review that did not happen. The pictures on this site were made with AI tools and show no real people or brands; they are never used to show what a particular product looks like. Please confirm important details, such as cost, safety and availability, with the provider before you rely on them.</li>
+    <li><strong>How we use AI.</strong> We use AI tools to help with research, drafting, organisation and the running of the site. We do not claim firsthand experience, personal testing or human review that did not happen.{aiInUse && ' Some pictures on this site are AI-generated illustrations; each one is labelled as such and none is used to show what a particular product looks like.'} Please confirm important details, such as cost, safety and availability, with the provider before you rely on them.</li>
     <li><strong>Corrections.</strong> If we got something wrong, write to <a href={`mailto:${settings.contactEmail}`}>{settings.contactEmail}</a> and we will fix it.</li>
   </ul>
 

@@ -1,17 +1,17 @@
 ---
 import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
-import { settings } from "../lib/site.mjs";
+import { settings, images } from "../lib/site.mjs";
 import { shopGroups } from "../lib/catalog.mjs";
 import { productCardHtml, disclosureHtml } from "../lib/render-product.mjs";
 
 const products = (await getCollection("products")).map((p) => p.data);
-const groups = shopGroups(products);
+const groups = shopGroups(products, settings.launchMode);
 ---
 <Base title="The Shop" description="A small, curated shelf of supplies for the hobbies and plans in the Journal, each checked against its Amazon listing with our reasons and one honest caveat." path="/shop/">
   <div class="wrap page-head">
     <p class="eyebrow">The Shop</p>
-    <h1>Small on purpose</h1>
+    <h1>The Good Stuff, Already Found</h1>
     <p class="page-head__dek">Every item here has been checked against its Amazon listing, comes with our reasons, and carries one honest caveat. We write our own descriptions, because &ldquo;high quality, great value&rdquo; has never told anyone anything.</p>
   </div>
   <div class="wrap section section--tight">
@@ -30,7 +30,7 @@ const groups = shopGroups(products);
             <h2 id={`h-${g.id}`}>{g.label}</h2>
             <p class="shop-group__plain">{g.plain}</p>
             <div class="pick-list pick-list--grid">
-              {g.products.map((p) => <Fragment set:html={productCardHtml(p, settings, { ctx: { page: "shop" }, placement: "shop" })} />)}
+              {g.products.map((p) => <Fragment set:html={productCardHtml(p, settings, { ctx: { page: "shop" }, placement: "shop", images })} />)}
             </div>
           </section>
         ))}

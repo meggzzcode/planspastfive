@@ -2,33 +2,56 @@
   "girls-night-crafts": {
     "file": "girls-night-crafts.jpg",
     "alt": "Four friends laughing around a low table, threading bead bracelets beside a mahjong game, with a bowl of strawberries and fairy lights behind them.",
-    "credit": "Plans Past Five",
-    "source": "Lovable AI image tool, originally generated for the earlier Plans Past Five project",
-    "licence": "AI-generated. No exclusivity or registrable copyright promised. Commercial-use and transfer terms of the tool not independently verified (see docs/RISKS.md).",
-    "rights": "cleared"
+    "kind": "ai-illustration",
+    "source": {
+      "name": "Lovable AI image tool (generated for the earlier Plans Past Five project)"
+    },
+    "notes": "AI-generated. No exclusivity or registrable copyright promised. Commercial-use and transfer terms not independently verified (see docs/RISKS.md).",
+    "commercialUse": "unverified",
+    "transferWithSite": "unverified",
+    "attribution": "none",
+    "rightsStatus": "pending"
   },
   "cozy-corner": {
     "file": "cozy-corner.jpg",
     "alt": "A woman in wool socks and tartan pyjamas relaxes on a green sofa with a cup of tea and a book, a jigsaw puzzle laid out on a gingham-covered table beside her.",
-    "credit": "Plans Past Five",
-    "source": "Canva AI, https://www.canva.com/M/MAHbXzI-Ijo",
-    "licence": "AI-generated image under the Canva AI Product Terms (https://www.canva.com/policies/ai-product-terms/). Transfer to a buyer not stated by Canva (see docs/RISKS.md).",
-    "rights": "cleared"
+    "kind": "ai-illustration",
+    "source": {
+      "name": "Canva AI",
+      "url": "https://www.canva.com/M/MAHbXzI-Ijo"
+    },
+    "licenceName": "Canva AI Product Terms",
+    "licenceUrl": "https://www.canva.com/policies/ai-product-terms/",
+    "notes": "Transfer to a buyer is not stated by Canva (see docs/RISKS.md). Licence check date not recorded.",
+    "commercialUse": "unverified",
+    "transferWithSite": "unverified",
+    "attribution": "none",
+    "rightsStatus": "pending"
   },
   "weekend-picnic": {
     "file": "weekend-picnic.jpg",
     "alt": "Two friends chatting on a red gingham picnic blanket in dappled sunlight, with sunflowers, strawberries, a baguette and a film camera beside them.",
-    "credit": "Plans Past Five",
-    "source": "Lovable AI image tool, originally generated for the earlier Plans Past Five project",
-    "licence": "AI-generated. No exclusivity or registrable copyright promised. Commercial-use and transfer terms of the tool not independently verified (see docs/RISKS.md).",
-    "rights": "cleared"
+    "kind": "ai-illustration",
+    "source": {
+      "name": "Lovable AI image tool (generated for the earlier Plans Past Five project)"
+    },
+    "notes": "AI-generated. No exclusivity or registrable copyright promised. Commercial-use and transfer terms not independently verified (see docs/RISKS.md).",
+    "commercialUse": "unverified",
+    "transferWithSite": "unverified",
+    "attribution": "none",
+    "rightsStatus": "pending"
   },
   "junk-journal-flatlay": {
     "file": "junk-journal-flatlay.jpg",
     "alt": "An open junk journal on a butter-yellow cloth, its pages layered with pressed flowers, old tickets, photographs and red gingham tape, beside a cherry-print mug and two fine-liner pens.",
-    "credit": "Plans Past Five",
-    "source": "Lovable AI image tool, originally generated for the earlier Plans Past Five project",
-    "licence": "AI-generated. No exclusivity or registrable copyright promised. Commercial-use and transfer terms of the tool not independently verified (see docs/RISKS.md).",
-    "rights": "cleared"
+    "kind": "ai-illustration",
+    "source": {
+      "name": "Lovable AI image tool (generated for the earlier Plans Past Five project)"
+    },
+    "notes": "AI-generated. No exclusivity or registrable copyright promised. Commercial-use and transfer terms not independently verified (see docs/RISKS.md).",
+    "commercialUse": "unverified",
+    "transferWithSite": "unverified",
+    "attribution": "none",
+    "rightsStatus": "pending"
   }
 }

@@ -3,7 +3,10 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import { amazonUrl, amazonAttrs, trackingActive, affiliateSettingsProblems } from "../src/lib/affiliate.mjs";
-import { resolveProduct, shopGroups, imageUrl } from "../src/lib/catalog.mjs";
+import { resolveProduct, shopGroups, imageUrl, articlesUsingProduct } from "../src/lib/catalog.mjs";
+import { captionFor, isApproved } from "../src/lib/images.mjs";
+import { disclosureText } from "../src/lib/affiliate.mjs";
+import { imageAssetSchema } from "../src/lib/schemas.mjs";
 import { checkContent } from "../scripts/check-content.mjs";
 import { REPO } from "./helpers.mjs";
 
@@ -38,13 +41,31 @@ describe("affiliate module (the only place Amazon links are built)", () => {
 });
 
 describe("catalog rules", () => {
-  const P = (o) => ({ id: "a", status: "verified", collection: "paper", name: "A", ...o });
+  const P = (o) => ({ id: "a", status: "verified", editorialDecision: "approve", collection: "paper", name: "A", ...o });
   const map = (...ps) => new Map(ps.map((p) => [p.id, p]));
   test("verified resolves; candidate, held, unknown do not", () => {
     assert.equal(resolveProduct(map(P()), "a").product.id, "a");
     assert.match(resolveProduct(map(P({ status: "candidate" })), "a").error, /only a candidate/);
     assert.match(resolveProduct(map(P({ status: "held", statusReason: "r" })), "a").error, /on hold/);
     assert.match(resolveProduct(map(), "zzz").error, /no product called/);
+  });
+  test("technically valid is not enough: a verified product needs editorialDecision approve; provisional shows only in preview", () => {
+    assert.match(resolveProduct(map(P({ editorialDecision: "hold" })), "a").error, /held by editorial decision/);
+    assert.match(resolveProduct(map(P({ editorialDecision: undefined })), "a").error, /not been approved/);
+    const prov = map(P({ status: "provisional" }));
+    assert.ok(resolveProduct(prov, "a", "preview").product);
+    assert.match(resolveProduct(prov, "a", "production").error, /provisional/);
+    assert.deepEqual(shopGroups([P({ status: "provisional" })], "production"), []);
+    assert.equal(shopGroups([P({ status: "provisional" })], "preview").length, 1);
+  });
+  test("deliberate ordering: numeric order first, the rest keep their stable order", () => {
+    const g = shopGroups([P({ id: "x" }), P({ id: "y", order: 2 }), P({ id: "z", order: 1 }), P({ id: "w" })]);
+    assert.deepEqual(g[0].products.map((p) => p.id), ["z", "y", "x", "w"]);
+  });
+  test("which articles show a product (picks, markers, replacement chains)", () => {
+    const m = map(P({ id: "old", status: "discontinued", replacedBy: "a" }), P());
+    const used = articlesUsingProduct([{ id: "s1", title: "T1", picks: ["old"], body: "" }, { id: "s2", title: "T2", picks: [], body: "x {{product:a}} y" }], m);
+    assert.deepEqual(used.get("a").map((x) => x.id), ["s1", "s2"]);
   });
   test("replacement chains are followed, and loops and dead ends are errors", () => {
     const m = map(P({ id: "old", status: "discontinued", replacedBy: "mid" }), P({ id: "mid", status: "discontinued", replacedBy: "new" }), P({ id: "new" }));
@@ -62,20 +83,63 @@ describe("catalog rules", () => {
 });
 
 describe("real repository content", () => {
-  test("passes the content-integrity check, and only verified Cowork-checked products are present", () => {
+  test("passes the content-integrity check; every public product is approved and no product is called verified without its evidence", () => {
     const { errors, content } = checkContent(REPO);
     assert.deepEqual(errors, []);
-    assert.deepEqual(content.products.map((p) => p.data.asin).sort(), ["B000XAHF7S", "B0GRCBQ3Y2", "B0GRCCTYJ5"]);
-    for (const p of content.products) { assert.equal(p.data.status, "verified"); assert.ok(p.data.verifiedOn && p.data.verificationSource); }
+    for (const p of content.products) {
+      assert.ok(["provisional", "verified"].includes(p.data.status) ? p.data.editorialDecision === "approve" : true);
+      if (p.data.status === "verified") assert.equal(p.data.listingChecked.affiliateLinkEligible, "yes");
+    }
+  });
+  test("tracking stays off and launchMode is preview", () => {
+    const { content } = checkContent(REPO);
+    assert.equal(content.settings.amazonTrackingEnabled, false);
+    assert.equal(content.settings.launchMode, "preview");
+  });
+  test("no image record claims approval without commercial use, and no AI image is described as a photograph", () => {
+    const { content } = checkContent(REPO);
+    for (const r of Object.values(content.images)) {
+      if (r.rightsStatus === "approved") assert.equal(r.commercialUse, "yes");
+      if (r.kind === "ai-illustration") assert.match(captionFor(r), /AI-generated/);
+    }
+  });
+});
+
+describe("image records and captions", () => {
+  const base = { file: "a.jpg", alt: "x", kind: "photograph", credit: "Jo", source: { name: "Jo", url: "https://e.com" }, commercialUse: "yes", transferWithSite: "yes", licenceName: "L", licenceUrl: "https://e.com/l", licenceCheckedOn: "2026-11-20", approvedOn: "2026-11-20", attribution: "none", rightsStatus: "approved" };
+  test("captions reflect the real kind of picture", () => {
+    assert.equal(captionFor(base), "Photo: Jo");
+    assert.equal(captionFor({ ...base, kind: "ai-illustration" }), "Illustrative image (AI-generated)");
+    assert.equal(captionFor({ ...base, kind: "product-photo", credit: "Tombow" }), "Product photo: Tombow");
+    assert.doesNotMatch(captionFor(base), /llustrat/);
+    assert.doesNotMatch(captionFor({ ...base, kind: "ai-illustration" }), /Photo/);
+  });
+  test("approval needs commercial use yes, licence details, checked date and owner approval date", () => {
+    assert.ok(imageAssetSchema.safeParse(base).success);
+    assert.ok(isApproved(base));
+    for (const [k, v] of [["commercialUse", "unverified"], ["licenceUrl", ""], ["licenceCheckedOn", ""], ["approvedOn", ""], ["credit", ""]]) {
+      assert.ok(!imageAssetSchema.safeParse({ ...base, [k]: v }).success, k);
+    }
+    assert.ok(imageAssetSchema.safeParse({ ...base, commercialUse: "unverified", transferWithSite: "unverified", rightsStatus: "pending" }).success);
+  });
+});
+
+describe("affiliate disclosure wording follows the tracking state", () => {
+  test("off: never claims earnings; on: carries the exact required statement", () => {
+    const off = disclosureText({ amazonTrackingEnabled: false, amazonTrackingId: "x-20", amazonDisclosure: "As an Amazon Associate I earn from qualifying purchases." });
+    const on = disclosureText({ amazonTrackingEnabled: true, amazonTrackingId: "x-20", amazonDisclosure: "As an Amazon Associate I earn from qualifying purchases." });
+    assert.match(off, /earn nothing from them yet/); assert.doesNotMatch(off, /Associate|commission/);
+    assert.match(on, /As an Amazon Associate I earn from qualifying purchases\.$/);
+    assert.notEqual(off, on);
   });
 });
 
 describe("empty boxes saved by the CMS are treated as not filled in", () => {
   test("empty strings and an empty image group do not break a candidate product or a draft", async () => {
     const { productSchema, articleSchema } = await import("../src/lib/schemas.mjs");
-    const p = productSchema.safeParse({ id: "a", name: "A", brand: "B", asin: "B000XAHF7S", status: "candidate", collection: "paper", statusReason: "", replacedBy: "", verifiedOn: "", verificationSource: "", image: { file: "", alt: "", source: "", licence: "", rights: "" } });
+    const p = productSchema.safeParse({ id: "a", name: "A", brand: "B", asin: "B000XAHF7S", status: "candidate", collection: "paper", statusReason: "", replacedBy: "", listingChecked: { checkedOn: "", variant: "", listingAvailable: "", sellerType: "", affiliateLinkEligible: "" }, specsEvidence: "", order: "", editorialDecision: "", imageStatus: "", verificationSource: "", image: { file: "", alt: "" } });
     assert.ok(p.success, JSON.stringify(p.error?.issues));
-    assert.equal(p.data.image, undefined); assert.equal(p.data.verifiedOn, undefined);
+    assert.equal(p.data.image, undefined); assert.equal(p.data.listingChecked, undefined); assert.equal(p.data.order, undefined);
     const a = articleSchema.safeParse({ title: "Draft title", status: "draft", publishedAt: "", updatedAt: "", hero: { image: "", alt: "", credit: "", source: "", licence: "", rights: "" } });
     assert.ok(a.success, JSON.stringify(a.error?.issues));
   });

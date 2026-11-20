@@ -19,6 +19,12 @@ export function makeCopy(label = "ppf") {
     }
   };
   copy(REPO, dir);
+  // Tests protect behaviour, not shipped wording: every copy gets FIXTURE articles and products (test/fixtures),
+  // so editorial rewrites of src/content/articles or src/content/products cannot break them.
+  for (const kind of ["articles", "products"]) {
+    fs.rmSync(path.join(dir, "src/content", kind), { recursive: true, force: true });
+    fs.cpSync(path.join(REPO, "test/fixtures", kind), path.join(dir, "src/content", kind), { recursive: true });
+  }
   // node_modules: a real folder of links to the real packages, so each copy has its own Astro cache
   fs.mkdirSync(path.join(dir, "node_modules"));
   for (const e of fs.readdirSync(path.join(REPO, "node_modules"))) {
@@ -56,3 +62,20 @@ export const newProduct = (over = {}) => ({
   collection: "creative", ...over,
 });
 export const addProduct = (dir, p) => write(dir, `src/content/products/${p.id}.json`, JSON.stringify(p, null, 2));
+
+/** Evidence for a fully verified product (invented for TEST COPIES only, never for the real content). */
+export const verifiedFields = (over = {}) => ({
+  status: "verified", editorialDecision: "approve", verificationSource: "Test: listing read.",
+  listingChecked: { checkedOn: "2026-11-20", variant: "test", listingAvailable: "yes", sellerType: "amazon", affiliateLinkEligible: "yes" },
+  specsEvidence: "Test: https://maker.example/spec", suitability: "Test: suits beginners.", ...over,
+});
+/** Turn every real product in a copy into a fully verified one (needed before tracking can be switched on). */
+export const promoteProducts = (dir) => {
+  for (const f of fs.readdirSync(path.join(dir, "src/content/products"))) editJson(dir, `src/content/products/${f}`, (p) => Object.assign(p, verifiedFields()));
+};
+/** An approved image record (test copies only). */
+export const approvedImage = (over = {}) => ({
+  commercialUse: "yes", transferWithSite: "yes", licenceName: "Test licence", licenceUrl: "https://example.com/licence",
+  licenceCheckedOn: "2026-11-20", approvedOn: "2026-11-20", rightsStatus: "approved", ...over,
+});
+export const IMAGES = "src/content/images.json";

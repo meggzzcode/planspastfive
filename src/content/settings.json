@@ -8,5 +8,6 @@
   "amazonTrackingEnabled": false,
   "amazonMarketplace": "amazon.com",
   "amazonDisclosure": "As an Amazon Associate I earn from qualifying purchases.",
-  "searchConsoleVerification": ""
+  "searchConsoleVerification": "",
+  "launchMode": "preview"
 }

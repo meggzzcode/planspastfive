@@ -2,7 +2,7 @@
 import { getCollection, render } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import ArticleCard from "../../components/ArticleCard.astro";
-import { settings, abs, fmtDate, isoDate, readMinutes } from "../../lib/site.mjs";
+import { settings, images, recordFor, abs, fmtDate, isoDate, readMinutes } from "../../lib/site.mjs";
 import { resolveProduct, imageUrl, categorySlug } from "../../lib/catalog.mjs";
 import { productCardHtml, disclosureHtml } from "../../lib/render-product.mjs";
 
@@ -23,7 +23,7 @@ const products = await getCollection("products");
 const byId = new Map(products.map((p) => [p.data.id, p.data]));
 const picks = [];
 for (const id of d.picks) {
-  const r = resolveProduct(byId, id);
+  const r = resolveProduct(byId, id, settings.launchMode);
   if (r.error) throw new Error(`src/content/articles/${entry.id}.md, field "picks": cannot show "${id}" because ${r.error}.`);
   if (!picks.some((p) => p.id === r.product.id)) picks.push(r.product);
 }
@@ -36,6 +36,7 @@ const related = d.related.length
 
 const url = abs(`/journal/${entry.id}/`);
 const heroSrc = imageUrl(d.hero.image);
+const heroRec = recordFor(d.hero.image);
 const shareText = encodeURIComponent(d.title);
 const pin = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(url)}&media=${encodeURIComponent(abs(heroSrc))}&description=${shareText}`;
 const mail = `mailto:?subject=${shareText}&body=${encodeURIComponent(`${d.dek}\n\n${url}`)}`;
@@ -57,8 +58,8 @@ const jsonLd = [{
     </header>
 
     <figure class="article__hero">
-      <img src={heroSrc} alt={d.hero.alt} width="1152" height="896" fetchpriority="high" decoding="async" />
-      <figcaption>Illustrative image &middot; {d.hero.credit}</figcaption>
+      <img src={heroSrc} alt={d.hero.alt || heroRec?.alt || ""} width="1152" height="896" fetchpriority="high" decoding="async" />
+      <figcaption>{heroRec?.caption}</figcaption>
     </figure>
 
     <div class="prose">
@@ -73,7 +74,7 @@ const jsonLd = [{
           <p class="section-lede">Everything mentioned above, in one place, with a link to each.</p>
           {!inlineDisclosed && <Fragment set:html={disclosureHtml(settings)} />}
           <div class="pick-list">
-            {picks.map((p) => <Fragment set:html={productCardHtml(p, settings, { compact: shownInline.has(p.id), ctx: { article: entry.id }, placement: "story-end" })} />)}
+            {picks.map((p) => <Fragment set:html={productCardHtml(p, settings, { compact: shownInline.has(p.id), ctx: { article: entry.id }, placement: "story-end", images })} />)}
           </div>
         </section>
       )}

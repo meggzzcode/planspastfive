@@ -2,7 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import YAML from "yaml";
-import { articleSchema, productSchema, settingsSchema, describeIssues } from "./schemas.mjs";
+import { articleSchema, productSchema, settingsSchema, imagesFileSchema, describeIssues } from "./schemas.mjs";
 
 const rel = (root, f) => path.relative(root, f).split(path.sep).join("/");
 
@@ -18,7 +18,7 @@ export function parseFrontmatter(raw) {
 
 export function loadContent(root) {
   const errors = [];
-  const out = { root, settings: null, articles: [], products: [], errors };
+  const out = { root, settings: null, articles: [], products: [], images: {}, errors };
 
   const sFile = path.join(root, "src/content/settings.json");
   try {
@@ -27,6 +27,18 @@ export function loadContent(root) {
     else errors.push(...describeIssues("src/content/settings.json", parsed.error));
   } catch (e) {
     errors.push(`src/content/settings.json: cannot be read as JSON (${e.message})`);
+  }
+
+  const iFile = path.join(root, "src/content/images.json");
+  if (!fs.existsSync(iFile)) errors.push("src/content/images.json: missing (the rights record of every picture).");
+  else {
+    try {
+      const parsed = imagesFileSchema.safeParse(JSON.parse(fs.readFileSync(iFile, "utf8")));
+      if (parsed.success) out.images = parsed.data;
+      else errors.push(...describeIssues("src/content/images.json", parsed.error));
+    } catch (e) {
+      errors.push(`src/content/images.json: cannot be read as JSON (${e.message})`);
+    }
   }
 
   const aDir = path.join(root, "src/content/articles");

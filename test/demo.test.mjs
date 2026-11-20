@@ -7,7 +7,7 @@ import path from "node:path";
 import { spawn } from "node:child_process";
 import {
   REPO, makeCopy, cleanup, npmBuild, checkContentCli, astroBuildOnly, read, write, exists, editJson, editArticle,
-  ARTICLE, SETTINGS, amazonLinks, distHtml, newProduct, addProduct,
+  ARTICLE, SETTINGS, IMAGES, amazonLinks, distHtml, newProduct, addProduct, verifiedFields, promoteProducts, approvedImage,
 } from "./helpers.mjs";
 
 const SLUG = "your-first-junk-journal-spread";
@@ -23,16 +23,16 @@ describe("baseline: the real repo content passes every check (item 7)", () => {
     assert.match(r.out, /Content check passed/);
     assert.match(r.out, /Link check passed/);
   });
-  test("article page has hero credit, inline product, pick card, one disclosure beside the first product, shop section", () => {
+  test("article page has hero caption, inline product, pick card, one disclosure BEFORE the first product, shop section", () => {
     const h = distHtml(dir, `journal/${SLUG}/index.html`);
-    assert.match(h, /Illustrative image &middot; Plans Past Five/);
+    assert.match(h, /<figcaption>Illustrative image \(AI-generated\)<\/figcaption>/);
     assert.match(h, /class="product-mention"/);
     assert.match(h, /class="product-card/);
     assert.match(h, /Shop this story/);
     assert.equal((h.match(/class="disclosure"/g) || []).length, 1, "exactly one disclosure block in an article that shows its product inline");
-    // first product mention comes before the disclosure which comes before the card
-    assert.ok(h.indexOf("product-mention") < h.indexOf('class="disclosure"'));
-    assert.ok(h.indexOf('class="disclosure"') < h.indexOf('class="product-card'));
+    // the disclosure comes before the first product mention, which comes before the card
+    assert.ok(h.indexOf('class="disclosure"') < h.indexOf("product-mention"));
+    assert.ok(h.indexOf("product-mention") < h.indexOf('class="product-card'));
     assert.match(h, /"@type":"Article"/);
     assert.match(h, /<link rel="canonical" href="https:\/\/planspastfive\.com\/journal\//);
   });
@@ -78,34 +78,58 @@ describe("(1) edit the article text and publish it (draft -> published)", () => 
   });
 });
 
-describe("(2) upload a NEW image and change the hero", () => {
+describe("(2) upload a NEW image and change the hero (one rights record per picture)", () => {
   let dir;
   const fresh = () => { if (dir) cleanup(dir); dir = makeCopy("ppf-demo"); };
   after(() => dir && cleanup(dir));
   before(fresh);
   const IMG = "public/images/new-hero.jpg";
-  test("missing alt, credit and rights fail with plain messages", () => {
+  const hero = (alt = "A woman reading in an armchair") => (s) => s.replace(/hero:[\s\S]*?\npicks:/, `hero:\n  image: /images/new-hero.jpg\n  alt: "${alt}"\npicks:`);
+  const record = { file: "new-hero.jpg", alt: "A woman reading", kind: "photograph", credit: "Jo Photographer", source: { name: "Jo", url: "https://example.com/jo" }, attribution: "none", ...approvedImage() };
+  test("a hero with no rights record, or with a missing file or alt, fails with plain messages", () => {
     fs.copyFileSync(path.join(REPO, "public/images/cozy-corner.jpg"), path.join(dir, IMG));
-    editArticle(dir, (s) => s.replace(/hero:[\s\S]*?\npicks:/, "hero:\n  image: /images/new-hero.jpg\n  source: test\n  licence: test\n  rights: pending\npicks:"));
-    const r = checkContentCli(dir);
+    editArticle(dir, hero(""));
+    let r = checkContentCli(dir);
     assert.ok(!r.ok);
     assert.match(r.out, /field "hero\.alt"/);
-    assert.match(r.out, /field "hero\.credit"/);
-    assert.match(r.out, /field "hero\.rights": must be "cleared"/);
-  });
-  test("a hero file that does not exist fails", () => {
+    assert.match(r.out, /field "hero\.image": \/images\/new-hero\.jpg has no rights record in src\/content\/images\.json/);
     editArticle(dir, (s) => s.replace("/images/new-hero.jpg", "/images/not-there.jpg"));
-    const r = checkContentCli(dir);
+    r = checkContentCli(dir);
     assert.match(r.out, /field "hero\.image": the file \/images\/not-there\.jpg is not in public\/images\//);
   });
-  test("a complete record passes, and the built page and share image use the new picture", () => {
-    editArticle(dir, (s) => s.replace(/hero:[\s\S]*?\npicks:/, 'hero:\n  image: /images/new-hero.jpg\n  alt: "A woman reading in an armchair"\n  credit: "Plans Past Five"\n  source: "test source"\n  licence: "test licence"\n  rights: cleared\npicks:'));
+  test("an approved record passes; the page and share image use the picture and a PHOTO caption", () => {
+    editArticle(dir, hero());
+    editJson(dir, IMAGES, (j) => { j["new-hero"] = record; });
     const r = npmBuild(dir);
     assert.ok(r.ok, r.out);
     const h = distHtml(dir, `journal/${SLUG}/index.html`);
     assert.match(h, /src="\/images\/new-hero\.jpg"/);
     assert.match(h, /og:image" content="https:\/\/planspastfive\.com\/images\/new-hero\.jpg"/);
     assert.match(h, /alt="A woman reading in an armchair"/);
+    assert.match(h, /<figcaption>Photo: Jo Photographer<\/figcaption>/);
+  });
+  test("a pending hero is a loud warning in preview mode and a failure in production mode naming what is missing", () => {
+    editJson(dir, IMAGES, (j) => Object.assign(j["new-hero"], { rightsStatus: "pending", commercialUse: "unverified", licenceUrl: "", approvedOn: "" }));
+    let r = checkContentCli(dir);
+    assert.ok(r.ok, r.out);
+    assert.match(r.out, /LAUNCH WARNING/);
+    assert.match(r.out, /"new-hero" \(new-hero\.jpg\) is used by the article "your-first-junk-journal-spread" but is not approved/);
+    assert.match(r.out, /commercial use is "unverified"/); assert.match(r.out, /licenceUrl\) is missing/); assert.match(r.out, /approvedOn\) is missing/);
+    editJson(dir, SETTINGS, (s) => { s.launchMode = "production"; });
+    r = checkContentCli(dir);
+    assert.ok(!r.ok);
+    assert.match(r.out, /CONTENT CHECK FAILED/);
+    assert.match(r.out, /"new-hero" \(new-hero\.jpg\) is used by the article .* not approved/);
+    assert.ok(!npmBuild(dir).ok, "the full build must fail too");
+  });
+  test('a record cannot be "approved" unless commercial use is yes; a rejected picture always fails', () => {
+    editJson(dir, SETTINGS, (s) => { s.launchMode = "preview"; });
+    editJson(dir, IMAGES, (j) => Object.assign(j["new-hero"], { rightsStatus: "approved", commercialUse: "unverified" }));
+    let r = checkContentCli(dir);
+    assert.match(r.out, /new-hero\.rightsStatus": cannot be "approved" yet: commercial use is "unverified"/);
+    editJson(dir, IMAGES, (j) => Object.assign(j["new-hero"], approvedImage({ rightsStatus: "rejected" })));
+    r = checkContentCli(dir);
+    assert.match(r.out, /the picture was rejected but is used by the article/);
   });
 });
 
@@ -137,16 +161,19 @@ describe("(3) add a product, then replace a product", () => {
     assert.ok(!unknown.ok);
     assert.match(unknown.out, /there is no product called "no-such-product"/);
   });
-  test("verified without verifiedOn / verificationSource is refused", () => {
+  test("verified without its evidence is refused, naming every missing item", () => {
     editArticle(dir, (s) => s.replace("Try {{product:no-such-product}} on the edges. ", ""));
     addProduct(dir, newProduct({ status: "verified" }));
     const r = checkContentCli(dir);
     assert.ok(!r.ok);
-    assert.match(r.out, /washi-tape-demo\.json, field "verifiedOn": A verified product needs the date/);
+    assert.match(r.out, /washi-tape-demo\.json, field "status": A verified product needs: the date the listing was checked/);
+    assert.match(r.out, /affiliateLinkEligible must be "yes"/);
+    assert.match(r.out, /specsEvidence/); assert.match(r.out, /suitability/);
     assert.match(r.out, /field "verificationSource"/);
   });
   test("verified with its evidence: shown in the shop with a TAGGED link when tracking is on", () => {
-    addProduct(dir, newProduct({ status: "verified", verifiedOn: "2026-11-20", verificationSource: "Test: listing read, seller Amazon.com, in stock." }));
+    addProduct(dir, newProduct(verifiedFields()));
+    promoteProducts(dir);
     editJson(dir, SETTINGS, (s) => { s.amazonTrackingEnabled = true; });
     editArticle(dir, (s) => s.replace("  - tombow-mono-permanent\nrelated", "  - tombow-mono-permanent\n  - washi-tape-demo\nrelated"));
     const r = npmBuild(dir);
@@ -158,7 +185,7 @@ describe("(3) add a product, then replace a product", () => {
     assert.match(shop, /The Creative Edit/, "a new group appears when it gets its first verified product");
   });
   test("replace a product: new id, old one discontinued with replacedBy; every reference shows the new product", () => {
-    addProduct(dir, newProduct({ id: "washi-tape-demo-2", name: "Demo Washi Tape Mk2", asin: "B0TESTBBBB", status: "verified", verifiedOn: "2026-11-21", verificationSource: "Test: re-checked." }));
+    addProduct(dir, newProduct({ id: "washi-tape-demo-2", name: "Demo Washi Tape Mk2", asin: "B0TESTBBBB", ...verifiedFields() }));
     addProduct(dir, newProduct({ status: "discontinued", statusReason: "Maker stopped selling it.", replacedBy: "washi-tape-demo-2" }));
     const r = npmBuild(dir);
     assert.ok(r.ok, r.out);
@@ -196,6 +223,7 @@ describe("(4) change the tracking tag; enable tracking with no ID", () => {
   after(() => dir && cleanup(dir));
   before(fresh);
   test("changing the tag in settings changes EVERY Amazon link on the built site", () => {
+    promoteProducts(dir);
     editJson(dir, SETTINGS, (s) => { s.amazonTrackingEnabled = true; s.amazonTrackingId = "firsttag-20"; });
     assert.ok(npmBuild(dir).ok);
     const pages = ["shop/index.html", `journal/${SLUG}/index.html`];
@@ -223,11 +251,60 @@ describe("(4) change the tracking tag; enable tracking with no ID", () => {
     assert.ok(!r.ok);
     assert.match(r.out, /contains an Amazon address or tracking tag/);
   });
-  test("prices, ratings and testing claims in text are refused", () => {
+  test("ratings, testing claims and pricing claims in text are refused", () => {
     fresh();
-    editArticle(dir, (s) => s.replace("Close the book", "It costs $12 and has 4.5 stars. We tested it for weeks. Close the book"));
+    editArticle(dir, (s) => s.replace("Close the book", "It is on sale with a coupon and has 4.5 stars. We tested it for weeks. Close the book"));
     const r = checkContentCli(dir);
-    assert.match(r.out, /contains a price/); assert.match(r.out, /star rating/); assert.match(r.out, /hands-on testing claim/);
+    assert.match(r.out, /pricing claim/); assert.match(r.out, /star rating/); assert.match(r.out, /hands-on testing claim/);
+  });
+  test("tracking on while a shown product is not recorded as affiliate-eligible fails; with eligibility recorded it passes", () => {
+    fresh();
+    editJson(dir, SETTINGS, (s) => { s.amazonTrackingEnabled = true; });
+    assert.match(checkContentCli(dir).out, /affiliateLinkEligible": affiliate tracking is switched on but this shown product is not recorded as eligible/);
+    promoteProducts(dir);
+    assert.ok(checkContentCli(dir).ok);
+  });
+});
+
+describe("price rule: product prices blocked, editorial budget estimates in article prose allowed", () => {
+  let dir;
+  before(() => { dir = makeCopy("ppf-price"); });
+  after(() => dir && cleanup(dir));
+  test("a budget estimate in ordinary article prose passes the content check AND the built-site check", () => {
+    editArticle(dir, (s) => s.replace("Close the book", "Most first spreads cost under $25, or about $20 to $40 to start properly. Close the book"));
+    const r = npmBuild(dir);
+    assert.ok(r.ok, r.out);
+    assert.match(distHtml(dir, `journal/${SLUG}/index.html`), /under \$25/);
+  });
+  test("a dollar amount in a paragraph that names a product, or next to a product card, is refused", () => {
+    editArticle(dir, (s) => s.replace("Close the book", "Close the book. {{product:tombow-mono-permanent}} is about $6 a roll."));
+    assert.match(checkContentCli(dir).out, /a dollar amount sits in or next to a paragraph that names a product/);
+    editArticle(dir, (s) => s.replace(" {{product:tombow-mono-permanent}} is about $6 a roll.", "").replace("{{pick:tombow-mono-permanent}}", "{{pick:tombow-mono-permanent}}\n\nCosts about $6."));
+    assert.match(checkContentCli(dir).out, /a dollar amount sits in or next to a paragraph/);
+  });
+  test("dollar amounts in a product record, an article summary, or pricing claims anywhere are refused", () => {
+    editArticle(dir, (s) => s.replace("Costs about $6.", "Fine."));
+    editJson(dir, "src/content/products/tombow-mono-permanent.json", (p) => { p.limitations += " Priced at $6."; });
+    assert.match(checkContentCli(dir).out, /tombow-mono-permanent\.json, field "limitations": contains a price/);
+    editJson(dir, "src/content/products/tombow-mono-permanent.json", (p) => { p.limitations = p.limitations.replace(" Priced at $6.", ""); });
+    for (const bad of ["The current price is low.", "A real deal.", "Now with a discount.", "Only $5 today."]) {
+      editArticle(dir, (s) => s.replace("Fine.", bad));
+      assert.match(checkContentCli(dir).out, /pricing claim|contains a price|dollar amount/, bad);
+      editArticle(dir, (s) => s.replace(bad, "Fine."));
+    }
+    editArticle(dir, (s) => s.replace(/^description: .*$/m, 'description: "Costs $5."'));
+    assert.match(checkContentCli(dir).out, /field "description": contains a price/);
+  });
+  test("built-site check: a dollar amount inside a product card or on the shop page is caught, even where article prose may have one", async () => {
+    cleanup(dir); dir = makeCopy("ppf-price");
+    assert.ok(npmBuild(dir).ok);
+    const { checkDist } = await import(path.join(REPO, "scripts/check-dist.mjs"));
+    const f = path.join(dir, `dist/journal/${SLUG}/index.html`);
+    const good = fs.readFileSync(f, "utf8");
+    fs.writeFileSync(f, good.replace("class=\"product-card__desc\">", "class=\"product-card__desc\">$6 "));
+    assert.ok(checkDist(dir).errors.some((e) => /dollar amount appears in a product card/.test(e)));
+    fs.writeFileSync(f, good.replace("<div class=\"prose", "<div class=\"prose"));
+    assert.deepEqual(checkDist(dir).errors, []);
   });
 });
 
@@ -372,5 +449,80 @@ describe("shell rules from the owner's master brief", () => {
     assert.match(distHtml(dir, "shop/index.html"), /data-page="shop" data-placement="shop"/);
     editJson(dir, SETTINGS, (s) => { s.ga4MeasurementId = "not-an-id"; });
     assert.match(checkContentCli(dir).out, /field "ga4MeasurementId"/);
+  });
+});
+
+describe("disclosure placement, launchMode, homepage journey and captions in the built site", () => {
+  let dir;
+  const fresh = () => { if (dir) cleanup(dir); dir = makeCopy("ppf-journey"); };
+  before(fresh);
+  after(() => dir && cleanup(dir));
+  const pages = ["index.html", "shop/index.html", `journal/${SLUG}/index.html`];
+  const firstProductLink = (h) => h.search(/<a [^>]*data-product-id=|<a [^>]*href="\/shop\/#/);
+  test("the shopping note comes BEFORE the first product link on home, shop and article; wording follows tracking", () => {
+    assert.ok(npmBuild(dir).ok);
+    for (const f of pages) {
+      const h = distHtml(dir, f);
+      assert.ok(h.indexOf('class="disclosure"') >= 0 && h.indexOf('class="disclosure"') < firstProductLink(h), `${f}: note first`);
+      assert.match(h, /Product links on this site go to Amazon\. They are ordinary links for now, so we earn nothing from them yet\./);
+      assert.doesNotMatch(h.slice(h.indexOf('class="disclosure"'), h.indexOf('class="disclosure"') + 400), /Associate/);
+    }
+    assert.doesNotMatch(distHtml(dir, "index.html").split("<footer")[1], /Associate|commission/);
+    promoteProducts(dir);
+    editJson(dir, SETTINGS, (s) => { s.amazonTrackingEnabled = true; });
+    assert.ok(npmBuild(dir).ok);
+    for (const f of pages) {
+      const h = distHtml(dir, f);
+      assert.ok(h.indexOf('class="disclosure"') < firstProductLink(h), `${f}: note first (tracking on)`);
+      assert.match(h, /As an Amazon Associate I earn from qualifying purchases\./);
+      assert.ok(h.indexOf("As an Amazon Associate") < h.search(/<a [^>]*data-product-id=/) || f === "index.html");
+      assert.doesNotMatch(h, /earn nothing from them yet/);
+    }
+  });
+  test("homepage teaser: each item links to its Shop collection and to the article that shows it; Shop intro is renamed", () => {
+    fresh();
+    assert.ok(npmBuild(dir).ok);
+    const h = distHtml(dir, "index.html");
+    const teaser = h.slice(h.indexOf("A little shopping inspiration"), h.indexOf("Our story"));
+    assert.equal((teaser.match(/<li class="teaser">/g) || []).length, 2, "one item per shop collection that has products");
+    assert.equal((teaser.match(/href="\/shop\/#\w+"/g) || []).length, 2);
+    assert.match(teaser, /Shop The Paper Edit/); assert.match(teaser, new RegExp(`href="/journal/${SLUG}/">See where it appears`));
+    assert.match(distHtml(dir, "shop/index.html"), /<h1>The Good Stuff, Already Found<\/h1>/);
+    assert.doesNotMatch(distHtml(dir, "shop/index.html"), /Small on purpose/);
+  });
+  test("shop follows the editorial `order` field instead of the alphabet", () => {
+    editJson(dir, "src/content/products/nmjl-2026-standard-cards-four-pack.json", (p) => { p.order = 1; });
+    assert.ok(npmBuild(dir).ok);
+    const s = distHtml(dir, "shop/index.html");
+    assert.ok(s.indexOf('data-product-id="nmjl-2026-standard-cards-four-pack"') < s.indexOf('data-product-id="nmjl-2026-large-print-cards-four-pack"'));
+  });
+  test("launchMode production fails on provisional products and pending images, listing each; preview only warns", () => {
+    fresh();
+    editJson(dir, SETTINGS, (s) => { s.launchMode = "production"; });
+    const r = checkContentCli(dir);
+    assert.ok(!r.ok);
+    for (const id of ["tombow-mono-permanent", "nmjl-2026-large-print-cards-four-pack", "nmjl-2026-standard-cards-four-pack"]) assert.match(r.out, new RegExp(`Product "${id}".*only provisional.*affiliateLinkEligible must be "yes"`));
+    for (const k of ["girls-night-crafts", "cozy-corner", "weekend-picnic", "junk-journal-flatlay"]) assert.match(r.out, new RegExp(`"${k}".*not approved`));
+    editJson(dir, SETTINGS, (s) => { s.launchMode = "preview"; });
+    const p = checkContentCli(dir);
+    assert.ok(p.ok); assert.match(p.out, /LAUNCH WARNING/);
+  });
+  test("production passes once every shown product and picture is fully approved", () => {
+    promoteProducts(dir);
+    editJson(dir, IMAGES, (j) => { for (const [k, r] of Object.entries(j)) j[k] = { ...r, source: { name: r.source.name, url: "https://example.com/s" }, ...approvedImage() }; });
+    editJson(dir, SETTINGS, (s) => { s.launchMode = "production"; });
+    const r = npmBuild(dir);
+    assert.ok(r.ok, r.out);
+    assert.doesNotMatch(r.out, /LAUNCH WARNING/);
+  });
+  test("captions and the About AI statement follow the real kind of each picture", () => {
+    const h = distHtml(dir, "index.html");
+    assert.match(h, /Illustrative image \(AI-generated\)/);
+    assert.match(distHtml(dir, "about/index.html"), /AI-generated illustrations/);
+    editJson(dir, IMAGES, (j) => { for (const r of Object.values(j)) { r.kind = "photograph"; r.credit = "Jo Photographer"; } });
+    assert.ok(npmBuild(dir).ok);
+    assert.match(distHtml(dir, "index.html"), /<span class="illus">Photo: Jo Photographer<\/span>/);
+    assert.doesNotMatch(distHtml(dir, "index.html") + distHtml(dir, `journal/${SLUG}/index.html`), /Illustrative image/);
+    assert.doesNotMatch(distHtml(dir, "about/index.html"), /AI-generated illustrations/);
   });
 });

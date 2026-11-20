@@ -130,33 +130,15 @@ content:
       - name: hero
         label: Top picture
         type: object
-        description: "All six boxes are required to publish, and Rights must be Cleared."
+        description: "Picture and description are required to publish. Who made it, the licence and the approval are recorded ONCE, in src/content/images.json (one record per picture); the article is matched to it by file name."
         fields:
           - name: image
             label: Picture
             type: image
-            description: "Upload it here, or pick one already uploaded."
+            description: "Upload it here, or pick one already uploaded. It needs a record in src/content/images.json."
           - name: alt
             label: Description for screen readers (alt text)
             type: string
-          - name: credit
-            label: Credit line shown under the picture
-            type: string
-          - name: source
-            label: Where the picture came from
-            type: string
-          - name: licence
-            label: Licence or permission (what lets us use it)
-            type: text
-          - name: rights
-            label: Rights
-            type: select
-            options:
-              values:
-                - name: pending
-                  label: Pending (not yet cleared)
-                - name: cleared
-                  label: Cleared (we may use it)
       - name: picks
         label: Products to show in "Shop this story"
         type: reference
@@ -217,17 +199,33 @@ content:
         label: Status
         type: select
         required: true
-        description: "Only Verified products are shown on the website. Candidate = idea, not checked yet."
+        description: "Verified needs the evidence fields below (listing checked, available, seller Amazon or brand, affiliate-eligible yes, specs evidence, suitability). Candidate = idea, never shown."
         options:
           values:
             - name: candidate
               label: Candidate (not checked yet, never shown)
+            - name: provisional
+              label: Provisional (checked, evidence incomplete; shown only while launchMode is preview)
             - name: verified
-              label: Verified (checked against the Amazon listing, shown)
+              label: Verified (all evidence recorded; shown when approved)
             - name: held
               label: Held (paused, never shown)
             - name: discontinued
               label: Discontinued (no longer sold)
+      - name: editorialDecision
+        label: Editorial decision
+        type: select
+        description: "Only products that are technically valid AND approved are shown. Hold = valid but paused for quality or suitability."
+        options:
+          values:
+            - name: approve
+              label: Approve (may be shown)
+            - name: hold
+              label: Hold (never shown)
+      - name: order
+        label: Position in the shop (optional number, lowest first)
+        type: number
+        description: "Leave empty for the default order. 1, 2, 3 puts products first, in that order."
       - name: statusReason
         label: Reason (required for Held or Discontinued)
         type: text
@@ -284,18 +282,82 @@ content:
       - name: limitations
         label: Worth knowing (honest limits)
         type: text
-      - name: verifiedOn
-        label: Date you checked the Amazon listing
-        type: date
-        default: ""
-        options:
-          format: yyyy-MM-dd
+      - name: listingChecked
+        label: Amazon listing check
+        type: object
+        fields:
+          - name: checkedOn
+            label: Date you checked the listing
+            type: date
+            default: ""
+            options:
+              format: yyyy-MM-dd
+          - name: variant
+            label: Exact variant checked (size, colour, pack)
+            type: string
+          - name: listingAvailable
+            label: Listing available?
+            type: select
+            options:
+              values:
+                - name: unverified
+                  label: Not checked
+                - name: "yes"
+                  label: "Yes"
+                - name: "no"
+                  label: "No"
+          - name: sellerType
+            label: Who sells it
+            type: select
+            options:
+              values:
+                - name: unverified
+                  label: Not checked
+                - name: amazon
+                  label: Amazon
+                - name: brand
+                  label: The brand or maker
+                - name: other
+                  label: Another seller
+          - name: affiliateLinkEligible
+            label: Eligible for affiliate links?
+            type: select
+            description: "Unknown is allowed only until the product is verified."
+            options:
+              values:
+                - name: unknown
+                  label: Unknown
+                - name: "yes"
+                  label: "Yes"
+                - name: "no"
+                  label: "No"
+      - name: specsEvidence
+        label: Specs evidence (short note with the maker or seller web address)
+        type: text
+      - name: suitability
+        label: Who it suits (short)
+        type: text
+      - name: qualityNote
+        label: Quality note (short, from what you saw)
+        type: text
       - name: verificationSource
         label: Where you checked it (a note)
         type: text
         description: "Example: Amazon page read on that date; seller Amazon.com; in stock."
+      - name: imageStatus
+        label: Picture status
+        type: select
+        description: "Approved only when the picture has an approved product-photo record in src/content/images.json."
+        options:
+          values:
+            - name: none
+              label: No picture
+            - name: pending
+              label: Pending (not shown)
+            - name: approved
+              label: Approved
       - name: image
-        label: Product picture (optional, only if you own the rights; never from Amazon)
+        label: Product picture (optional, never from Amazon)
         type: object
         fields:
           - name: file
@@ -304,21 +366,6 @@ content:
           - name: alt
             label: Description for screen readers
             type: string
-          - name: source
-            label: Where it came from
-            type: string
-          - name: licence
-            label: Licence or permission
-            type: text
-          - name: rights
-            label: Rights
-            type: select
-            options:
-              values:
-                - name: pending
-                  label: Pending
-                - name: cleared
-                  label: Cleared
 
   # ------------------------------------------------------------------ Settings
   - name: settings
@@ -351,6 +398,16 @@ content:
         label: Amazon marketplace
         type: string
         description: "Keep as amazon.com."
+      - name: launchMode
+        label: Launch mode
+        type: select
+        description: "Preview: unfinished picture rights or product evidence are warnings. Production: they fail the build. Switch to Production only when ready to launch."
+        options:
+          values:
+            - name: preview
+              label: Preview (warnings only)
+            - name: production
+              label: Production (unfinished items fail the build)
       - name: amazonDisclosure
         label: Amazon disclosure sentence
         type: text

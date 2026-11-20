@@ -5,7 +5,7 @@ import { trackingActive } from "../lib/affiliate.mjs";
 const live = trackingActive(settings);
 ---
 <Prose title="Affiliate disclosure" description="How our shopping links work: they go to Amazon, we show no prices, and we explain plainly whether we earn anything from them." path="/affiliate-disclosure/" dek="Plain-English details about our shopping links.">
-  <p class="callout"><strong>{settings.amazonDisclosure}</strong></p>
+  {live && <p class="callout"><strong>{settings.amazonDisclosure}</strong></p>}
   {live
     ? <p>Some links on this site are affiliate links to Amazon. If you click one and buy something, we may earn a small commission at no extra cost to you. Amazon sets the price, shipping and returns.</p>
     : <p>Our shopping links go to Amazon. At the moment they are ordinary links and we earn nothing from them. When we switch on affiliate tracking, the links will carry our tracking tag, we may earn a small commission on qualifying purchases at no extra cost to you, and we will say so here.</p>}
