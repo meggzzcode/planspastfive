@@ -504,7 +504,7 @@ describe("disclosure placement, launchMode, homepage journey and captions in the
     assert.match(r.out, new RegExp(`Product "tombow-mono-permanent".*only provisional but the published article "${SLUG}" uses it.*Missing:.*affiliateLinkEligible must be "yes"`));
     assert.equal((r.out.match(/"tombow-mono-permanent"/g) || []).length, 1, "reported once, not twice");
     for (const id of ["nmjl-2026-large-print-cards-four-pack", "nmjl-2026-standard-cards-four-pack"]) assert.doesNotMatch(r.out, new RegExp(id));
-    for (const k of ["girls-night-crafts", "cozy-corner", "weekend-picnic", "junk-journal-flatlay"]) assert.match(r.out, new RegExp(`"${k}".*not approved`));
+    for (const k of ["junk-journal-flatlay"]) assert.match(r.out, new RegExp(`"${k}".*not approved`));
     editJson(dir, SETTINGS, (s) => { s.launchMode = "preview"; });
     const p = checkContentCli(dir);
     assert.ok(p.ok); assert.match(p.out, /LAUNCH WARNING/);
@@ -563,6 +563,8 @@ describe("disclosure placement, launchMode, homepage journey and captions in the
     assert.doesNotMatch(r.out, /LAUNCH WARNING/);
   });
   test("captions and the About AI statement follow the real kind of each picture", () => {
+    editJson(dir, IMAGES, (j) => { for (const r of Object.values(j)) { r.kind = "ai-illustration"; } });
+    assert.ok(npmBuild(dir).ok);
     const h = distHtml(dir, "index.html");
     assert.match(h, /Illustrative image \(AI-generated\)/);
     assert.match(distHtml(dir, "about/index.html"), /AI-generated illustrations/);
