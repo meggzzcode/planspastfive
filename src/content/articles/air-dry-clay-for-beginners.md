@@ -8,8 +8,8 @@ category: Creative Corner
 format: starter-guide
 featured: false
 hero:
-  image: /images/clay-ring-dish-painted-blossoms.jpg
-  alt: "A handmade clay ring dish painted turquoise with hand-painted pink and white blossoms and a pale yellow centre ring, holding six pearl beads, in warm window light."
+  image: /images/clay-three-projects-hero.jpg
+  alt: "Illustration of three small handmade air-dry clay projects on cream linen: a white ring dish with a red rim, a blush scalloped dish with a yellow rim and a sage-green oval tray, with gold rings and pins."
 picks:
   - das-air-hardening-clay-white-1kg
   - winsor-newton-galeria-acrylic-set
@@ -73,7 +73,7 @@ Keep each piece the same thickness all over. Makers differ on the minimum: Mont 
 3. Lift the shape and pinch or roll the edge upward into a shallow curve.
 4. Smooth the edge with a damp fingertip and leave to dry. Paint it blush with a butter-yellow rim.
 
-<figure class="prose__figure"><img src="/images/clay-scalloped-cloud-trinket-dish.jpg" alt="A glossy white trinket dish with a soft scalloped, cloud-shaped edge holding a freshwater pearl bracelet, on white fabric." loading="lazy" decoding="async" width="2000" height="1500"><figcaption>Photo: TinyPearl xoxo</figcaption></figure>
+<figure class="prose__figure"><img src="/images/clay-bow-scalloped-dish.jpg" alt="Illustration of a small blush-pink air-dry clay trinket dish with a gently scalloped edge and a butter-yellow rim, with a gold ring and a cherry sprig on linen." loading="lazy" decoding="async" width="2000" height="1333"><figcaption>Illustrative image (AI-generated): the scalloped dish idea, not a piece we made</figcaption></figure>
 
 ## Project 3: coil-lip tray
 
@@ -82,6 +82,8 @@ Keep each piece the same thickness all over. Makers differ on the minimum: Mont 
 3. Score a line about 1 cm inside the edge. Press a thin coil of clay onto it for a low lip, and blend the join with a damp fingertip.
 4. Press a pattern into the base with a toothpick or the back of a spoon.
 5. Leave to dry.
+
+<figure class="prose__figure"><img src="/images/clay-coil-tray.jpg" alt="Illustration of a small sage-green oval air-dry clay tray with a low rolled rim and a pressed fern-leaf pattern in the base, with earrings and a ring beside it." loading="lazy" decoding="async" width="2000" height="1333"><figcaption>Illustrative image (AI-generated): the tray idea, not a piece we made</figcaption></figure>
 
 Mont Marte publishes a free trinket-dish project for its own clay, a good place to see this shape made.
 

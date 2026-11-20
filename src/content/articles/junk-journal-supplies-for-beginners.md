@@ -40,13 +40,13 @@ These three looks are inspiration, not three shopping lists. All of them start f
 - *Collect:* seed packets, plant tags, catalogue pages, a pressed leaf or two.
 - *Add:* nothing. This is a found-paper look: gather your own seed packets and leaves, and let the basket below do the rest.
 
-<figure class="prose__figure"><img src="/images/pressed-flowers-vintage-book.jpg" alt="Overhead view of an old open book on a wooden table, its pages dotted with pressed pansies, a daisy, a ginkgo leaf and other flowers." loading="lazy" decoding="async" width="1600" height="1200"><figcaption>Photo: Merve Bayar</figcaption></figure>
+<figure class="prose__figure"><img src="/images/junk-journal-garden-press.jpg" alt="Illustration of an open handmade junk journal in warm tan and cream, layered with a pressed fern, leaves, a four-leaf clover, sage and olive paper scraps and a botanical rose drawing." loading="lazy" decoding="async" width="2000" height="1500"><figcaption>Illustrative image (AI-generated): the Garden Press look</figcaption></figure>
 
 **Tea Rose.** Soft, romantic and old-fashioned. Pale pages and a lot of blush.
 - *Collect:* love-letter paper, old valentines, floral wrapping, tissue paper, a scrap of lace.
 - *Add:* nothing needed. The look comes from the paper and lace you collect, sitting on the same basket below. Keep to blush and cream, leave plenty of white space, and treat pink tape as a bonus if you already own some.
 
-<figure class="prose__figure" style="max-width:30rem;margin-inline:auto"><img src="/images/pink-stationery-flat-lay.jpg" alt="Flat lay on a pale pink ground: a small spiral notebook, pink pencil and brush pen, washi tape on a flower-shaped tray, pink paper clips and dried pink flowers." loading="lazy" decoding="async" width="1600" height="1600"><figcaption>Photo: Jilly Noble</figcaption></figure>
+<figure class="prose__figure"><img src="/images/junk-journal-tea-rose.jpg" alt="Illustration of an open handmade junk journal in a Tea Rose look: pale cream pages with blush paper, small rose illustrations, lace, a pink ribbon and a wax-sealed envelope." loading="lazy" decoding="async" width="2000" height="1500"><figcaption>Illustrative image (AI-generated): the Tea Rose look, more elaborate than a first spread</figcaption></figure>
 
 ## The starter basket
 
@@ -111,6 +111,8 @@ Set a timer for 45 minutes and treat it as a warm-up.
 5. **Add one strip of tape** across a corner or an edge. One. Step back.
 6. **Write something small:** a date and a sentence about where the ticket came from.
 7. **Close the book** and leave it under a stack of cookbooks overnight.
+
+<figure class="prose__figure"><img src="/images/junk-journal-finished-spread.jpg" alt="Illustration of a finished beginner junk journal spread: a kraft paper page with a blank label strip and a pressed buttercup, facing a cream page with a pink paper scrap, red torn paper and a pressed fern." loading="lazy" decoding="async" width="2000" height="1333"><figcaption>Illustrative image (AI-generated): what a first spread can look like, not one we made</figcaption></figure>
 
 It will be a little lopsided, which is the style. For layouts to copy, try [Your First Junk Journal Spread](/journal/your-first-junk-journal-spread/), and see everything above in one place in [the Shop](/shop/#paper).
 

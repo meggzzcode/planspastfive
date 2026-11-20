@@ -40,6 +40,8 @@ A dozen pieces is plenty. More than that and you are archiving, not journaling.
 
 **The Row of Small Things.** A loose line of tiny pieces (stamps, labels, tea-bag tags) running across the lower third of the page, with plenty of space above. Best when nothing you own is big, and the quietest of the three.
 
+<figure class="prose__figure"><img src="/images/junk-journal-three-layouts.jpg" alt="Illustration of an open junk journal showing three layout ideas: a stack of overlapping vintage postcards on the left, one large landscape picture with a tape strip in the middle and a row of three small keepsakes on the right." loading="lazy" decoding="async" width="2000" height="1333"><figcaption>Illustrative image (AI-generated): left to right, the Postcard Stack, the Big Hero and the Row of Small Things</figcaption></figure>
+
 Whichever you pick, arrange everything on the open pages before you stick anything down. Step back, squint, move one piece, and stop when you smile. Take a quick photo of the layout, so you can rebuild it after the cat walks across it.
 
 ## Stick it down, flat
