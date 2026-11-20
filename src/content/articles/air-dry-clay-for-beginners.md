@@ -63,6 +63,8 @@ Keep each piece the same thickness all over. Makers differ on the minimum: Mont 
 4. Smooth cracks with a barely damp fingertip.
 5. Set it on parchment to dry. Once dry, paint it white, then add a cherry-red rim.
 
+<figure class="prose__figure"><img src="/images/clay-cherry-dish.jpg" alt="Illustration of a small white air-dry clay ring dish with a cherry-red painted rim, holding a gold ring on natural linen beside dried flowers." loading="lazy" decoding="async" width="2000" height="1333"><figcaption>Illustrative image (AI-generated): the ring dish idea, not a piece we made</figcaption></figure>
+
 ## Project 2: scalloped or bow trinket dish
 
 1. Roll the clay between two sheets of cling film to an even thickness.
