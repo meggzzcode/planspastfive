@@ -3,8 +3,8 @@
   "name": "Air Hardening Modelling Clay Premium, White, 500 g (MMSP0005)",
   "brand": "Mont Marte",
   "asin": "B00Y5EOHRY",
-  "status": "provisional",
-  "editorialDecision": "approve",
+  "status": "candidate",
+  "editorialDecision": "hold",
   "order": 5,
   "collection": "creative",
   "bestUse": "Best for a first ring dish and trinket dish in soft colours",
@@ -24,5 +24,5 @@
   "suitability": "A first-timer who wants a plain white block for small decorative dishes, from a maker that publishes drying guidance and projects.",
   "imageStatus": "none",
   "verificationSource": "Awaiting Cowork listing and Link Checker check",
-  "statusReason": "Awaiting Cowork listing and Link Checker check"
+  "statusReason": "Held 2026-11-20: Cowork found the Amazon listing sold by a third-party reseller (Artistry Art Supply), which fails the Amazon-or-brand seller rule; Link Checker succeeded and the item is 500 g white. Re-check if Amazon or Mont Marte becomes the seller."
 }

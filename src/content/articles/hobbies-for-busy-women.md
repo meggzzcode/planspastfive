@@ -6,12 +6,9 @@ status: draft
 category: Creative Corner
 format: discovery
 featured: false
-# hero to be replaced by hobby-discovery image (another agent supplies it; do not change images here).
-# HERO: reuses the existing record "cozy-corner" (rightsStatus pending in src/content/images.json). Owner approval of that
-# record is needed before this article can be published (check:content warns in preview mode and fails in production mode).
 hero:
-  image: /images/cozy-corner.jpg
-  alt: "A woman in wool socks and tartan pyjamas relaxes on a green sofa with a cup of tea and a book, a jigsaw puzzle laid out on a gingham-covered table beside her."
+  image: /images/hobby-flat-lay-embroidery-dried-flowers.jpg
+  alt: "Overhead flat lay of hobby supplies on a rust-brown table: a cross-stitched owl in a twig wreath, gold embroidery scissors, a spool of thread, green ribbon, beads, a wooden alphabet stamp set and dried hydrangeas and heather."
 picks: []
 related: []
 ---

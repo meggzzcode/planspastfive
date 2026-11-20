@@ -6,10 +6,11 @@ status: draft
 category: Creative Corner
 format: starter-guide
 featured: false
-# No hero yet. DRAFT: add an original photograph of real finished pieces (or a newly cleared image) before publishing.
-# None of the pending image records in images.json shows clay, so none is borrowed. Do not edit images.json from here.
+hero:
+  image: /images/clay-ring-dish-painted-blossoms.jpg
+  alt: "A handmade clay ring dish painted turquoise with hand-painted pink and white blossoms and a pale yellow centre ring, holding six pearl beads, in warm window light."
 picks:
-  - mont-marte-air-hardening-clay-white-500g
+  - das-air-hardening-clay-white-1kg
   - winsor-newton-galeria-acrylic-set
 related: []
 ---
@@ -38,7 +39,7 @@ Clay, paint and, if you like, a clear finish. The rest is in your kitchen drawer
 
 **Clay.** Look for a white, air-hardening clay from a maker that explains drying, painting and cracks. White takes soft colours best. A 500 g block covers a ring dish and a trinket dish, and a small tray too if you keep everything small. Buy a second block for room to start over. Our pick is Mont Marte's white block, from a maker that publishes drying guidance and project ideas for its clay:
 
-{{pick:mont-marte-air-hardening-clay-white-500g}}
+{{pick:das-air-hardening-clay-white-1kg}}
 
 **Paint.** Ordinary acrylics do the job, applied once the clay is completely dry. For soft shades with no mixing, we like this set:
 
@@ -70,6 +71,8 @@ Keep each piece the same thickness all over. Makers differ on the minimum: Mont 
 2. Cut a circle around a lid. For scallops, press a small round lid or bottle cap into the edge, overlapping the dents all the way round. Or cut a bow or heart from a paper template.
 3. Lift the shape and pinch or roll the edge upward into a shallow curve.
 4. Smooth the edge with a damp fingertip and leave to dry. Paint it blush with a butter-yellow rim.
+
+<figure class="prose__figure"><img src="/images/clay-scalloped-cloud-trinket-dish.jpg" alt="A glossy white trinket dish with a soft scalloped, cloud-shaped edge holding a freshwater pearl bracelet, on white fabric." loading="lazy" decoding="async" width="2000" height="1500"><figcaption>Photo: TinyPearl xoxo</figcaption></figure>
 
 ## Project 3: coil-lip tray
 
