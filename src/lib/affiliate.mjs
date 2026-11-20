@@ -17,6 +17,16 @@ export function amazonAttrs(asin, settings) {
   return { href: amazonUrl(asin, settings), rel: AMAZON_REL, target: "_blank" };
 }
 
+/**
+ * The one-line shopping note, accurate to the tracking state. Tracking on: the plain sentence plus the exact
+ * required statement from settings. Tracking off: says we earn nothing yet (never claims commissions).
+ */
+export function disclosureText(settings) {
+  return trackingActive(settings)
+    ? `Some links on this site go to Amazon and are affiliate links. ${settings.amazonDisclosure}`
+    : "Product links on this site go to Amazon. They are ordinary links for now, so we earn nothing from them yet.";
+}
+
 /** Plain-English problems with the affiliate settings (empty list = fine). */
 export function affiliateSettingsProblems(settings, file = "src/content/settings.json") {
   const out = [];

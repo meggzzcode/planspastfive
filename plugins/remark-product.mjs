@@ -1,6 +1,6 @@
 // Remark plugin: turns {{product:id}} (inline link) and {{pick:id}} (inline product card) in article
 // Markdown into output built from the product source. An unknown or unpublishable id FAILS THE BUILD.
-// The first product block in an article also carries the Amazon disclosure.
+// A one-line Amazon disclosure is placed BEFORE the first product link or card (never only after it).
 import { fileURLToPath } from "node:url";
 import { loadContent } from "../src/lib/content-fs.mjs";
 import { resolveProduct, MARKER } from "../src/lib/catalog.mjs";
@@ -12,6 +12,7 @@ export default function remarkProduct() {
   const content = loadContent(ROOT);
   const byId = new Map(content.products.map((p) => [p.data.id, p.data]));
   const settings = content.settings;
+  const mode = settings.launchMode;
 
   return (tree, file) => {
     const where = (file.path || "an article").replace(ROOT, "");
@@ -20,7 +21,7 @@ export default function remarkProduct() {
     let disclosed = false;
 
     const get = (kind, id) => {
-      const r = resolveProduct(byId, id);
+      const r = resolveProduct(byId, id, mode);
       if (r.error) {
         throw new Error(`${where}: {{${kind}:${id}}} cannot be shown because ${r.error}. Fix the product in src/content/products/ or remove the marker.`);
       }
@@ -36,8 +37,12 @@ export default function remarkProduct() {
           const only = new RegExp(`^\\s*${MARKER.source}\\s*$`).exec(child.children[0].value);
           if (only && only[1] === "pick") {
             const p = get("pick", only[2]);
-            node.children[i] = { type: "html", value: productCardHtml(p, settings, { disclosure: !disclosed, ctx }) };
-            disclosed = true;
+            const card = { type: "html", value: productCardHtml(p, settings, { ctx, images: content.images }) };
+            if (!disclosed) {
+              node.children.splice(i, 1, { type: "html", value: disclosureHtml(settings) }, card);
+              i++;
+              disclosed = true;
+            } else node.children[i] = card;
             continue;
           }
         }
@@ -54,16 +59,20 @@ export default function remarkProduct() {
           if (last < child.value.length) parts.push({ type: "text", value: child.value.slice(last) });
           node.children.splice(i, 1, ...parts);
           i += parts.length - 1;
-          if (!disclosed && node.type === "paragraph") {
-            // put the short disclosure straight after the first paragraph that mentions a product
+          if (!disclosed) {
+            // the short disclosure goes straight BEFORE the first paragraph that links a product
             disclosed = true;
             node.__needsDisclosure = true;
           }
           continue;
         }
         walk(child);
-        if (child.__needsDisclosure) {
-          node.children.splice(i + 1, 0, { type: "html", value: disclosureHtml(settings) });
+        if (child.__needsDisclosure && (node.type === "paragraph" || node.type === "heading")) {
+          node.__needsDisclosure = true; // never put a block inside a paragraph: let the parent place it
+          delete child.__needsDisclosure;
+        } else if (child.__needsDisclosure) {
+          delete child.__needsDisclosure;
+          node.children.splice(i, 0, { type: "html", value: disclosureHtml(settings) });
           i++;
         }
       }

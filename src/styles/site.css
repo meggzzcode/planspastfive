@@ -275,3 +275,15 @@ ul.plain { list-style: none; padding: 0; margin: 0; }
 .product-card__use { display: inline-block; margin-left: 0.5rem; padding: 0.1rem 0.6rem; background: var(--butter); color: var(--ink); border-radius: 999px; letter-spacing: 0.02em; text-transform: none; font-weight: 600; font-size: 0.78rem; }
 .card-grid--first { margin-top: 0; }
 @media (min-width: 720px) { .feature-grid { grid-template-columns: repeat(3, 1fr); } }
+
+/* shopping journey: teaser links, readable product cards on small screens */
+.teaser__links { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; margin: 0.8rem 0 0.4rem; font-size: 0.95rem; }
+.teaser__links .more { padding-block: 0.35rem; }
+.product-card__desc, .product-card__facts dd { max-width: 62ch; }
+.product-card__action .button { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; }
+@media (max-width: 599px) {
+  .product-card { padding: 1.2rem 1.1rem 1rem; line-height: 1.6; }
+  .product-card__name { font-size: 1.25rem; }
+  .product-card__facts { gap: 0.9rem; }
+  .product-card__action .button { display: flex; width: 100%; }
+}

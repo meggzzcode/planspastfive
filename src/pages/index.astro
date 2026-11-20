@@ -3,7 +3,8 @@ import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
 import ArticleCard from "../components/ArticleCard.astro";
 import { settings, siteImage, abs } from "../lib/site.mjs";
-import { shopGroups, imageUrl } from "../lib/catalog.mjs";
+import { shopGroups, imageUrl, articlesUsingProduct } from "../lib/catalog.mjs";
+import { disclosureHtml } from "../lib/render-product.mjs";
 
 const articles = (await getCollection("articles", (a) => a.data.status === "published")).sort(
   (a, b) => +new Date(b.data.publishedAt) - +new Date(a.data.publishedAt),
@@ -12,7 +13,8 @@ const featured = articles.filter((a) => a.data.featured).slice(0, 3);
 const latest = articles.filter((a) => !a.data.featured).slice(0, 4);
 const [lead, ...rest] = latest;
 const products = (await getCollection("products")).map((p) => p.data);
-const groups = shopGroups(products);
+const groups = shopGroups(products, settings.launchMode);
+const usedIn = articlesUsingProduct(articles.map((a) => ({ id: a.id, title: a.data.title, picks: a.data.picks, body: a.body })), new Map(products.map((p) => [p.id, p])), settings.launchMode);
 const picks = groups.flatMap((g) => g.products.slice(0, 1).map((p) => ({ ...p, group: g }))).slice(0, 3);
 const hero = siteImage("girls-night-crafts");
 const cozy = siteImage("cozy-corner");
@@ -34,7 +36,7 @@ const jsonLd = [{ "@context": "https://schema.org", "@type": "WebSite", name: se
       <figure class="postcard">
         <span class="tape" aria-hidden="true"></span>
         <img src={hero.src} alt={hero.alt} width="1152" height="896" fetchpriority="high" decoding="async" />
-        <figcaption><span class="hand">saturday, with a storyline.</span><span class="illus">Illustrative image</span></figcaption>
+        <figcaption><span class="hand">saturday, with a storyline.</span><span class="illus">{hero.caption}</span></figcaption>
       </figure>
     </div>
   </section>
@@ -78,6 +80,7 @@ const jsonLd = [{ "@context": "https://schema.org", "@type": "WebSite", name: se
           <a class="more" href="/shop/">The whole shop <span aria-hidden="true">&rarr;</span></a>
         </div>
         <p class="section-lede">A short shelf, chosen with care. Every item is checked against its Amazon listing before it gets a place here.</p>
+        <Fragment set:html={disclosureHtml(settings)} />
         <ul class="teaser-grid plain">
           {picks.map((p) => (
             <li class="teaser">
@@ -85,6 +88,10 @@ const jsonLd = [{ "@context": "https://schema.org", "@type": "WebSite", name: se
               <h3>{p.name}</h3>
               <p class="teaser__brand">{p.brand}</p>
               <p>{p.descriptionOriginal}</p>
+              <p class="teaser__links">
+                <a class="more" href={`/shop/#${p.group.id}`}>Shop {p.group.label} <span aria-hidden="true">&rarr;</span></a>
+                {(usedIn.get(p.id) || []).slice(0, 1).map((a) => <a class="more" href={`/journal/${a.id}/`}>See where it appears<span class="sr-only">: {a.title}</span></a>)}
+              </p>
             </li>
           ))}
         </ul>
@@ -102,7 +109,7 @@ const jsonLd = [{ "@context": "https://schema.org", "@type": "WebSite", name: se
       </div>
       <figure class="frame">
         <img src={cozy.src} alt={cozy.alt} loading="lazy" decoding="async" width="1600" height="1205" />
-        <figcaption class="illus-cap">Illustrative image</figcaption>
+        <figcaption class="illus-cap">{cozy.caption}</figcaption>
       </figure>
     </div>
   </section>

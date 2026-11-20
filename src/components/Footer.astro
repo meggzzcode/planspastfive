@@ -1,5 +1,6 @@
 ---
 import { settings } from "../lib/site.mjs";
+import { disclosureText } from "../lib/affiliate.mjs";
 ---
 <div class="gingham-strip" aria-hidden="true"></div>
 <footer class="site-footer">
@@ -28,7 +29,7 @@ import { settings } from "../lib/site.mjs";
     </nav>
   </div>
   <div class="wrap site-footer__legal">
-    <p class="small">{settings.amazonDisclosure}</p>
+    <p class="small">{disclosureText(settings)}</p>
     <p class="small">&copy; {new Date().getFullYear()} {settings.siteName}</p>
   </div>
 </footer>
