@@ -92,6 +92,10 @@ If a friend owns a set, borrowing it is the easiest start. If you are buying, th
 - **A case.** A soft case or a hard one with a handle makes the set easy to bring to someone else's table.
 - **What the maker says is included.** Dice, scoring coins and an instruction book vary from set to set.
 
+{{pick:ymi-sapphire-american-mahjong-set}}
+
+Our pick comes with four wooden racks, magnetic pushers, dice and a zippered soft case, and the maker's own page lists every tile count. It has no card, and buyers' opinions on the pushers vary.
+
 **The card.** Every player needs the current year's card from the National Mah Jongg League, and the card changes every year, so check the League's website for the current one before you buy. The League sells standard and large sizes, and large print is kind to anyone who squints at the lines. The card pick below is optional and seasonal: it covers the 2026 card only, and it will be replaced when the League issues the next one.
 
 {{pick:nmjl-2026-large-print-cards-four-pack}}
