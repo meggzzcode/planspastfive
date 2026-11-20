@@ -9,9 +9,9 @@
   "collection": "paper",
   "bestUse": "Best for trimming tape and small paper pieces",
   "cta": "See It on Amazon",
-  "descriptionOriginal": "A small pair of five-inch scissors with a pointed micro-tip blade and a non-stick coating, sold for cutting sticky materials.",
-  "whyWeLikeIt": "Tape and adhesive gum up ordinary scissors fast. Fiskars describes its non-stick coating as helping with sticky materials, and the fine tip is useful for cutting out small ephemera.",
-  "limitations": "The scissors are small, so they are not for long cuts or thick card. Non-stick coating helps but does not replace wiping the blades. Fiskars' own page for this exact version could not be read, so the description follows its Non-stick Detail Scissors (No. 5) listing.",
+  "descriptionOriginal": "A small pair of five-inch scissors with a pointed micro-tip blade and a non-stick coating, made for cutting sticky materials.",
+  "whyWeLikeIt": "Tape and adhesive gum up ordinary scissors fast, and a fine tip is handy for cutting out small ephemera.",
+  "limitations": "The scissors are small, so they are not for long cuts or thick card. The coating helps with sticky materials but does not replace wiping the blades.",
   "qualityNote": "Customers say the quality is excellent and the blades are sharp and effective. No concerns seen when checked.",
   "listingChecked": {
     "checkedOn": "2026-11-19",
@@ -23,5 +23,6 @@
   "specsEvidence": "Fiskars non-stick detail scissors (No. 5) pages, https://www2.fiskars.com/Products/Crafting-and-Sewing/Scissors-and-Shears/Non-stick-Detail-Scissors-No.-5 (fetch failed 2026-11-20; content seen in search summary): Micro-Tip blades for precision, non-stick, lifetime warranty, length about 4.9 in. Retailers describe a non-stick coating for tape, vinyl, stickers and glue. Whether the white B0DLFLZFGK is identical to that page's model is unconfirmed.",
   "suitability": "A small, sharp, non-stick pair for trimming tape and cutting out small paper pieces for a first junk journal.",
   "imageStatus": "none",
-  "verificationSource": "Cowork read-only research in the owner's browser, 2026-11-19, JUNK-JOURNAL-RESEARCH.md/.csv on origin/cowork/junk-journal-research (docs/commerce/buy-plan) (primary pick; sold by Amazon.com, in stock, none seen); the Fiskars 5 in scissors were also checked in the earlier priority check. Cowork confirmed the SiteStripe toolbar is present but recorded no Associates Link Checker success for this ASIN, so affiliate eligibility is unknown. No Amazon image or text is used."
+  "verificationSource": "Cowork read-only research in the owner's browser, 2026-11-19, JUNK-JOURNAL-RESEARCH.md/.csv on origin/cowork/junk-journal-research (docs/commerce/buy-plan) (primary pick; sold by Amazon.com, in stock, none seen); the Fiskars 5 in scissors were also checked in the earlier priority check. Cowork confirmed the SiteStripe toolbar is present but recorded no Associates Link Checker success for this ASIN, so affiliate eligibility is unknown. No Amazon image or text is used.",
+  "statusReason": "Internal note: Fiskars' own page for this exact white 5 in version could not be read on 2026-11-20, so the description follows its Non-stick Detail Scissors (No. 5) page; identity with B0DLFLZFGK is unconfirmed. Associates Link Checker success not yet recorded."
 }

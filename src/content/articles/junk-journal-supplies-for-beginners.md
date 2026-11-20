@@ -41,7 +41,7 @@ A book that sticks to one palette looks designed, even when it is chaos undernea
 
 **Tea Rose.** Soft, romantic and old-fashioned. Pale pages and a lot of blush.
 - *Collect:* love-letter paper, old valentines, floral wrapping, tissue paper, a scrap of lace.
-- *Buy:* soft pink or cream tape if your washi set has it (we cannot confirm the colours), and fine pen lines with plenty of white space.
+- *Buy:* soft pink or cream tape if your washi set includes any, and fine pen lines with plenty of white space.
 
 ## The four things to buy
 
@@ -53,27 +53,27 @@ Layered paper and adhesive make a page swell, and a thin writing notebook ripple
 
 {{pick:strathmore-400-toned-tan-art-journal-5-5x8-5}}
 
-Strathmore lists this paper at 300 g/m2 with a Smyth-sewn binding that lets pages lie flatter, in warm tan or cool gray. It has 48 pages, so expect to fill it fast. That is a good problem.
+The tan page does half the styling for you: one envelope and a line of ink already look like a spread. Fill it from the front and let the spine fatten slowly.
 
 ### 2. Something to stick with
 
 {{pick:tombow-mono-permanent}}
 
-Tombow lists junk journaling among the uses of this applicator and describes the adhesive as acid-free. Those are the maker's statements. It is permanent, so line each piece up before it touches the page.
+Run it along the back of each piece in one steady stroke, pressing as you go. Line the piece up first, because it will not lift.
 
 ### 3. One good black pen
 
 {{pick:staedtler-pigment-liner-black-8}}
 
-Captions and dates turn a collage into a diary. Staedtler describes the ink as pigment-based and waterproof on paper, and the box has a range of tip widths: a fine one for small notes, a broader one for headings. Try it on paper before a glossy sticker.
+Write your captions last, once everything is stuck down, so the words fit the gaps. Date every spread.
 
 ### 4. Tape that sets the colour
 
 {{pick:scotch-expressions-washi-abstract-modern-8}}
 
-One roll goes a long way, and one strip across a corner is plenty. Scotch sells Expressions washi in several widths, and we could not confirm the colours or width of this set from the maker, so check the listing pictures against your palette. Scotch advises testing removability on a hidden spot first.
+Lay one strip across a corner or along an edge, then stop and step back. One roll goes a long way.
 
-You will also want small scissors; wipe the adhesive off the blades afterwards.
+Last, a small pair of scissors for trimming tape ends and cutting out pieces.
 
 {{pick:fiskars-micro-tip-non-stick-scissors-5in}}
 
@@ -83,13 +83,13 @@ You will also want small scissors; wipe the adhesive off the blades afterwards.
 
 {{pick:tim-holtz-idea-ology-snippets-ephemera}}
 
-Ranger describes the snippets as vintage-inspired labels, typography, tickets and frames, which is the look of a postal archive without the hunt. The look is aged, so it will not suit Garden Press or Tea Rose.
+Layer them over your own scraps: a label under a ticket stub, a frame around a photograph. A few go a long way, and they suit this look far better than the other two.
 
 **For Garden Press:**
 
 {{pick:rifle-paper-co-planner-sticker-set}}
 
-Rifle says its designs start as original gouache paintings. We could not confirm the contents or motifs from Rifle's page, so look at the listing before you rely on it for flowers.
+Tuck one or two among your seed packets and pressed leaves rather than covering a page. They give Garden Press its illustrated touch.
 
 ## Paper worth saving
 

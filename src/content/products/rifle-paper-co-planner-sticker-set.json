@@ -10,8 +10,8 @@
   "bestUse": "Best for illustrated accents",
   "cta": "See It on Amazon",
   "descriptionOriginal": "A set of illustrated planner stickers from Rifle Paper Co., sold in sheets.",
-  "whyWeLikeIt": "A sheet of illustrated stickers adds colour and detail with no painting. Rifle says each of its designs starts as an original gouache painting by Anna Bond.",
-  "limitations": "Contents are not confirmed from the maker: Rifle's page text we could read does not state the number of sheets, number of stickers or motifs, and retailers disagree on the count. It is a planner sticker set, so fit with a junk-journal spread is unconfirmed. Printed stickers, not found paper.",
+  "whyWeLikeIt": "Illustrated stickers add colour and detail with no painting. Rifle says each of its designs starts as an original gouache painting by Anna Bond.",
+  "limitations": "These are printed planner stickers, not found paper, so they sit best beside your own scraps rather than carrying a page alone.",
   "qualityNote": "No sentiment line recorded by Cowork. Reviewers on Rifle's page call the stickers adorable with a nice assortment of images.",
   "listingChecked": {
     "checkedOn": "2026-11-19",
@@ -23,5 +23,6 @@
   "specsEvidence": "Rifle Paper Co., https://riflepaperco.com/products/planner-sticker-set (read 2026-11-20): page text shows no sheet count, sticker count or motif list in the content we could read; the general brand statement is that each design starts with an original gouache painting by Anna Bond. Counts of 128, 130 and 150 appear elsewhere, so none is used here.",
   "suitability": "Illustrated stickers for adding one decorative accent to a spread; contents unconfirmed.",
   "imageStatus": "none",
-  "verificationSource": "Cowork, PILOT-VERIFICATION-V2.csv (origin/cowork/priority-verification, 2026-11-19): sold by Rifle Paper Co., ships from Amazon, keep (conditional), 'confirm it fits the junk-journal spread'; listing check, not Link Checker. Cowork confirmed the SiteStripe toolbar is present but recorded no Associates Link Checker success for this ASIN, so affiliate eligibility is unknown. No Amazon image or text is used. Needed to become verified: maker-stated contents and motifs, and a Link Checker success."
+  "verificationSource": "Cowork, PILOT-VERIFICATION-V2.csv (origin/cowork/priority-verification, 2026-11-19): sold by Rifle Paper Co., ships from Amazon, keep (conditional), 'confirm it fits the junk-journal spread'; listing check, not Link Checker. Cowork confirmed the SiteStripe toolbar is present but recorded no Associates Link Checker success for this ASIN, so affiliate eligibility is unknown. No Amazon image or text is used. Needed to become verified: maker-stated contents and motifs, and a Link Checker success.",
+  "statusReason": "Internal note: Rifle's page text does not state the number of sheets, stickers or motifs, and retailers disagree on the count, so none is named in public copy. Fit with a junk-journal spread is unconfirmed. Needed to become verified: maker-stated contents and motifs, and an Associates Link Checker success."
 }
