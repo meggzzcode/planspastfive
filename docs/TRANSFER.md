@@ -3,7 +3,7 @@
 ## What the buyer must set up themselves
 | Needs | Why |
 |---|---|
-| Their own **Amazon Associates account** and their own tracking ID | The seller's account and tag cannot be transferred (Operating Agreement). The buyer must replace the tag and apply for approval |
+| Their own **Amazon Associates account** and their own tracking ID | The seller's account and tag cannot be transferred (Operating Agreement). The buyer applies for their own account, replaces the tag, and starts their own 180-day qualifying-sales period |
 | A **GitHub** account (private repository) | Holds the site and all content |
 | A **Netlify** account (or another static host) | Builds and serves the site; the seller's plan does not transfer |
 | A **domain registrar** account | The domain can be moved by the registrar's transfer process |
@@ -15,7 +15,7 @@
 2. Buyer connects the repository to their own Netlify site (build command `npm run build`, publish folder `dist`, Node 22).
 3. Buyer sets repository Settings, Actions, Workflow permissions = Read and write; creates the branch `content-edits` from `main`.
 4. Buyer opens Pages CMS and adds the repository.
-5. In Site settings: replace `amazonTrackingId` with their own ID, **leave tracking off until their Associates account is approved**, then switch it on and publish. Update `contactEmail`, `siteUrl`, analytics ID.
+5. In Site settings: replace `amazonTrackingId` with their own ID. Amazon lets a new Associate use links after applying (final approval follows three qualifying sales within 180 days; see `docs/AMAZON-ASSOCIATES.md`), so switch tracking on once the buyer's account is registered, the site is public and the buyer is ready, then publish. Update `contactEmail`, `siteUrl`, analytics ID.
 6. Re-verify every product against its Amazon page (change `verifiedOn` and `verificationSource` in their own name) before relying on the shop.
 7. Seller deletes the seller's tracking ID from the repository history if the buyer asks; the seller's account is not part of the sale.
 8. Move the domain and mail; update DNS; check the built site loads.

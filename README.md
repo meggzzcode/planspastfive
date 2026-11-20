@@ -46,6 +46,9 @@ Only products whose status is `verified` (with a verification date and source) c
 
 `npm test` copies the repository into a temporary folder and, in the copy, simulates the owner's CMS edits: publish/unpublish an article, change a hero picture, add and replace products, change or break the tracking tag, and run the publish and undo logic in scratch git repositories. See `test/demo.test.mjs` and `test/workflows.test.mjs`. Screenshots: `docs/milestone-1/screenshots/` (regenerate with `node scripts/screenshots.mjs`; needs Playwright, which is not an npm dependency).
 
+## Amazon Associates
+Links may be used after applying; final approval follows three qualifying sales within 180 days. Public tracking stays off until the owner confirms eligibility and authorises launch. See `docs/AMAZON-ASSOCIATES.md`.
+
 ## Docs
 
-`docs/OWNER-OPERATIONS.md` (day to day), `docs/OWNER-REAL-TEST.md` (the real-account test), `docs/COSTS.md`, `docs/RISKS.md`, `docs/TRANSFER.md`, `docs/IMAGE-RECORDS.md`.
+`docs/STATUS.md` (where things stand), `docs/OWNER-OPERATIONS.md` (day to day), `docs/OWNER-REAL-TEST.md` (the real-account test), `docs/AMAZON-ASSOCIATES.md`, `docs/REPO-PRIVACY-CHECK.md`, `docs/COSTS.md`, `docs/RISKS.md`, `docs/TRANSFER.md`, `docs/IMAGE-RECORDS.md`.

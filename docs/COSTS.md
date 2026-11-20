@@ -12,7 +12,7 @@ Verified facts come from the earlier project's records, read 2026-11-19. **UNKNO
 | Domain planspastfive.com | $12.08 + $0.20 ICANN for year one (paid); renewal list price $15.98 plus ICANN | Verified (Namecheap, order record kept by the owner, not in this repository). Registered 2026-11-19, expires 2027-11-19, auto-renew OFF. Renewal price from a secondary source |
 | Mailbox hello@planspastfive.com | $14.88 for year one (Namecheap Private Email Launch, paid) | Verified for year one. Renewal price **UNKNOWN** (unconfirmed on an official page) |
 | Order total paid | $27.16 | Verified |
-| GitHub (private repository), Pages CMS, GA4 analytics, Amazon Associates | $0 | Pages CMS is free and MIT licensed (pagescms.org); the rest are free plans. GitHub Actions use for this site is a few minutes a month, far inside the free allowance (estimate) |
+| GitHub (private repository), Pages CMS, GA4 analytics, Amazon Associates | $0 (Associates is free to join; it pays commission once qualifying sales happen, see `docs/AMAZON-ASSOCIATES.md`) | Pages CMS is free and MIT licensed (pagescms.org); the rest are free plans. GitHub Actions use for this site is a few minutes a month, far inside the free allowance (estimate) |
 | Fonts | $0 | Self-hosted, open licence |
 
 **Estimated yearly running cost:** about $108 (Netlify) + about $16 to $20 (domain renewal) + the mailbox renewal (UNKNOWN) = roughly $125 to $150 plus the mailbox. A $0 hosting option exists (a free static host) but is not set up or tested here.
