@@ -9,7 +9,7 @@ Verified facts come from the earlier project's records, read 2026-11-19. **UNKNO
 | Credits left this period | 135 of 1,000 until 2026-12-16 (about 9 deploys) | Verified 2026-11-19; auto-recharge disabled |
 | Deploys per month on 1,000 credits | about 66 | Estimate (1,000 / 15) |
 | Skipped builds, deploy previews, branch deploys | **UNKNOWN** in this account | Netlify's documentation lists previews and branch deploys at 0 credits and says failed deploys and rollbacks cost 0; the owner's Usage page did not show it. `docs/OWNER-REAL-TEST.md` records the real figures |
-| Domain planspastfive.com | $12.08 + $0.20 ICANN for year one (paid); renewal list price $15.98 plus ICANN | Verified: Namecheap order 220011258. Registered 2026-11-19, expires 2027-11-19, auto-renew OFF. Renewal price from a secondary source |
+| Domain planspastfive.com | $12.08 + $0.20 ICANN for year one (paid); renewal list price $15.98 plus ICANN | Verified (Namecheap, order record kept by the owner, not in this repository). Registered 2026-11-19, expires 2027-11-19, auto-renew OFF. Renewal price from a secondary source |
 | Mailbox hello@planspastfive.com | $14.88 for year one (Namecheap Private Email Launch, paid) | Verified for year one. Renewal price **UNKNOWN** (unconfirmed on an official page) |
 | Order total paid | $27.16 | Verified |
 | GitHub (private repository), Pages CMS, GA4 analytics, Amazon Associates | $0 | Pages CMS is free and MIT licensed (pagescms.org); the rest are free plans. GitHub Actions use for this site is a few minutes a month, far inside the free allowance (estimate) |
