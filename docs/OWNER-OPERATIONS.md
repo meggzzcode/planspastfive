@@ -22,16 +22,77 @@ The design that saves credits: the live site is rebuilt **only** when the newest
 ## Edit an article
 1. Open Pages CMS, choose this repository and the branch **content-edits** (Pages CMS expects you to pick the branch; the exact control is UNVERIFIED).
 2. Articles, pick one (or New). Change the text. Keep **Status = Draft** while writing; a draft never shows on the website.
-3. To go live set Status = Published, choose Category and Kind of story, fill the search summary, standfirst, publish date and every box of the top picture (Rights must be Cleared), then Save. "Feature on the home page" puts it in Featured experiences.
+3. To go live set Status = Published, choose Category and Kind of story, fill the search summary, standfirst, publish date and the top picture (the picture and its description for screen readers), then Save. The picture must also have a record in `src/content/images.json` (see "Change a picture" below), or the check fails. "Feature on the home page" puts it in Featured experiences.
 4. A product is named in a sentence with `{{product:the-product-id}}`, or shown as a card with `{{pick:the-product-id}}` alone on its own line. UNVERIFIED: whether the rich-text editor leaves those curly-bracket markers untouched. If it changes them, use the editor's source/markdown view, or edit the file on GitHub's website.
 
 ## Add or replace a product
-- **Add:** Products, New. Fill every box. The product id (lowercase words with hyphens) becomes the file name; never change it later. The ASIN is the 10 letters and digits on the Amazon page under Product details. Keep Status = **Candidate**: it never shows. When *you* have checked the Amazon listing (right item, in stock, sold by Amazon or the maker) set **Verified**, fill the date and where you checked, and write your own words for the description, "why we picked it" and "worth knowing". Never copy Amazon's text; no prices, ratings or Amazon pictures.
-- **Replace:** create the new product (Verified). On the old one set Discontinued, write a reason, and pick the new one in **Replaced by**.
+- **Add:** Products, New. The product id (lowercase words with hyphens) becomes the file name; never change it later. The ASIN is the 10 letters and digits on the Amazon page under Product details. Start at Status = **Candidate**: it never shows. Write your own words for the description, "why we picked it" and "worth knowing"; never copy Amazon's text; no prices, ratings or Amazon pictures. See "Product statuses and evidence" below for what each status needs.
+- **Replace:** create the new product (Verified, with its evidence). On the old one set Discontinued, write a reason, and pick the new one in **Replaced by**.
 - If a product is no longer right, set it to Held (with a reason). A published article that still points at it will refuse to publish until you swap it.
 
+### Product statuses and evidence
+A product is shown only when its **Editorial decision** is Approve **and** its status allows it.
+
+| Status | Meaning | Shown on the site? |
+|---|---|---|
+| `candidate` | An idea; not checked. | Never. |
+| `provisional` | Listing checked, but some evidence is missing. | **Only while `launchMode` is `preview`.** Never in production. |
+| `verified` | All the evidence below is recorded. | Yes, when Editorial decision is Approve. |
+| `held` | Paused. Needs a reason (`statusReason`). | Never. |
+| `discontinued` | No longer sold. Needs a reason; may point to `replacedBy`. | Never. |
+
+The evidence fields on a product (all in the Products form):
+- `listingChecked`: date checked (`checkedOn`), exact variant, `listingAvailable`, `sellerType`, `affiliateLinkEligible`.
+- `specsEvidence`: a short note with the maker's or seller's web address that backs up the facts you state.
+- `suitability`: who it suits.
+- `qualityNote`: what customers say, in your words (optional but encouraged).
+- `imageStatus`: `none`, `pending` or `approved`. Use `approved` only when the product has a picture whose record in `images.json` is an approved `product-photo`. Amazon pictures are never used.
+- `editorialDecision`: `approve` or `hold`.
+- `order`: an optional whole number; the shop lists lower numbers first, the rest keep their usual order.
+
+**Verified needs all of these:** `checkedOn` filled; `listingAvailable` = yes; `sellerType` = Amazon or the brand/maker; `affiliateLinkEligible` = yes; `specsEvidence`; `suitability`; plus `verificationSource` (where you checked), `whyWeLikeIt`, `limitations` and `descriptionOriginal`. If any is missing the build refuses "verified": use `provisional` or `candidate` until it is known. A `provisional` product needs the check date and the same text fields, and cannot be shown if the listing is unavailable or not eligible for affiliate links (hold it instead).
+
 ## Change a picture
-In the article's **Top picture** upload the picture (it goes to `public/images`) and fill every box: description for screen readers, credit, source, licence, Rights = Cleared. Only use pictures you have the right to use. Never use Amazon's.
+Each picture has **one record** in `src/content/images.json`, matched to the article or product by file name. The article's **Top picture** form only takes the picture (it goes to `public/images`) and the description for screen readers. Who made it, the licence and the approval live in the record, not in the article. Any old `credit`, `source`, `licence` or `rights` lines in an article are ignored.
+
+**`images.json` cannot be edited in a Pages CMS form.** To change it, either open the file on GitHub's website (`src/content/images.json`, pencil icon, on the `content-edits` branch) and edit it there, or ask the AI or developer to do it. Each record looks like this:
+
+```
+"file-key": {
+  "file": "name.jpg",             // in public/images/
+  "alt": "what the picture shows",
+  "kind": "photograph",           // photograph | ai-illustration | product-photo
+  "credit": "Photographer or brand",   // required for photograph and product-photo
+  "source": { "name": "Pexels", "url": "https://..." },
+  "licenceName": "...", "licenceUrl": "https://...", "licenceCheckedOn": "2026-11-20",
+  "commercialUse": "yes",         // yes | no | unverified
+  "transferWithSite": "unverified",   // yes | no | unverified
+  "attribution": "none",          // the required credit wording, or the word "none"
+  "rightsStatus": "approved",     // approved | pending | rejected
+  "approvedOn": "2026-11-20",
+  "notes": "optional"
+}
+```
+A record can be `approved` only when commercial use is `yes` and it has the source address, licence name and address, the date the licence was checked, your approval date, and (for photographs and product photos) the credit. Otherwise the build refuses the record. A `rejected` picture fails the build wherever it is used. A `pending` picture used on the site is a warning in preview mode and a failure in production mode.
+
+**Captions** are chosen automatically from the kind: AI illustration = "Illustrative image (AI-generated)"; photograph = "Photo: <credit>"; product photo = "Product photo: <credit>". You do not type them, and an AI picture can never be captioned as a photograph. Only use pictures you have the right to use. Never use Amazon's.
+
+## What you can and cannot say about prices
+Budget estimates are allowed in ordinary article prose ("most of this fits under $25"). Never put a price for a product: not in a product record, an article title or summary, a product card, or in a paragraph that names a product with `{{product:...}}` or `{{pick:...}}` (or sits next to a product card). The words sale, discount, coupon, deal, "current price", "lowest price" and similar are refused everywhere. Star ratings, "we tested it" claims and Amazon addresses or tracking tags are also refused.
+
+## The Amazon note (disclosure)
+A short shopping note appears before the first product link or card on every page that has product links (articles, shop, home) and in the footer. Its wording follows the tracking switch:
+- **Tracking off (now):** "Product links on this site go to Amazon. They are ordinary links for now, so we earn nothing from them yet."
+- **Tracking on:** "Some links on this site go to Amazon and are affiliate links." followed by the exact sentence in Site settings ("Amazon disclosure sentence", currently "As an Amazon Associate I earn from qualifying purchases.").
+
+## Launch mode: preview or production
+`launchMode` in `src/content/settings.json` is either:
+- **`preview`** (now): unfinished picture rights and product evidence do **not** stop the build. The build log prints a **LAUNCH WARNING** listing each item, and the build passes. Provisional products are shown.
+- **`production`**: the build **fails** on any provisional product that is approved for showing, any pending picture used by a page, article or product, and any missing evidence. Provisional products are not shown.
+
+**Owner step: switch `launchMode` to `production` only when you are ready to launch**, and only after the LAUNCH WARNING list in the build log is empty. How: in Pages CMS open Site settings and set **Launch mode** to Production, then Save and Publish (or edit `"launchMode"` in `src/content/settings.json` on GitHub's website; or ask the AI or developer). **Caveat:** nothing yet ties the Netlify production deploy to this setting. The live site is built from whatever `settings.json` says on `main`, so the switch is a deliberate manual step and not an automatic guard. Do not rely on it to stop an unready publish.
+
+**Current production blockers** (what the LAUNCH WARNING lists today): 3 provisional products (Tombow Mono, and the two NMJL 2026 card packs: each lacks `affiliateLinkEligible` = yes, `specsEvidence` and `suitability`) and 4 pending pictures (`girls-night-crafts`, `cozy-corner`, `weekend-picnic`, `junk-journal-flatlay`: commercial use unverified, plus missing licence details and approval date).
 
 ## Change settings and the tracking ID
 Site settings in the CMS. **The Amazon tracking ID lives only here.** Keep "Switch Amazon affiliate tracking on" **off** until you have confirmed eligibility and decided to launch: Amazon lets you use links after applying, but the site must be public first (`docs/AMAZON-ASSOCIATES.md`). Switching it on with an empty ID fails the build. Changing the ID changes every Amazon link at the next publish.

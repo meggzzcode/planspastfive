@@ -26,8 +26,8 @@ npm run dev        # live development server
 |---|---|
 | Articles (Markdown) | `src/content/articles/*.md` |
 | Products (one file each) | `src/content/products/<id>.json` |
-| Site settings, **the only place the Amazon tag lives** | `src/content/settings.json` |
-| Pictures used on home/about (with records) | `src/content/images.json`, `public/images/`, `docs/IMAGE-RECORDS.md` |
+| Site settings, **the only place the Amazon tag lives**, and `launchMode` | `src/content/settings.json` |
+| One rights record per picture (articles, home, about, products); not editable in the CMS form | `src/content/images.json`, `public/images/`, `docs/IMAGE-RECORDS.md` |
 | Amazon link builder (single module) | `src/lib/affiliate.mjs` |
 | `{{product:id}}` / `{{pick:id}}` article markers | `plugins/remark-product.mjs` |
 | Content and link checks | `scripts/check-content.mjs`, `scripts/check-dist.mjs` |
@@ -40,11 +40,13 @@ Header: Home, The Journal, The Shop, About. Footer: Journal, Shop, About, Contac
 
 ## Product rules (enforced by the checks)
 
-Only products whose status is `verified` (with a verification date and source) can appear. A published article that mentions a candidate, held, discontinued or unknown product fails the build, unless the product has a `replacedBy` chain that ends at a verified product. No prices, no ratings, no Amazon pictures, no testing claims, no stored tags or Amazon addresses in content.
+A product shows only when its `editorialDecision` is `approve` and its status is `verified` (all evidence recorded: listing check, specs evidence, suitability) or `provisional` while `launchMode` is `preview`. Candidate, held and discontinued products never show. A published article that mentions a product that cannot be shown fails the build, unless the product has a `replacedBy` chain that ends at a shown product. No product prices, ratings, Amazon pictures or testing claims, no stored tags or Amazon addresses in content; budget estimates are allowed in article prose, but not in a paragraph that names a product.
+
+`launchMode` in `src/content/settings.json`: `preview` (default) prints a LAUNCH WARNING for unfinished picture rights and provisional products and still builds; `production` fails the build on them. Switch to `production` only when ready; nothing yet ties the Netlify production deploy to it. Details in `docs/OWNER-OPERATIONS.md`.
 
 ## What the Milestone 1 demonstration proves
 
-`npm test` copies the repository into a temporary folder and, in the copy, simulates the owner's CMS edits: publish/unpublish an article, change a hero picture, add and replace products, change or break the tracking tag, and run the publish and undo logic in scratch git repositories. See `test/demo.test.mjs` and `test/workflows.test.mjs`. Screenshots: `docs/milestone-1/screenshots/` (regenerate with `node scripts/screenshots.mjs`; needs Playwright, which is not an npm dependency).
+`npm test` copies a fixture set (`test/fixtures/`) into a temporary folder, not the shipped content, and, in the copy, simulates the owner's CMS edits: publish/unpublish an article, change a hero picture, add and replace products, change or break the tracking tag, and run the publish and undo logic in scratch git repositories. See `test/demo.test.mjs` and `test/workflows.test.mjs`. Screenshots: `docs/milestone-1/screenshots/` (regenerate with `node scripts/screenshots.mjs`; needs Playwright, which is not an npm dependency).
 
 ## Amazon Associates
 Links may be used after applying; final approval follows three qualifying sales within 180 days. Public tracking stays off until the owner confirms eligibility and authorises launch. See `docs/AMAZON-ASSOCIATES.md`.

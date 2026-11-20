@@ -11,10 +11,6 @@ featured: false
 hero:
   image: /images/junk-journal-flatlay.jpg
   alt: "An open junk journal on a butter-yellow cloth, its pages layered with pressed flowers, old tickets, photographs and red gingham tape, beside a cherry-print mug and two fine-liner pens."
-  credit: "Plans Past Five"
-  source: "Lovable AI image tool, originally generated for the earlier Plans Past Five project"
-  licence: "AI-generated. No exclusivity or registrable copyright promised. Commercial-use and transfer terms of the tool not independently verified (see docs/RISKS.md)."
-  rights: cleared
 picks:
   - tombow-mono-permanent
 related:

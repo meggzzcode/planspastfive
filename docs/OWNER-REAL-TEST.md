@@ -15,8 +15,8 @@
 |---|---|---|---|---|---|
 | 1 | Open Pages CMS, repository, branch **content-edits** (find the branch control). Do Articles, Products and Site settings load? | No | All three load; note any `.pages.yml` error text | | how the branch is chosen: |
 | 2 | Edit the demo article: add a sentence in the rich-text editor, Save (still Published). Then open the file on GitHub (branch `content-edits`) and look at the `{{product:...}}` / `{{pick:...}}` markers. | Branch deploy if on (cost unknown) | One commit on `content-edits`; `main` unchanged; **markers survive unchanged** (if altered: note exactly how, and whether the source view avoids it) | | marker result: |
-| 3 | Change Top picture to a new upload; fill all boxes. | No | File in `public/images/`; note the exact text stored in `hero.image` | | stored value: |
-| 4 | Add a Candidate product; set another to Discontinued with Replaced by = a new Verified one (with date and source). | No | Valid `<id>.json`; empty boxes do not break anything | | |
+| 3 | Change Top picture to a new upload (picture and description; its rights record in `images.json` is added separately on GitHub). | No | File in `public/images/`; note the exact text stored in `hero.image` | | stored value: |
+| 4 | Add a Candidate product; set another to Discontinued with Replaced by = a new product (Provisional is enough for the test; Verified needs the full evidence). | No | Valid `<id>.json`; empty boxes do not break anything | | |
 | 5 | Site settings: change the tracking ID text, leave tracking **off**. | No | Commit on `content-edits` | | |
 | 6 | **Skipped build:** on GitHub's website edit README on `main` (message without `[deploy]`). Watch Netlify Deploys and the Usage page. | Skipped (cost unknown) | Deploy shows **Skipped**; **record credits used** | | before/after: |
 | 7 | Turn on Branch deploys for `content-edits` (owner action 4). Save a small edit in Pages CMS. Open the branch preview (Netlify > Deploys > Branch deploys; `content-edits--<site>.netlify.app`). | Branch deploy (cost unknown) | Preview shows your edit; **record minutes taken and credits used** | | preview URL, credits: |
