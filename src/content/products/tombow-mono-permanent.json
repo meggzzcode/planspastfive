@@ -3,7 +3,7 @@
   "name": "Mono Permanent Adhesive Applicator",
   "brand": "Tombow",
   "asin": "B000XAHF7S",
-  "status": "provisional",
+  "status": "verified",
   "editorialDecision": "approve",
   "bestUse": "Best for junk journals and scrapbooks",
   "descriptionOriginal": "A refillable hand-held roller that applies a thin, permanent line of dry adhesive to paper, photos and ephemera.",
@@ -11,13 +11,15 @@
   "limitations": "It is a permanent adhesive, so there is no repositioning once a piece is down. It is also a tape runner, not a wet glue, so it is not the tool for thick or heavy embellishments.",
   "collection": "paper",
   "listingChecked": {
-    "checkedOn": "2026-11-19",
+    "checkedOn": "2026-11-20",
     "variant": "1/3 in x 472 in (model 62106)",
     "listingAvailable": "yes",
     "sellerType": "amazon",
-    "affiliateLinkEligible": "unknown"
+    "affiliateLinkEligible": "yes"
   },
   "qualityNote": "Customers say it is easy to use, easier than glue or tape. No concerns seen when checked.",
   "imageStatus": "none",
-  "verificationSource": "Cowork Amazon listing check, docs/commerce/buy-plan/PILOT-VERIFICATION-V2.csv in the earlier repository (decision keep; seller Amazon.com; in stock; title matches model 62106)."
+  "verificationSource": "Cowork, in the owner's Associates account, 2026-11-20: SiteStripe on the Tombow listing offered a tagged link under the site's tracking ID, and the Associates Link Checker returned 'Success: the link tags to a valid tag or sub-tag for your Associate ID' for the product's tagged address. Earlier listing check: PILOT-VERIFICATION-V2.csv in the old repository (decision keep; seller Amazon.com). No Amazon image is used (SiteStripe offers no image option; Creators API not available).",
+  "specsEvidence": "Tombow USA product page https://www.tombowusa.com/products/mono-adhesive-permanent (read 2026-11-19): refillable permanent adhesive applicator, 1/3 in x 472 in, acid-free, lists junk journaling and scrapbooking among its uses. Amazon listing (model 62106) sold by Amazon.com, in stock, checked by Cowork 2026-11-19 and again 2026-11-20.",
+  "suitability": "A refillable dry-adhesive runner suited to thin paper, photos and ephemera in a first junk journal spread; not for thick or heavy embellishments."
 }
