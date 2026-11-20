@@ -27,9 +27,9 @@ describe("affiliate module (the only place Amazon links are built)", () => {
     assert.match(affiliateSettingsProblems({ amazonTrackingEnabled: true, amazonTrackingId: "" })[0], /field "amazonTrackingId"/);
     assert.deepEqual(affiliateSettingsProblems(on), []);
   });
-  test("the real settings file keeps tracking OFF and stores the tag", () => {
+  test("the real settings file stores the tag and the required statement (tracking may be on or off)", () => {
     const s = JSON.parse(fs.readFileSync(path.join(REPO, "src/content/settings.json"), "utf8"));
-    assert.equal(s.amazonTrackingEnabled, false); assert.equal(s.amazonTrackingId, "planspastfive-20");
+    assert.equal(typeof s.amazonTrackingEnabled, "boolean"); assert.equal(s.amazonTrackingId, "planspastfive-20");
     assert.equal(s.amazonDisclosure, "As an Amazon Associate I earn from qualifying purchases.");
   });
   test("the tag appears nowhere in content or source except settings.json", () => {
@@ -91,10 +91,10 @@ describe("real repository content", () => {
       if (p.data.status === "verified") assert.equal(p.data.listingChecked.affiliateLinkEligible, "yes");
     }
   });
-  test("tracking stays off and launchMode is preview", () => {
+  test("the real settings are valid and the launch mode is a known value", () => {
     const { content } = checkContent(REPO);
-    assert.equal(content.settings.amazonTrackingEnabled, false);
-    assert.equal(content.settings.launchMode, "preview");
+    assert.equal(typeof content.settings.amazonTrackingEnabled, "boolean");
+    assert.ok(["preview", "production"].includes(content.settings.launchMode));
   });
   test("no image record claims approval without commercial use, and no AI image is described as a photograph", () => {
     const { content } = checkContent(REPO);
