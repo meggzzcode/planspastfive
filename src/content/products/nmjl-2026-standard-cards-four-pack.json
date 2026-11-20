@@ -15,9 +15,9 @@
     "variant": "4 standard cards, 2026",
     "listingAvailable": "yes",
     "sellerType": "brand",
-    "affiliateLinkEligible": "unknown"
+    "affiliateLinkEligible": "yes"
   },
   "qualityNote": "Buyers confirm they are official cards and good value. No concerns seen when checked.",
   "imageStatus": "none",
-  "verificationSource": "Cowork Amazon listing check, docs/commerce/buy-plan/PILOT-VERIFICATION-V2.csv in the earlier repository (decision keep; seller The National Mah Jongg League, Inc., ships from Amazon; in stock)."
+  "verificationSource": "Cowork Amazon listing check, docs/commerce/buy-plan/PILOT-VERIFICATION-V2.csv in the earlier repository (decision keep; seller The National Mah Jongg League, Inc., ships from Amazon; in stock). Affiliate check 2026-11-20: listing sold by the brand (The National Mah Jongg League, Inc.), in stock; SiteStripe present and Link Checker accepted the site's tracking-ID tag. This does not prove commission; a real sale in Associates reports does."
 }
