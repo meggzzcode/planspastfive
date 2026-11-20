@@ -25,8 +25,9 @@ export function productMentionHtml(p, settings, ctx) {
 export function productCardHtml(p, settings, { heading = "h3", compact = false, ctx = {}, placement = "card", images = {} } = {}) {
   // A picture is shown only when its record in images.json is approved (see productImageFor).
   const rec = productImageFor(p, images);
+  const alt = esc(p.image?.alt || rec?.alt);
   const img = rec
-    ? `<figure class="product-card__media"><img src="${esc(imageUrl(rec.file))}" alt="${esc(p.image.alt || rec.alt)}" loading="lazy" decoding="async"><figcaption>${esc(captionFor(rec))}</figcaption></figure>`
+    ? `<figure class="product-card__media"><a class="product-card__photo" ${linkAttrs(p, settings, ctx, `${placement}-image`)}><img src="${esc(imageUrl(rec.file))}" alt="${alt}" loading="lazy" decoding="async"></a><figcaption>${esc(captionFor(rec))}</figcaption></figure>`
     : "";
   return `<article class="product-card${img ? " product-card--with-image" : ""}${compact ? " product-card--compact" : ""}" data-product-id="${esc(p.id)}">
 ${img}<div class="product-card__body">
