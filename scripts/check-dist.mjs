@@ -5,7 +5,8 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadContent } from "../src/lib/content-fs.mjs";
 import { amazonUrl, AMAZON_REL } from "../src/lib/affiliate.mjs";
-import { resolveProduct } from "../src/lib/catalog.mjs";
+import { resolveProduct, isShown } from "../src/lib/catalog.mjs";
+import { PRICE_AMOUNT, PRICE_CLAIM } from "./check-content.mjs";
 
 const RETAILERS = /(^|\.)(walmart|target|etsy|ebay|bestbuy|temu|shein|aliexpress|michaels|joann|hobbylobby|shareasale|rstyle|shopltk|liketoknow|bit)\.(com|it|co)$/i;
 const AMAZON_IMAGE_HOSTS = /(m\.media-amazon|images-na\.ssl-images-amazon|ssl-images-amazon|images-amazon|media-amazon|amazon-adsystem|fls-na\.amazon|ws-na\.amazon-adsystem)\./i;
@@ -13,6 +14,7 @@ const AMAZON_IMAGE_HOSTS = /(m\.media-amazon|images-na\.ssl-images-amazon|ssl-im
 const walk = (dir) => fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(path.join(dir, e.name)) : [path.join(dir, e.name)]));
 const attrsOf = (tag) => { const o = {}; for (const m of tag.matchAll(/([a-zA-Z_:][-a-zA-Z0-9_:.]*)(?:\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'>]+)))?/g)) if (m[1] !== tag.slice(1, 1 + m[1].length) || m.index > 1) o[m[1].toLowerCase()] = m[2] ?? m[3] ?? m[4] ?? ""; return o; };
 const tagsOf = (html, name) => [...html.matchAll(new RegExp(`<${name}\\b[^>]*>`, "gi"))].map((m) => ({ raw: m[0], a: attrsOf(m[0]) }));
+const flat = (x) => x.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
 const textOf = (html) => html.replace(/<(script|style)\b[\s\S]*?<\/\1>/gi, " ").replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/\s+/g, " ");
 
 export function checkDist(root) {
@@ -22,6 +24,7 @@ export function checkDist(root) {
   const c = loadContent(root);
   if (!c.settings) return { errors: ["src/content/settings.json: cannot read the settings, so the built site cannot be checked."] };
   const S = c.settings;
+  const mode = S.launchMode;
   const files = walk(dist).map((f) => path.relative(dist, f).split(path.sep).join("/"));
   const fileSet = new Set(files);
   const htmlFiles = files.filter((f) => f.endsWith(".html"));
@@ -53,7 +56,7 @@ export function checkDist(root) {
   const pageUrls = new Set();
   const asinOk = new Map(); // asin -> product id, for every product that is verified
   const byId = new Map(c.products.map((p) => [p.data.id, p.data]));
-  for (const p of c.products) if (p.data.status === "verified") asinOk.set(p.data.asin, p.data.id);
+  for (const p of c.products) if (isShown(p.data, mode)) asinOk.set(p.data.asin, p.data.id);
 
   for (const f of htmlFiles) {
     const h = html[f];
@@ -110,7 +113,7 @@ export function checkDist(root) {
       if (isAmazon) {
         const m = /^https:\/\/www\.amazon\.com\/dp\/([A-Z0-9]{10})(\?tag=([^&]+))?$/.exec(href);
         if (!m) { err(`the Amazon link ${href} is not in the required form https://www.amazon.com/dp/<ASIN>${S.amazonTrackingEnabled ? "?tag=<id>" : ""}.`); continue; }
-        if (!asinOk.has(m[1])) err(`the Amazon link ${href} is for ASIN ${m[1]}, which is not a verified product.`);
+        if (!asinOk.has(m[1])) err(`the Amazon link ${href} is for ASIN ${m[1]}, which is not a product that may be shown.`);
         if (href !== amazonUrl(m[1], S)) err(`the Amazon link ${href} should be exactly ${amazonUrl(m[1], S)} (tag only when tracking is switched on in settings).`);
         const rel = new Set((t.a.rel || "").split(/\s+/));
         for (const need of AMAZON_REL.split(" ")) if (!rel.has(need)) err(`the Amazon link ${href} is missing rel="${need}".`);
@@ -123,9 +126,28 @@ export function checkDist(root) {
       }
     }
 
-    // prices and ratings in visible text
+    // The shopping note must come BEFORE the first product link on the page.
+    const firstLink = h.search(/<a [^>]*data-product-id=/);
+    if (firstLink >= 0) {
+      const note = h.indexOf('class="disclosure"');
+      if (note < 0 || note > firstLink) err("the first product link comes before the shopping note (the affiliate disclosure must come first).");
+    }
+
+    // prices and ratings in visible text. Article prose may hold budget estimates ("under $25"), nothing else may hold a dollar amount.
+    const isArticle = /^journal\/[^/]+\/index\.html$/.test(f);
+    const clean = (x) => flat(x.replace(/<(script|style)\b[\s\S]*?<\/\1>/gi, " "));
+    let priceZones = [h], claimZones = f === "shop/index.html" || f === "index.html" ? [h] : [];
+    if (isArticle) {
+      const start = h.search(/<div class="prose[ "]/);
+      const body = h.slice(start < 0 ? 0 : start);
+      const cards = [...body.matchAll(/<article class="product-card[\s\S]*?<\/article>/g)].map((m) => m[0]);
+      const mentionParas = [...body.matchAll(/<p>(?:(?!<\/p>)[\s\S])*?class="product-mention"[\s\S]*?<\/p>/g)].map((m) => m[0]);
+      claimZones = [...cards, ...mentionParas];
+      priceZones = [h.slice(0, start < 0 ? 0 : start), ...claimZones];
+    }
+    if (priceZones.some((z) => PRICE_AMOUNT.test(clean(z)))) err(isArticle ? "a dollar amount appears in a product card, in a paragraph naming a product, or outside the article text (product prices are never shown)." : "a price appears on the page (dollar amounts are only allowed in article prose).");
+    if (claimZones.some((z) => PRICE_CLAIM.test(clean(z)))) err("a pricing claim (sale, discount, deal, current or lowest price...) appears in a product area.");
     const txt = textOf(h);
-    if (/\$\s?\d/.test(txt)) err("a price appears on the page (prices are never shown).");
     if (/\b\d(\.\d)?\s*(\/\s*5|out of 5|stars?)\b|★/i.test(txt)) err("a star rating appears on the page (ratings are never shown).");
   }
 
@@ -151,13 +173,13 @@ export function checkDist(root) {
     if (a.data.title && allText.includes(a.data.title.replace(/&/g, "&amp;"))) errors.push(`dist: the title of the draft "${a.slug}" appears in the built site.`);
   }
   for (const p of c.products) {
-    if (p.data.status === "verified") continue;
-    const r = resolveProduct(byId, p.data.id);
+    if (isShown(p.data, mode)) continue;
+    const r = resolveProduct(byId, p.data.id, mode);
     if (allText.includes(p.data.asin)) errors.push(`dist: the ${p.data.status} product "${p.data.id}" (ASIN ${p.data.asin}) is reachable in the built site.`);
     if (!r.product && allText.includes(p.data.name)) errors.push(`dist: the ${p.data.status} product "${p.data.id}" is named in the built site.`);
   }
   const shop = html["shop/index.html"] || "";
-  for (const p of c.products.filter((p) => p.data.status === "verified")) {
+  for (const p of c.products.filter((p) => isShown(p.data, mode))) {
     if (!shop.includes(`data-product-id="${p.data.id}"`)) errors.push(`dist/shop/index.html: the verified product "${p.data.id}" is missing from the shop.`);
   }
   return { errors, pages: pageUrls.size };
