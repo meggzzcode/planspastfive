@@ -38,7 +38,7 @@ Clay, paint and, if you like, a clear finish. The rest is in your kitchen drawer
 
 **Paint.** Ordinary acrylics do the job, applied once the clay is completely dry. For soft shades with no mixing, we like this 20-tube set, which has blush, Naples yellow and olive ready-made, plus white and a strong red for the cherry rim:
 
-{{pick:winsor-newton-galeria-acrylic-20}}
+{{pick:winsor-newton-galeria-acrylic-set}}
 
 If you would rather mix your own tints from white, {{product:liquitex-basics-acrylic-12}} is an alternative, though its finish is satin and every pastel is yours to mix.
 

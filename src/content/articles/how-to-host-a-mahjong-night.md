@@ -105,7 +105,7 @@ The evening works without either product on this page. A borrowed set and a card
 ## Questions
 
 **Do I need to know the game before I host?**
-No. You need to deal, explain the aim and follow the card. Being a few pages ahead of your guests is a fine place to start.
+No. You need to set up the table, explain the aim and follow the card. Being a few pages ahead of your guests is a fine place to start.
 
 **Which year's card should we use?**
 The current one. The League changes its card annually, so use this year's, and look for next year's on the League's website.
