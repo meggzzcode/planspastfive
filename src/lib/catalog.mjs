@@ -64,6 +64,31 @@ export function articlesUsingProduct(articles, byId, mode = "production") {
   return out;
 }
 
+/**
+ * Which PUBLISHED articles reference each product, shown or not? Map product id -> [{ id, title }].
+ * A reference ({{pick:id}}, {{product:id}}, picks) counts for the product named and for every product on its
+ * replacedBy chain, so a provisional replacement target is "used" too. Pass only published articles.
+ */
+export function productsReferencedBy(articles, byId) {
+  const out = new Map();
+  for (const a of articles) {
+    const ids = [...(a.picks || []), ...[...a.body.matchAll(MARKER)].map((m) => m[2])];
+    for (const id of ids) {
+      const seen = new Set();
+      for (let cur = id; cur && byId.has(cur) && !seen.has(cur); cur = byId.get(cur).replacedBy) {
+        seen.add(cur);
+        const list = out.get(cur) || [];
+        if (!list.some((x) => x.id === a.id)) list.push({ id: a.id, title: a.title });
+        out.set(cur, list);
+      }
+    }
+  }
+  return out;
+}
+
+/** Research products: provisional or candidate. In production they are never shown anywhere. */
+export const isResearch = (p) => p.status === "provisional" || p.status === "candidate";
+
 /** Pattern for inline product markers inside article Markdown. */
 export const MARKER = /\{\{\s*(product|pick)\s*:\s*([^}\s]*)\s*\}\}/g;
 

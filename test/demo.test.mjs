@@ -496,16 +496,63 @@ describe("disclosure placement, launchMode, homepage journey and captions in the
     const s = distHtml(dir, "shop/index.html");
     assert.ok(s.indexOf('data-product-id="nmjl-2026-standard-cards-four-pack"') < s.indexOf('data-product-id="nmjl-2026-large-print-cards-four-pack"'));
   });
-  test("launchMode production fails on provisional products and pending images, listing each; preview only warns", () => {
+  test("launchMode production fails on a provisional product a published article uses, and on pending images; unused ones are ignored", () => {
     fresh();
     editJson(dir, SETTINGS, (s) => { s.launchMode = "production"; });
     const r = checkContentCli(dir);
     assert.ok(!r.ok);
-    for (const id of ["tombow-mono-permanent", "nmjl-2026-large-print-cards-four-pack", "nmjl-2026-standard-cards-four-pack"]) assert.match(r.out, new RegExp(`Product "${id}".*only provisional.*affiliateLinkEligible must be "yes"`));
+    assert.match(r.out, new RegExp(`Product "tombow-mono-permanent".*only provisional but the published article "${SLUG}" uses it.*Missing:.*affiliateLinkEligible must be "yes"`));
+    assert.equal((r.out.match(/"tombow-mono-permanent"/g) || []).length, 1, "reported once, not twice");
+    for (const id of ["nmjl-2026-large-print-cards-four-pack", "nmjl-2026-standard-cards-four-pack"]) assert.doesNotMatch(r.out, new RegExp(id));
     for (const k of ["girls-night-crafts", "cozy-corner", "weekend-picnic", "junk-journal-flatlay"]) assert.match(r.out, new RegExp(`"${k}".*not approved`));
     editJson(dir, SETTINGS, (s) => { s.launchMode = "preview"; });
     const p = checkContentCli(dir);
     assert.ok(p.ok); assert.match(p.out, /LAUNCH WARNING/);
+    // preview separates the two groups
+    const [blocks, ignored] = p.out.split("Research products no published article uses");
+    assert.match(blocks, /Blocks production:[\s\S]*tombow-mono-permanent/);
+    assert.doesNotMatch(blocks, /nmjl-2026/);
+    assert.match(ignored, /nmjl-2026-large-print-cards-four-pack[\s\S]*nmjl-2026-standard-cards-four-pack/);
+    assert.doesNotMatch(ignored, /tombow/);
+  });
+  describe("unused research products in production", () => {
+    const approveAll = () => {
+      editJson(dir, IMAGES, (j) => { for (const [k, r] of Object.entries(j)) j[k] = { ...r, source: { name: r.source.name, url: "https://example.com/s" }, ...approvedImage() }; });
+      editJson(dir, "src/content/products/tombow-mono-permanent.json", (p) => Object.assign(p, verifiedFields()));
+    };
+    test("an unused provisional product builds in production and is absent from dist, shop, home and sitemap", () => {
+      fresh(); approveAll();
+      editJson(dir, SETTINGS, (s) => { s.launchMode = "production"; });
+      const r = npmBuild(dir);
+      assert.ok(r.ok, r.out);
+      assert.match(r.out, /2 research product\(s\) not shown in production/);
+      assert.doesNotMatch(r.out, /LAUNCH WARNING/);
+      let all = "";
+      const walk = (d) => { for (const e of fs.readdirSync(path.join(dir, d), { withFileTypes: true })) { const f = `${d}/${e.name}`; if (e.isDirectory()) walk(f); else if (/\.(html|xml)$/.test(e.name)) all += fs.readFileSync(path.join(dir, f), "utf8"); } };
+      walk("dist");
+      for (const asin of ["B0GRCCTYJ5", JSON.parse(read(dir, "src/content/products/nmjl-2026-standard-cards-four-pack.json")).asin]) assert.ok(!all.includes(asin), asin);
+      assert.doesNotMatch(all, /nmjl-2026|NMJL/i);
+      assert.match(distHtml(dir, "shop/index.html"), /data-product-id="tombow-mono-permanent"/);
+      assert.doesNotMatch(read(dir, "dist/sitemap-0.xml"), /nmjl|draft/i);
+    });
+    test("a verified product is shown in both modes", () => {
+      fresh(); approveAll();
+      for (const mode of ["preview", "production"]) {
+        editJson(dir, SETTINGS, (s) => { s.launchMode = mode; });
+        assert.ok(npmBuild(dir).ok, mode);
+        assert.match(distHtml(dir, "shop/index.html"), /data-product-id="tombow-mono-permanent"/, mode);
+        assert.match(distHtml(dir, `journal/${SLUG}/index.html`), /tombow/i, mode);
+      }
+    });
+    test("tracking on: an unused provisional product does not fail production, a shown one still needs eligibility", () => {
+      fresh(); approveAll();
+      editJson(dir, SETTINGS, (s) => { s.launchMode = "production"; s.amazonTrackingEnabled = true; });
+      const r = npmBuild(dir);
+      assert.ok(r.ok, r.out);
+      editJson(dir, "src/content/products/tombow-mono-permanent.json", (p) => { p.listingChecked.affiliateLinkEligible = "unknown"; });
+      const bad = checkContentCli(dir);
+      assert.ok(!bad.ok); assert.match(bad.out, /tombow-mono-permanent.*affiliateLinkEligible/);
+    });
   });
   test("production passes once every shown product and picture is fully approved", () => {
     promoteProducts(dir);

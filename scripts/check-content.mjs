@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadContent } from "../src/lib/content-fs.mjs";
-import { resolveProduct, isShown, MARKER, imageUrl } from "../src/lib/catalog.mjs";
+import { resolveProduct, isShown, isResearch, productsReferencedBy, MARKER, imageUrl } from "../src/lib/catalog.mjs";
 import { affiliateSettingsProblems, trackingActive } from "../src/lib/affiliate.mjs";
 import { recordForFile, whyNotApproved, isApproved } from "../src/lib/images.mjs";
 import { verifiedGaps } from "../src/lib/schemas.mjs";
@@ -26,6 +26,8 @@ export function checkContent(root) {
   const c = loadContent(root);
   const errors = [...c.errors];
   const warnings = [];
+  const blocksProduction = []; // preview only: provisional products a published article uses
+  const ignoredInProduction = []; // preview only: research products no published article uses
   const mode = c.settings?.launchMode ?? "preview";
   // Unfinished rights or evidence: a loud warning in "preview", a build failure in "production".
   const unfinished = (msg) => (mode === "production" ? errors : warnings).push(msg);
@@ -59,17 +61,34 @@ export function checkContent(root) {
     else if (!isApproved(rec)) unfinished(`src/content/images.json, "${key}" (${rec.file}) is used by ${where} but is not approved: ${whyNotApproved(rec)}.`);
   };
 
+  // Which published articles use which product (replacement chains followed). Unused research products are ignored in production.
+  const publishedArticles = c.articles.filter((a) => a.data.status === "published").map((a) => ({ id: a.slug, title: a.data.title, picks: a.data.picks, body: a.body }));
+  const usedBy = productsReferencedBy(publishedArticles, byId);
+  const names = (list) => list.map((x) => `"${x.id}"`).join(", ");
+  let notShownInProduction = 0;
+
   for (const { file, data: p } of c.products) {
     if (p.replacedBy) {
       if (!byId.has(p.replacedBy)) errors.push(`${file}, field "replacedBy": "${p.replacedBy}" does not exist.`);
       else {
         const r = resolveProduct(byId, p.id, mode);
-        if (r.error) errors.push(`${file}, field "replacedBy": ${r.error}.`);
+        // in production a product nobody publishes is simply left out: only a circular chain still fails
+        if (r.error && (mode !== "production" || usedBy.has(p.id) || isShown(p, mode) || /circle/.test(r.error))) errors.push(`${file}, field "replacedBy": ${r.error}.`);
       }
     }
     for (const f of ["name", "brand", "statusReason", "bestUse", "whyWeLikeIt", "limitations", "descriptionOriginal", "suitability", "qualityNote"]) scan(file, f, p[f]);
     if (p.listingChecked) scan(file, "listingChecked.variant", p.listingChecked.variant);
-    if (p.status === "provisional" && p.editorialDecision === "approve") unfinished(`Product "${p.id}" (${file}) is only provisional, so it is not ready for the live launch: ${verifiedGaps(p).join("; ")}.`);
+    if (mode === "production" && isResearch(p) && !usedBy.has(p.id)) notShownInProduction++;
+    if (p.status === "provisional" && p.editorialDecision === "approve") {
+      const users = usedBy.get(p.id);
+      const gaps = verifiedGaps(p).join("; ");
+      if (users) {
+        const msg = `Product "${p.id}" (${file}) is only provisional but the published article ${names(users)} uses it, so it cannot go live. Missing: ${gaps}. Verify it or take it out of the article.`;
+        if (mode === "production") errors.push(msg); else blocksProduction.push(msg);
+      } else if (mode !== "production") {
+        ignoredInProduction.push(`Product "${p.id}" (${file}) is a research product no published article uses: ignored in production. Missing if you ever use it: ${gaps}.`);
+      }
+    }
     if (!isShown(p, mode)) continue;
     if (trackingActive(c.settings || {}) && p.listingChecked?.affiliateLinkEligible !== "yes") {
       errors.push(`${file}, field "listingChecked.affiliateLinkEligible": affiliate tracking is switched on but this shown product is not recorded as eligible for affiliate links ("${p.listingChecked?.affiliateLinkEligible || "empty"}"). Record the check, hold the product or switch tracking off.`);
@@ -119,6 +138,9 @@ export function checkContent(root) {
     for (const m of a.body.matchAll(MARKER)) refs.push([`body {{${m[1]}:${m[2]}}}`, m[2]]);
     for (const [field, id] of refs) {
       const r = resolveProduct(byId, id, mode);
+      // an unverified product used here is already reported once, with its missing evidence, in the product check above
+      const direct = byId.get(id);
+      if (mode === "production" && direct?.status === "provisional" && direct.editorialDecision === "approve" && !direct.replacedBy) continue;
       if (r.error) errors.push(`${file}, field "${field}": the product cannot be shown because ${r.error}.`);
     }
     for (const s of d.related || []) {
@@ -144,12 +166,13 @@ export function checkContent(root) {
     if (used.has(key)) needApproved(key, rec, [...new Set(used.get(key))].join(", "));
   }
 
-  return { errors, warnings, mode, content: c };
+  warnings.push(...blocksProduction, ...ignoredInProduction);
+  return { errors, warnings, blocksProduction, ignoredInProduction, notShownInProduction, mode, content: c };
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const root = path.resolve(process.argv[2] || fileURLToPath(new URL("..", import.meta.url)));
-  const { errors, warnings, mode, content } = checkContent(root);
+  const { errors, warnings, blocksProduction, ignoredInProduction, notShownInProduction, mode, content } = checkContent(root);
   if (errors.length) {
     console.error("\nCONTENT CHECK FAILED. Nothing was published. Please fix these:\n");
     for (const e of errors) console.error(`  - ${e}`);
@@ -157,10 +180,19 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     process.exit(1);
   }
   if (warnings.length) {
-    console.warn(`\nLAUNCH WARNING: launchMode is "preview", so this builds, but the site is NOT ready for the live launch.\nSwitch launchMode to "production" in src/content/settings.json only when these are fixed (production would fail the build on each):\n`);
-    for (const w of warnings) console.warn(`  ! ${w}`);
+    console.warn(`\nLAUNCH WARNING: launchMode is "preview", so this builds, but the site is NOT ready for the live launch.\nSwitch launchMode to "production" in src/content/settings.json only when the first list is fixed (production would fail the build on each item in it):\n`);
+    const other = warnings.filter((w) => !blocksProduction.includes(w) && !ignoredInProduction.includes(w));
+    if (blocksProduction.length || other.length) {
+      console.warn("Blocks production:");
+      for (const w of [...blocksProduction, ...other]) console.warn(`  ! ${w}`);
+    }
+    if (ignoredInProduction.length) {
+      console.warn("Research products no published article uses (ignored in production, no action needed):");
+      for (const w of ignoredInProduction) console.warn(`  - ${w}`);
+    }
     console.warn("");
   }
+  if (mode === "production" && notShownInProduction) console.log(`${notShownInProduction} research product(s) not shown in production.`);
   const pub = content.articles.filter((a) => a.data.status === "published").length;
-  console.log(`Content check passed: ${pub} published article(s), ${content.articles.length - pub} draft(s), ${content.products.filter((p) => isShown(p.data, mode)).length} shown product(s) of ${content.products.length}; launchMode ${mode}; ${warnings.length} launch warning(s).`);
+  console.log(`Content check passed: ${pub} published article(s), ${content.articles.length - pub} draft(s), ${content.products.filter((p) => isShown(p.data, mode)).length} shown product(s) of ${content.products.length}; launchMode ${mode}; ${warnings.length - ignoredInProduction.length} launch warning(s) that block production, ${ignoredInProduction.length} unused research product(s) ignored.`);
 }
