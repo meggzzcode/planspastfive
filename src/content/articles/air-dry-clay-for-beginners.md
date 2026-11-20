@@ -2,7 +2,8 @@
 title: "Air-Dry Clay for Beginners: Three Small Projects to Start With"
 description: "A friendly first-time guide to air-dry clay: what to look for in clay and paint, three small projects (ring dish, scalloped trinket dish, tray), drying times and fixes for cracks."
 dek: "No kiln, no wheel and no studio. Just a block of clay, a kitchen table and an evening, and by Sunday there is a small dish waiting on the windowsill."
-status: draft
+publishedAt: 2026-11-20
+status: published
 category: Creative Corner
 format: starter-guide
 featured: false

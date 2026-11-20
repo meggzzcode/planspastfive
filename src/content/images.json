@@ -20,26 +20,15 @@
       "name": "Canva AI",
       "url": "https://www.canva.com/M/MAHbXzI-Ijo"
     },
-    "licenceName": "Canva AI Product Terms",
+    "licenceName": "Canva AI Product Terms / Terms of Use",
     "licenceUrl": "https://www.canva.com/policies/ai-product-terms/",
-    "notes": "Transfer to a buyer is not stated by Canva (see docs/RISKS.md). Licence check date not recorded.",
-    "commercialUse": "unverified",
+    "notes": "Generated earlier with Canva AI (link in source). Owner read Canva's AI Product Terms and Terms of Use on 2026-11-20 and confirmed use. Transfer to a buyer is not stated by Canva, so transferWithSite stays unverified. Conceptual illustration, not a real person or a thing we made.",
+    "commercialUse": "yes",
     "transferWithSite": "unverified",
     "attribution": "none",
-    "rightsStatus": "pending"
-  },
-  "weekend-picnic": {
-    "file": "weekend-picnic.jpg",
-    "alt": "Two friends chatting on a red gingham picnic blanket in dappled sunlight, with sunflowers, strawberries, a baguette and a film camera beside them.",
-    "kind": "ai-illustration",
-    "source": {
-      "name": "Lovable AI image tool (generated for the earlier Plans Past Five project)"
-    },
-    "notes": "AI-generated. No exclusivity or registrable copyright promised. Commercial-use and transfer terms not independently verified (see docs/RISKS.md).",
-    "commercialUse": "unverified",
-    "transferWithSite": "unverified",
-    "attribution": "none",
-    "rightsStatus": "pending"
+    "rightsStatus": "approved",
+    "licenceCheckedOn": "2026-11-20",
+    "approvedOn": "2026-11-20"
   },
   "junk-journal-flatlay": {
     "file": "junk-journal-flatlay.jpg",
@@ -52,97 +41,6 @@
     "commercialUse": "unverified",
     "transferWithSite": "unverified",
     "attribution": "none",
-    "rightsStatus": "pending"
-  },
-  "junk-journal-envelopes-hero": {
-    "file": "junk-journal-envelopes-hero.jpg",
-    "alt": "Vintage postcards and envelopes tied with twine, with a red dip pen, old stamps and postmarks, laid flat on more old handwritten postcards.",
-    "kind": "photograph",
-    "credit": "Ylanite Koppens",
-    "source": {
-      "name": "Pexels",
-      "url": "https://www.pexels.com/photo/letter-envelopes-1906606/"
-    },
-    "licenceName": "Pexels License",
-    "licenceUrl": "https://www.pexels.com/license/",
-    "licenceCheckedOn": "2026-11-20",
-    "notes": "Pexels licence page read 2026-11-20: free to use online incl. website/e-commerce shop/template you sell; modification allowed; attribution not required; no irrevocable or perpetual wording and nothing about selling or transferring a website with the images (transferWithSite stays unverified). Not allowed: identifiable people in a bad light, implying endorsement by people or brands shown, use as trade-mark/business name, reselling unaltered copies. Pexels photo 1906606, title 'Letter Envelopes', profile https://www.pexels.com/@nietjuhart, taken 2019-01-10. Shoebox Post hero. Old postmarks, stamps and 1910s handwriting are readable (publisher names Ern. Thill / Bromolux, Bruxelles; addressee names in cursive): historic ephemera, no modern brand, but owner should confirm comfortable with it. Used as the Shoebox Post photo in Junk Journal Supplies. The photo is free for anyone on Pexels: we do not claim it is exclusive to us. Owner approved in chat 2026-11-20 (approval in principle for Pexels photos whose licence evidence is recorded).",
-    "commercialUse": "yes",
-    "transferWithSite": "unverified",
-    "attribution": "none required (Pexels licence: credit optional); photographer recorded in credit",
-    "rightsStatus": "approved",
-    "approvedOn": "2026-11-20"
-  },
-  "scrapbook-vintage-papers-pink": {
-    "file": "scrapbook-vintage-papers-pink.jpg",
-    "alt": "Overhead view of vintage printed papers, a butterfly illustration, a blank hardback journal and a wooden alphabet stamp set on soft dusty-pink faux fur.",
-    "kind": "photograph",
-    "credit": "melanfolia меланфолія",
-    "source": {
-      "name": "Pexels",
-      "url": "https://www.pexels.com/photo/an-aesthetic-flat-lay-with-journaling-or-scrapbooking-materials-papers-and-junk-18277854/"
-    },
-    "licenceName": "Pexels License",
-    "licenceUrl": "https://www.pexels.com/license/",
-    "licenceCheckedOn": "2026-11-20",
-    "notes": "Pexels licence page read 2026-11-20: free to use online incl. website/e-commerce shop/template you sell; modification allowed; attribution not required; no irrevocable or perpetual wording and nothing about selling or transferring a website with the images (transferWithSite stays unverified). Not allowed: identifiable people in a bad light, implying endorsement by people or brands shown, use as trade-mark/business name, reselling unaltered copies. Pexels photo 18277854, profile https://www.pexels.com/@melanfolia/, 2023-09-06. Tea Rose / Pinterest 2:3. Contains reproduced old print and notes (old engravings, 'The Story of the Heavens'); generic stamp set, no brand seen. Awaiting owner approval (set rightsStatus approved and approvedOn).",
-    "commercialUse": "yes",
-    "transferWithSite": "unverified",
-    "attribution": "none required (Pexels licence: credit optional); photographer recorded in credit",
-    "rightsStatus": "pending"
-  },
-  "pressed-flowers-taped": {
-    "file": "pressed-flowers-taped.jpg",
-    "alt": "Soft-focus close-up of small dried flower sprigs held down with strips of clear tape on a pale cream surface.",
-    "kind": "photograph",
-    "credit": "Andreea Ch",
-    "source": {
-      "name": "Pexels",
-      "url": "https://www.pexels.com/photo/dried-flowers-1261182/"
-    },
-    "licenceName": "Pexels License",
-    "licenceUrl": "https://www.pexels.com/license/",
-    "licenceCheckedOn": "2026-11-20",
-    "notes": "Pexels licence page read 2026-11-20: free to use online incl. website/e-commerce shop/template you sell; modification allowed; attribution not required; no irrevocable or perpetual wording and nothing about selling or transferring a website with the images (transferWithSite stays unverified). Not allowed: identifiable people in a bad light, implying endorsement by people or brands shown, use as trade-mark/business name, reselling unaltered copies. Pexels photo 1261182, title 'Dried Flowers', profile https://www.pexels.com/@andreea-ch-371539/, 2018-07-23. Garden Press supporting image; no text, brands or people. Awaiting owner approval (set rightsStatus approved and approvedOn).",
-    "commercialUse": "yes",
-    "transferWithSite": "unverified",
-    "attribution": "none required (Pexels licence: credit optional); photographer recorded in credit",
-    "rightsStatus": "pending"
-  },
-  "pink-flowers-open-notebook": {
-    "file": "pink-flowers-open-notebook.jpg",
-    "alt": "Pink and white lisianthus flowers lying across a blank open notebook on a white table, with a grey pen beside it.",
-    "kind": "photograph",
-    "credit": "Hanna Pad",
-    "source": {
-      "name": "Pexels",
-      "url": "https://www.pexels.com/photo/pink-and-white-flowers-on-white-wooden-table-8534381/"
-    },
-    "licenceName": "Pexels License",
-    "licenceUrl": "https://www.pexels.com/license/",
-    "licenceCheckedOn": "2026-11-20",
-    "notes": "Pexels licence page read 2026-11-20: free to use online incl. website/e-commerce shop/template you sell; modification allowed; attribution not required; no irrevocable or perpetual wording and nothing about selling or transferring a website with the images (transferWithSite stays unverified). Not allowed: identifiable people in a bad light, implying endorsement by people or brands shown, use as trade-mark/business name, reselling unaltered copies. Pexels photo 8534381, title 'Pink and White Flowers on White Wooden Table', page profile link https://www.pexels.com/@anna-nekrashevich (page credits Hanna Pad; confirm), 2021-06-28. Tea Rose / Pinterest 2:3. Only text is a tiny recycling mark on the pen clip; no brand. Awaiting owner approval (set rightsStatus approved and approvedOn).",
-    "commercialUse": "yes",
-    "transferWithSite": "unverified",
-    "attribution": "none required (Pexels licence: credit optional); photographer recorded in credit",
-    "rightsStatus": "pending"
-  },
-  "washi-tapes-blue-paper": {
-    "file": "washi-tapes-blue-paper.jpg",
-    "alt": "Overhead view of a stack of four slim washi tape rolls in grey, brown, green and slate beside a deep blue and a pale card, with a hard shadow.",
-    "kind": "photograph",
-    "credit": "PNW Production",
-    "source": {
-      "name": "Pexels",
-      "url": "https://www.pexels.com/photo/overhead-shot-of-washi-tapes-near-a-notebook-8250948/"
-    },
-    "licenceName": "Pexels License",
-    "licenceUrl": "https://www.pexels.com/license/",
-    "licenceCheckedOn": "2026-11-20",
-    "notes": "Pexels licence page read 2026-11-20: free to use online incl. website/e-commerce shop/template you sell; modification allowed; attribution not required; no irrevocable or perpetual wording and nothing about selling or transferring a website with the images (transferWithSite stays unverified). Not allowed: identifiable people in a bad light, implying endorsement by people or brands shown, use as trade-mark/business name, reselling unaltered copies. Pexels photo 8250948, profile https://www.pexels.com/@pnw-prod/, 2021-06-07. Sunday Blue fallback only; palette is muted, not a bright blue. Tiny text on a tape core is illegible. Awaiting owner approval (set rightsStatus approved and approvedOn).",
-    "commercialUse": "yes",
-    "transferWithSite": "unverified",
-    "attribution": "none required (Pexels licence: credit optional); photographer recorded in credit",
     "rightsStatus": "pending"
   },
   "pressed-flowers-vintage-book": {
@@ -163,24 +61,6 @@
     "attribution": "none required (Pexels licence: credit optional); photographer recorded in credit",
     "rightsStatus": "approved",
     "approvedOn": "2026-11-20"
-  },
-  "scissors-botanical-print-pink": {
-    "file": "scissors-botanical-print-pink.jpg",
-    "alt": "Vintage scissors lying on an old botanical plate of a yellow-flowered flax plant, beside a collaged journal, on dusty-pink faux fur.",
-    "kind": "photograph",
-    "credit": "melanfolia меланфолія",
-    "source": {
-      "name": "Pexels",
-      "url": "https://www.pexels.com/photo/an-aesthetic-flat-lay-with-journaling-or-scrapbooking-materials-papers-and-junk-18277842/"
-    },
-    "licenceName": "Pexels License",
-    "licenceUrl": "https://www.pexels.com/license/",
-    "licenceCheckedOn": "2026-11-20",
-    "notes": "Pexels licence page read 2026-11-20: free to use online incl. website/e-commerce shop/template you sell; modification allowed; attribution not required; no irrevocable or perpetual wording and nothing about selling or transferring a website with the images (transferWithSite stays unverified). Not allowed: identifiable people in a bad light, implying endorsement by people or brands shown, use as trade-mark/business name, reselling unaltered copies. Pexels photo 18277842, title 'Vintage scissors on botanical scrapbook paper' (research title), profile https://www.pexels.com/@melanfolia/, 2023-09-06. Tea Rose / junk-journal supplies inline. Reproduced antique print text readable; no brand. Awaiting owner approval (set rightsStatus approved and approvedOn).",
-    "commercialUse": "yes",
-    "transferWithSite": "unverified",
-    "attribution": "none required (Pexels licence: credit optional); photographer recorded in credit",
-    "rightsStatus": "pending"
   },
   "pink-stationery-flat-lay": {
     "file": "pink-stationery-flat-lay.jpg",
@@ -277,44 +157,6 @@
     "rightsStatus": "approved",
     "approvedOn": "2026-11-20"
   },
-  "american-mahjong-table-tiles-and-racks": {
-    "file": "american-mahjong-table-tiles-and-racks.jpg",
-    "alt": "A hand holding a mahjong tile over a table of scattered tiles, with tile racks, walls of tiles and a green playing mat printed with Charleston instructions, set for American mahjong.",
-    "kind": "photograph",
-    "credit": "Mahoney Fotos",
-    "source": {
-      "name": "Pexels",
-      "url": "https://www.pexels.com/photo/mahjong-game-night-on-peacock-design-table-30574324/"
-    },
-    "licenceName": "Pexels License",
-    "licenceUrl": "https://www.pexels.com/license/",
-    "licenceCheckedOn": "2026-11-20",
-    "notes": "Pexels licence page read 2026-11-20: free to use online incl. website/e-commerce shop/template you sell; modification allowed; attribution not required; no irrevocable or perpetual wording and nothing about selling or transferring a website with the images (transferWithSite stays unverified). Not allowed: identifiable people in a bad light, implying endorsement by people or brands shown, use as trade-mark/business name, reselling unaltered copies. The photo is free for anyone on Pexels: we do not claim it is exclusive to us. Pexels photo 30574324, title 'Mahjong Game Night on Peacock Design Table' (page description: playful evening of Mahjong with friends), profile https://www.pexels.com/@mahoneyfotos/, dated 2025-02-05, 4000x6000 original; cropped to 4:3 (2000x1500) around the tiles and hand, EXIF stripped. Unmistakably American mahjong: racks, jokers-era tile set, 'Charleston' mat instructions, and a card on the table. Viewed 2026-11-20: one hand and a sleeve, no face. The mat and tiles are a designer set with a decorative peacock design; generic instruction text ('Charleston', 'Play right', 'Walls left') is readable, no brand name is legible in the crop. The original photo also shows a phone, a glass with a faint logo and an American mahjong card (all cropped out or illegible). Mahjong hero and home hero. Owner approved in chat 2026-11-20 (approval in principle for Pexels photos whose licence evidence is recorded).",
-    "commercialUse": "yes",
-    "transferWithSite": "unverified",
-    "attribution": "none required (Pexels licence: credit optional); photographer recorded in credit",
-    "rightsStatus": "approved",
-    "approvedOn": "2026-11-20"
-  },
-  "hobby-flat-lay-embroidery-dried-flowers": {
-    "file": "hobby-flat-lay-embroidery-dried-flowers.jpg",
-    "alt": "Overhead flat lay of hobby supplies on a rust-brown table: a cross-stitched owl in a twig wreath, gold embroidery scissors, a spool of thread, green ribbon, beads, a wooden alphabet stamp set and dried hydrangeas and heather.",
-    "kind": "photograph",
-    "credit": "Olga Kalinina",
-    "source": {
-      "name": "Pexels",
-      "url": "https://www.pexels.com/photo/table-with-dry-flowers-embroidery-and-scissors-10599100/"
-    },
-    "licenceName": "Pexels License",
-    "licenceUrl": "https://www.pexels.com/license/",
-    "licenceCheckedOn": "2026-11-20",
-    "notes": "Pexels licence page read 2026-11-20: free to use online incl. website/e-commerce shop/template you sell; modification allowed; attribution not required; no irrevocable or perpetual wording and nothing about selling or transferring a website with the images (transferWithSite stays unverified). Not allowed: identifiable people in a bad light, implying endorsement by people or brands shown, use as trade-mark/business name, reselling unaltered copies. The photo is free for anyone on Pexels: we do not claim it is exclusive to us. Pexels photo 10599100, title 'Table with Dry Flowers Embroidery and Scissors', profile https://www.pexels.com/@olgakalinina/, dated 2021-12-20, 3016x4032 original; cropped to 4:3 (2000x1500) below the top edge, EXIF stripped. Hobby-discovery hero for 'Hobbies for Busy Women': embroidery, beading, stamping, pressed flowers in one picture. Viewed 2026-11-20: no people. The original shows a candle label ('Lemon Verbena') at the top edge, which is cropped out; the stamp letters are generic. Owner approved in chat 2026-11-20 (approval in principle for Pexels photos whose licence evidence is recorded).",
-    "commercialUse": "yes",
-    "transferWithSite": "unverified",
-    "attribution": "none required (Pexels licence: credit optional); photographer recorded in credit",
-    "rightsStatus": "approved",
-    "approvedOn": "2026-11-20"
-  },
   "junk-journal-shoebox-post": {
     "file": "junk-journal-shoebox-post.jpg",
     "alt": "Illustration of an open handmade junk journal with tan pages layered with an airmail-style envelope, torn aged papers, a kraft envelope, twine and washi tape, on a wooden table.",
@@ -352,5 +194,18 @@
     "notes": "Generated 2026-11-20 with Canva AI (text-to-image). Prompt: Small white air-dry clay ring dish with a cherry-red painted rim and a gold ring in it, on linen. Premium lifestyle photograph, soft natural window light, warm cream, butter-yellow and cherry-red accents, shallow depth of field, realistic materials, no text or letters, no logos or brand names, no people or faces, physically plausible. Exported 2000 px, cropped to 3:2. Conceptual illustration of the ring-dish project, not a dish we made. Owner to read Canva's terms once, then approve. Owner read Canva's AI Product Terms and Terms of Use on 2026-11-20 and confirmed use (owner statement in chat). transferWithSite left unverified: Canva's terms say nothing explicit about transferring a site with the images.",
     "licenceCheckedOn": "2026-11-20",
     "approvedOn": "2026-11-20"
+  },
+  "weekend-picnic": {
+    "file": "weekend-picnic.jpg",
+    "alt": "Two friends chatting on a red gingham picnic blanket in dappled sunlight, with sunflowers, strawberries, a baguette and a film camera beside them.",
+    "kind": "ai-illustration",
+    "source": {
+      "name": "Lovable AI image tool (generated for the earlier Plans Past Five project)"
+    },
+    "notes": "AI-generated. No exclusivity or registrable copyright promised. Commercial-use and transfer terms not independently verified (see docs/RISKS.md).",
+    "commercialUse": "unverified",
+    "transferWithSite": "unverified",
+    "attribution": "none",
+    "rightsStatus": "pending"
   }
 }

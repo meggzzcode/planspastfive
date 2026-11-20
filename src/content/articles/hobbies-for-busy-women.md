@@ -2,13 +2,14 @@
 title: "Hobbies for Busy Women: Pick One by Energy, Budget and Company"
 description: "Twelve hobbies for a busy week, sorted by how much energy you have left after work, what you want to spend and whether you want company."
 dek: "Twelve hobbies, sorted by what is left in the tank at 6 p.m. Find your kind of evening, read the first step, ignore everything else until you want it."
-status: draft
+publishedAt: 2026-11-20
+status: published
 category: Creative Corner
 format: discovery
 featured: false
 hero:
-  image: /images/hobby-flat-lay-embroidery-dried-flowers.jpg
-  alt: "Overhead flat lay of hobby supplies on a rust-brown table: a cross-stitched owl in a twig wreath, gold embroidery scissors, a spool of thread, green ribbon, beads, a wooden alphabet stamp set and dried hydrangeas and heather."
+  image: /images/cozy-corner.jpg
+  alt: "Illustration of a woman in wool socks and tartan pyjamas relaxing on a green sofa with a cup of tea and a book, a jigsaw puzzle laid out on a gingham-covered table beside her."
 picks: []
 related: []
 ---

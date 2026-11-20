@@ -2,7 +2,8 @@
 title: "Junk Journal Supplies for Beginners: A Small, Pretty Starter List"
 description: "What to buy for your first junk journal: a thick book, dry adhesive, a black pen and tape, dressed in one of three looks, plus a seven-step first spread."
 dek: "A thick book, a runner of dry adhesive, a black pen and a roll of tape, dressed in a mood you love. Choose your look, gather the four basics and make a first page tonight."
-status: draft
+publishedAt: 2026-11-20
+status: published
 category: Creative Corner
 format: shopping-edit
 featured: false

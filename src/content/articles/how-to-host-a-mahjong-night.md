@@ -2,7 +2,8 @@
 title: "How to Host a Mahjong Night (American Mahjong, for Four)"
 description: "How to host an American mahjong night for four: a realistic timeline, table setup, a gentle teaching flow, snack ideas and what to borrow or buy."
 dek: "A table set for four, a lamp on, something good to eat within reach. Here is how to plan an evening of American mahjong that people ask to repeat."
-status: draft
+publishedAt: 2026-11-20
+status: published
 category: Better Together
 format: experience-guide
 featured: false

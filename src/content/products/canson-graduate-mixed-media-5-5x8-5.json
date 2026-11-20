@@ -3,7 +3,7 @@
   "name": "Graduate Mixed Media Art Book, Hardcover, 5.5 x 8.5 in",
   "brand": "Canson",
   "asin": "B0CN7B82NG",
-  "status": "provisional",
+  "status": "verified",
   "editorialDecision": "approve",
   "order": 10,
   "collection": "paper",
@@ -12,18 +12,17 @@
   "cta": "See It on Amazon",
   "descriptionOriginal": "A small hardcover art book of heavy mixed media paper, in a handbag-friendly 5.5 x 8.5 inch size.",
   "whyWeLikeIt": "Heavy 200 g/m2 mixed media paper and a hard cover hold up to layered paper and adhesive better than a thin notebook, in a size that is easy to finish.",
-  "limitations": "The pages are white, so a sparse spread looks plain until you add paper, and with about 36 sheets a keen collager will fill it quickly.",
+  "limitations": "The pages are white, so a sparse spread looks plain until you add paper, and with 36 sheets a keen collager will fill it quickly.",
   "qualityNote": "Not yet recorded.",
   "listingChecked": {
     "checkedOn": "2026-11-20",
-    "variant": "Hardcover, 5.5 x 8.5 in, 36 sheets (about 72 pages), 200 gsm",
+    "variant": "5.5 x 8.5 in, 36 sheets, 123 lb / 200 gsm, black hardcover with ribbon bookmark, elastic band and inner pocket",
     "listingAvailable": "yes",
     "sellerType": "amazon",
-    "affiliateLinkEligible": "unknown"
+    "affiliateLinkEligible": "yes"
   },
-  "specsEvidence": "Cowork final check 2026-11-20: Amazon listing sold by Amazon.com, in stock, Add to Cart present, hardcover 5.5 x 8.5 in, 36 sheets (about 72 pages), 200 gsm, white paper. Retailer pages (Staples, Kaartist) list the 5.5 x 8.5 hard cover book as 36 sheets of 200 gsm (123 lb) mixed media paper; Utrecht lists 32 sheets, so the count is stated only as the Amazon listing says. No Canson maker page read yet.",
+  "specsEvidence": "Amazon listing read by Cowork 2026-11-20: sold by Amazon.com, in stock, Add to Cart on the new item; title 36 sheets, 123 lb / 200 gsm, 5.5 x 8.5 in; bullets say black hardcover with ribbon bookmark, elastic band and inner pocket. The listing does not state paper colour or a page count. Canson maker page https://us.canson.com/graduate-mixed-media-white-book (read by Cowork 2026-11-20): 200 gsm, 72 pages / 36 sheets, light grain, acid-free, white paper, elastic band; it says recycled fibre cover and does not state the size, so we rely on the Amazon bullets for hardcover and size and on Canson for white paper. Not claimed: toned paper.",
   "suitability": "A beginner who wants a small, sturdy book with heavy paper for layering collage and adhesive.",
   "imageStatus": "none",
-  "statusReason": "Provisional: replaces Strathmore (delayed). Needs Cowork Link Checker on the tagged address and a Canson maker page or confirmed listing details before it can be verified.",
-  "verificationSource": "Cowork, 2026-11-20 (final Amazon check, branch cowork/final-check): listing sold by Amazon.com, in stock, Add to Cart present. Associates Link Checker not yet run for this item."
+  "verificationSource": "Cowork, 2026-11-20 (final Amazon check, branch cowork/final-check, commit 48e474c): listing sold by Amazon.com, in stock, Add to Cart present. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID' for the product's tagged address (owner's account). That validates the tag only; real commission is confirmed only in Associates reports."
 }
