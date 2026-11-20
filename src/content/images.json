@@ -4,13 +4,19 @@
     "alt": "Four friends laughing around a low table, threading bead bracelets beside a mahjong game, with a bowl of strawberries and fairy lights behind them.",
     "kind": "ai-illustration",
     "source": {
-      "name": "Lovable AI image tool (generated for the earlier Plans Past Five project)"
+      "name": "Lovable AI image tool",
+      "url": "https://lovable.dev"
     },
-    "notes": "AI-generated. No exclusivity or registrable copyright promised. Commercial-use and transfer terms not independently verified (see docs/RISKS.md).",
-    "commercialUse": "unverified",
+    "notes": "AI-generated with Lovable's image tool for the earlier Plans Past Five project. Owner reviewed Lovable's terms on 2026-11-20 and confirmed commercial use (owner statement in chat). No exclusivity or registrable copyright promised. transferWithSite stays unverified. Conceptual illustration: not real people, not a product photo, not a thing we made.",
+    "commercialUse": "yes",
     "transferWithSite": "unverified",
     "attribution": "none",
-    "rightsStatus": "pending"
+    "rightsStatus": "approved",
+    "licenceName": "Lovable Terms of Service",
+    "licenceUrl": "https://lovable.dev/terms",
+    "licenceCheckedOn": "2026-11-20",
+    "approvedOn": "2026-11-20",
+    "credit": "Generated with Lovable AI"
   },
   "cozy-corner": {
     "file": "cozy-corner.jpg",
@@ -200,12 +206,18 @@
     "alt": "Two friends chatting on a red gingham picnic blanket in dappled sunlight, with sunflowers, strawberries, a baguette and a film camera beside them.",
     "kind": "ai-illustration",
     "source": {
-      "name": "Lovable AI image tool (generated for the earlier Plans Past Five project)"
+      "name": "Lovable AI image tool",
+      "url": "https://lovable.dev"
     },
-    "notes": "AI-generated. No exclusivity or registrable copyright promised. Commercial-use and transfer terms not independently verified (see docs/RISKS.md).",
-    "commercialUse": "unverified",
+    "notes": "AI-generated with Lovable's image tool for the earlier Plans Past Five project. Owner reviewed Lovable's terms on 2026-11-20 and confirmed commercial use (owner statement in chat). No exclusivity or registrable copyright promised. transferWithSite stays unverified. Conceptual illustration: not real people, not a product photo, not a thing we made.",
+    "commercialUse": "yes",
     "transferWithSite": "unverified",
     "attribution": "none",
-    "rightsStatus": "pending"
+    "rightsStatus": "approved",
+    "licenceName": "Lovable Terms of Service",
+    "licenceUrl": "https://lovable.dev/terms",
+    "licenceCheckedOn": "2026-11-20",
+    "approvedOn": "2026-11-20",
+    "credit": "Generated with Lovable AI"
   }
 }
