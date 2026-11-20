@@ -10,7 +10,7 @@ hero:
   image: /images/junk-journal-spread-leaves-collage.jpg
   alt: "Overhead view of a hand-bound junk journal open on dusty-pink faux fur, its pages layered with a pressed leaf, a fern card, torn paper, grey washi tape and old printed papers."
 picks:
-  - strathmore-400-toned-tan-art-journal-5-5x8-5
+  - canson-graduate-mixed-media-5-5x8-5
   - tombow-mono-permanent
   - staedtler-pigment-liner-black-8
   - scotch-expressions-washi-abstract-modern-8
@@ -29,7 +29,7 @@ That is a junk journal, and it takes four things to begin: a sturdy book, someth
 
 These three looks are inspiration, not three shopping lists. All of them start from the same basket of essentials below, so you can pick a mood now and change your mind later. A book that sticks to one palette looks designed, even when it is chaos underneath.
 
-**Shoebox Post.** Warm and well travelled, like a postal archive. A tan book, black ink, aged paper pieces.
+**Shoebox Post.** Warm and well travelled, like a postal archive. Kraft and cream papers, black ink, aged paper pieces.
 - *Collect:* airmail envelopes, postmarks, boarding passes, the receipt from a very good lunch.
 - *Add:* the optional Tim Holtz snippets below suit this look best.
 
@@ -53,9 +53,9 @@ One basket, whichever look you choose: a heavy-paper book, dry adhesive, a pigme
 
 ### 1. A book that can take glue
 
-Layered paper and adhesive make a page swell, and a thin writing notebook ripples like a crisp packet. You want heavy paper, a binding that lies open and, ideally, a toned page.
+Layered paper and adhesive make a page swell, and a thin writing notebook ripples like a crisp packet. You want heavy paper, a binding that lies open and, ideally, a hard cover. A little colour on the page helps too: you can add it with paper.
 
-{{pick:strathmore-400-toned-tan-art-journal-5-5x8-5}}
+{{pick:canson-graduate-mixed-media-5-5x8-5}}
 
 The tan page does half the styling for you: one envelope and a line of ink already look like a spread. Fill it from the front and let the spine fatten slowly.
 

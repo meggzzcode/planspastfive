@@ -3,8 +3,8 @@
   "name": "400 Series Hardbound Toned Mixed Media Art Journal, Tan, 8.5 x 5.5 in (469-305)",
   "brand": "Strathmore",
   "asin": "B0767X3D34",
-  "status": "provisional",
-  "editorialDecision": "approve",
+  "status": "held",
+  "editorialDecision": "hold",
   "order": 10,
   "collection": "paper",
   "bestUse": "Best for layered collage pages",
@@ -24,6 +24,6 @@
   "suitability": "A small, toned, sewn-bound heavy-paper book for layering collage and adhesive in a first junk journal.",
   "imageStatus": "none",
   "verificationSource": "Cowork, 2026-11-20 (see statusReason). Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID' for the product's tagged address (Cowork, owner's account, 2026-11-20). That validates the tag only; real commission is confirmed only in Associates reports.",
-  "statusReason": "Provisional: Cowork 2026-11-20: sold by Amazon itself, Add to Cart present, Link Checker success, but no 'In Stock' line and the Tan style shows a mid-to-late December delivery estimate (Gray shows next-day). Re-check before launch; if still delayed, swap or hold.",
+  "statusReason": "Held 2026-11-20: Tan style shows a Dec 14 to 27 delivery estimate and no In Stock line (Cowork final check). Replaced in the guide by the Canson Graduate Mixed Media book. Record kept; re-check after Dec 27 if wanted.",
   "shopTier": "start"
 }
