@@ -42,3 +42,8 @@ All four are long drafts with embedded briefs, written for the old site; none ha
 
 ## Owner actions needed (short list)
 Make the repository private and re-check Netlify; run the real test (after 2026-12-16 if credits matter); inspect and approve the Pexels photos; confirm Associates status and say when to launch tracking.
+
+## Owner confirmations, 2026-11-20
+- American mahjong rules in the article: owner confirmed they are good (the separate expert-player review request remains optional).
+- Canva AI terms read by the owner; the two Canva images are recorded as approved (transfer-with-site still unverified).
+- GitHub repository is intentionally public for now (owner decision); it contains no secrets. Revisit before any buyer handover.

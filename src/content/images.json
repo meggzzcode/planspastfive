@@ -326,11 +326,13 @@
     },
     "licenceName": "Canva AI Product Terms / Terms of Use",
     "licenceUrl": "https://www.canva.com/policies/ai-product-terms/",
-    "commercialUse": "unverified",
+    "commercialUse": "yes",
     "transferWithSite": "unverified",
     "attribution": "none",
-    "rightsStatus": "pending",
-    "notes": "Generated 2026-11-20 with Canva AI (Canva connector, text-to-image). Prompt: Premium lifestyle photograph, overhead, of a handmade junk journal open to a Shoebox Post spread: tan kraft pages layered with airmail-style envelopes, torn aged paper, black ink handwriting lines, a strip of washi tape, twine, soft warm window light, shallow natural shadows, realistic, no readable text, no logos, no people. Exported at 2000 px and cropped to 3:2. Conceptual illustration only: not a product photo and not a project we made or tested. Owner to read Canva's terms once, then set commercialUse yes, licenceCheckedOn, approvedOn and rightsStatus approved."
+    "rightsStatus": "approved",
+    "notes": "Generated 2026-11-20 with Canva AI (Canva connector, text-to-image). Prompt: Premium lifestyle photograph, overhead, of a handmade junk journal open to a Shoebox Post spread: tan kraft pages layered with airmail-style envelopes, torn aged paper, black ink handwriting lines, a strip of washi tape, twine, soft warm window light, shallow natural shadows, realistic, no readable text, no logos, no people. Exported at 2000 px and cropped to 3:2. Conceptual illustration only: not a product photo and not a project we made or tested. Owner to read Canva's terms once, then set commercialUse yes, licenceCheckedOn, approvedOn and rightsStatus approved. Owner read Canva's AI Product Terms and Terms of Use on 2026-11-20 and confirmed use (owner statement in chat). transferWithSite left unverified: Canva's terms say nothing explicit about transferring a site with the images.",
+    "licenceCheckedOn": "2026-11-20",
+    "approvedOn": "2026-11-20"
   },
   "clay-cherry-dish": {
     "file": "clay-cherry-dish.jpg",
@@ -343,10 +345,12 @@
     },
     "licenceName": "Canva AI Product Terms / Terms of Use",
     "licenceUrl": "https://www.canva.com/policies/ai-product-terms/",
-    "commercialUse": "unverified",
+    "commercialUse": "yes",
     "transferWithSite": "unverified",
     "attribution": "none",
-    "rightsStatus": "pending",
-    "notes": "Generated 2026-11-20 with Canva AI (text-to-image). Prompt: Small white air-dry clay ring dish with a cherry-red painted rim and a gold ring in it, on linen. Premium lifestyle photograph, soft natural window light, warm cream, butter-yellow and cherry-red accents, shallow depth of field, realistic materials, no text or letters, no logos or brand names, no people or faces, physically plausible. Exported 2000 px, cropped to 3:2. Conceptual illustration of the ring-dish project, not a dish we made. Owner to read Canva's terms once, then approve."
+    "rightsStatus": "approved",
+    "notes": "Generated 2026-11-20 with Canva AI (text-to-image). Prompt: Small white air-dry clay ring dish with a cherry-red painted rim and a gold ring in it, on linen. Premium lifestyle photograph, soft natural window light, warm cream, butter-yellow and cherry-red accents, shallow depth of field, realistic materials, no text or letters, no logos or brand names, no people or faces, physically plausible. Exported 2000 px, cropped to 3:2. Conceptual illustration of the ring-dish project, not a dish we made. Owner to read Canva's terms once, then approve. Owner read Canva's AI Product Terms and Terms of Use on 2026-11-20 and confirmed use (owner statement in chat). transferWithSite left unverified: Canva's terms say nothing explicit about transferring a site with the images.",
+    "licenceCheckedOn": "2026-11-20",
+    "approvedOn": "2026-11-20"
   }
 }
