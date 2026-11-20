@@ -71,7 +71,7 @@ Write your captions last, once everything is stuck down, so the words fit the ga
 
 {{pick:scotch-expressions-washi-abstract-modern-8}}
 
-Lay one strip across a corner or along an edge, then stop and step back. One roll goes a long way.
+Press it down from one end, smoothing as you go, and pick the shade that answers the colour of your envelope or ticket.
 
 Last, a small pair of scissors for trimming tape ends and cutting out pieces.
 
