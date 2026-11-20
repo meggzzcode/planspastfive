@@ -1,7 +1,7 @@
 ---
 import Prose from "../layouts/Prose.astro";
 import { settings, images, siteImage } from "../lib/site.mjs";
-const pic = siteImage("weekend-picnic");
+const pic = siteImage("clay-ring-dish-painted-blossoms");
 const aiInUse = Object.values(images).some((r) => r.kind === "ai-illustration");
 ---
 <Prose title="Making a life, not just a living." eyebrow="About" description={`${settings.siteName} is an independent lifestyle journal for the hours after work: small hobbies, easy plans and a short, honest shopping list.`} path="/about/" image={pic.src}

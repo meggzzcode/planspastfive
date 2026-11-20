@@ -6,11 +6,9 @@ status: draft
 category: Creative Corner
 format: shopping-edit
 featured: false
-# HERO NEEDS REPLACING before publishing: interim AI image (also used on the published first-spread article).
-# Replace with an original overhead photo of a real half-built spread, or a newly cleared image. Do not edit images.json.
 hero:
-  image: /images/junk-journal-flatlay.jpg
-  alt: "An open junk journal on a butter-yellow cloth, its pages layered with pressed flowers, old tickets, photographs and red gingham tape, beside a cherry-print mug and two fine-liner pens."
+  image: /images/junk-journal-spread-leaves-collage.jpg
+  alt: "Overhead view of a hand-bound junk journal open on dusty-pink faux fur, its pages layered with a pressed leaf, a fern card, torn paper, grey washi tape and old printed papers."
 picks:
   - strathmore-400-toned-tan-art-journal-5-5x8-5
   - tombow-mono-permanent
@@ -35,13 +33,19 @@ A book that sticks to one palette looks designed, even when it is chaos undernea
 - *Collect:* airmail envelopes, postmarks, boarding passes, the receipt from a very good lunch.
 - *Buy:* the tan journal, the black pens and the Tim Holtz snippets below.
 
+<figure class="prose__figure"><img src="/images/junk-journal-envelopes-hero.jpg" alt="Vintage postcards and envelopes tied with twine, with a red dip pen, old stamps and postmarks, laid flat on more old handwritten postcards." loading="lazy" decoding="async" width="2000" height="1333"><figcaption>Photo: Ylanite Koppens</figcaption></figure>
+
 **Garden Press.** A pressed-flower book. Cream and tan pages, a lot of green and a little sunshine.
 - *Collect:* seed packets, plant tags, catalogue pages, a pressed leaf or two.
 - *Buy:* the illustrated stickers below, and soft tape colours from your washi set.
 
+<figure class="prose__figure"><img src="/images/pressed-flowers-vintage-book.jpg" alt="Overhead view of an old open book on a wooden table, its pages dotted with pressed pansies, a daisy, a ginkgo leaf and other flowers." loading="lazy" decoding="async" width="1600" height="1200"><figcaption>Photo: Merve Bayar</figcaption></figure>
+
 **Tea Rose.** Soft, romantic and old-fashioned. Pale pages and a lot of blush.
 - *Collect:* love-letter paper, old valentines, floral wrapping, tissue paper, a scrap of lace.
 - *Buy:* soft pink or cream tape if your washi set includes any, and fine pen lines with plenty of white space.
+
+<figure class="prose__figure" style="max-width:30rem;margin-inline:auto"><img src="/images/pink-stationery-flat-lay.jpg" alt="Flat lay on a pale pink ground: a small spiral notebook, pink pencil and brush pen, washi tape on a flower-shaped tray, pink paper clips and dried pink flowers." loading="lazy" decoding="async" width="1600" height="1600"><figcaption>Photo: Jilly Noble</figcaption></figure>
 
 ## The four things to buy
 

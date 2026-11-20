@@ -16,8 +16,8 @@ const products = (await getCollection("products")).map((p) => p.data);
 const groups = shopGroups(products, settings.launchMode);
 const usedIn = articlesUsingProduct(articles.map((a) => ({ id: a.id, title: a.data.title, picks: a.data.picks, body: a.body })), new Map(products.map((p) => [p.id, p])), settings.launchMode);
 const picks = groups.flatMap((g) => g.products.slice(0, 1).map((p) => ({ ...p, group: g }))).slice(0, 3);
-const hero = siteImage("girls-night-crafts");
-const cozy = siteImage("cozy-corner");
+const hero = siteImage("american-mahjong-table-tiles-and-racks");
+const cozy = siteImage("junk-journal-spread-leaves-collage");
 const jsonLd = [{ "@context": "https://schema.org", "@type": "WebSite", name: settings.siteName, url: abs("/"), description: settings.tagline }];
 ---
 <Base home title={settings.tagline} description="Your next favorite thing starts here. Fun hobbies, pretty little projects and thoughtfully chosen supplies for making the most of life after five." path="/" image={hero.src} jsonLd={jsonLd}>

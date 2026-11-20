@@ -6,8 +6,9 @@ status: draft
 category: Creative Corner
 format: starter-guide
 featured: false
-# No hero yet. DRAFT: add an original photograph of real finished pieces (or a newly cleared image) before publishing.
-# None of the pending image records in images.json shows clay, so none is borrowed. Do not edit images.json from here.
+hero:
+  image: /images/clay-ring-dish-painted-blossoms.jpg
+  alt: "A handmade clay ring dish painted turquoise with hand-painted pink and white blossoms and a pale yellow centre ring, holding six pearl beads, in warm window light."
 picks: []
 related: []
 ---
@@ -66,6 +67,8 @@ Keep each piece the same thickness all over. Makers differ on the minimum: Mont 
 2. Cut a circle around a lid. For scallops, press a small round lid or bottle cap into the edge, overlapping the dents all the way round. Or cut a bow or heart from a paper template.
 3. Lift the shape and pinch or roll the edge upward into a shallow curve.
 4. Smooth the edge with a damp fingertip and leave to dry. Paint it blush with a butter-yellow rim.
+
+<figure class="prose__figure"><img src="/images/clay-scalloped-cloud-trinket-dish.jpg" alt="A glossy white trinket dish with a soft scalloped, cloud-shaped edge holding a freshwater pearl bracelet, on white fabric." loading="lazy" decoding="async" width="2000" height="1500"><figcaption>Photo: TinyPearl xoxo</figcaption></figure>
 
 ## Project 3: coil-lip tray
 

@@ -9,8 +9,8 @@ category: Creative Corner
 format: starter-guide
 featured: false
 hero:
-  image: /images/junk-journal-flatlay.jpg
-  alt: "An open junk journal on a butter-yellow cloth, its pages layered with pressed flowers, old tickets, photographs and red gingham tape, beside a cherry-print mug and two fine-liner pens."
+  image: /images/junk-journal-floral-handmade-book.jpg
+  alt: "A small hand-bound journal with a blue floral cloth cover and navy elastic band, a pressed leaf laid across it, on pink faux fur among old handwritten papers."
 picks:
   - tombow-mono-permanent
 related: []
