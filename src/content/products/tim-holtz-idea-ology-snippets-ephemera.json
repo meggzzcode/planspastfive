@@ -5,7 +5,7 @@
   "asin": "B06VTCRXBC",
   "status": "verified",
   "editorialDecision": "approve",
-  "order": 50,
+  "order": 60,
   "collection": "paper",
   "bestUse": "Best for vintage-style collage touches",
   "cta": "See It on Amazon",
@@ -23,5 +23,6 @@
   "specsEvidence": "Ranger Ink, https://rangerink.com/products/tim-holtz-idea-ology-ephemera-pack-snippets (read 2026-11-20): 'vintage-inspired' assortment featuring vintage florals, labels, typography, tickets, frames and decorative accents, sized for journals, cards, tags, albums, planners and mixed media. Ranger's page gives item TH94485 and 136 pieces; the Amazon listing Cowork read is TH93564 with 111 pieces, so the edition on Amazon is NOT matched to the maker page.",
   "suitability": "Vintage-style die-cut paper ephemera for layering into the pages of a first junk journal.",
   "imageStatus": "none",
-  "verificationSource": "Listing: sold by Amazon.com; 111 pieces stated throughout the listing. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID' for the product's tagged address (Cowork, owner's account, 2026-11-20). That validates the tag only; real commission is confirmed only in Associates reports. Earlier listing check: Cowork, 2026-11-19."
+  "verificationSource": "Listing: sold by Amazon.com; 111 pieces stated throughout the listing. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID' for the product's tagged address (Cowork, owner's account, 2026-11-20). That validates the tag only; real commission is confirmed only in Associates reports. Earlier listing check: Cowork, 2026-11-19.",
+  "shopTier": "extras"
 }

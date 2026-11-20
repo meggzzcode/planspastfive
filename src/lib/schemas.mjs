@@ -3,10 +3,10 @@
 import { z } from "astro/zod";
 
 export const COLLECTIONS = {
-  paper: { name: "The Paper Edit", plain: "Journaling and stationery" },
-  creative: { name: "The Creative Edit", plain: "Painting, clay and making" },
+  paper: { name: "The Paper Edit", plain: "Journaling and stationery", image: "junk-journal-spread-leaves-collage", extras: "Pretty extras" },
+  creative: { name: "The Creative Edit", plain: "Painting, clay and making", image: "clay-ring-dish-painted-blossoms", extras: "Nice to have" },
   cozy: { name: "The Cozy Edit", plain: "Slow evenings in" },
-  hosting: { name: "The Hosting Edit", plain: "Game nights and gatherings" },
+  hosting: { name: "The Hosting Edit", plain: "Game nights and gatherings", image: "american-mahjong-table-tiles-and-racks", extras: "Nice to have" },
   sporty: { name: "The Sporty Edit", plain: "Moving a little more" },
   "little-adventures": { name: "The Little Adventures Edit", plain: "Days out and small trips" },
 };
@@ -135,6 +135,7 @@ export const productSchema = z
     replacedBy: text.optional(),
     whyWeLikeIt: text.optional(),
     bestUse: text.optional(),
+    shopTier: optional(z.enum(["start", "extras"])),
     cta: optional(z.enum(CTA_LABELS)),
     limitations: text.optional(),
     descriptionOriginal: text.optional(),

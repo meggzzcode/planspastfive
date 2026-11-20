@@ -5,7 +5,7 @@
   "asin": "B09HN2PR9K",
   "status": "verified",
   "editorialDecision": "approve",
-  "order": 30,
+  "order": 40,
   "collection": "paper",
   "bestUse": "Best for borders, corners and tabs",
   "cta": "See It on Amazon",
@@ -23,5 +23,6 @@
   "specsEvidence": "Retail listings (Staples item 24471917, Target A-75000498, read 2026-11-20 via search) name this set 'Scotch Expressions Washi Tape, Abstract Modern Design, 8 Rolls, C1017-8-P19'. 3M's Scotch Expressions Washi Tape page, https://www.3m.com/3M/en_US/p/d/cbgnhw011160 (3M pages returned 403 to our fetcher; content seen in search summaries on 2026-11-20): variable roll sizes including 7, 10 and 15 mm widths; initially repositionable, with a test-on-a-small-area note; good for journaling. The page does not list this SKU, so its width and colours are NOT confirmed. Cowork 2026-11-19 could not confirm colourways or 15 mm width either.",
   "suitability": "A small, named-maker washi set for adding borders and accents to a first junk journal; colours must be checked by eye on the listing.",
   "imageStatus": "none",
-  "verificationSource": "Listing: sold by Amazon.com. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID' for the product's tagged address (Cowork, owner's account, 2026-11-20). That validates the tag only; real commission is confirmed only in Associates reports. Earlier listing check: Cowork, 2026-11-19."
+  "verificationSource": "Listing: sold by Amazon.com. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID' for the product's tagged address (Cowork, owner's account, 2026-11-20). That validates the tag only; real commission is confirmed only in Associates reports. Earlier listing check: Cowork, 2026-11-19.",
+  "shopTier": "start"
 }

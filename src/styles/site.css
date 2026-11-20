@@ -290,3 +290,13 @@ ul.plain { list-style: none; padding: 0; margin: 0; }
   .product-card__photo { width: 160px; }
 }
 .product-card__brand { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.5rem; }
+
+/* Shop: one picture per collection, and Start here / extras tiers */
+.shop-group__head--with-image { display: grid; gap: 1.2rem; grid-template-columns: 1fr; align-items: center; margin-bottom: 1.4rem; }
+.shop-group__head h2 { border-bottom: 0; padding-bottom: 0; margin-bottom: 0.3rem; }
+.shop-group__head .shop-group__plain { margin: 0; }
+.shop-group__image { margin: 0; }
+.shop-group__image img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 6px; }
+.shop-group__image figcaption { font-size: 0.8rem; color: var(--muted); margin-top: 0.3rem; }
+.shop-group__tier { font-family: var(--sans); font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--cherry); margin: 1.6rem 0 0.8rem; }
+@media (min-width: 760px) { .shop-group__head--with-image { grid-template-columns: 1fr 1.1fr; gap: 2rem; } .shop-group__head--with-image .shop-group__image { order: 2; } }

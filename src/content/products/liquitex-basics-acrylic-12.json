@@ -21,5 +21,7 @@
   "imageStatus": "none",
   "verificationSource": "Listing: sold by Amazon.com; 12 tubes stated. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID' for the product's tagged address (Cowork, owner's account, 2026-11-20). That validates the tag only; real commission is confirmed only in Associates reports. Earlier listing check: Cowork, 2026-11-19.",
   "specsEvidence": "Liquitex product page https://www.liquitex.com/products/basics-acrylic-set-12x22ml (read 2026-11-20): 12 tubes of 22 ml, medium viscosity, satin finish, lists canvas, paper and board, wood, metal, stone and ceramics, textiles among its surfaces, AP certified. Does not mention clay.",
-  "suitability": "Someone who likes to mix colours from a few tubes and does not mind a satin finish."
+  "suitability": "Someone who likes to mix colours from a few tubes and does not mind a satin finish.",
+  "order": 30,
+  "shopTier": "extras"
 }

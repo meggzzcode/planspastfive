@@ -262,6 +262,15 @@ content:
       - name: whyWeLikeIt
         label: Why we picked it
         type: text
+      - name: shopTier
+        label: Shop position (Start here = beginner essentials, Pretty extras = optional)
+        type: select
+        options:
+          values:
+            - name: start
+              label: Start here
+            - name: extras
+              label: Pretty extras
       - name: bestUse
         label: Best-use label (optional, a few words, e.g. "Best for junk journals")
         type: string

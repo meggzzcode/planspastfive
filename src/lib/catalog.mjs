@@ -44,7 +44,10 @@ export const byEditorialOrder = (list) =>
 export function shopGroups(products, mode = "production") {
   const v = shownProducts(products, mode);
   return Object.entries(COLLECTIONS)
-    .map(([id, c]) => ({ id, label: c.name, plain: c.plain, products: byEditorialOrder(v.filter((p) => p.collection === id)) }))
+    .map(([id, c]) => {
+      const all = byEditorialOrder(v.filter((p) => p.collection === id));
+      return { id, label: c.name, plain: c.plain, image: c.image, extrasLabel: c.extras || "Nice to have", products: all, start: all.filter((p) => p.shopTier !== "extras"), extras: all.filter((p) => p.shopTier === "extras") };
+    })
     .filter((g) => g.products.length > 0);
 }
 
