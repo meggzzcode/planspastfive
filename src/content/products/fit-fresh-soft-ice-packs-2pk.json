@@ -1,0 +1,31 @@
+{
+  "id": "fit-fresh-soft-ice-packs-2pk",
+  "name": "Cool Coolers Soft Ice Packs for Lunch Bags and Coolers, 2-Pack",
+  "brand": "Fit & Fresh",
+  "asin": "B0DY2R4VBK",
+  "status": "verified",
+  "editorialDecision": "hold",
+  "statusReason": "Held until the picnic article is released: the record is verified and ready, but it must not appear in the Shop before its article exists. At release, set editorialDecision to approve and add the pick to the article.",
+  "order": 11,
+  "collection": "picnic",
+  "shopTier": "start",
+  "cta": "See It on Amazon",
+  "buttonLabel": "See the Ice Packs on Amazon",
+  "bestUse": "Best for keeping picnic food cold in a small soft cooler",
+  "inTheBox": "Two soft gel ice packs, each 6.5 x 4.25 x 0.5 in.",
+  "descriptionOriginal": "Two flat, soft reusable ice packs made of nylon with gel.",
+  "whyWeLikeIt": "Flat packs slide in beside the food in a small soft bag, and the listing describes them as non-toxic and BPA-free. Keeping cold food cold is the first rule of picnic food safety.",
+  "limitations": "Two small packs suit a small bag and a short afternoon, not a day out in summer heat. Freeze them flat the night before.",
+  "haveItAlready": "Already have frozen gel packs or a bag of frozen peas to spare? Use those.",
+  "listingChecked": {
+    "checkedOn": "2026-11-23",
+    "variant": "2-pack, 6.5 x 4.25 x 0.5 in",
+    "listingAvailable": "yes",
+    "sellerType": "amazon",
+    "affiliateLinkEligible": "yes"
+  },
+  "specsEvidence": "Amazon listing (Cowork, 2026-11-23): two soft packs, each 6.5 x 4.25 x 0.5 in, nylon with gel; the listing says 'Non-toxic and BPA-free'. 6.5 in wide fits flat in the Mari bag.",
+  "suitability": "Reusable flat gel ice packs for a small soft cooler.",
+  "imageStatus": "none",
+  "verificationSource": "Listing read by Cowork on the owner's account, 2026-11-23 (docs/cowork/BATCH-5-RESULTS.csv, branch cowork/batch-5): sold by Amazon.com, in stock. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID'; that validates the tag only, and real commission is confirmed only in Associates reports."
+}

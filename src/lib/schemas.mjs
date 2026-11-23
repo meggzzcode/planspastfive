@@ -7,6 +7,7 @@ export const COLLECTIONS = {
   creative: { name: "Air-Dry Clay Starter Bundle", plain: "Little handmade dishes and a pretty palette to paint them", own: "a rolling pin or bottle, a butter knife, a toothpick and a damp cloth", image: "clay-three-projects-hero", extras: "Nice to have" },
   cozy: { name: "Cozy Paint Night Bundle", plain: "A finished little painting in one slow evening", image: "cozy-paint-evening", extras: "Nice to have" },
   hosting: { name: "Host Your First Mahjong Night", plain: "A set and a card for a first American mahjong night", image: "american-mahjong-table-tiles-and-racks", extras: "Nice to have" },
+  picnic: { name: "Perfect Little Picnic Bundle", plain: "A soft cooler bag and ice packs for an easy afternoon outside", extras: "Nice to have" },
   sporty: { name: "The Sporty Edit", plain: "Moving a little more" },
   "little-adventures": { name: "The Little Adventures Edit", plain: "Days out and small trips" },
 };

@@ -1,0 +1,31 @@
+{
+  "id": "fit-fresh-mari-insulated-backpack-cooler",
+  "name": "Mari Insulated Soft Backpack Cooler Tote, 12-Can Capacity",
+  "brand": "Fit & Fresh",
+  "asin": "B0CQPPZB8W",
+  "status": "verified",
+  "editorialDecision": "hold",
+  "statusReason": "Held until the picnic article is released: the record is verified and ready, but it must not appear in the Shop before its article exists. At release, set editorialDecision to approve and add the pick to the article.",
+  "order": 10,
+  "collection": "picnic",
+  "shopTier": "start",
+  "cta": "See It on Amazon",
+  "buttonLabel": "See the Cooler Bag on Amazon",
+  "bestUse": "Best for carrying a picnic for two to four on your back or by the handles",
+  "inTheBox": "One soft insulated tote, 11.5 x 5 x 12.5 in, with backpack straps, tote handles and a front zip pocket.",
+  "descriptionOriginal": "A soft insulated cooler tote that holds about twelve cans, with backpack straps and tote handles.",
+  "whyWeLikeIt": "A soft bag keeps the cold food together and leaves a hand free, and the listing describes an easy-clean insulated interior. It also carries as a tote or on your back.",
+  "limitations": "The listing does not say whether the main compartment zips shut (only the front pocket is described) or that the liner is sealed, and it holds about a dozen cans, so it suits two to four people, not a crowd. Pair it with ice packs, since food safety depends on staying cold.",
+  "haveItAlready": "Already own a soft cooler or insulated lunch bag? Use it.",
+  "listingChecked": {
+    "checkedOn": "2026-11-23",
+    "variant": "12-can capacity, 11.5 x 5 x 12.5 in",
+    "listingAvailable": "yes",
+    "sellerType": "amazon",
+    "affiliateLinkEligible": "yes"
+  },
+  "specsEvidence": "Amazon listing (Cowork, 2026-11-23): size 11.5 x 5 x 12.5 in, holds up to 12 cans, snacks and ice packs; backpack straps and tote handles; front zip pocket; easy-clean insulated interior; leak-resistant. The listing's marketing claims about how long food stays cold are not repeated. Main-compartment closure and a sealed liner are not stated.",
+  "suitability": "A small soft cooler for a picnic for two to four people.",
+  "imageStatus": "none",
+  "verificationSource": "Listing read by Cowork on the owner's account, 2026-11-23 (docs/cowork/BATCH-5-RESULTS.csv, branch cowork/batch-5): sold by Amazon.com, in stock. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID'; that validates the tag only, and real commission is confirmed only in Associates reports."
+}
