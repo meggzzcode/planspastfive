@@ -1,0 +1,31 @@
+{
+  "id": "away-cooler-tote",
+  "name": "Cooler Tote, Insulated Soft-Sided Travel Cooler Bag",
+  "brand": "Away",
+  "asin": "B0H5RKFQDX",
+  "status": "verified",
+  "editorialDecision": "hold",
+  "statusReason": "Held until the picnic article is released: verified and ready, but it must not appear in the Shop before its article exists. At release, set editorialDecision to approve and add it to the article.",
+  "order": 12,
+  "collection": "picnic",
+  "choiceOf": "fit-fresh-mari-insulated-backpack-cooler",
+  "choiceLabel": "Different style",
+  "cta": "See It on Amazon",
+  "buttonLabel": "See the Larger Tote on Amazon",
+  "bestUse": "Best for a larger picnic or a longer day out",
+  "inTheBox": "One soft insulated tote, 14.6 x 8.7 x 22.4 in, with shoulder-strap handles, a removable padded strap and front and back slip pockets.",
+  "descriptionOriginal": "A larger soft-sided insulated tote with a welded body and waterproof zipper tape.",
+  "whyWeLikeIt": "A larger tote gives a picnic for three or four room to breathe, and the listing describes a welded body and waterproof zipper tape, which suits spills and damp grass.",
+  "limitations": "The listing does not state the capacity in cans or litres, or that the liner wipes clean, so check its photos and measurements against your menu. Pair it with ice packs.",
+  "listingChecked": {
+    "checkedOn": "2026-11-23",
+    "variant": "14.6 x 8.7 x 22.4 in",
+    "listingAvailable": "yes",
+    "sellerType": "brand",
+    "affiliateLinkEligible": "yes"
+  },
+  "specsEvidence": "Amazon listing (Cowork, 2026-11-23): 14.6 x 8.7 x 22.4 in; fully welded body and waterproof zipper tape; shoulder-strap webbing handles plus a removable padded strap; front and back slip pockets; capacity in cans or litres not shown; the listing's marketing claim about hours of cold is not repeated. Sold by the brand.",
+  "suitability": "A larger soft insulated tote for a picnic for three or four.",
+  "imageStatus": "none",
+  "verificationSource": "Listing read by Cowork on the owner's account, 2026-11-23 (docs/cowork/BATCH-5-RESULTS.csv, branch cowork/batch-5): sold by the brand (Away), in stock. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID'; that validates the tag only, and real commission is confirmed only in Associates reports."
+}

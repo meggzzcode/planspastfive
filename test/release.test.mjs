@@ -159,3 +159,25 @@ describe("fixes from the independent review", () => {
     assert.match(out, /status: published/);
   });
 });
+
+describe("draft products held until release", () => {
+  test("a draft with products that are not approved yet is not ready, so the queue skips it with a reason", () => {
+    const r = pickNext({ schedule: { ...base, queue: ["a", "b"] }, articles: [art("a"), art("b")], today: { date: "2026-12-01", weekday: "tue" }, hasImageFile: ready, unshownProducts: (x) => (x.slug === "a" ? ["held-bag"] : []) });
+    assert.equal(r.slug, "b"); assert.match(r.skipped[0].why, /not approved yet \(held-bag\)/);
+  });
+  test("check-content lets a draft name a held product but fails a published article that does", () => {
+    const dir = makeCopy("ppf-held");
+    try {
+      const f = "src/content/products/tombow-mono-permanent.json";
+      editJson(dir, f, (x) => { x.editorialDecision = "hold"; });
+      const art0 = fs.readdirSync(path.join(dir, "src/content/articles"))[0];
+      const p = `src/content/articles/${art0}`;
+      write(dir, p, read(dir, p).replace("status: published", "status: draft"));
+      const d = checkContentCli(dir);
+      assert.ok(d.ok, d.out);
+      write(dir, p, read(dir, p).replace("status: draft", "status: published"));
+      const pub = checkContentCli(dir);
+      assert.ok(!pub.ok); assert.match(pub.out, /cannot be shown because/);
+    } finally { cleanup(dir); }
+  });
+});

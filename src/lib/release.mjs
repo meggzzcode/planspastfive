@@ -14,7 +14,7 @@ export function todayIn(timezone, now = new Date()) {
 }
 
 /** A draft can go live only when it has the things a published article must have. Returns a list of what is missing. */
-export function notReadyBecause(article, hasImageFile) {
+export function notReadyBecause(article, hasImageFile, unshownProducts = []) {
   const d = article.data;
   const why = [];
   if (d.status !== "draft") why.push(`it is already ${d.status}`);
@@ -25,6 +25,7 @@ export function notReadyBecause(article, hasImageFile) {
   if (!d.dek) why.push("it has no intro line (dek)");
   if (!d.category) why.push("it has no category");
   if (!d.format) why.push("it has no format");
+  if (unshownProducts.length) why.push(`products it uses are not approved yet (${unshownProducts.join(", ")})`);
   return why;
 }
 
@@ -34,7 +35,7 @@ export function notReadyBecause(article, hasImageFile) {
  * mode "now": the owner pressed the button, so the switch and weekdays do not matter.
  * Returns { slug, skipped: [{slug, why}] } or { slug: null, reason }.
  */
-export function pickNext({ schedule, articles, today, mode = "auto", hasImageFile }) {
+export function pickNext({ schedule, articles, today, mode = "auto", hasImageFile, unshownProducts = () => [] }) {
   if (mode === "auto") {
     if (!schedule.enabled) return { slug: null, reason: "Automatic releases are switched off (schedule.json: enabled is false)." };
     if (!schedule.weekdays.includes(today.weekday)) return { slug: null, reason: `Today is ${today.weekday}; releases happen on ${schedule.weekdays.join(", ")}.` };
@@ -45,7 +46,7 @@ export function pickNext({ schedule, articles, today, mode = "auto", hasImageFil
     const a = articles.find((x) => x.slug === slug);
     if (!a) { skipped.push({ slug, why: "there is no article with this name" }); continue; }
     if (a.data.status === "published") continue; // already live: nothing to do
-    const why = notReadyBecause(a, hasImageFile);
+    const why = notReadyBecause(a, hasImageFile, unshownProducts(a));
     if (why.length) { skipped.push({ slug, why: why.join("; ") }); continue; }
     return { slug, skipped };
   }

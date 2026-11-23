@@ -4,7 +4,7 @@ Every article agent reads this before drafting and adds a "Fact-consistency note
 
 ## Voice and rules
 - Warm, specific, honest; a small concrete scene first; no hype, no empty self-care talk, no first-hand testing or participation claims ("we tested", "I tried"), no prices, ratings, discounts or "best seller" words, no health or mental-health promises.
-- Recommend only what readers would not already own and the activity truly needs (owner rule). Tape, scissors, pens, a rolling pin, a notebook, a blanket: mention in prose, no product link.
+- Recommend what readers would not already own and the activity truly needs (owner rule), AND, where the activity is about making an occasion feel special, a few genuinely good-looking, well-made pieces readers would be excited to own or give (owner direction, 2026-11-23: our audience buys beauty and occasion, not utilities). Label these "pretty extras" or optional, never as required, and never push basics (an ordinary cooler, ice packs, tape) as the headline purchase. Tape, scissors, pens, a rolling pin, a notebook, a blanket: mention in prose, no product link.
 - Product links only via `{{pick:id}}` (card) or `{{product:id}}` (inline) for products with status verified in `src/content/products/`. Never hand-write Amazon links. New products go to a "PRODUCT CANDIDATES (UNVERIFIED)" list in the brief with the criteria that should decide them; they are checked later on Amazon.com by Cowork.
 - Link only to published articles and Shop bundles that exist. Planned future links are listed in the brief, not in the article.
 - AI illustrations are not captioned (disclosed in About, Terms, Privacy); never present an illustration as a tested result or our own project.
@@ -26,7 +26,7 @@ canson-graduate-mixed-media-5-5x8-5 (journal book); tombow-mono-permanent (dry a
 - Cost wording: "starter bundle: N things to buy; everything else optional"; budget estimates in prose are allowed only as editorial estimates with no product prices.
 
 ## Facts added by batch 1 drafts (2026-11-23; unpublished until released)
-- Walking club: first walk is about 90 minutes (45 minutes walking plus coffee); Jeffrey Hall's 2018 KU findings (about 50 hours acquaintance to casual friend, about 90 casual to friend, 200+ close friend; 355 recent movers, 112 freshmen) are the only friendship-time figures used; no friendship or health outcome is promised.
+- Walking club: first walk is about 90 minutes (45 minutes walking plus coffee); Jeffrey Hall's 2018 KU findings (about 40 to 60 hours to move from acquaintance to casual friend, 80 to 100 to friend, 200+ to close friend; 355 recent movers, 112 freshmen) are the only friendship-time figures used; no friendship or health outcome is promised.
 - Picnic: the FDA 2-hour rule (1 hour above 90F) is the food-safety anchor; park rules vary, check the local parks site; a soft insulated bag and ice packs are the only things worth buying if you lack them (no verified products linked yet).
 - Paint night: one Faber-Castell kit per painter (host included) is the default, which is a cost step-up (the hobbies guide's craft night is about 2.5 hours, 6:30 to 9:00); the first evening is a start, canvases go home to finish; keep pot lids closed; acrylic waste goes in a waste bin you can seal, not the sink.
 - Paint by numbers: kit-choice detail (canvas, paint quantity, brushes, easel or frame, fineness of numbered areas) lives in the paint-by-numbers guide; the paint-night guide only links to the Cozy Paint Night Bundle until both publish together.

@@ -9,7 +9,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadContent } from "../src/lib/content-fs.mjs";
 import { pickNext, publishText, todayIn, WEEKDAYS } from "../src/lib/release.mjs";
-import { imageUrl } from "../src/lib/catalog.mjs";
+import { imageUrl, resolveProduct, MARKER } from "../src/lib/catalog.mjs";
 import { isApproved, recordForFile } from "../src/lib/images.mjs";
 
 export function releaseNext(root, { mode = "auto", date, now = new Date() } = {}) {
@@ -21,7 +21,10 @@ export function releaseNext(root, { mode = "auto", date, now = new Date() } = {}
     const hit = recordForFile(c.images, img);
     return fs.existsSync(path.join(root, "public", imageUrl(img).replace(/^\//, ""))) && !!hit && isApproved(hit[1]);
   };
-  const r = pickNext({ schedule, articles: c.articles.map((a) => ({ slug: a.slug, data: a.data })), today, mode, hasImageFile });
+  const byId = new Map(c.products.map((p) => [p.data.id, p.data]));
+  const bodies = new Map(c.articles.map((a) => [a.slug, a.body]));
+  const unshownProducts = (a) => [...new Set([...(a.data.picks || []), ...[...(bodies.get(a.slug) || "").matchAll(MARKER)].map((m) => m[2])])].filter((id) => !resolveProduct(byId, id, c.settings?.launchMode ?? "preview").product);
+  const r = pickNext({ schedule, articles: c.articles.map((a) => ({ slug: a.slug, data: a.data })), today, mode, hasImageFile, unshownProducts });
   if (!r.slug) return { released: null, reason: r.reason, skipped: r.skipped || [] };
   const file = path.join(root, "src/content/articles", `${r.slug}.md`);
   fs.writeFileSync(file, publishText(fs.readFileSync(file, "utf8"), today.date));
