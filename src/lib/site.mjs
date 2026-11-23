@@ -11,4 +11,4 @@ export const recordFor = (file) => { const hit = recordForFile(images, file); re
 export const fmtDate = (d) => new Date(d).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
 export const isoDate = (d) => new Date(d).toISOString().slice(0, 10);
 export const readMinutes = (body) => Math.max(1, Math.round(body.split(/\s+/).length / 210));
-export const legalUpdated = "November 19, 2026";
+export const legalUpdated = "November 23, 2026";

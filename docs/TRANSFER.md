@@ -6,6 +6,8 @@ Start with the one-page summary in `docs/BUYER-FACT-SHEET.md`.
 The Astro site source (5 articles, 20 product records of which 14 are shown, the shop, legal-page drafts, publishing workflows, tests), the owner documents in `docs/`, the picture files with their rights records, and the domain planspastfive.com (moved by registrar transfer). **Not included:** the seller's Amazon Associates account or tracking ID, Netlify plan or credits, GitHub or Cowork accounts, any login or credential, and any right in Amazon, Canva, Lovable or Pexels content beyond what their own terms give a buyer (see `docs/IMAGE-RECORDS.md`). The asking price ($1,500) is an asking price, not a valuation; the site has no traffic or earnings history.
 
 ## What the buyer must set up themselves
+Also: a **Google Analytics 4 property** of their own (the seller's belongs to the seller's Google account); paste the new `G-` ID into Site settings and read the Privacy page wording that appears with it.
+
 | Needs | Why |
 |---|---|
 | Their own **Amazon Associates account** and their own tracking ID | The seller's account and tag cannot be transferred (Operating Agreement). The buyer applies for their own account, replaces the tag, and starts their own 180-day qualifying-sales period |

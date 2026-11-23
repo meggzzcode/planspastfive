@@ -19,7 +19,7 @@ A small, static lifestyle magazine with a curated Amazon shop, built with Astro,
 
 ## What the buyer does NOT receive
 - The seller's Amazon Associates account, tracking ID, sales history or the seller's 180-day qualifying period. Amazon's agreement cannot be assigned without its written approval; the buyer applies for their own account, replaces the tracking ID (`docs/OWNER-OPERATIONS.md`) and verifies every product again.
-- The seller's Netlify plan or credits, GitHub or Cowork accounts, any password or credential.
+- The seller's Google Analytics property and ID (the buyer creates their own), the seller's Netlify plan or credits, GitHub or Cowork accounts, any password or credential.
 - Any right in Amazon, Canva, Lovable or Pexels content beyond what those services' own terms give a buyer. **Image transfer rights are unverified** for the Canva, Lovable and Pexels pictures (`docs/IMAGE-RECORDS.md`); the buyer can replace any picture (steps are there).
 - Product photographs: none are used, by design, until Amazon's Creators API access exists.
 

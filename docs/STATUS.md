@@ -50,6 +50,14 @@ Production-mode simulation in an isolated copy, canonical URLs and titles presen
 The Shop's main section is **Ready-to-Start Bundles**: our curated collections of individually sold products (not prepackaged boxes). Four are live: Junk Journal Starter Bundle, Air-Dry Clay Starter Bundle, Cozy Paint Night Bundle, Host Your First Mahjong Night. Each shows what is in it, what you probably already own, choose-one alternatives and optional extras. Product names that contain "kit" (a paint-by-numbers kit) are unchanged.
 **"Shop the Full Bundle on Amazon" is NOT shown.** A public Amazon List destination and its commission eligibility are unverified: official pages checked on 2026-11-23 neither allow nor forbid a tagged link from our site to a List (`docs/SHOPPING-STRATEGY.md`). The live verification assignment for Cowork is `docs/cowork/AMAZON-BUNDLE-LISTS-LIVE-VERIFICATION.md`.
 
+## Cowork batch 4 results (2026-11-23; full notes on branch `cowork/batch-4`, which contains personal account details, so they are not copied here)
+- **Live preview review (Part A): PASS** with minor notes (a few small phone tap targets, since enlarged; legal-page date, now updated). Phone checked at 390 px by frame.
+- **Associates (Part B): PASS.** Account active, `planspastfive.com` on the website list, `planspastfive-20` unchanged. A payment-related banner is shown on the Associates home page; the owner should open it.
+- **Google Analytics (Part E): set up.** GA4 property "Plans Past Five" with a web stream for `https://planspastfive.com`; **Measurement ID `G-NEQH28N9NG`** (not secret). Google signals OFF, event retention 14 months, Enhanced measurement ON, no data sharing; Google Analytics terms were accepted. **Not on the site yet** (`ga4MeasurementId` is empty): add it at launch only. Google required an industry (Home & Garden), size (small) and objective (understand traffic); the owner can change them in Admin.
+- **Launch-readiness audit (Part F): PARTIAL.** Netlify project is private with the domain attached; production deploys show "Canceled" by design (the `[deploy]` rule). The repository is **public** (owner decision). No Search Console property exists yet. Pinterest account verified. **Blocked:** Namecheap DNS, nameservers, expiry and lock (needs the owner to sign in again; Cowork left that tab on a login page); GitHub workflow permissions.
+- **Not done:** Part C (image licence wording) needs a retry; Part D (real CMS and Netlify test, costs credits) and Part G (launch) are owner-gated.
+- **Amazon Lists (Part H): recommendation is not to use Lists** (below).
+
 ## Blocking launch (owner-gated)
 1. Real Pages CMS and Netlify test (`docs/OWNER-REAL-TEST.md`), best after 2026-12-16 because of Netlify credits.
 2. Amazon Associates: owner confirms status and says when to switch tracking on; Amazon commission is confirmed only in Associates reports.
