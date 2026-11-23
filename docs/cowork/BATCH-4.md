@@ -2,7 +2,7 @@
 
 Batch 3 Part 1 (Amazon product checks) is done; its results are in `BATCH-3-RESULTS.csv` and `BATCH-3-NOTES.md`. This file is the **only** remaining Cowork list. Nothing here needs more writing from Claude Code.
 
-You are Cowork, in the owner's logged-in browser. General rules: read-only unless a part says otherwise; no purchases, no adding to cart, no card details, no new accounts, no changes to Amazon Associates settings; tracking stays OFF (`amazonTrackingEnabled: false`) and `launchMode` stays `preview`; never copy or save Amazon images; no prices, ratings or review counts. Write "not shown" instead of guessing. If something needs a login, captcha or country change, stop that item and say so.
+You are Cowork, in the owner's logged-in browser. General rules: read-only unless a part says otherwise; no purchases, no adding to cart, no card details, no new accounts (Part E is the one exception: it only creates a Google Analytics property inside the owner's existing Google account), no changes to Amazon Associates settings; tracking stays OFF (`amazonTrackingEnabled: false`) and `launchMode` stays `preview`; never copy or save Amazon images; no prices, ratings or review counts. Write "not shown" instead of guessing. If something needs a login, captcha or country change, stop that item and say so.
 
 Push to branch `cowork/batch-4` only (never `main`): `docs/cowork/BATCH-4-NOTES.md` (all parts, anything not OK first, each item marked PASS, FAIL or NOT DONE with the exact text or screenshot name) and screenshots in `docs/cowork/final-check-evidence/`. Then message the owner a one-paragraph summary leading with anything not OK.
 
@@ -25,6 +25,15 @@ Read the current public terms and note, with a quote of 15 words or fewer, anyth
 
 ## Part D. Real Pages CMS, publish and release-queue test (ONLY when the owner says "run Part D"; costs Netlify credits)
 Follow `docs/OWNER-REAL-TEST.md` step by step (read the Usage page first and report credits; at most 4 production deploys; stop below 40 credits; best after the 2026-12-16 reset). Fill its PASS/FAIL column and credits table in your notes. Then also test the release queue (`docs/editorial/PUBLISHING-THE-BACKLOG.md`): confirm the **Release next article now** button and the **Release queue** form appear in Pages CMS; confirm the "Release next article" workflow is listed under GitHub Actions; on the `content-edits` branch only, check that pressing the button with an empty queue reports nothing to release and changes nothing. Do not switch **Post automatically** on. Afterwards confirm `settings.json` still has `amazonTrackingEnabled: false` and `launchMode: "preview"`, and `schedule.json` has `enabled: false`.
+
+## Part E. Set up Google Analytics 4 (the owner has authorized this one account change; do it now, on its own)
+In the owner's Google account (the one already signed in; do not create a new Google account, do not enter payment details, do not link Google Ads, Search Console or any other product):
+1. Open Google Analytics (analytics.google.com). Create an Analytics account named `Plans Past Five` if none fits, then a **GA4 property** named `Plans Past Five`, reporting time zone and currency to match the owner's (United States, US dollars unless the owner's account says otherwise). Decline the optional business-size, industry and goals questions as far as the form allows.
+2. Create a **Web data stream** for `https://planspastfive.com` named `planspastfive.com`. Leave Enhanced measurement ON (it records outbound clicks; our own `amazon_click` event is sent by the site and needs no setup).
+3. Settings to apply: Admin > Data collection and modification > Data collection: turn **Google signals data collection OFF** (the Privacy page promises only simple visit counts). Admin > Data retention: set event data retention to **14 months**. Do not enable advertising features, user-ID, or data sharing options.
+4. Copy the **Measurement ID** (looks like `G-XXXXXXXXXX`; it is in the web stream details) and write it, with the property name and the account email shown (not the password), into `docs/cowork/BATCH-4-NOTES.md` under "Part E". **Do not put the ID into `src/content/settings.json`.** The owner (or Claude Code) switches it on at launch so the private preview and your own test clicks are not counted.
+5. Report: the screenshots of the stream details page (blur nothing but hide any billing panel), the exact data-retention and Google signals states you set, and anything Google asked that you declined.
+6. Do NOT open the live site or click product buttons to "test" it; there is nothing to test until the ID is on the site.
 
 ## Not for Cowork (owner only)
 Applying to or changing the Associates account, paying anything, connecting the domain, a lawyer or trademark review, making the repository private, and the decision to launch or switch tracking on.
