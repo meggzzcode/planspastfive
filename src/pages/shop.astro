@@ -35,7 +35,7 @@ const groups = shopGroups(products, settings.launchMode);
             return alts.length === 0 ? card(p) : (
               <div class="choice-set">
                 {card(p)}
-                <p class="choice-set__note">Or choose one of these instead. You only need one.</p>
+                <p class="choice-set__note">Our pick is the card above. Prefer a different look? Choose one of these instead. You only need one.</p>
                 {alts.map(card)}
               </div>
             );
@@ -47,6 +47,7 @@ const groups = shopGroups(products, settings.launchMode);
               <div>
                 <h2 id={`h-${g.id}`}>{g.label}</h2>
                 <p class="shop-group__plain">{g.plain}</p>
+                <p class="shop-group__count">The starter kit: {g.start.length} {g.start.length === 1 ? "thing" : "things"} to buy. Everything else is optional.</p>
               </div>
             </div>
             {g.showStartHeading && <h3 class="shop-group__tier">Start here</h3>}

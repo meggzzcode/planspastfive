@@ -276,6 +276,9 @@ content:
             - Different style
             - Mix-your-own alternative
             - Larger set
+      - name: inTheBox
+        label: What is in the box (verified contents only, one sentence)
+        type: text
       - name: shopTier
         label: Shop position (Start here = beginner essentials, Pretty extras = optional)
         type: select

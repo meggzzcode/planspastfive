@@ -136,6 +136,7 @@ export const productSchema = z
     replacedBy: text.optional(),
     whyWeLikeIt: text.optional(),
     bestUse: text.optional(),
+    inTheBox: text.optional(),
     shopTier: optional(z.enum(["start", "extras"])),
     // An alternative to another product in the same collection: shown under it as "choose one", never as a second essential.
     choiceOf: text.optional(),

@@ -28,6 +28,11 @@ test("card marks essentials and optional extras from shopTier", () => {
   assert.doesNotMatch(productCardHtml(p, settings, {}), /product-card__tier/);
 });
 
+test("card shows verified contents when the product has them", () => {
+  assert.match(productCardHtml({ ...p, inTheBox: "Three black pens." }, settings, {}), /product-card__box"><strong>In the box:<\/strong> Three black pens\./);
+  assert.doesNotMatch(productCardHtml(p, settings, {}), /product-card__box/);
+});
+
 test("compact card is just name and button", () => {
   const h = productCardHtml(p, settings, { compact: true });
   assert.doesNotMatch(h, /Writes cleanly|Worth knowing/);
