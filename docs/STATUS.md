@@ -5,7 +5,7 @@ Updated 2026-11-23 against `main`. "Unverified" means nobody has confirmed it. T
 ## What the repository holds today
 - 5 published articles (junk journal supplies, your first junk journal spread, air-dry clay, how to host a mahjong night, hobbies for busy women), 15 built pages, 20 product records, 16 rights records and image files (see `docs/IMAGE-RECORDS.md`).
 - Settings: marketplace amazon.com, tracking ID `planspastfive-20`, **tracking OFF**, **launchMode `preview`**. Neither is changed without the owner's go-ahead.
-- Checks run on a clean clone (`npm ci`, `npm run check`, `npm test`, `npm audit`): build passes with 15 pages and the link check, 129 of 129 tests pass, 0 vulnerabilities. An isolated copy with `launchMode` production and tracking on also passes the content check (0 launch blockers).
+- Checks run on a clean clone (`npm ci`, `npm run check`, `npm test`, `npm audit`): build passes with 15 pages and the link check, 130 of 130 tests pass, 0 vulnerabilities. An isolated copy with `launchMode` production and tracking on also passes the content check (0 launch blockers).
 
 ## Products (20 records; 14 shown, 6 not shown)
 Rule (owner, 2026-11-23): the shop pushes only what the activity needs that most readers would not already own. Scissors and ordinary tape are not sold; washi is an optional extra.

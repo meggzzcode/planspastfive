@@ -26,5 +26,6 @@
   "verificationSource": "Listing: Buy New offer sold by Amazon.com (link the new item, not the separate used offer). Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID' for the product's tagged address (Cowork, owner's account, 2026-11-20). That validates the tag only; real commission is confirmed only in Associates reports. Earlier listing check: Cowork, 2026-11-19.",
   "choiceOf": "staedtler-pigment-liner-black-3",
   "choiceLabel": "Larger set",
-  "inTheBox": "Eight black pens, with tips from 0.05 to 1.2 mm."
+  "inTheBox": "Eight black pens, with tips from 0.05 to 1.2 mm.",
+  "buttonLabel": "See the 8-Pen Set on Amazon"
 }

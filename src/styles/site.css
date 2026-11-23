@@ -317,3 +317,4 @@ ul.plain { list-style: none; padding: 0; margin: 0; }
 .product-card__box { font-size: 0.9rem; margin: 0 0 0.5rem; color: var(--ink, #3a2f2c); }
 .shop-group__count { margin: 0.4rem 0 0; font-weight: 700; color: var(--cherry); font-size: 0.95rem; }
 .choice-set .choice-set__note ~ .product-card { margin-left: 1rem; border-left: 3px dashed var(--cherry); background: transparent; box-shadow: none; }
+.product-card__skip { font-size: 0.9rem; margin: 0 0 0.6rem; color: var(--muted, #6b5b57); font-style: italic; }

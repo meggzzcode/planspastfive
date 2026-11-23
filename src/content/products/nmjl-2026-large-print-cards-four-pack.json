@@ -24,5 +24,7 @@
   "suitability": "A table of four needs one current-year card per player. This is the large print four-pack, for players who want the clearest print on the current card.",
   "order": 20,
   "shopTier": "start",
-  "inTheBox": "Four large-print copies of the 2026 card."
+  "inTheBox": "Four large-print copies of the 2026 card.",
+  "buttonLabel": "See the Cards on Amazon",
+  "haveItAlready": "Already have this year's card? You only need one per player."
 }

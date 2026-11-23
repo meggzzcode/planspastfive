@@ -25,5 +25,7 @@
   "suitability": "A beginner who wants a small, sturdy book with heavy paper for layering collage and adhesive.",
   "imageStatus": "none",
   "verificationSource": "Cowork, 2026-11-20 (final Amazon check, branch cowork/final-check, commit 48e474c): listing sold by Amazon.com, in stock, Add to Cart present. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID' for the product's tagged address (owner's account). That validates the tag only; real commission is confirmed only in Associates reports.",
-  "inTheBox": "A hardcover book with 36 sheets of 200 gsm mixed media paper, a ribbon bookmark, an elastic band and an inner pocket."
+  "inTheBox": "A hardcover book with 36 sheets of 200 gsm mixed media paper, a ribbon bookmark, an elastic band and an inner pocket.",
+  "buttonLabel": "See the Journal on Amazon",
+  "haveItAlready": "Use a thick notebook you already own if it can take glue, and put your budget toward paper you love."
 }

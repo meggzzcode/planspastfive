@@ -33,6 +33,14 @@ test("card shows verified contents when the product has them", () => {
   assert.doesNotMatch(productCardHtml(p, settings, {}), /product-card__box/);
 });
 
+test("button text and the already-have-one line come from the product when set", () => {
+  const h = productCardHtml({ ...p, buttonLabel: "See the Journal on Amazon", haveItAlready: "Use a notebook you own." }, settings, {});
+  assert.match(h, />See the Journal on Amazon<span class="sr-only">/);
+  assert.match(h, /product-card__skip"><strong>Already have one\?<\/strong> Use a notebook you own\./);
+  const plain = productCardHtml(p, settings, {});
+  assert.match(plain, />See It on Amazon</); assert.doesNotMatch(plain, /product-card__skip/);
+});
+
 test("compact card is just name and button", () => {
   const h = productCardHtml(p, settings, { compact: true });
   assert.doesNotMatch(h, /Writes cleanly|Worth knowing/);

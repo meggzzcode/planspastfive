@@ -25,5 +25,7 @@
   "imageStatus": "none",
   "verificationSource": "Cowork, 2026-11-20: listing in stock, sold by Amazon.com, 2.2 lb (1 kg) white; link the new item, not the separate used offer. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID' for the product's tagged address (Cowork, owner's account, 2026-11-20). That validates the tag only; real commission is confirmed only in Associates reports. Rechecked by Cowork 2026-11-23 (docs/cowork/BATCH-2-RESULTS.csv): same item, in stock, Link Checker success.",
   "shopTier": "start",
-  "inTheBox": "One 2.2 lb (1 kg) block of white air-hardening clay."
+  "inTheBox": "One 2.2 lb (1 kg) block of white air-hardening clay.",
+  "buttonLabel": "See the Clay on Amazon",
+  "haveItAlready": "Already have white air-dry clay? Use it for your first dish."
 }

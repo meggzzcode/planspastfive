@@ -3,10 +3,10 @@
 import { z } from "astro/zod";
 
 export const COLLECTIONS = {
-  paper: { name: "The Paper Edit", plain: "Journaling and stationery", image: "junk-journal-spread-leaves-collage", extras: "Optional extras" },
-  creative: { name: "The Creative Edit", plain: "Painting, clay and making", image: "clay-ring-dish-painted-blossoms", extras: "Nice to have" },
-  cozy: { name: "The Cozy Edit", plain: "Slow evenings in", image: "cozy-corner", extras: "Nice to have" },
-  hosting: { name: "The Hosting Edit", plain: "Game nights and gatherings", image: "american-mahjong-table-tiles-and-racks", extras: "Nice to have" },
+  paper: { name: "The Paper Edit", plain: "Beautiful journal pages without a drawer full of supplies", image: "junk-journal-spread-leaves-collage", extras: "Optional extras" },
+  creative: { name: "The Creative Edit", plain: "Little handmade dishes and a pretty palette to paint them", image: "clay-ring-dish-painted-blossoms", extras: "Nice to have" },
+  cozy: { name: "The Cozy Edit", plain: "A finished little painting in one slow evening", image: "cozy-corner", extras: "Nice to have" },
+  hosting: { name: "The Hosting Edit", plain: "A set and a card for a first American mahjong night", image: "american-mahjong-table-tiles-and-racks", extras: "Nice to have" },
   sporty: { name: "The Sporty Edit", plain: "Moving a little more" },
   "little-adventures": { name: "The Little Adventures Edit", plain: "Days out and small trips" },
 };
@@ -137,6 +137,8 @@ export const productSchema = z
     whyWeLikeIt: text.optional(),
     bestUse: text.optional(),
     inTheBox: text.optional(),
+    buttonLabel: text.max(40, "Keep the button label short").optional(),
+    haveItAlready: text.optional(),
     shopTier: optional(z.enum(["start", "extras"])),
     // An alternative to another product in the same collection: shown under it as "choose one", never as a second essential.
     choiceOf: text.optional(),

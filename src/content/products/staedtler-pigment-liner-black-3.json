@@ -24,5 +24,7 @@
   "imageStatus": "none",
   "verificationSource": "Listing read by Cowork on the owner's account, 2026-11-23 (docs/cowork/BATCH-2-RESULTS.csv): sold by Amazon.com, in stock. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID' for the tagged address; that validates the tag only, and real commission is confirmed only in Associates reports.",
   "shopTier": "start",
-  "inTheBox": "Three black pens: 0.05, 0.2 and 0.8 mm."
+  "inTheBox": "Three black pens: 0.05, 0.2 and 0.8 mm.",
+  "buttonLabel": "See the Pens on Amazon",
+  "haveItAlready": "Any black pigment-ink pen you already like will do."
 }

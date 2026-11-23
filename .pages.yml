@@ -285,6 +285,12 @@ content:
             - Different style
             - Mix-your-own alternative
             - Larger set
+      - name: buttonLabel
+        label: Button text (for example See the Journal on Amazon; leave empty for the standard label)
+        type: string
+      - name: haveItAlready
+        label: Already have one? (one sentence giving permission to skip or reuse)
+        type: string
       - name: inTheBox
         label: What is in the box (verified contents only, one sentence)
         type: text

@@ -25,5 +25,7 @@
   "imageStatus": "none",
   "verificationSource": "Listing: sold by Amazon.com; 111 pieces stated throughout the listing. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID' for the product's tagged address (Cowork, owner's account, 2026-11-20). That validates the tag only; real commission is confirmed only in Associates reports. Earlier listing check: Cowork, 2026-11-19. Rechecked by Cowork 2026-11-23 (docs/cowork/BATCH-2-RESULTS.csv): same item, in stock, Link Checker success.",
   "shopTier": "extras",
-  "inTheBox": "111 die-cut paper pieces in assorted sizes."
+  "inTheBox": "111 die-cut paper pieces in assorted sizes.",
+  "buttonLabel": "See the Paper Pieces on Amazon",
+  "haveItAlready": "Your own tickets, envelopes and scraps do the same job; this is a pretty extra."
 }
