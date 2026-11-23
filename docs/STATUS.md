@@ -3,7 +3,7 @@
 Updated 2026-11-23 against `main`. "Unverified" means nobody has confirmed it. The site is private and in preview mode; nothing is launched.
 
 ## What the repository holds today
-- 5 published articles (junk journal supplies, your first junk journal spread, air-dry clay, how to host a mahjong night, hobbies for busy women), 15 built pages, 20 product records, 15 rights records and image files (see `docs/IMAGE-RECORDS.md`).
+- 5 published articles (junk journal supplies, your first junk journal spread, air-dry clay, how to host a mahjong night, hobbies for busy women), 15 built pages, 20 product records, 16 rights records and image files (see `docs/IMAGE-RECORDS.md`).
 - Settings: marketplace amazon.com, tracking ID `planspastfive-20`, **tracking OFF**, **launchMode `preview`**. Neither is changed without the owner's go-ahead.
 - Checks run on a clean clone (`npm ci`, `npm run check`, `npm test`, `npm audit`): build passes with 15 pages and the link check, 134 of 134 tests pass, 0 vulnerabilities. An isolated copy with `launchMode` production and tracking on also passes the content check (0 launch blockers).
 

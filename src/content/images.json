@@ -282,5 +282,24 @@
     "notes": "Generated 2026-11-20 with Canva AI (text-to-image). Prompt: Three layout zones on one wide spread: postcard stack, one hero picture, a tidy row of three small items. Concept image, not a spread we made. Stamp marks on postcards are decorative, not lettering. Style line: Premium editorial lifestyle photography, warm natural window light, cream and ivory, cherry-red accents, blush pink, butter yellow, sage green, linen and natural wood, believable imperfect handmade details, no readable text or gibberish lettering, no logos, no brand names. Exported 2000 px, cropped to 3:2. Owner read Canva's AI Product Terms and Terms of Use on 2026-11-20 and confirmed use (owner statement in chat). transferWithSite left unverified: Canva's terms say nothing explicit about transferring a site with the images.",
     "licenceCheckedOn": "2026-11-20",
     "approvedOn": "2026-11-20"
+  },
+  "friends-mahjong-night": {
+    "file": "friends-mahjong-night.jpg",
+    "alt": "Illustration of four friends laughing around a wooden table set for American mahjong, with tile racks, scattered tiles, a teapot, a bowl of strawberries and a plate of cookies in warm lamp light.",
+    "kind": "ai-illustration",
+    "credit": "Generated with Canva AI",
+    "source": {
+      "name": "Canva AI image generator",
+      "url": "https://www.canva.com/ai-image-generator/"
+    },
+    "licenceName": "Canva AI Product Terms / Terms of Use",
+    "licenceUrl": "https://www.canva.com/policies/ai-product-terms/",
+    "commercialUse": "yes",
+    "transferWithSite": "unverified",
+    "attribution": "none",
+    "rightsStatus": "approved",
+    "notes": "Generated 2026-11-23 with Canva AI (text-to-image), inspired by the warm film-style mood of the earlier Lovable image (original composition, not a copy). Prompt: four women in their late twenties and thirties laughing around a low wooden table playing American mahjong, tile racks in front of each, a bowl of strawberries, a teapot and cups, cookies, one friend holding a tile up in mock triumph, cosy living room with fairy lights. Style line: candid warm film-style lifestyle photograph, soft lamp light, cream, cherry red, blush pink and sage accents, no readable text or logos. Exported 2000 px, cropped to 4:3. Concept image, not a photograph of a real evening. Owner read Canva's AI Product Terms and Terms of Use on 2026-11-20 and confirmed use (owner statement in chat); owner asked for this image on 2026-11-23. transferWithSite left unverified. The Canva media id is in the generation job record; the source address above is the tool, not a share link.",
+    "licenceCheckedOn": "2026-11-20",
+    "approvedOn": "2026-11-23"
   }
 }

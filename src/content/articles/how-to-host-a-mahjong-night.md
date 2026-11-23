@@ -8,8 +8,8 @@ category: Better Together
 format: experience-guide
 featured: false
 hero:
-  image: /images/american-mahjong-table-tiles-and-racks.jpg
-  alt: "A hand holding a mahjong tile over a table of scattered tiles, with tile racks, walls of tiles and a green playing mat set for American mahjong."
+  image: /images/friends-mahjong-night.jpg
+  alt: "Illustration of four friends laughing around a wooden table set for American mahjong, with tile racks, scattered tiles, a teapot, a bowl of strawberries and a plate of cookies in warm lamp light."
 picks: []
 related: []
 ---

@@ -13,7 +13,7 @@ A small, static lifestyle magazine with a curated Amazon shop, built with Astro,
 | Shop | 4 shelves (paper, creative, cozy, hosting); 20 product records of which 14 are shown (essentials, optional extras, and "choose one" alternatives); text-only cards with a verified "In the box" line, a "Worth knowing" caveat and a clear button |
 | Product system | One JSON file per product with status, evidence and approval controls; links are built centrally from the ASIN and your tracking ID; unverified products cannot appear in production |
 | Publishing | Pages CMS forms, a Publish button with checks, Undo, an optional release queue (manual or automatic posting, off by default), Netlify build rule that spends credits only on `[deploy]` commits |
-| Pictures | 15 pictures with a rights record each: 11 AI-generated (10 Canva, 1 Lovable) and 4 Pexels photographs, plus the red "5" site icon |
+| Pictures | 16 pictures with a rights record each: 12 AI-generated (11 Canva, 1 Lovable) and 4 Pexels photographs, plus the red "5" site icon |
 | Domain | planspastfive.com (registered 2026-11-19, expires 2027-11-19, auto-renew off), moved by registrar transfer; mailbox hello@planspastfive.com on Namecheap |
 | Documents | Owner guide, publishing guide, transfer steps, costs, risks, status, shopping strategy, image records, article templates (`docs/`) |
 
