@@ -40,4 +40,4 @@ After release, add a link to the new article from the related guides that should
 - **Wrong article went out:** use **Undo last publish** (`docs/OWNER-OPERATIONS.md`).
 
 ## Status of this automation
-The release logic has automated tests (`test/release.test.mjs`: queue order, release days, skipping unready drafts, the manual button, nothing published when a check fails). The GitHub workflow itself has **not run on GitHub yet**, like the other workflows; its first real run is part of `docs/cowork/BATCH-3.md` Part 4. Until then treat automatic posting as untested and prefer way A or B.
+The release logic has automated tests (`test/release.test.mjs`: queue order, release days, skipping unready drafts, the manual button, nothing published when a check fails). The GitHub workflow itself has **not run on GitHub yet**, like the other workflows; its first real run is part of `docs/cowork/BATCH-4.md` Part D. Until then treat automatic posting as untested and prefer way A or B.

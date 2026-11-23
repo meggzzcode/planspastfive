@@ -399,7 +399,7 @@ describe("shell rules from the owner's master brief", () => {
   test("home: hero wording and CTAs; no Featured section when nothing is featured; no placeholder text anywhere", () => {
     const h = distHtml(dir, "index.html");
     assert.match(h, /Explore the Journal/); assert.match(h, /Shop Our Favorites/);
-    assert.match(h, /Your next favorite thing starts here\. Discover fun hobbies, pretty little projects and thoughtfully chosen supplies for making the most of life after five\./);
+    assert.match(h, /Your next favorite thing starts here\. Discover fun hobbies, evenings with friends, small adventures and thoughtfully chosen supplies for making the most of life after five\./);
     assert.doesNotMatch(h, /Featured experiences/);
     for (const f of ["index.html", "journal/index.html", "shop/index.html", "about/index.html"]) assert.doesNotMatch(distHtml(dir, f), /coming soon|lorem|placeholder/i);
     assert.ok(h.indexOf("Latest from the Journal") < h.indexOf("A little shopping inspiration"));

@@ -20,14 +20,14 @@ const hero = siteImage("weekend-picnic");
 const cozy = siteImage("cozy-corner");
 const jsonLd = [{ "@context": "https://schema.org", "@type": "WebSite", name: settings.siteName, url: abs("/"), description: settings.tagline }];
 ---
-<Base home title={settings.tagline} description="Your next favorite thing starts here. Fun hobbies, pretty little projects and thoughtfully chosen supplies for making the most of life after five." path="/" image={hero.src} jsonLd={jsonLd}>
+<Base home title={settings.tagline} description="Your next favorite thing starts here. Fun hobbies, evenings with friends, small adventures and thoughtfully chosen supplies for making the most of life after five." path="/" image={hero.src} jsonLd={jsonLd}>
   <section class="hero" aria-labelledby="hero-h">
     <div class="wrap hero__grid">
       <div class="hero__text">
         <p class="eyebrow">An independent lifestyle journal</p>
         <h1 id="hero-h" class="hero__title">Plans Past <em>Five.</em></h1>
         <p class="hero__sub">Making a life, not just a living.</p>
-        <p class="hero__lede">Your next favorite thing starts here. Discover fun hobbies, pretty little projects and thoughtfully chosen supplies for making the most of life after five.</p>
+        <p class="hero__lede">Your next favorite thing starts here. Discover fun hobbies, evenings with friends, small adventures and thoughtfully chosen supplies for making the most of life after five.</p>
         <p class="hero__actions">
           <a class="button" href="/journal/">Explore the Journal</a>
           {groups.length > 0 && <a class="button button--ghost" href="/shop/">Shop Our Favorites</a>}
