@@ -20,7 +20,7 @@ This guide is for the person who would send the first message. It covers startin
 
 One fair warning first: a walking club cannot promise you friends. What it does is hand you a reason to spend repeated time with the same people, and time together is the part research keeps pointing to.
 
-In 2018, University of Kansas communication researcher Jeffrey Hall reported on two surveys: 355 adults who had recently moved, and 112 first-year students. Putting both together, he estimated that it took roughly 40 to 60 hours together to go from acquaintance to casual friend, 80 to 100 hours to become a friend, and more than 200 hours to become a close friend. Time spent hanging out and joking around counted. Time spent working together counted for much less. Two caveats: these are averages from self-reported surveys of people who had just moved, not a rule, and the study was not about walking.
+In 2018, University of Kansas communication researcher Jeffrey Hall reported on two surveys: 355 adults who had recently moved, and 112 first-year students. Putting both together, he estimated that it took roughly 40 to 60 hours together to go from acquaintance to casual friend, 80 to 100 hours to become a friend, and more than 200 hours to become a close friend. Time spent hanging out and joking around counted. Time spent working together counted for much less. Caveats: these are self-reported averages from people who had just moved, and the study was not about walking.
 
 Our own arithmetic, not Hall's: a 45-minute walk plus 45 minutes of coffee is 90 minutes. Meet 48 weeks a year and that is about 72 hours with the same people. Hall's own line fits the plan: you cannot make people spend time with you, but you can invite them.
 
@@ -30,7 +30,7 @@ Aim for two or three invitees, so one cancellation does not cancel the walk.
 
 - **One fixed day and time.** "Thursdays at 6" beats "whenever works." People can build a week around a standing slot, and you never have to renegotiate it.
 - **One route near work or home.** If it takes a bus and a forty-minute drive, it will not survive February.
-- **A length you can promise.** Forty-five minutes walking, then coffee, is easy to say yes to. Say the finish time out loud so nobody wonders whether she is signing up for two hours.
+- **A length you can promise.** Forty-five minutes walking, then coffee, is easy to say yes to. State the finish time.
 - **Weekly or every other week.** Groups described in a Washington State guide meet weekly, every two weeks or monthly. Pick the one you will actually keep.
 
 ## Where to find your first members
@@ -49,7 +49,7 @@ Expect a slow start. A Washington State guide notes that it takes time to build 
 The route is half the club. Work through this list before you announce anything.
 
 - **A loop that starts and ends in the same place.** A public-health action guide recommends loops because people can set their own pace and find their way back. A bench near the middle is a bonus.
-- **Quieter streets.** A UK walking guide advises avoiding main roads and favouring side streets or paths, with a park or water if you have one.
+- **Quieter streets.** A UK walking guide advises avoiding main roads and favouring side streets or paths.
 - **Restrooms, benches and bus stops.** Check them before you pick a start point, and look for hills, steps and rough ground.
 - **A café at the end.** Make sure it has a step-free way in.
 
