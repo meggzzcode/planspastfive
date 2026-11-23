@@ -54,4 +54,4 @@ Write a single line: a date, a place, a small joy. "Tuesday. Jam on toast. Bette
 
 Leave the book open on the side table overnight so anything curling has time to calm down. Then look at the page on Thursday and see what the next one wants.
 
-When you are ready to buy a proper book, adhesive and pen, our [junk journal supplies guide](/journal/junk-journal-supplies-for-beginners/) has the short list.
+When you are ready to buy a proper book, adhesive and pen, our [junk journal supplies guide](/journal/junk-journal-supplies-for-beginners/) has the short list, and [the paper shelf](/shop/#paper) has it all in one place.

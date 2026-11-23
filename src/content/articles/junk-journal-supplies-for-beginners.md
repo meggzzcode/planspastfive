@@ -24,7 +24,9 @@ related:
 
 Picture the page. A cream envelope tucked under a ticket stub, one strip of tape in a colour that makes you smile, a line of your own handwriting underneath. Turn it over and the next page is just as full. The corners have gone soft, and it looks like something loved for a year, although it has only been a month.
 
-That is a junk journal, and it takes four things to begin: a sturdy book, something to stick with, a pen and a roll of tape. Pick a mood for inspiration, buy one small basket of essentials, and your first page feels like the start of a collection. The whole basket also sits together on [the paper shelf in the Shop](/shop/#paper).
+That is a junk journal, and it takes four things to begin: a sturdy book, something to stick with, a pen and a roll of tape. Pick a mood for inspiration, buy one small basket of essentials, and your first page feels like the start of a collection.
+
+**The kit at a glance.** Essentials: a heavy-paper book, dry adhesive, a black pen and a roll of tape, with scissors if you need a pair. Optional: aged paper pieces and a sticker set for a finishing touch. See all of it together on [the paper shelf in the Shop](/shop/#paper).
 
 ## Choose your look
 
