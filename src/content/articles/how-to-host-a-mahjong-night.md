@@ -8,8 +8,8 @@ category: Better Together
 format: experience-guide
 featured: false
 hero:
-  image: /images/girls-night-crafts.jpg
-  alt: "Illustration of four friends laughing around a low table, threading bead bracelets beside a mahjong game, with a bowl of strawberries and fairy lights behind them."
+  image: /images/american-mahjong-table-tiles-and-racks.jpg
+  alt: "A hand holding a mahjong tile over a table of scattered tiles, with tile racks, walls of tiles and a green playing mat set for American mahjong."
 picks: []
 related: []
 ---

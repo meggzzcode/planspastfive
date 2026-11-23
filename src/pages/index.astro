@@ -16,7 +16,7 @@ const products = (await getCollection("products")).map((p) => p.data);
 const groups = shopGroups(products, settings.launchMode);
 const usedIn = articlesUsingProduct(articles.map((a) => ({ id: a.id, title: a.data.title, picks: a.data.picks, body: a.body })), new Map(products.map((p) => [p.id, p])), settings.launchMode);
 const picks = groups.flatMap((g) => g.products.slice(0, 1).map((p) => ({ ...p, group: g }))).slice(0, 3);
-const hero = siteImage("weekend-picnic");
+const hero = siteImage("girls-night-crafts");
 const cozy = siteImage("cozy-corner");
 const jsonLd = [{ "@context": "https://schema.org", "@type": "WebSite", name: settings.siteName, url: abs("/"), description: settings.tagline }];
 ---
@@ -36,7 +36,7 @@ const jsonLd = [{ "@context": "https://schema.org", "@type": "WebSite", name: se
       <figure class="postcard">
         <span class="tape" aria-hidden="true"></span>
         <img src={hero.src} alt={hero.alt} width="1152" height="896" fetchpriority="high" decoding="async" />
-        <figcaption><span class="hand">saturday, with a storyline.</span>{hero.caption && <span class="illus">{hero.caption}</span>}</figcaption>
+        <figcaption><span class="hand">friday night, with a plan.</span>{hero.caption && <span class="illus">{hero.caption}</span>}</figcaption>
       </figure>
     </div>
   </section>
