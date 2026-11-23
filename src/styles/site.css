@@ -310,3 +310,7 @@ ul.plain { list-style: none; padding: 0; margin: 0; }
 
 .product-card__best { font-size: 0.85rem; font-weight: 700; color: var(--cherry); margin: 0.1rem 0 0.4rem; }
 .product-card__tier { display: inline-block; margin-right: 0.5rem; padding: 0.05rem 0.5rem; border-radius: 999px; background: var(--cherry); color: #fff; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.choice-set { display: grid; gap: 0.9rem; align-content: start; }
+.choice-set .product-card { margin: 0; }
+.choice-set__note { margin: 0; font-size: 0.85rem; font-style: italic; color: var(--muted, #6b5b57); }
+.product-card__tier--alt { background: transparent; color: var(--cherry); border: 1px solid var(--cherry); }

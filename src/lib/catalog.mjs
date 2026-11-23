@@ -45,8 +45,14 @@ export function shopGroups(products, mode = "production") {
   const v = shownProducts(products, mode);
   return Object.entries(COLLECTIONS)
     .map(([id, c]) => {
-      const all = byEditorialOrder(v.filter((p) => p.collection === id));
-      return { id, label: c.name, plain: c.plain, image: c.image, extrasLabel: c.extras || "Nice to have", products: all, start: all.filter((p) => p.shopTier !== "extras"), extras: all.filter((p) => p.shopTier === "extras") };
+      const inGroup = byEditorialOrder(v.filter((p) => p.collection === id));
+      const ids = new Set(inGroup.map((p) => p.id));
+      // an alternative sits under its main product when that product is shown; otherwise it is an ordinary product
+      const isAlt = (p) => p.choiceOf && ids.has(p.choiceOf) && !inGroup.find((x) => x.id === p.choiceOf)?.choiceOf;
+      const alternatives = new Map();
+      for (const p of inGroup.filter(isAlt)) alternatives.set(p.choiceOf, [...(alternatives.get(p.choiceOf) || []), p]);
+      const all = inGroup.filter((p) => !isAlt(p));
+      return { id, alternatives, label: c.name, plain: c.plain, image: c.image, extrasLabel: c.extras || "Nice to have", products: all, start: all.filter((p) => p.shopTier !== "extras"), extras: all.filter((p) => p.shopTier === "extras") };
     })
     .filter((g) => g.products.length > 0);
 }

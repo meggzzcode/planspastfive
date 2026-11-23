@@ -12,6 +12,7 @@ export const COLLECTIONS = {
 };
 export const CATEGORIES = ["Creative Corner", "After Hours", "Better Together", "The Weekend Edit", "Table for One", "A Little Movement"];
 export const FORMATS = ["starter-guide", "shopping-edit", "experience-guide", "discovery"];
+export const CHOICE_LABELS = ["Prettier alternative", "Budget-friendly alternative", "Premium alternative", "Different style", "Mix-your-own alternative"];
 export const CTA_LABELS = ["See It on Amazon", "Explore This Starter Kit", "Shop the Supplies", "See Our Pick"];
 export const COLLECTION_IDS = Object.keys(COLLECTIONS);
 
@@ -136,6 +137,9 @@ export const productSchema = z
     whyWeLikeIt: text.optional(),
     bestUse: text.optional(),
     shopTier: optional(z.enum(["start", "extras"])),
+    // An alternative to another product in the same collection: shown under it as "choose one", never as a second essential.
+    choiceOf: text.optional(),
+    choiceLabel: optional(z.enum(CHOICE_LABELS)),
     cta: optional(z.enum(CTA_LABELS)),
     limitations: text.optional(),
     descriptionOriginal: text.optional(),
@@ -165,6 +169,8 @@ export const productSchema = z
       if (!l.checkedOn) ctx.addIssue({ code: "custom", path: ["listingChecked", "checkedOn"], message: "A provisional product needs the date the listing was checked" });
       if (l.listingAvailable === "no" || l.affiliateLinkEligible === "no") ctx.addIssue({ code: "custom", path: ["status"], message: "A product whose listing is unavailable or not eligible for affiliate links cannot be shown; mark it held" });
     }
+    if (p.choiceOf && !p.choiceLabel) ctx.addIssue({ code: "custom", path: ["choiceLabel"], message: "An alternative needs a label saying how it differs (choiceLabel)" });
+    if (p.choiceOf && p.choiceOf === p.id) ctx.addIssue({ code: "custom", path: ["choiceOf"], message: "A product cannot be an alternative to itself" });
     if (p.imageStatus === "approved" && !p.image) ctx.addIssue({ code: "custom", path: ["image"], message: 'imageStatus is "approved" but there is no image' });
   });
 

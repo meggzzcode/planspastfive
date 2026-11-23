@@ -262,6 +262,19 @@ content:
       - name: whyWeLikeIt
         label: Why we picked it
         type: text
+      - name: choiceOf
+        label: Alternative to (the id of the main product in the same section; leave empty for a main product)
+        type: string
+      - name: choiceLabel
+        label: How the alternative differs
+        type: select
+        options:
+          values:
+            - Prettier alternative
+            - Budget-friendly alternative
+            - Premium alternative
+            - Different style
+            - Mix-your-own alternative
       - name: shopTier
         label: Shop position (Start here = beginner essentials, Pretty extras = optional)
         type: select

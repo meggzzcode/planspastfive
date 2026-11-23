@@ -33,3 +33,37 @@ test("compact card is just name and button", () => {
   assert.doesNotMatch(h, /Writes cleanly|Worth knowing/);
   assert.match(h, /class="button"/);
 });
+
+import { shopGroups } from "../src/lib/catalog.mjs";
+const mk = (id, extra = {}) => ({ id, name: id, brand: "B", asin: "B0TESTAAAA", status: "verified", editorialDecision: "approve", collection: "creative", ...extra });
+
+test("an alternative sits under its main product and is not a second essential", () => {
+  const g = shopGroups([mk("main"), mk("alt", { choiceOf: "main", choiceLabel: "Budget-friendly alternative" })])[0];
+  assert.deepEqual(g.start.map((p) => p.id), ["main"]);
+  assert.deepEqual(g.alternatives.get("main").map((p) => p.id), ["alt"]);
+});
+
+test("an alternative whose main product is not shown becomes an ordinary product", () => {
+  const g = shopGroups([mk("main", { editorialDecision: "hold" }), mk("alt", { choiceOf: "main", choiceLabel: "Different style" })])[0];
+  assert.deepEqual(g.start.map((p) => p.id), ["alt"]);
+});
+
+test("alternative card shows its label instead of Start here", () => {
+  const h = productCardHtml({ ...p, shopTier: "start", choiceLabel: "Prettier alternative" }, settings, {});
+  assert.match(h, /product-card__tier product-card__tier--alt">Prettier alternative</);
+  assert.doesNotMatch(h, /Start here/);
+});
+
+import { makeCopy, cleanup, editJson, checkContentCli } from "./helpers.mjs";
+test("check-content rejects a bad choiceOf and accepts a good one", () => {
+  const dir = makeCopy("ppf-choice");
+  try {
+    const f = "src/content/products/nmjl-2026-standard-cards-four-pack.json";
+    editJson(dir, f, (x) => { x.choiceOf = "tombow-mono-permanent"; x.choiceLabel = "Different style"; });
+    assert.match(checkContentCli(dir).out, /different shop section/);
+    editJson(dir, f, (x) => { x.choiceOf = "no-such-product"; });
+    assert.match(checkContentCli(dir).out, /does not exist/);
+    editJson(dir, f, (x) => { x.choiceOf = "nmjl-2026-large-print-cards-four-pack"; });
+    assert.ok(checkContentCli(dir).ok);
+  } finally { cleanup(dir); }
+});

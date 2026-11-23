@@ -36,7 +36,7 @@ export function productCardHtml(p, settings, { heading = "h3", compact = false, 
 ${img}<div class="product-card__body">
 <p class="product-card__brand">${esc(p.brand)}</p>
 <${heading} class="product-card__name">${esc(p.name)}</${heading}>
-${compact ? "" : `${p.bestUse || p.shopTier ? `<p class="product-card__best">${p.shopTier ? `<span class="product-card__tier">${p.shopTier === "start" ? "Start here" : "Optional extra"}</span>` : ""}${esc(p.bestUse || "")}</p>
+${compact ? "" : `${p.bestUse || p.shopTier || p.choiceLabel ? `<p class="product-card__best">${p.choiceLabel ? `<span class="product-card__tier product-card__tier--alt">${esc(p.choiceLabel)}</span>` : p.shopTier ? `<span class="product-card__tier">${p.shopTier === "start" ? "Start here" : "Optional extra"}</span>` : ""}${esc(p.bestUse || "")}</p>
 ` : ""}<p class="product-card__why">${esc(firstSentence(p.whyWeLikeIt))}</p>
 ${p.limitations ? `<p class="product-card__note"><strong>Worth knowing:</strong> ${esc(firstSentence(p.limitations))}</p>` : ""}
 `}<p class="product-card__action"><a class="button" ${linkAttrs(p, settings, ctx, placement)}>${esc(p.cta || "See It on Amazon")}<span class="sr-only"> (opens in a new tab)</span></a></p>

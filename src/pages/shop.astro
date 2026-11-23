@@ -30,6 +30,16 @@ const groups = shopGroups(products, settings.launchMode);
         {groups.map((g) => {
           const rec = g.image && images[g.image]?.rightsStatus === "approved" ? images[g.image] : null;
           const card = (p) => <Fragment set:html={productCardHtml(p, settings, { ctx: { page: "shop" }, placement: "shop", images })} />;
+          const entry = (p) => {
+            const alts = g.alternatives.get(p.id) || [];
+            return alts.length === 0 ? card(p) : (
+              <div class="choice-set">
+                {card(p)}
+                <p class="choice-set__note">Or choose one of these instead. You only need one.</p>
+                {alts.map(card)}
+              </div>
+            );
+          };
           return (
           <section class="shop-group" id={g.id} aria-labelledby={`h-${g.id}`}>
             <div class={rec ? "shop-group__head shop-group__head--with-image" : "shop-group__head"}>
@@ -40,10 +50,10 @@ const groups = shopGroups(products, settings.launchMode);
               </div>
             </div>
             {g.extras.length > 0 && <h3 class="shop-group__tier">Start here</h3>}
-            <div class="pick-list pick-list--grid">{g.start.map(card)}</div>
+            <div class="pick-list pick-list--grid">{g.start.map(entry)}</div>
             {g.extras.length > 0 && (<>
               <h3 class="shop-group__tier">{g.extrasLabel}</h3>
-              <div class="pick-list pick-list--grid">{g.extras.map(card)}</div>
+              <div class="pick-list pick-list--grid">{g.extras.map(entry)}</div>
             </>)}
           </section>
           );

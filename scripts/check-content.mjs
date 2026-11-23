@@ -76,6 +76,12 @@ export function checkContent(root) {
         if (r.error && (mode !== "production" || usedBy.has(p.id) || isShown(p, mode) || /circle/.test(r.error))) errors.push(`${file}, field "replacedBy": ${r.error}.`);
       }
     }
+    if (p.choiceOf) {
+      const parent = byId.get(p.choiceOf);
+      if (!parent) errors.push(`${file}, field "choiceOf": "${p.choiceOf}" does not exist.`);
+      else if (parent.collection !== p.collection) errors.push(`${file}, field "choiceOf": "${p.choiceOf}" is in a different shop section ("${parent.collection}"); an alternative must sit in the same section.`);
+      else if (parent.choiceOf) errors.push(`${file}, field "choiceOf": "${p.choiceOf}" is itself an alternative. Point at the main product instead.`);
+    }
     for (const f of ["name", "brand", "statusReason", "bestUse", "whyWeLikeIt", "limitations", "descriptionOriginal", "suitability", "qualityNote"]) scan(file, f, p[f]);
     if (p.listingChecked) scan(file, "listingChecked.variant", p.listingChecked.variant);
     if (mode === "production" && isResearch(p) && !usedBy.has(p.id)) notShownInProduction++;
