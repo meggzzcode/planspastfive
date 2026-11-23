@@ -22,6 +22,12 @@ test("card shows name, best-use label, one reason, one caveat and the button; no
   for (const hidden of ["long original description", "Private", "<dl", "product-card__media"]) assert.doesNotMatch(h, new RegExp(hidden));
 });
 
+test("card marks essentials and optional extras from shopTier", () => {
+  assert.match(productCardHtml({ ...p, shopTier: "start" }, settings, {}), /product-card__tier">Start here</);
+  assert.match(productCardHtml({ ...p, shopTier: "extras" }, settings, {}), /product-card__tier">Optional extra</);
+  assert.doesNotMatch(productCardHtml(p, settings, {}), /product-card__tier/);
+});
+
 test("compact card is just name and button", () => {
   const h = productCardHtml(p, settings, { compact: true });
   assert.doesNotMatch(h, /Writes cleanly|Worth knowing/);

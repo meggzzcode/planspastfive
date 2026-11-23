@@ -20,7 +20,7 @@ After that:
 | API keys, tokens, passwords, private keys (files and full history) | None. The only matches are workflow code that uses GitHub's built-in per-run token (`.github/workflows/publish-content.yml` lines 14, 48, 52; `undo-last-publish.yml` lines 40, 44). That token is created fresh for each run and is not stored in the repository. |
 | `.env` or credential files | None tracked; `.gitignore` does not need one. |
 | Commit author details | All 10 commits are authored as a generic "Claude" no-reply address. No personal email or name. |
-| Picture metadata | The four pictures carry only an "AI generated" marker (and for two, an image-tool label). No camera, location or personal data. |
+| Picture metadata | The pictures carry at most an "AI generated" marker or an image-tool label (AI images) or a photographer credit (Pexels). No camera, location or personal data. |
 | Amazon order numbers, card or payment details, Associates logins, account holder name | None, except the item below. |
 | The owner's other site and its tracking ID | Not named anywhere. `docs/RISKS.md` line 3 says only "another site's tag". |
 

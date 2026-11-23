@@ -15,7 +15,7 @@ The flow: **Pages CMS (edit) > Netlify preview link (look) > Publish site button
 6. Look at Netlify's Usage page and note the credits left.
 
 ## The credit budget (read once)
-Your Netlify Personal plan ($9 a month) gives 1,000 credits a month. A production deploy costs 15 (verified 2026-11-19), so about 66 publishes a month. As of 2026-11-19 you had **135 credits left until 2026-12-16** (about 9 deploys).
+Your Netlify Personal plan ($9 a month) gives 1,000 credits a month. A production deploy costs 15 (verified 2026-11-19), so about 66 publishes a month. On 2026-11-19 you had 135 credits left until 2026-12-16 (about 9 deploys); check the Usage page for today's figure.
 
 The design that saves credits: the live site is rebuilt **only** when the newest commit on `main` contains `[deploy]`, which only the Publish button adds. Saving in the CMS never changes the live site. Netlify's documentation says branch deploys, deploy previews, failed builds and rollbacks cost 0 credits, but your account's real figures, and what a **skipped build** costs, are **UNKNOWN** until the real test measures them. So: batch your edits, save as often as you like, publish once.
 
@@ -96,7 +96,7 @@ A short shopping note appears before the first product link or card on every pag
 
 **Owner step: switch `launchMode` to `production` only when you are ready to launch**, and only after the LAUNCH WARNING list in the build log is empty. How: in Pages CMS open Site settings and set **Launch mode** to Production, then Save and Publish (or edit `"launchMode"` in `src/content/settings.json` on GitHub's website; or ask the AI or developer). **Caveat:** nothing yet ties the Netlify production deploy to this setting. The live site is built from whatever `settings.json` says on `main`, so the switch is a deliberate manual step and not an automatic guard. Do not rely on it to stop an unready publish.
 
-**Current production blockers** (what the "Blocks production" list shows today): only the 4 pending pictures (`girls-night-crafts`, `cozy-corner`, `weekend-picnic`, `junk-journal-flatlay`: commercial use unverified, plus missing licence details and approval date). No product blocks: the one published article uses Tombow, which is verified.
+**Current production blockers:** none in the content check (verified in an isolated production-mode copy on 2026-11-23). Remaining launch gates are owner actions (`docs/STATUS.md`).
 
 ## Change settings and the tracking ID
 Site settings in the CMS. **The Amazon tracking ID lives only here.** Keep "Switch Amazon affiliate tracking on" **off** until you have confirmed eligibility and decided to launch: Amazon lets you use links after applying, but the site must be public first (`docs/AMAZON-ASSOCIATES.md`). Switching it on with an empty ID fails the build. Changing the ID changes every Amazon link at the next publish.
@@ -120,6 +120,15 @@ The site pauses and visitors see "Site not available" until the monthly reset. O
 - Read analytics if on. (15 min)
 - Associates Central: account in good standing, qualifying sales count. (10 min)
 - Write or tidy one story; publish once. (40 min)
+
+## Replace a product or change what it says
+Open its file in `src/content/products/` (one JSON per product). To swap one: copy a verified product file, set a new `id`, `asin`, name, brand, `whyWeLikeIt` (one specific reason), `limitations` (one real caveat), `bestUse` ("Best for ..."), `collection` and `shopTier` (`start` or `extras`), re-check the Amazon page yourself, fill `listingChecked` and set `status` to `verified` and `editorialDecision` to `approve`. Then point the article's `{{pick:id}}` marker at it. To retire one, set `status` to `held` (it then disappears from the site). Never type an Amazon link into an article: links are built from the ASIN and your tracking ID.
+
+## Replace the tracking ID and connect your own Associates account
+Change `amazonTrackingId` in Site settings (or `src/content/settings.json`), keep `amazonTrackingEnabled` off until your own Associates account is open and the site is public, then switch it on and publish. Check one product button: the link should read `amazon.com/dp/ASIN?tag=<your ID>`, and the footer disclosure should show Amazon's required sentence.
+
+## Yearly: American mahjong card
+The National Mah Jongg League issues a new card each spring. Each year: find the new large-print and standard four-pack on Amazon, replace the `nmjl-...` product records (or edit ASIN, name and checked date), update the year in the article text, and re-check the Sapphire set. Until replaced, the 2026 pack is labelled as the 2026 edition.
 
 ## Yearly
 Domain renewal (auto-renew is OFF; first year paid to 2027-11-19), mailbox plan renewal (price unconfirmed), Netlify plan, GitHub, and re-check picture tool licence terms.

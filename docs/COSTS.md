@@ -6,7 +6,7 @@ Verified facts come from the earlier project's records, read 2026-11-19. **UNKNO
 | Item | Cost | Status and source |
 |---|---|---|
 | Netlify Personal plan | $9.00 a month ($108 a year) | Verified 2026-11-19 (Netlify dashboard, `docs/marketplace/final-inspection/NETLIFY-ACCOUNT-FACTS.md`): 1,000 credits a month, 15 credits per production deploy |
-| Credits left this period | 135 of 1,000 until 2026-12-16 (about 9 deploys) | Verified 2026-11-19; auto-recharge disabled |
+| Credits left this period | 135 of 1,000 until 2026-12-16 (about 9 deploys) | Verified 2026-11-19, since then only preview branch builds, no production deploy; check the Usage page. Auto-recharge disabled |
 | Deploys per month on 1,000 credits | about 66 | Estimate (1,000 / 15) |
 | Skipped builds, deploy previews, branch deploys | **UNKNOWN** in this account | Netlify's documentation lists previews and branch deploys at 0 credits and says failed deploys and rollbacks cost 0; the owner's Usage page did not show it. `docs/OWNER-REAL-TEST.md` records the real figures |
 | Domain planspastfive.com | $12.08 + $0.20 ICANN for year one (paid); renewal list price $15.98 plus ICANN | Verified (Namecheap, order record kept by the owner, not in this repository). Registered 2026-11-19, expires 2027-11-19, auto-renew OFF. Renewal price from a secondary source |

@@ -1,19 +1,39 @@
 # Image records
 
-Every picture used on the site, with where it came from. Copied from the earlier Plans Past Five project's ledger (`docs/IMAGE-LICENSES.md` and `docs/content/IMAGE-LICENCE-LEDGER.md` there). Each picture has one record in `src/content/images.json` (the only place rights are recorded; articles and products only point to it by file name). A record can be `approved` only when commercial use is `yes` and the source address, licence name and address, licence-checked date, approval date and (photographs and product photos) credit are all present. In `launchMode` "production" a picture that is not approved cannot be used. `images.json` cannot be edited in a Pages CMS form: change it on GitHub's website or ask the AI or developer (see `docs/OWNER-OPERATIONS.md`).
+Every picture on the site has one record in `src/content/images.json`, the only place rights are kept (articles and products point to it by key or file name). A record can be `approved` only when commercial use is `yes` and it has a source address, licence name and address, a licence-checked date and approval date (photographs also need a credit). In `launchMode` production a picture a page uses must be approved. `images.json` is not editable in the CMS form: edit it on GitHub or ask the AI or developer (`docs/OWNER-OPERATIONS.md`).
 
-All four are **AI-generated illustrations**, not photographs, and **all four are `pending`** (not approved). The owner supplied them for use, but the earlier ledger says: *no exclusivity or registrable copyright promised; the tools' commercial-use and transfer terms were not verified.* That is the open risk in `docs/RISKS.md`. No Amazon, manufacturer or stock images are used.
+Captions follow the kind: AI illustrations say "Illustrative image (AI-generated)", photographs "Photo: <credit>", product photos "Product photo: <credit>". An illustration is never presented as a tested result or a photo of a product. No Amazon, manufacturer or stock-product images are used.
 
-| File | Used on | Tool and source | Licence statement |
+## Inventory (16 used pictures)
+| File | Used on | Kind and tool | Rights status |
 |---|---|---|---|
-| `junk-journal-flatlay.jpg` | Demo article hero, journal and home cards | Lovable AI image tool (per the earlier project record), made 2026-11 | AI-generated; no exclusivity or registrable copyright promised; tool terms govern commercial use and transfer: not verified |
-| `girls-night-crafts.jpg` | Home hero | Lovable AI image tool (as above) | as above |
-| `weekend-picnic.jpg` | About page | Lovable AI image tool (as above) | as above |
-| `cozy-corner.jpg` | Home brand band | Canva AI, https://www.canva.com/M/MAHbXzI-Ijo, exported 2026-11-19 | AI-generated under the Canva AI Product Terms (https://www.canva.com/policies/ai-product-terms/); transfer to a buyer not stated by Canva |
+| `girls-night-crafts.jpg` | Mahjong article hero | AI (Lovable) | approved 2026-11-20 |
+| `cozy-corner.jpg` | Home story band, hobbies article hero | AI (Canva) | approved 2026-11-20 |
+| `junk-journal-spread-leaves-collage.jpg` | Junk journal supplies hero; Shop paper shelf | Photo (Pexels) | approved 2026-11-20 |
+| `junk-journal-floral-handmade-book.jpg` | Tutorial hero | Photo (Pexels) | approved 2026-11-20 |
+| `clay-ring-dish-painted-blossoms.jpg` | About page; Shop creative shelf | Photo (Pexels) | approved 2026-11-20 |
+| `junk-journal-shoebox-post.jpg` | Supplies article (Shoebox Post) | AI (Canva) | approved 2026-11-20 |
+| `clay-cherry-dish.jpg` | Clay article (Project 1) | AI (Canva) | approved 2026-11-20 |
+| `weekend-picnic.jpg` | Home hero (via siteImage key) | AI (Lovable) | approved 2026-11-20 |
+| `american-mahjong-table-tiles-and-racks.jpg` | Mahjong article inline; Shop hosting shelf | Photo (Pexels) | approved 2026-11-20 |
+| `clay-three-projects-hero.jpg` | Clay article hero | AI (Canva) | approved 2026-11-20 |
+| `junk-journal-garden-press.jpg` | Supplies article (Garden Press) | AI (Canva) | approved 2026-11-20 |
+| `junk-journal-tea-rose.jpg` | Supplies article (Tea Rose) | AI (Canva) | approved 2026-11-20 |
+| `clay-coil-tray.jpg` | Clay article (Project 3) | AI (Canva) | approved 2026-11-20 |
+| `clay-bow-scalloped-dish.jpg` | Clay article (Project 2) | AI (Canva) | approved 2026-11-20 |
+| `junk-journal-finished-spread.jpg` | Supplies article (seven steps) | AI (Canva) | approved 2026-11-20 |
+| `junk-journal-three-layouts.jpg` | Tutorial (three layouts) | AI (Canva) | approved 2026-11-20 |
 
-Alt text for each is in `src/content/images.json`. Status of each record today: `pending` (commercial use unverified; the Lovable-made pictures also lack a source address, licence and approval date).
+`junk-journal-flatlay.jpg` was an unused legacy file and has been removed.
 
-## Fonts
-Fraunces, DM Sans and Caveat (SIL Open Font License 1.1), self-hosted in `public/fonts/` from the `@fontsource-variable` packages (version 5.3.0, Latin subset). No requests to Google Fonts.
+## Third-party rights and what a buyer must do
+- **Canva AI images (10):** generated with Canva's AI image tool under its AI Product Terms and Terms of Use; the owner read and approved them on 2026-11-20. Canva's terms say nothing explicit about transferring a site with the images, so transfer is **unverified**. A buyer should read the terms themselves, or regenerate or replace any image they are not comfortable keeping. No exclusivity or registrable copyright is promised for AI images.
+- **Lovable AI images (2: `girls-night-crafts`, `weekend-picnic`):** generated with Lovable's image tool; terms read by the owner 2026-11-20; transfer unverified, same advice.
+- **Pexels photographs (4):** free to use under the Pexels License, credited to the photographers; the licence does not say whether images pass to a buyer of a site, so treat transfer as **unverified**. Replace any one by uploading your own photo to `public/images/`, adding a record, and pointing the article at it.
+- **Fonts:** Fraunces, DM Sans and Caveat (SIL Open Font License 1.1), self-hosted in `public/fonts/`.
 
-Captions follow the kind of picture: AI illustrations are captioned "Illustrative image (AI-generated)", photographs "Photo: <credit>", product photos "Product photo: <credit>". This stops an illustration being mistaken for a photo of a tested outcome or of a product.
+## Replace or remove a picture (no developer needed)
+1. Put the new JPEG (about 2000 px wide) in `public/images/` (GitHub: Add file > Upload).
+2. Add a record for it in `src/content/images.json` (copy an existing one; set kind, credit, source, licence, dates).
+3. In the article's Top picture field, or in the Markdown figure, point to the new file name. Pictures on Home, About and the Shop shelves are chosen by the record key in `src/pages/index.astro`, `about.astro` and `COLLECTIONS` in `src/lib/schemas.mjs`.
+4. Delete the old file and record. `npm run check` fails if anything still points to a missing picture.

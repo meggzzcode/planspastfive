@@ -28,6 +28,10 @@ export function makeCopy(label = "ppf") {
   // Settings too: tests run against fixture settings (tracking OFF), so the owner switching tracking on,
   // changing the tag or the launch mode in the real settings file cannot break them.
   fs.copyFileSync(path.join(REPO, "test/fixtures/settings.json"), path.join(dir, "src/content/settings.json"));
+  // One pending (unapproved) picture lives only in the fixtures, so the production-mode tests have something to reject.
+  const imgPath = path.join(dir, "src/content/images.json");
+  fs.writeFileSync(imgPath, JSON.stringify({ ...JSON.parse(fs.readFileSync(imgPath, "utf8")), ...JSON.parse(fs.readFileSync(path.join(REPO, "test/fixtures/images.json"), "utf8")) }, null, 2));
+  fs.cpSync(path.join(REPO, "test/fixtures/images"), path.join(dir, "public/images"), { recursive: true });
   // node_modules: a real folder of links to the real packages, so each copy has its own Astro cache
   fs.mkdirSync(path.join(dir, "node_modules"));
   for (const e of fs.readdirSync(path.join(REPO, "node_modules"))) {
