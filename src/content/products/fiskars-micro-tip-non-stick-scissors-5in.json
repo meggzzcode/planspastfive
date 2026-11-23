@@ -3,8 +3,8 @@
   "name": "5 in Non-Stick Micro-Tip Scissors for Sticky Materials, No. 5",
   "brand": "Fiskars",
   "asin": "B0DLFLZFGK",
-  "status": "verified",
-  "editorialDecision": "approve",
+  "status": "held",
+  "editorialDecision": "hold",
   "order": 50,
   "collection": "paper",
   "bestUse": "Best for trimming tape and small paper pieces",
@@ -24,5 +24,5 @@
   "suitability": "A small, sharp, non-stick pair for trimming tape and cutting out small paper pieces for a first junk journal.",
   "imageStatus": "none",
   "verificationSource": "Listing: sold by Amazon.com; title and bullets confirm the No. 5 micro-tip non-stick model. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID' for the product's tagged address (Cowork, owner's account, 2026-11-20). That validates the tag only; real commission is confirmed only in Associates reports. Earlier listing check: Cowork, 2026-11-19.",
-  "shopTier": "extras"
+  "statusReason": "Editorial decision 2026-11-23: people typically already own scissors, so this is not a craft-specific purchase. The shop pushes only what the activity needs that most readers would not already have. Kept on file in case it is wanted again."
 }

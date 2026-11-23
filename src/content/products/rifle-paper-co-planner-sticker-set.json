@@ -3,8 +3,8 @@
   "name": "Planner Sticker Set",
   "brand": "Rifle Paper Co.",
   "asin": "B0BWSHLP2T",
-  "status": "verified",
-  "editorialDecision": "approve",
+  "status": "held",
+  "editorialDecision": "hold",
   "order": 70,
   "collection": "paper",
   "bestUse": "Best for illustrated accents",
@@ -24,5 +24,5 @@
   "suitability": "Illustrated stickers for adding one decorative accent to a spread; contents unconfirmed.",
   "imageStatus": "none",
   "verificationSource": "Listing: sold by Rifle Paper Co., ships from Amazon. The listing states the sticker total two ways, so no count is published. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID' for the product's tagged address (Cowork, owner's account, 2026-11-20). That validates the tag only; real commission is confirmed only in Associates reports. Earlier listing check: Cowork, 2026-11-19.",
-  "shopTier": "extras"
+  "statusReason": "Cowork 2026-11-23: the listing's art is bright and playful with many text labels, not vintage-botanical, and the page contradicts itself on the count (150 in the title, 128 in a bullet). Not a fit for our readers; revisit only if a better-matched illustrated sticker set is found."
 }

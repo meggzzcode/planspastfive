@@ -275,6 +275,7 @@ content:
             - Premium alternative
             - Different style
             - Mix-your-own alternative
+            - Larger set
       - name: shopTier
         label: Shop position (Start here = beginner essentials, Pretty extras = optional)
         type: select

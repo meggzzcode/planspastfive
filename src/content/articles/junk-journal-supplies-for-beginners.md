@@ -13,11 +13,9 @@ hero:
 picks:
   - canson-graduate-mixed-media-5-5x8-5
   - tombow-mono-permanent
-  - staedtler-pigment-liner-black-8
-  - scotch-expressions-washi-abstract-modern-8
-  - fiskars-micro-tip-non-stick-scissors-5in
+  - staedtler-pigment-liner-black-3
+  - scotch-expressions-washi-whimsical-15
   - tim-holtz-idea-ology-snippets-ephemera
-  - rifle-paper-co-planner-sticker-set
 related:
   - your-first-junk-journal-spread
 ---
@@ -26,7 +24,7 @@ Picture the page. A cream envelope tucked under a ticket stub, one strip of tape
 
 That is a junk journal, and it takes four things to begin: a sturdy book, something to stick with, a pen and a roll of tape. Pick a mood for inspiration, buy one small basket of essentials, and your first page feels like the start of a collection.
 
-**The kit at a glance.** Essentials: a heavy-paper book, dry adhesive, a black pen and a roll of tape, with scissors if you need a pair. Optional: aged paper pieces and a sticker set for a finishing touch. See all of it together on [the paper shelf in the Shop](/shop/#paper).
+**The kit at a glance.** Essentials: a heavy-paper book, dry adhesive and a black pen, plus tape and scissors you probably own already. Optional: a washi assortment for colour and aged paper pieces for a finishing touch. See all of it together on [the paper shelf in the Shop](/shop/#paper).
 
 ## Choose your look
 
@@ -52,7 +50,7 @@ These three looks are inspiration, not three shopping lists. All of them start f
 
 ## The starter basket
 
-Start with these four supplies, whichever look you choose: a heavy-paper book, dry adhesive, a pigment-ink pen and a roll of tape. Add scissors if you don't already have a pair. Everything else is paper, and the pretty extras further down are optional.
+Start with these supplies, whichever look you choose: a heavy-paper book, dry adhesive and a pigment-ink pen, plus tape and scissors from the drawer. Everything else is paper, and the pretty extras further down are optional.
 
 ### 1. A book that can take glue
 
@@ -70,19 +68,21 @@ Run it along the back of each piece in one steady stroke, pressing as you go. Li
 
 ### 3. One good black pen
 
-{{pick:staedtler-pigment-liner-black-8}}
+{{pick:staedtler-pigment-liner-black-3}}
+
+Three widths are plenty to start. If you want more tip sizes, {{product:staedtler-pigment-liner-black-8}} runs from very fine to broad.
 
 Write your captions last, once everything is stuck down, so the words fit the gaps. Date every spread.
 
 ### 4. Tape that sets the colour
 
-{{pick:scotch-expressions-washi-abstract-modern-8}}
+Any tape you already own will do to start, and a washi assortment adds colour:
 
-This set is assorted and modern in feel, a good all-round extra and the cleanest-looking choice if your book leans modern rather than vintage. Press it down from one end, smoothing as you go, and pick the shade that answers the colour of your envelope or ticket. Look at the colours on the listing first; they may not suit every palette.
+{{pick:scotch-expressions-washi-whimsical-15}}
 
-Finally, if you don't already have a small pair of scissors, this one is for trimming tape ends and cutting out pieces.
+This assortment leans floral and botanical in warm tones, which suits Garden Press and Tea Rose. If your book is more modern than vintage, {{product:scotch-expressions-washi-abstract-modern-8}} is the cleaner-looking choice. Press tape down from one end, smoothing as you go, and pick the pattern that answers the colour of your envelope or ticket. Look at the listing images first; no assortment suits every palette.
 
-{{pick:fiskars-micro-tip-non-stick-scissors-5in}}
+A small pair of scissors for trimming tape ends and cutting out pieces is the one tool you will want, and you almost certainly own a pair already.
 
 ## A little something pretty (optional)
 
@@ -92,11 +92,6 @@ None of this is needed for a first spread. **For Shoebox Post:**
 
 Layer them over your own scraps: a label under a ticket stub, a frame around a photograph. A few go a long way, and they suit this look far better than the other two. Garden Press and Tea Rose stay with your own paper, so spend nothing extra on them.
 
-**For a touch of colour, any look:**
-
-{{pick:rifle-paper-co-planner-sticker-set}}
-
-Use one or two sheets as accents beside your own scraps. They are optional, and they work best as a small finishing detail rather than the main event.
 
 ## Paper worth saving
 

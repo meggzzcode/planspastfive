@@ -3,7 +3,7 @@
 import { z } from "astro/zod";
 
 export const COLLECTIONS = {
-  paper: { name: "The Paper Edit", plain: "Journaling and stationery", image: "junk-journal-spread-leaves-collage", extras: "Pretty extras" },
+  paper: { name: "The Paper Edit", plain: "Journaling and stationery", image: "junk-journal-spread-leaves-collage", extras: "Optional extras" },
   creative: { name: "The Creative Edit", plain: "Painting, clay and making", image: "clay-ring-dish-painted-blossoms", extras: "Nice to have" },
   cozy: { name: "The Cozy Edit", plain: "Slow evenings in" },
   hosting: { name: "The Hosting Edit", plain: "Game nights and gatherings", image: "american-mahjong-table-tiles-and-racks", extras: "Nice to have" },
@@ -12,7 +12,7 @@ export const COLLECTIONS = {
 };
 export const CATEGORIES = ["Creative Corner", "After Hours", "Better Together", "The Weekend Edit", "Table for One", "A Little Movement"];
 export const FORMATS = ["starter-guide", "shopping-edit", "experience-guide", "discovery"];
-export const CHOICE_LABELS = ["Prettier alternative", "Budget-friendly alternative", "Premium alternative", "Different style", "Mix-your-own alternative"];
+export const CHOICE_LABELS = ["Prettier alternative", "Budget-friendly alternative", "Premium alternative", "Different style", "Mix-your-own alternative", "Larger set"];
 export const CTA_LABELS = ["See It on Amazon", "Explore This Starter Kit", "Shop the Supplies", "See Our Pick"];
 export const COLLECTION_IDS = Object.keys(COLLECTIONS);
 

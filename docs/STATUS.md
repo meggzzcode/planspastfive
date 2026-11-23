@@ -3,31 +3,39 @@
 Updated 2026-11-23 against `main`. "Unverified" means nobody has confirmed it. The site is private and in preview mode; nothing is launched.
 
 ## What the repository holds today
-- 5 published articles (junk journal supplies, your first junk journal spread, air-dry clay, how to host a mahjong night, hobbies for busy women), 15 built pages, 16 product records, 16 rights records and image files (see `docs/IMAGE-RECORDS.md`).
+- 5 published articles (junk journal supplies, your first junk journal spread, air-dry clay, how to host a mahjong night, hobbies for busy women), 15 built pages, 20 product records, 16 rights records and image files (see `docs/IMAGE-RECORDS.md`).
 - Settings: marketplace amazon.com, tracking ID `planspastfive-20`, **tracking OFF**, **launchMode `preview`**. Neither is changed without the owner's go-ahead.
-- Checks run on a clean clone (`npm ci`, `npm run check`, `npm test`, `npm audit`): build passes with 15 pages and the link check, 104 of 104 tests pass, 0 vulnerabilities. An isolated copy with `launchMode` production and tracking on also passes the content check (0 launch blockers).
+- Checks run on a clean clone (`npm ci`, `npm run check`, `npm test`, `npm audit`): build passes with 15 pages and the link check, 108 of 108 tests pass, 0 vulnerabilities. An isolated copy with `launchMode` production and tracking on also passes the content check (0 launch blockers).
 
-## Products (16 records; 12 shown, 4 not shown)
-| Product | ASIN | Status | Decision |
+## Products (20 records; 12 shown, 8 not shown)
+Rule (owner, 2026-11-23): the shop pushes only what the activity needs that most readers would not already own. Scissors and ordinary tape are not sold; washi is an optional extra.
+
+| Product | ASIN | Status | Role and decision |
 |---|---|---|---|
-| Canson Graduate Mixed Media 5.5 x 8.5 book | B0CN7B82NG | verified | Keep (journal book, Cowork 2026-11-20) |
-| Tombow MONO permanent adhesive | B000XAHF7S | verified | Keep |
-| Staedtler Pigment Liner black 8-pack | B0C922C7WT | verified | Keep; smaller-set comparison pending |
-| Scotch Expressions washi, abstract modern | B09HN2PR9K | verified | Keep; colour fit pending (modern, not vintage; article says so) |
-| Fiskars micro-tip scissors | B0DLFLZFGK | verified | Keep (optional) |
-| Tim Holtz Idea-ology Snippets | B06VTCRXBC | verified | Keep for Shoebox Post; SKU and piece-count match pending |
-| Rifle Paper Co. planner stickers | B0BWSHLP2T | verified | Keep as optional accent; no count stated (listing contradicts itself) |
-| DAS air-hardening clay, white, 1 kg | B001GAP4YA | verified | Keep; quantity wording is a labelled estimate |
-| Winsor & Newton Galeria acrylic set | B08NJZPZG6 | verified | Keep; smaller-set comparison pending |
-| Liquitex BASICS acrylic 12 | B07VSZM41G | verified | Keep (inline alternative) |
-| YMI Sapphire American mahjong set | B09VGX38JV | verified | Keep; contents and stock re-check pending |
-| NMJL 2026 large-print four-pack | B0GRCBQ3Y2 | verified | Keep; 2027 card replacement due (see owner guide) |
+| Canson Graduate Mixed Media 5.5 x 8.5 book | B0CN7B82NG | verified | Paper shelf, Start here |
+| Tombow MONO permanent adhesive | B000XAHF7S | verified | Paper shelf, Start here |
+| Staedtler Pigment Liner black 3-pack | B0C4VRJ1XP | verified | Paper shelf, Start here (new; beginner starter, sold by Amazon) |
+| Staedtler Pigment Liner black 8-pack | B0C922C7WT | verified | Choose-one alternative ("Larger set") |
+| Scotch Expressions washi, Whimsical 15 rolls | B09HN34X72 | verified | Optional extra (new; floral and botanical mix, evidence for the pattern mix is Amazon's own image descriptions) |
+| Scotch Expressions washi, Abstract Modern 8 rolls | B09HN2PR9K | verified | Choose-one alternative ("Different style"); listing names no colours |
+| Tim Holtz Idea-ology Snippets | B06VTCRXBC | verified | Optional extra for Shoebox Post; SKU TH93564 and 111 pieces confirmed |
+| DAS air-hardening clay, white, 2.2 lb | B001GAP4YA | verified | Creative shelf, Start here; listing gives no drying time or non-toxic wording, so the article does not claim them |
+| Winsor & Newton Galeria 20 x 12 ml | B08NJZPZG6 | verified | Creative shelf, Start here; includes white, pale rose blush, pale lemon, olive green and red |
+| Liquitex BASICS 12 x 22 ml | B07VSZM41G | verified | Choose-one alternative ("Mix-your-own"); the listing does not list its colours |
+| YMI Sapphire American mahjong set | B09VGX38JV | verified | Hosting shelf; listing confirms tiles, 4 racks with pushers, dice, scoring coins and a zippered blue case |
+| NMJL 2026 large-print four-pack | B0GRCBQ3Y2 | verified | Hosting shelf; 2026 edition, no 2027 edition mentioned; replace each year |
+| Fiskars micro-tip scissors | B0DLFLZFGK | held | Removed: people already own scissors |
+| Rifle Paper Co. planner stickers | B0BWSHLP2T | held | Removed: bright, playful, many text labels, not vintage-botanical; count contradicts itself |
+| Strathmore 400 tan journal | B0767X3D34 | held | No in-stock line, delivery Dec 12-23; replaced by Canson |
 | NMJL 2026 standard four-pack | B0GRCCTYJ5 | held | Not shown |
-| Strathmore 400 toned tan journal | B0767X3D34 | held | Replaced by Canson (delivery Dec 14-27) |
 | Sculpd pottery kit | B09HL286VM | held | Not shown |
-| Mont Marte air-hardening clay 500 g | B00Y5EOHRY | candidate | Not shown (failed link check, hold) |
+| Mont Marte clay 500 g | B00Y5EOHRY | candidate | Not shown |
+| Faber-Castell Monet Water Lilies paint-by-numbers | B08DGL3R8K | held | Candidate for a craft-night shelf; canvas size and paint and brush contents not confirmed |
+| JOOZ landscape paint-by-numbers with frame | B0D6VHXD88 | held | Title says oil, a bullet says acrylic; resolve first |
 
-The "pending" items are one Cowork batch of ASIN checks on Amazon (this project never fetches Amazon). Until it returns, nothing above is changed on a guess.
+Checked and rejected in batch 2 (third-party sellers or unclear): the three ephemera packs, Jovi 1.1 lb and 2.2 lb, Dimensions embroidery kits, Strathmore 500 hardcover, Strathmore gray (Hyatt's). On hold: Jovi 4-pack (8.8 lb), Crayola 5 lb. Strathmore 400 white spiral (B0F97VF4HX) is sold by Amazon but its paper weight is not shown, so it is not added.
+
+Cowork batch 2 results: `docs/cowork/BATCH-2-RESULTS.csv` and `BATCH-2-NOTES.md` (branch `cowork/batch-2`). Open follow-ups are in `docs/cowork/BATCH-3.md`.
 
 ## Verified this pass
 Production-mode simulation in an isolated copy, canonical URLs and titles present on every page, sitemap and robots present, security headers file present, no secrets, no stray tracking IDs, no Amazon images stored.

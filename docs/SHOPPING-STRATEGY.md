@@ -29,6 +29,9 @@ Scores are judgement, not measurement; no conversion claim is made. C, D and E a
 ## Kits
 Paper Edit (junk journaling), Creative Edit (air-dry clay), Hosting Edit (American mahjong). A fourth, a cozy craft-night project, is held until a candidate is verified (Cowork batch 2, `docs/cowork/BATCH-2.md`). Three good kits beat eight thin ones.
 
+## What the shop sells
+Only what the activity needs that most readers would not already own (owner rule, 2026-11-23). Scissors and ordinary tape are not sold; washi is an optional extra. Articles mention such items in prose without a link.
+
 ## Rules for alternatives
 Up to two per main product, only when the choice is about taste or budget; a budget alternative only if genuinely worthwhile. Nothing enters the catalog until its exact ASIN, variant and claims are verified on Amazon.com. No prices, ratings, discounts or "best seller" language.
 
