@@ -17,22 +17,22 @@ related:
 
 Every paint night has one moment. Around 7:15, someone leans back from her canvas and says, "I did warn you, I cannot paint." Then she looks again, and the blue she just laid down is rather good, and she stops apologising. A host cannot make that happen, but she can set the evening up so it has room to.
 
-This guide is about hosting, not choosing a kit. It is for two to six friends around one table, nobody expected to have held a brush since school. The order is the order you will do things: invite, settle who pays, set the table, run the evening, send everyone home.
+This guide is for two to six friends around one table, nobody expected to have held a brush since school. The order is the order you will do things: invite, settle who pays, set the table, run the evening, send everyone home.
 
 ## Start with the invitation
 
 Etiquette guidance from the Emily Post Institute says an invitation should carry the date, time, place and how to reply, plus anything guests need to know, such as what to wear. For a paint night that means three plain facts: no skill needed, wear something you do not mind marking, and there are alcohol-free drinks. Send it about a week ahead. Here is a message to copy:
 
-> Paint night at mine, Friday at 6:30. There will be a small canvas and everything you need at your seat, and no painting skill required. Wear something you do not mind marking. I will have snacks and plenty of drinks without alcohol. If the date falls through we will move it a week, so tell me early.
+> Paint night at mine, Friday at 6:30. There will be a small canvas, paints and brushes at your seat, and no painting skill required. My treat, so just bring yourself. Wear something you do not mind marking. I will have snacks and plenty of drinks without alcohol. If the date falls through we will move it a week, so tell me early.
 
-That last line is your reschedule plan, and it works better said up front than invented on the day. If it falls through, reschedule by a week and keep the pot lids closed.
+That last line is your reschedule plan, and it works better said up front than invented on the day. If it falls through, we will move it a week.
 
 ## Decide who pays, and count honestly
 
 Guests should not meet a surprise bill. Pick one of these before you send the invitation:
 
-- **You cover it**, the way you would a dinner.
-- **Everyone chips in** for her own kit, and the invitation says so.
+- **You cover it**, the way you would a dinner. The sample invitation below assumes this.
+- **Everyone chips in** for her own kit. Then change the invitation's "my treat" line to "kits are shared out at cost, I will send the amount."
 - **A shared pile.** Each guest brings a canvas or paints she already owns, and you supply brushes and water. This is the cheapest route, and it suits friends who already paint a little.
 
 A kit for every painter is a real step up from a shared pile, and you count as a painter too. Here is the arithmetic. Quantities beyond kits and seats are our own estimates.
@@ -45,17 +45,17 @@ A kit for every painter is a real step up from a shared pile, and you count as a
 | Table | a small table | one dining table | two tables pushed together |
 | Snack plates | 2 | 4 | 6 |
 
-Six painters means five friends and you. A home-party guide found a 5 x 3 ft dining table held about six easels, which is the tightest you want to go.
+Six painters means five friends and you. Step by Step Painting, a hobby blog, found a 5 x 3 ft dining table held about six easels, which is the tightest you want to go.
 
 ## One project or free choice
 
 Everyone paints the same guided project, or everyone paints what she likes. Avoid mixing them. A numbered guide or traceable template gives a nervous guest a place to start. Free choice is lovely for a group that already paints, and it can leave a beginner facing a blank canvas, so give her a simple subject, such as a bowl of lemons, and say nothing is graded. Whichever you pick, paint the project once beforehand so you know where people stumble.
 
-For a guided night, the Faber-Castell Monet Water Lilies kit is a reasonable default for each painter:
+For a guided night, the Faber-Castell Monet Water Lilies kit suits the one-per-painter plan:
 
 {{pick:faber-castell-monet-water-lilies-paint-by-numbers}}
 
-It holds a 6 x 8 in canvas board, six 5 ml acrylic pots, one brush, a small easel and a numbered guide. A kit takes longer than one evening, so plan the night as a start and let everyone carry her canvas home to finish. More kits live in [the Cozy Paint Night Bundle](/shop/#cozy).
+It holds a 6 x 8 in canvas board, six 5 ml acrylic pots, one brush, a small easel and a numbered guide. More kits live in [the Cozy Paint Night Bundle](/shop/#cozy).
 
 ## Set the table
 
@@ -79,7 +79,11 @@ Two and a half hours, the same as the "craft and paint nights" entry in [our hob
 | 8:45 | Start the wipe-down | Help for ten minutes |
 | 9:00 | Thank everyone at the door | Take canvases home to finish |
 
-Hold up what you have so far is the reveal, and it is a half-finished one. A kit takes longer than one evening, so the first night is a start. Acrylic also needs touch-dry time. Winsor & Newton gives about 10 to 20 minutes for thin Galeria coats and an hour or more for thick ones, and it says conditions vary, so do not promise a wet canvas is ready to carry.
+Hold up what you have so far is the reveal, and it is a half-finished one. A kit takes longer than one evening, so the first night is a start and canvases go home to finish. Check the kit's own instructions for drying times, and treat any wet canvas as not ready to carry.
+
+## If your guests only have an hour
+
+Drop the break and the snack table, and keep the order: 6:30 greet, 6:40 a one-minute welcome and your practice picture, 6:45 paint, 7:20 quick hand wash and drink, 7:25 paint again, 7:40 hold up what you have so far, 7:45 wipe down and goodbye. Everyone takes her canvas home to finish.
 
 ## When a guest says she can't paint
 
@@ -104,8 +108,6 @@ Treat non-drinkers as guests, not afterthoughts. The NIAAA advises real alcohol-
 3. Close every pot lid firmly.
 4. Roll up the sheet with the paint side in, and wipe the table.
 5. Send wet or unfinished canvases home flat in a box or tote, or keep a wet one overnight and hand it over tomorrow.
-
-If this goes well, the same table suits [air-dry clay](/journal/air-dry-clay-for-beginners/) or a [junk journal spread](/journal/your-first-junk-journal-spread/) next time.
 
 ## After the last goodbye
 

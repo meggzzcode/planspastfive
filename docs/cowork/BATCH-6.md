@@ -15,4 +15,6 @@ For EACH category below find the 2 or 3 strongest candidates, run Associates Lin
 6. **A small flower or herb jar or bud vase** that is safe to carry (a lidded glass jar or a weighted vase), only if something sold by Amazon or the brand looks genuinely lovely and travels.
 7. One more idea of your own that fits a beautiful afternoon outside (a quilted tote, a linen napkin set, a picnic game such as a travel card set). Explain why.
 
-Also say in the notes which 3 items together would make the best 'picnic bundle' for this reader and why. Do NOT include ice packs or an ordinary cooler as headline picks.
+8. **An insulated picnic bag that is good-looking** (the owner likes a soft insulated tote or backpack bag for picnics; we already have two verified, a 12-can Fit & Fresh Mari tote and a larger Away tote, so only add one if it is clearly prettier or better for three or four people: look for a nice colour or print, a sealed wipe-clean liner, a main zip, a shoulder strap).
+
+Also say in the notes which 3 items together would make the best 'picnic bundle' for this reader and why. Do NOT include ice packs or an ordinary hard cooler as headline picks.
