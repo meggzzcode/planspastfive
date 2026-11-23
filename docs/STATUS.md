@@ -58,6 +58,12 @@ The Shop's main section is **Ready-to-Start Bundles**: our curated collections o
 - **Not done:** Part C (image licence wording) needs a retry; Part D (real CMS and Netlify test, costs credits) and Part G (launch) are owner-gated.
 - **Amazon Lists (Part H): recommendation is not to use Lists** (below).
 
+## Open items from Cowork's work (reviewed 2026-11-23)
+- **Privacy:** `cowork/batch-4` (public) contains the owner's personal Google account email and names of other Analytics accounts in `docs/cowork/BATCH-4-NOTES.md`. It is not in `main`. Owner decision needed: delete that branch (a sanitized summary is already in this file) and consider that GitHub may keep the commit viewable by its address for a while.
+- Owner to: delete the private test List in the owner's Amazon account (`PPF test, Junk Journal Starter Bundle`); sign in again to Namecheap (Cowork left that tab on a login page); open the Associates payment banner; confirm the Google Analytics industry, size and objective choices.
+- Cowork to retry: Part C (image licence wording) and the blocked Part F items (Namecheap DNS records, GitHub workflow permissions, last Netlify production deploy date).
+- Still owner-gated: Part D (real CMS and release-queue test, costs credits), Part G (launch), Bundle Lists steps 9 to 11 (not needed now, since the decision is not to use Lists).
+
 ## Blocking launch (owner-gated)
 1. Real Pages CMS and Netlify test (`docs/OWNER-REAL-TEST.md`), best after 2026-12-16 because of Netlify credits.
 2. Amazon Associates: owner confirms status and says when to switch tracking on; Amazon commission is confirmed only in Associates reports.

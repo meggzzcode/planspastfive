@@ -15,7 +15,7 @@ Verify whether we can create and use public Amazon.com Lists as compliant, commi
 | Signed-out view of the List | A private/incognito browser window |
 | Click a tagged List link and look at the Associates report | Owner's explicit yes; **one** click only |
 | Anything involving a purchase, payment, or a new account | **Not allowed. Stop and write BLOCKED.** |
-Never ask for, type into a document, or paste a password, code or payment detail. Do not change Associates settings or the live website. Tracking in our repository is ON and the tag is `planspastfive-20`; do not change either.
+Never ask for, type into a document, or paste a password, code or payment detail. **This repository is PUBLIC: never write a personal email address, a login name, account or property names that belong to other businesses, phone numbers, payment details, order numbers or any credential into a note, file, screenshot or commit message. Say "the owner's Google account" instead.** Redact such details from screenshots before saving them. Do not change Associates settings or the live website. Tracking in our repository is ON and the tag is `planspastfive-20`; do not change either.
 
 ## C. What the official pages already say (read by Claude Code, 2026-11-23; re-read them yourself and note changes)
 | Point | Finding | Source | Status |
