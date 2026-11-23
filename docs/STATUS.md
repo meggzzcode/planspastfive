@@ -37,7 +37,7 @@ Floral washi: Whaline 24 rolls (B0GYSNFN78) looks right but is sold by a third p
 
 Checked and rejected in batch 2 (third-party sellers or unclear): the three ephemera packs, Jovi 1.1 lb and 2.2 lb, Dimensions embroidery kits, Strathmore 500 hardcover, Strathmore gray (Hyatt's). On hold: Jovi 4-pack (8.8 lb), Crayola 5 lb. Strathmore 400 white spiral (B0F97VF4HX) is sold by Amazon but its paper weight is not shown, so it is not added.
 
-Cowork batch 2 and 3 results: `docs/cowork/BATCH-2-RESULTS.csv` and `BATCH-2-NOTES.md`, `BATCH-3-RESULTS.csv`, `BATCH-3-NOTES.md` (branches `cowork/batch-2`, `cowork/batch-3`). Everything still needing Cowork is in `docs/cowork/BATCH-4.md` (live preview review, Associates status read, image-terms wording, real CMS and Netlify test).
+Cowork batch 2 and 3 results: `docs/cowork/BATCH-2-RESULTS.csv` and `BATCH-2-NOTES.md`, `BATCH-3-RESULTS.csv`, `BATCH-3-NOTES.md` (branches `cowork/batch-2`, `cowork/batch-3`). Everything still needing Cowork is in `docs/cowork/BATCH-4.md` (live preview review, Associates status read, image-terms wording, real CMS and Netlify test, Google Analytics setup, launch-readiness audit and the launch runbook).
 
 ## Verified this pass
 Production-mode simulation in an isolated copy, canonical URLs and titles present on every page, sitemap and robots present, security headers file present, no secrets, no stray tracking IDs, no Amazon images stored.

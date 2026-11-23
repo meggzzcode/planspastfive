@@ -35,5 +35,28 @@ In the owner's Google account (the one already signed in; do not create a new Go
 5. Report: the screenshots of the stream details page (blur nothing but hide any billing panel), the exact data-retention and Google signals states you set, and anything Google asked that you declined.
 6. Do NOT open the live site or click product buttons to "test" it; there is nothing to test until the ID is on the site.
 
+## Part F. Launch-readiness audit (read-only; Cowork reads and reports, changes nothing)
+Goal: find every blocker between the private site and a public launch. Record each item as READY, NOT READY or NOT DONE with the exact text or screenshot.
+1. **Domain (Namecheap):** domain status, expiry, auto-renew, whether it is locked, current DNS records and nameservers (list them; do not edit), and whether the mailbox `hello@planspastfive.com` receives mail (check its inbox view only; do not send anything).
+2. **Netlify:** the site's custom-domain setting (is `planspastfive.com` attached? is HTTPS/SSL certificate status shown as provisioned?), the exact DNS records Netlify asks for, whether site-wide password or login protection is on (it was private with a 401), the last production deploy commit and date, branch-deploy setting for `preview`, credits left, and the production branch (`main`). Do not change any of it.
+3. **GitHub:** repository visibility (public or private), whether the Actions workflows `Publish content`, `Undo last publish` and `Release next article` are listed and enabled, workflow permissions (should be Read and write), and any red or pending runs.
+4. **Associates Central (Part B covers status):** also record whether `planspastfive.com` is on the website list, the tracking ID `planspastfive-20`, and any notice about the 180-day window or a missing item.
+5. **Search Console and indexing:** whether a Search Console property for `planspastfive.com` already exists in the owner's Google account; if not, list the verification choices it offers (domain DNS TXT record versus URL prefix). Do not verify or submit anything yet.
+6. **Pinterest:** whether the owner already has a Pinterest business account for Plans Past Five and whether the website is claimed. Do not create or claim anything.
+7. **Legal pages:** read the Privacy, Terms and Affiliate Disclosure pages on the preview once as a visitor. Do the disclosure sentence, the contact email, the AI statement and the analytics wording read correctly and agree with each other? List any sentence that looks wrong or inconsistent; this is a proofread, not legal advice.
+8. **Anything else you notice** that would embarrass the owner on day one (a broken page, a placeholder, a wrong date).
+
+## Part G. Launch runbook (ONLY when the owner says "launch"; every step needs the owner's explicit yes in that message)
+Claude Code makes the repository changes; Cowork does the account and browser steps. In this order, stopping at the first failure:
+1. Claude Code confirms `main` equals `preview`, tests pass, and shows the owner the exact settings change (below). Owner says yes.
+2. **Settings change (Claude Code, one commit with `[deploy]`, 15 Netlify credits):** `launchMode` to `production`. Tracking: the owner decides in the same message whether `amazonTrackingEnabled` goes to `true` now. Note: while tracking is off the links earn nothing and no sale can count toward Amazon's three-sales review, so launching with it off only delays that clock. If the owner chooses on, `amazonTrackingId` must stay `planspastfive-20`. The Google Analytics ID from Part E goes into `ga4MeasurementId` in the same commit only if the owner says so.
+3. Cowork (Netlify): confirm the production deploy succeeded and shows the new commit.
+4. **Domain (owner yes needed again):** attach `planspastfive.com` as the primary domain in Netlify, add exactly the DNS records Netlify lists in Namecheap, wait for the SSL certificate, then remove site password protection. Report each step's result.
+5. Cowork (visitor check on the public address, desktop and phone): Home, Journal, five articles, Shop, About, legal pages; `https://planspastfive.com/robots.txt` and `/sitemap-index.xml` load; `http://` and `www.` redirect to the main address; page source has a canonical link and no `noindex`.
+6. Click each product button once (no purchase). With tracking on, the Amazon address ends `?tag=planspastfive-20`; with it off, no `tag=`. Run Associates Link Checker on three of them.
+7. **Search Console (owner yes):** verify the domain (DNS TXT record via Namecheap), then submit `https://planspastfive.com/sitemap-index.xml`, and request indexing of the home page.
+8. Pinterest (owner yes): claim the website if the account exists; no pins are created by Cowork.
+9. Day 1 and day 7: Cowork reports Search Console indexing status and, if analytics is on, the GA4 realtime and event counts (look for `amazon_click`). Do not click your own product buttons repeatedly.
+
 ## Not for Cowork (owner only)
 Applying to or changing the Associates account, paying anything, connecting the domain, a lawyer or trademark review, making the repository private, and the decision to launch or switch tracking on.
