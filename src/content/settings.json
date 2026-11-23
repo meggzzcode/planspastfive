@@ -5,7 +5,7 @@
   "contactEmail": "hello@planspastfive.com",
   "ga4MeasurementId": "",
   "amazonTrackingId": "planspastfive-20",
-  "amazonTrackingEnabled": false,
+  "amazonTrackingEnabled": true,
   "amazonMarketplace": "amazon.com",
   "amazonDisclosure": "As an Amazon Associate I earn from qualifying purchases.",
   "searchConsoleVerification": "",

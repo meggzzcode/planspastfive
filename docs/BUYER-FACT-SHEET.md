@@ -33,7 +33,7 @@ About $108 a year Netlify Personal, about $16 to $20 domain renewal, plus mailbo
 
 ## First week as the new owner
 1. Move the repository, Netlify site, domain and mailbox to your accounts (`docs/TRANSFER.md`).
-2. Apply for your own Associates account; replace `amazonTrackingId`; keep tracking off until you are ready to launch.
+2. Apply for your own Associates account and **replace `amazonTrackingId` with your own ID before anything is published**: the repository ships with the seller's ID and tracking switched on, and links must never go live under someone else's tag.
 3. Re-check every shown product on Amazon.com and update its checked date.
 4. Read `docs/IMAGE-RECORDS.md`; replace any picture you are not comfortable keeping.
 5. Publish one change from Pages CMS to see the whole workflow work.

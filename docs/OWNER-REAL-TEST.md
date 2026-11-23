@@ -45,7 +45,7 @@ Production deploys 3 and 4 are spares for retrying step 7 or 8; do not use them 
 | Rollback (11) | | | 0 expected |
 
 ## Rollback and cleanup
-Live problem: Netlify Deploys > earlier good deploy > Publish deploy (about 0 credits expected, step 11 measures it), then Undo last publish (untick "Also build"), then delete and recreate `content-edits` from `main`. Afterwards confirm `settings.json` has `amazonTrackingEnabled: false`.
+Live problem: Netlify Deploys > earlier good deploy > Publish deploy (about 0 credits expected, step 11 measures it), then Undo last publish (untick "Also build"), then delete and recreate `content-edits` from `main`. Afterwards confirm `settings.json` still has `amazonTrackingEnabled: true` (owner decision 2026-11-23).
 
 ## Decision after measuring
 If a branch preview or skipped build costs credits, keep Branch deploys off and preview locally (`docs/OWNER-OPERATIONS.md`, developer appendix, no credits), and publish in fewer, bigger batches.

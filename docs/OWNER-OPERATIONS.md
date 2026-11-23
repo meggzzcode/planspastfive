@@ -99,7 +99,7 @@ A short shopping note appears before the first product link or card on every pag
 **Current production blockers:** none in the content check (verified in an isolated production-mode copy on 2026-11-23). Remaining launch gates are owner actions (`docs/STATUS.md`).
 
 ## Change settings and the tracking ID
-Site settings in the CMS. **The Amazon tracking ID lives only here.** Keep "Switch Amazon affiliate tracking on" **off** until you have confirmed eligibility and decided to launch: Amazon lets you use links after applying, but the site must be public first (`docs/AMAZON-ASSOCIATES.md`). Switching it on with an empty ID fails the build. Changing the ID changes every Amazon link at the next publish.
+Site settings in the CMS. **The Amazon tracking ID lives only here.** As shipped, "Switch Amazon affiliate tracking on" is **on** with the seller's ID; a new owner must replace the ID with their own first (or switch it off until they have one): Amazon lets you use links after applying, but the site must be public first (`docs/AMAZON-ASSOCIATES.md`). Switching it on with an empty ID fails the build. Changing the ID changes every Amazon link at the next publish.
 
 ## Preview, publish, check
 1. **Preview:** after you save, Netlify builds the `content-edits` branch. Open Netlify > Deploys > Branch deploys, or the address `https://content-edits--<your-site-name>.netlify.app` (form per Netlify's branch-deploy documentation; UNVERIFIED for this site). Check the page, the Amazon buttons and the phone view. UNVERIFIED: how many minutes it takes, and whether it costs credits (the real test measures this).

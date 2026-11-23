@@ -51,7 +51,7 @@ A product shows only when its `editorialDecision` is `approve` and its status is
 `npm test` copies a fixture set (`test/fixtures/`) into a temporary folder, not the shipped content, and, in the copy, simulates the owner's CMS edits: publish/unpublish an article, change a hero picture, add and replace products, change or break the tracking tag, and run the publish and undo logic in scratch git repositories. See `test/demo.test.mjs` and `test/workflows.test.mjs`. Screenshots: `docs/milestone-1/screenshots/` (regenerate with `node scripts/screenshots.mjs`; needs Playwright, which is not an npm dependency).
 
 ## Amazon Associates
-Links may be used after applying; final approval follows three qualifying sales within 180 days. Public tracking stays off until the owner confirms eligibility and authorises launch. See `docs/AMAZON-ASSOCIATES.md`.
+Links may be used after applying; final approval follows three qualifying sales within 180 days. Tracking is switched on in `main` (owner decision 2026-11-23); the production site only changes with a `[deploy]` commit. See `docs/AMAZON-ASSOCIATES.md`.
 
 ## Docs
 
