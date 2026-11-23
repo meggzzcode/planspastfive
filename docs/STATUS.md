@@ -64,6 +64,17 @@ The Shop's main section is **Ready-to-Start Bundles**: our curated collections o
 - Cowork to retry: Part C (image licence wording) and the blocked Part F items (Namecheap DNS records, GitHub workflow permissions, last Netlify production deploy date).
 - Still owner-gated: Part D (real CMS and release-queue test, costs credits), Part G (launch), Bundle Lists steps 9 to 11 (not needed now, since the decision is not to use Lists).
 
+## Articles in progress: batch 1 (2026-11-23; all `status: draft`, not built, not queued, no heroes)
+Written by one dedicated agent each, then reviewed twice by independent fact, editorial and SEO reviewers and revised twice. Briefs, sources and logs: `docs/editorial/briefs/`. Shared facts: `docs/editorial/FACTS.md`.
+| Draft | Words | Last independent verdict | Still needed before release |
+|---|---|---|---|
+| `start-a-walking-club` | about 1,570 | Editorial 9s (publish-ready), facts READY | Hero image; owner approval |
+| `perfect-little-picnic` | about 1,265 | Facts READY; editorial light revisions, since applied | Hero; owner approval; Cowork checks for the insulated bag, ice packs, blanket |
+| `host-a-paint-night-at-home` | about 1,490 | Facts fix-first items since applied; editorial light revisions, since applied | Hero; owner approval; link to the paint-by-numbers guide when both publish together |
+| `things-to-do-after-work-instead-of-scrolling` | about 1,250 | Contradiction fixed; editorial revisions applied | Hero; owner approval; link-backs |
+| `paint-by-numbers-for-adults` | about 1,330 | Attribution fixes applied | Hero; owner approval; Cowork claim checks and a possible third kit |
+The writers' own honest scores are 7.15 to 8.35 out of 10 (the 9 target is not met by self-scoring); the independent editorial re-review rated the walking club 9 and the others 6 to 8 before the last edits, which have not had a third full review. Treat only the walking club as near-ready; everything needs a hero image and the owner's approval. Sources are mostly retailers and public agencies; nothing was tested first-hand and none is claimed.
+
 ## Blocking launch (owner-gated)
 1. Real Pages CMS and Netlify test (`docs/OWNER-REAL-TEST.md`), best after 2026-12-16 because of Netlify credits.
 2. Amazon Associates: owner confirms status and says when to switch tracking on; Amazon commission is confirmed only in Associates reports.

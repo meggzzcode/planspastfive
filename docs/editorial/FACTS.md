@@ -25,6 +25,13 @@ canson-graduate-mixed-media-5-5x8-5 (journal book); tombow-mono-permanent (dry a
 - Hobbies guide time and company labels: pickleball, tennis, picnic, craft night (about 2.5 hours), watercolor, embroidery, crochet, reading, flower arranging are covered there at a glance only; new guides must agree with those labels or explain why.
 - Cost wording: "starter bundle: N things to buy; everything else optional"; budget estimates in prose are allowed only as editorial estimates with no product prices.
 
+## Facts added by batch 1 drafts (2026-11-23; unpublished until released)
+- Walking club: first walk is about 90 minutes (45 minutes walking plus coffee); Jeffrey Hall's 2018 KU findings (about 50 hours acquaintance to casual friend, about 90 casual to friend, 200+ close friend; 355 recent movers, 112 freshmen) are the only friendship-time figures used; no friendship or health outcome is promised.
+- Picnic: the FDA 2-hour rule (1 hour above 90F) is the food-safety anchor; park rules vary, check the local parks site; a soft insulated bag and ice packs are the only things worth buying if you lack them (no verified products linked yet).
+- Paint night: one Faber-Castell kit per painter (host included) is the default, which is a cost step-up (the hobbies guide's craft night is about 2.5 hours, 6:30 to 9:00); the first evening is a start, canvases go home to finish; keep pot lids closed; acrylic waste goes in a waste bin you can seal, not the sink.
+- Paint by numbers: kit-choice detail (canvas, paint quantity, brushes, easel or frame, fineness of numbered areas) lives in the paint-by-numbers guide; the paint-night guide only links to the Cozy Paint Night Bundle until both publish together.
+- After-work list: the 10-, 30- and 60-minute-plus buckets; max two shop bundle links; junk journaling there follows the supplies guide (heavy-paper book, dry adhesive, pen); clay is decorative only.
+
 ## Known uncertainties
 - Mahjong tile counts differ by maker; the 152 figure is the standard American count.
 - No source yet read for Crayola and Mont Marte drying figures in the clay article (they come from earlier research notes); do not repeat them elsewhere.
