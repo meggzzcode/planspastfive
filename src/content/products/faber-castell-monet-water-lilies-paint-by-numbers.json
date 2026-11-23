@@ -3,15 +3,26 @@
   "name": "Museum Series Paint by Numbers, Claude Monet Water Lilies",
   "brand": "Faber-Castell",
   "asin": "B08DGL3R8K",
-  "status": "held",
-  "editorialDecision": "hold",
-  "statusReason": "Cowork 2026-11-23: sold by Amazon, in stock, Link Checker success. Held for the cozy craft-night shelf until the canvas size and what paints and brushes are included are confirmed on the listing.",
-  "collection": "creative",
+  "status": "verified",
+  "editorialDecision": "approve",
+  "order": 10,
+  "collection": "cozy",
+  "shopTier": "start",
+  "cta": "See It on Amazon",
+  "bestUse": "Best for a calm evening with a finished picture at the end",
+  "inTheBox": "A 6 x 8 in canvas board, six 5 ml acrylic paint pots (white, purple, medium blue, yellow, green and magenta), one brush, a display easel and a numbered guide.",
+  "descriptionOriginal": "A small paint-by-numbers kit of Monet's Water Lilies with canvas board, paints, brush, easel and instructions in one box.",
+  "whyWeLikeIt": "Everything is in one box, so an evening has a clear plan and a finished little painting to stand on the included easel, with a soft, Monet-inspired look that suits a cozy night in.",
+  "limitations": "It is guided painting rather than freehand: the canvas is small (6 x 8 in) and comes with one brush and six paints, so detail takes patience.",
   "listingChecked": {
     "checkedOn": "2026-11-23",
-    "variant": "Museum Series, Monet Water Lilies",
+    "variant": "Museum Series, Monet Water Lilies; canvas 6 x 8 in",
     "listingAvailable": "yes",
     "sellerType": "amazon",
     "affiliateLinkEligible": "yes"
-  }
+  },
+  "specsEvidence": "Amazon listing, manufacturer section (Cowork, 2026-11-23): canvas 6 x 8 in; box contents six 5 ml acrylic pots in white, purple, medium blue, yellow, green and magenta, one #2 brush, canvas board, hang tab, display easel, number guide and instructions; ages 8 and up. Sold by Amazon.com, in stock.",
+  "suitability": "A complete beginner paint-by-numbers kit: no extra supplies are needed, and the finished result is a small soft-toned painting.",
+  "imageStatus": "none",
+  "verificationSource": "Listing read by Cowork on the owner's account, 2026-11-23 (docs/cowork/BATCH-2-RESULTS.csv and BATCH-3-RESULTS.csv). Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID' (batch 2); that validates the tag only, and real commission is confirmed only in Associates reports."
 }

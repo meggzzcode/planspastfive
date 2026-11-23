@@ -104,7 +104,7 @@ These take an evening or an afternoon and, mostly, a second person. They are the
 - **Company:** friends
 - **Buying commitment:** shared supplies, split between you
 - **You need:** one agreed craft and a share of the supplies, split between you. Check whether your library or community centre runs a craft night first
-- **First step:** pick the craft before you invite anybody (bracelets are the classic) so the invitation names a plan. You are the host, so choose something that survives a crowded table and a glass of wine.
+- **First step:** pick the craft before you invite anybody (bracelets are the classic) so the invitation names a plan. If you would rather paint than make bracelets, [the cozy shelf](/shop/#cozy) has a complete paint-by-numbers kit. You are the host, so choose something that survives a crowded table and a glass of wine.
 
 ### Mahjong
 

@@ -1,7 +1,7 @@
 # Handing the site to a buyer
 
 ## What is included in the sale
-The Astro site source (5 articles, 20 product records of which 12 are shown, the shop, legal-page drafts, publishing workflows, tests), the owner documents in `docs/`, the picture files with their rights records, and the domain planspastfive.com (moved by registrar transfer). **Not included:** the seller's Amazon Associates account or tracking ID, Netlify plan or credits, GitHub or Cowork accounts, any login or credential, and any right in Amazon, Canva, Lovable or Pexels content beyond what their own terms give a buyer (see `docs/IMAGE-RECORDS.md`). The asking price ($1,500) is an asking price, not a valuation; the site has no traffic or earnings history.
+The Astro site source (5 articles, 20 product records of which 14 are shown, the shop, legal-page drafts, publishing workflows, tests), the owner documents in `docs/`, the picture files with their rights records, and the domain planspastfive.com (moved by registrar transfer). **Not included:** the seller's Amazon Associates account or tracking ID, Netlify plan or credits, GitHub or Cowork accounts, any login or credential, and any right in Amazon, Canva, Lovable or Pexels content beyond what their own terms give a buyer (see `docs/IMAGE-RECORDS.md`). The asking price ($1,500) is an asking price, not a valuation; the site has no traffic or earnings history.
 
 ## What the buyer must set up themselves
 | Needs | Why |

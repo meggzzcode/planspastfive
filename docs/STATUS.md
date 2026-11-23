@@ -7,7 +7,7 @@ Updated 2026-11-23 against `main`. "Unverified" means nobody has confirmed it. T
 - Settings: marketplace amazon.com, tracking ID `planspastfive-20`, **tracking OFF**, **launchMode `preview`**. Neither is changed without the owner's go-ahead.
 - Checks run on a clean clone (`npm ci`, `npm run check`, `npm test`, `npm audit`): build passes with 15 pages and the link check, 110 of 110 tests pass, 0 vulnerabilities. An isolated copy with `launchMode` production and tracking on also passes the content check (0 launch blockers).
 
-## Products (20 records; 12 shown, 8 not shown)
+## Products (20 records; 14 shown, 6 not shown)
 Rule (owner, 2026-11-23): the shop pushes only what the activity needs that most readers would not already own. Scissors and ordinary tape are not sold; washi is an optional extra.
 
 | Product | ASIN | Status | Role and decision |
@@ -16,12 +16,12 @@ Rule (owner, 2026-11-23): the shop pushes only what the activity needs that most
 | Tombow MONO permanent adhesive | B000XAHF7S | verified | Paper shelf, Start here |
 | Staedtler Pigment Liner black 3-pack | B0C4VRJ1XP | verified | Paper shelf, Start here (new; beginner starter, sold by Amazon) |
 | Staedtler Pigment Liner black 8-pack | B0C922C7WT | verified | Choose-one alternative ("Larger set") |
-| Scotch Expressions washi, Whimsical 15 rolls | B09HN34X72 | verified | Optional extra (new; floral and botanical mix, evidence for the pattern mix is Amazon's own image descriptions) |
+| Scotch Expressions washi, Whimsical 15 rolls | B09HN34X72 | verified | Optional extra. Cowork (batch 3): a warm, busy mix of stripes, leaves, leopard print and foil; florals are a minority, so it is described as playful, not romantic |
 | Scotch Expressions washi, Abstract Modern 8 rolls | B09HN2PR9K | verified | Choose-one alternative ("Different style"); listing names no colours |
 | Tim Holtz Idea-ology Snippets | B06VTCRXBC | verified | Optional extra for Shoebox Post; SKU TH93564 and 111 pieces confirmed |
 | DAS air-hardening clay, white, 2.2 lb | B001GAP4YA | verified | Creative shelf, Start here; listing gives no drying time or non-toxic wording, so the article does not claim them |
 | Winsor & Newton Galeria 20 x 12 ml | B08NJZPZG6 | verified | Creative shelf, Start here; includes white, pale rose blush, pale lemon, olive green and red |
-| Liquitex BASICS 12 x 22 ml | B07VSZM41G | verified | Choose-one alternative ("Mix-your-own"); the listing does not list its colours |
+| Liquitex BASICS 12 x 22 ml | B07VSZM41G | verified | Choose-one alternative ("Mix-your-own"); 12 colours read from the chart (has white, no pink) |
 | YMI Sapphire American mahjong set | B09VGX38JV | verified | Hosting shelf; listing confirms tiles, 4 racks with pushers, dice, scoring coins and a zippered blue case |
 | NMJL 2026 large-print four-pack | B0GRCBQ3Y2 | verified | Hosting shelf; 2026 edition, no 2027 edition mentioned; replace each year |
 | Fiskars micro-tip scissors | B0DLFLZFGK | held | Removed: people already own scissors |
@@ -30,12 +30,14 @@ Rule (owner, 2026-11-23): the shop pushes only what the activity needs that most
 | NMJL 2026 standard four-pack | B0GRCCTYJ5 | held | Not shown |
 | Sculpd pottery kit | B09HL286VM | held | Not shown |
 | Mont Marte clay 500 g | B00Y5EOHRY | candidate | Not shown |
-| Faber-Castell Monet Water Lilies paint-by-numbers | B08DGL3R8K | held | Candidate for a craft-night shelf; canvas size and paint and brush contents not confirmed |
-| JOOZ landscape paint-by-numbers with frame | B0D6VHXD88 | held | Title says oil, a bullet says acrylic; resolve first |
+| Faber-Castell Monet Water Lilies paint-by-numbers | B08DGL3R8K | verified | Cozy shelf, Start here: 6 x 8 in canvas, six acrylic pots, one brush, easel, guide |
+| JOOZ landscape paint-by-numbers with frame | B0D6VHXD88 | verified | Cozy shelf, "Larger set" choice: 8 x 12 in canvas, wooden frame and easel, acrylic (only the title says oil) |
+
+Floral washi: Whaline 24 rolls (B0GYSNFN78) looks right but is sold by a third party and low stock, so it is not added; no sold-by-Amazon blush floral set was found. DAS: the listing and manual give no drying time or non-toxic wording, so the site makes no such claim.
 
 Checked and rejected in batch 2 (third-party sellers or unclear): the three ephemera packs, Jovi 1.1 lb and 2.2 lb, Dimensions embroidery kits, Strathmore 500 hardcover, Strathmore gray (Hyatt's). On hold: Jovi 4-pack (8.8 lb), Crayola 5 lb. Strathmore 400 white spiral (B0F97VF4HX) is sold by Amazon but its paper weight is not shown, so it is not added.
 
-Cowork batch 2 results: `docs/cowork/BATCH-2-RESULTS.csv` and `BATCH-2-NOTES.md` (branch `cowork/batch-2`). Open follow-ups are in `docs/cowork/BATCH-3.md`.
+Cowork batch 2 and 3 results: `docs/cowork/BATCH-2-RESULTS.csv` and `BATCH-2-NOTES.md`, `BATCH-3-RESULTS.csv`, `BATCH-3-NOTES.md` (branches `cowork/batch-2`, `cowork/batch-3`). Still open in `docs/cowork/BATCH-3.md`: Parts 2 to 4 (Associates status read, image-terms wording, real CMS and Netlify test).
 
 ## Verified this pass
 Production-mode simulation in an isolated copy, canonical URLs and titles present on every page, sitemap and robots present, security headers file present, no secrets, no stray tracking IDs, no Amazon images stored.

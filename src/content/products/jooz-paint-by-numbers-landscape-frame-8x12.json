@@ -3,15 +3,27 @@
   "name": "Paint by Numbers Kit for Adults with Frame, Landscape, 8 x 12 Inch",
   "brand": "JOOZ",
   "asin": "B0D6VHXD88",
-  "status": "held",
-  "editorialDecision": "hold",
-  "statusReason": "Cowork 2026-11-23: brand-sold, in stock, Link Checker success. Held because the title says oil painting kit while a bullet says acrylic paints; resolve before use.",
-  "collection": "creative",
+  "status": "verified",
+  "editorialDecision": "approve",
+  "order": 11,
+  "collection": "cozy",
+  "choiceOf": "faber-castell-monet-water-lilies-paint-by-numbers",
+  "choiceLabel": "Larger set",
+  "cta": "See It on Amazon",
+  "bestUse": "Best for a larger landscape you can display straight away",
+  "inTheBox": "An 8 x 12 in cotton canvas with a wooden frame, an adjustable wooden easel, three paintbrushes, acrylic paints and a reference picture.",
+  "descriptionOriginal": "A landscape paint-by-numbers kit with a wooden frame and tabletop easel included.",
+  "whyWeLikeIt": "A bigger canvas and a wooden frame and easel in the box mean the finished landscape can be displayed straight away.",
+  "limitations": "The listing's title says oil painting kit, while its description says acrylic paints; we treat it as acrylic, so check the listing before you buy. It is a landscape scene with a mountain view, a different mood from the Monet kit.",
   "listingChecked": {
     "checkedOn": "2026-11-23",
     "variant": "Landscape, 8 x 12 in",
     "listingAvailable": "yes",
     "sellerType": "brand",
     "affiliateLinkEligible": "yes"
-  }
+  },
+  "specsEvidence": "Amazon listing (Cowork, 2026-11-23): 8 x 12 in cotton canvas with wooden frame, adjustable wooden easel, three paintbrushes, acrylic paints, reference picture. Only the title says oil; the bullets and A+ content say acrylic. Sold by the brand (Jooz), shipped by Amazon, in stock.",
+  "suitability": "A beginner paint-by-numbers kit with frame and easel included, for a larger finished picture.",
+  "imageStatus": "none",
+  "verificationSource": "Listing read by Cowork on the owner's account, 2026-11-23 (docs/cowork/BATCH-2-RESULTS.csv and BATCH-3-RESULTS.csv). Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID' (batch 2); that validates the tag only, and real commission is confirmed only in Associates reports."
 }
