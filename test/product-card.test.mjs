@@ -88,3 +88,8 @@ test("the Start here heading shows only when a shelf has both starters and extra
   assert.equal(both.showStartHeading, true);
   assert.equal(shopGroups([mk("a")])[0].showStartHeading, false);
 });
+
+test("an alternative whose main product is not shown loses its alternative badge", () => {
+  const g = shopGroups([mk("main", { editorialDecision: "hold" }), mk("alt", { choiceOf: "main", choiceLabel: "Different style" })])[0];
+  assert.equal(g.start[0].choiceLabel, undefined);
+});

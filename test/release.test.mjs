@@ -8,7 +8,7 @@ import { pickNext, publishText, todayIn, notReadyBecause } from "../src/lib/rele
 import { makeCopy, cleanup, editJson, checkContentCli, write, read, REPO } from "./helpers.mjs";
 import { releaseNext } from "../scripts/release-next.mjs";
 
-const art = (slug, data = {}) => ({ slug, data: { status: "draft", description: "d", hero: { image: "/images/x.jpg", alt: "a" }, ...data } });
+const art = (slug, data = {}) => ({ slug, data: { status: "draft", description: "d", dek: "d", category: "After Hours", format: "discovery", hero: { image: "/images/x.jpg", alt: "a" }, ...data } });
 const ready = () => true;
 const base = { enabled: true, weekdays: ["tue", "fri"], timezone: "America/New_York", queue: ["a", "b"] };
 
@@ -138,5 +138,24 @@ describe("release workflow file", () => {
     const p = YAML.parse(fs.readFileSync(path.join(REPO, ".pages.yml"), "utf8"));
     assert.ok(p.content.find((c) => c.name === "schedule"));
     assert.ok(p.actions.find((a) => a.workflow === "release-next.yml"));
+  });
+});
+
+describe("fixes from the independent review", () => {
+  test("the one-a-day guard works when publishedAt is a Date, as the content loader gives it", () => {
+    const published = { slug: "x", data: { status: "published", publishedAt: new Date("2026-12-01T00:00:00Z") } };
+    const r = pickNext({ schedule: base, articles: [published, art("a", { dek: "d", category: "After Hours", format: "discovery" })], today: { date: "2026-12-01", weekday: "tue" }, hasImageFile: ready });
+    assert.equal(r.slug, null); assert.match(r.reason, /already published today/);
+  });
+  test("a draft missing its intro line, category or format is not ready, so it cannot block the queue", () => {
+    const why = notReadyBecause(art("a", { dek: undefined, category: undefined, format: undefined }), ready).join(";");
+    assert.match(why, /dek/); assert.match(why, /category/); assert.match(why, /format/);
+    const r = pickNext({ schedule: base, articles: [art("a", { dek: undefined }), art("b")], today: { date: "2026-12-01", weekday: "tue" }, hasImageFile: ready });
+    assert.equal(r.slug, "b");
+  });
+  test("publishText copes with a quoted status and with dollar patterns in the text", () => {
+    const out = publishText('---\ntitle: T\ndescription: "Costs $& more"\nstatus: "draft"\n---\nbody', "2026-12-01");
+    assert.match(out, /description: "Costs \$& more"/);
+    assert.match(out, /status: published/);
   });
 });

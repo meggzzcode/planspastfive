@@ -80,7 +80,7 @@ Any tape you already own will do to start, and a washi assortment adds colour:
 
 {{pick:scotch-expressions-washi-whimsical-15}}
 
-This assortment is a warm, busy mix of stripes, leaf prints and a copper foil roll: playful rather than romantic, so a few rolls will suit Shoebox Post best. If your book is more modern than vintage, {{product:scotch-expressions-washi-abstract-modern-8}} is the cleaner-looking choice. Press tape down from one end, smoothing as you go, and pick the pattern that answers the colour of your envelope or ticket. Look at the listing images first; no assortment suits every palette.
+This assortment is a warm, busy mix of stripes, leaf prints and a copper foil roll: playful rather than romantic, so a few rolls will suit Shoebox Post best. If your book is more modern than vintage, {{product:scotch-expressions-washi-abstract-modern-8}} is a more modern-looking alternative, though its listing names no colours, so check the images. Press tape down from one end, smoothing as you go, and pick the pattern that answers the colour of your envelope or ticket. Look at the listing images first; no assortment suits every palette.
 
 A small pair of scissors for trimming tape ends and cutting out pieces is the one tool you will want, and you almost certainly own a pair already.
 

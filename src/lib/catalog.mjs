@@ -51,7 +51,8 @@ export function shopGroups(products, mode = "production") {
       const isAlt = (p) => p.choiceOf && ids.has(p.choiceOf) && !inGroup.find((x) => x.id === p.choiceOf)?.choiceOf;
       const alternatives = new Map();
       for (const p of inGroup.filter(isAlt)) alternatives.set(p.choiceOf, [...(alternatives.get(p.choiceOf) || []), p]);
-      const all = inGroup.filter((p) => !isAlt(p));
+      // an alternative whose main product is not shown becomes an ordinary product, without its alternative badge
+      const all = inGroup.filter((p) => !isAlt(p)).map((p) => (p.choiceOf ? { ...p, choiceOf: undefined, choiceLabel: undefined } : p));
       return { id, alternatives, label: c.name, plain: c.plain, image: c.image, extrasLabel: c.extras || "Nice to have", products: all, start: all.filter((p) => p.shopTier !== "extras"), extras: all.filter((p) => p.shopTier === "extras"), get showStartHeading() { return this.start.length > 0 && this.extras.length > 0; } };
     })
     .filter((g) => g.products.length > 0);

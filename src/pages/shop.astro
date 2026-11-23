@@ -47,11 +47,11 @@ const groups = shopGroups(products, settings.launchMode);
               <div>
                 <h2 id={`h-${g.id}`}>{g.label}</h2>
                 <p class="shop-group__plain">{g.plain}</p>
-                <p class="shop-group__count">The starter kit: {g.start.length} {g.start.length === 1 ? "thing" : "things"} to buy. Everything else is optional.</p>
+                {g.start.length > 0 && <p class="shop-group__count">The starter kit: {g.start.length} {g.start.length === 1 ? "thing" : "things"} to buy. Everything else is optional.</p>}
               </div>
             </div>
             {g.showStartHeading && <h3 class="shop-group__tier">Start here</h3>}
-            <div class="pick-list pick-list--grid">{g.start.map(entry)}</div>
+            {g.start.length > 0 && <div class="pick-list pick-list--grid">{g.start.map(entry)}</div>}
             {g.extras.length > 0 && (<>
               <h3 class="shop-group__tier">{g.extrasLabel}</h3>
               <div class="pick-list pick-list--grid">{g.extras.map(entry)}</div>

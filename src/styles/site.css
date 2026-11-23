@@ -318,3 +318,14 @@ ul.plain { list-style: none; padding: 0; margin: 0; }
 .shop-group__count { margin: 0.4rem 0 0; font-weight: 700; color: var(--cherry); font-size: 0.95rem; }
 .choice-set .choice-set__note ~ .product-card { margin-left: 1rem; border-left: 3px dashed var(--cherry); background: transparent; box-shadow: none; }
 .product-card__skip { font-size: 0.9rem; margin: 0 0 0.6rem; color: var(--muted, #6b5b57); font-style: italic; }
+
+/* Comfortable tap targets and readable small text (independent QA, 2026-11-23). Inline links inside paragraphs are left alone. */
+.eyebrow { font-size: 0.8rem; }
+.illus { font-size: 0.78rem; }
+.product-card__brand { font-size: 0.8rem; }
+.product-card__tier { font-size: 0.75rem; }
+.product-card__best { font-size: 0.9rem; }
+.wordmark { display: inline-block; padding: 0.55rem 0; }
+.site-footer ul.plain a, .share__links a, a.more, .eyebrow a, .disclosure a { display: inline-block; padding: 0.6rem 0; }
+.disclosure a { white-space: normal; }
+.chips a { padding: 0.65rem 1.1rem; }

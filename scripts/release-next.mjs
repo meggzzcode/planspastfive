@@ -8,7 +8,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadContent } from "../src/lib/content-fs.mjs";
-import { pickNext, publishText, todayIn } from "../src/lib/release.mjs";
+import { pickNext, publishText, todayIn, WEEKDAYS } from "../src/lib/release.mjs";
 import { imageUrl } from "../src/lib/catalog.mjs";
 import { isApproved, recordForFile } from "../src/lib/images.mjs";
 
@@ -16,7 +16,7 @@ export function releaseNext(root, { mode = "auto", date, now = new Date() } = {}
   const c = loadContent(root);
   if (c.errors.length) return { released: null, reason: `The content has errors, so nothing was released:\n${c.errors.join("\n")}`, failed: true };
   const schedule = c.schedule;
-  const today = date ? { date, weekday: todayIn(schedule.timezone, new Date(`${date}T12:00:00Z`)).weekday } : todayIn(schedule.timezone, now);
+  const today = date ? { date, weekday: WEEKDAYS[new Date(`${date}T00:00:00Z`).getUTCDay()] } : todayIn(schedule.timezone, now);
   const hasImageFile = (img) => {
     const hit = recordForFile(c.images, img);
     return fs.existsSync(path.join(root, "public", imageUrl(img).replace(/^\//, ""))) && !!hit && isApproved(hit[1]);

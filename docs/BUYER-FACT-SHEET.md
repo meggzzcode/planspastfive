@@ -8,7 +8,7 @@ A small, static lifestyle magazine with a curated Amazon shop, built with Astro,
 ## What the buyer receives
 | Item | Detail |
 |---|---|
-| Website source | Astro site, plain CSS, 15 built pages, tests (130 automated), content and link checks, no database, no client-side shopping code |
+| Website source | Astro site, plain CSS, 15 built pages, tests (134 automated), content and link checks, no database, no client-side shopping code |
 | Articles | 5 published (junk journal supplies, first junk journal spread, air-dry clay, mahjong night, hobbies for busy women): a shopping guide, two starter guides, an experience guide and a discovery pillar |
 | Shop | 4 shelves (paper, creative, cozy, hosting); 20 product records of which 14 are shown (essentials, optional extras, and "choose one" alternatives); text-only cards with a verified "In the box" line, a "Worth knowing" caveat and a clear button |
 | Product system | One JSON file per product with status, evidence and approval controls; links are built centrally from the ASIN and your tracking ID; unverified products cannot appear in production |
