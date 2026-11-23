@@ -11,8 +11,6 @@ picks:
 related:
   - how-to-host-a-mahjong-night
   - hobbies-for-busy-women
-  - air-dry-clay-for-beginners
-  - your-first-junk-journal-spread
 ---
 
 Every paint night has one moment. Around 7:15, someone leans back from her canvas and says, "I did warn you, I cannot paint." Then she looks again, and the blue she just laid down is rather good, and she stops apologising. A host cannot make that happen, but she can set the evening up so it has room to.

@@ -124,4 +124,4 @@ Snippets only: Golden Just Paint drying summary, bestlifeonline, offbeathome; fe
 | Consistency | 10% | 9 | Agrees with the 2.5-hour label, FACTS and product record; no testing claims; no unpublished links. |
 | SEO intent and linking | 5% | 8 | Title 60 characters, audience in H1, four internal links plus the bundle; planned link to /journal/paint-by-numbers-for-adults/ stays in this brief. |
 
-**Weighted total:** 1.6 + 1.8 + 1.6 + 1.2 + 0.8 + 0.9 + 0.4 = **8.3 / 10**. I cannot honestly score a 9 on the source criterion while Golden's own clean-up and drying pages were unreadable and nothing is first-hand.
+**Weighted total:** 1.6 + 1.8 + 1.6 + 1.2 + 0.8 + 0.9 + 0.4 = 8.3; round 4 fixes a misapplied drying figure and cross-sell, so I hold at **8.3 / 10**. I cannot honestly score a 9 on the source criterion while Golden's own clean-up and drying pages were unreadable and nothing is first-hand.

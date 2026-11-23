@@ -1,5 +1,5 @@
 ---
-title: "How to Start a Walking Club (and Meet People as an Adult)"
+title: "How to Start a Walking Club: A First-Month Plan"
 description: "Start a walking club with two or three people: an invitation to copy, a first-month plan, a first-walk script and what to do when attendance fades."
 dek: "Two or three people, one fixed time, one loop you can talk on. How to start small, what to say, and how to keep a walking club going past the first month."
 status: draft
@@ -10,18 +10,17 @@ picks: []
 related:
   - hobbies-for-busy-women
   - how-to-host-a-mahjong-night
-  - air-dry-clay-for-beginners
 ---
 
 The hardest part of a walking club is a text message. It is four lines long, you have rewritten it three times, and your thumb is over the send button while a small voice asks what happens if everyone says no.
 
 This guide is for the person who sends it, and no purchase is needed. Shoes you already own, a phone and a water bottle are the kit.
 
-## Why a walking club helps you meet people
+## Why it takes a few months of Thursdays
 
-By the third walk you know Dee's commute and her opinion of the café's scones, and not much else. That in-between stage is where most adult friendships sit for a long while, and it is mostly a time problem.
+By the third walk you know Dee's commute and her opinion of the café's scones, and not much else. That in-between stage can last a while, and what moves it along is repeated time together.
 
-University of Kansas researcher Jeffrey Hall estimated in 2018, from surveys of recent movers and first-year students, that it takes roughly 40 to 60 hours together to go from acquaintance to casual friend, 80 to 100 to become a friend, and over 200 for a close friend. Hanging-out time counted; working together counted far less. These are self-reported averages, and the study was not about walking. Our arithmetic: 90 minutes a week is about 70 hours a year. A club cannot promise friendship. It gives people a reason to keep turning up.
+University of Kansas researcher Jeffrey Hall estimated in 2018, from surveys of recent movers and first-year students, that it takes roughly 40 to 60 hours together to go from acquaintance to casual friend, 80 to 100 to become a friend, and over 200 for a close friend. Hanging-out time counted; working together counted far less. These are self-reported averages, and the study was not about walking. A club cannot promise friendship. What it provides is a standing slot that puts the same people in the same place week after week.
 
 ## Start tiny
 
@@ -35,11 +34,15 @@ Attendance rises and falls, according to a rural walking-group toolkit hosted by
 ## Where to find your first members
 
 - **Neighbors.** Someone you wave to at the mailboxes. A note with the day, time and meeting spot is enough.
-- **Coworkers.** Ask in person, not in a company-wide email. A lunch loop is the lowest-effort version.
+- **Coworkers.** Ask in person. A lunch loop is the lowest-effort version.
 - **A group you already belong to.** A book club, class or craft night. The [hobbies guide](/journal/hobbies-for-busy-women/) lists other ways people already gather.
 - **A local community page.** A neighborhood group, a library or community center board. Give the day, time, length, pace and "beginners welcome." If you meet someone through a page, make the first walk a public spot in daylight and tell a friend where you will be.
 
-Low numbers early on are normal. Hold the date and walk anyway.
+Expect low numbers at first. Hold the date and walk anyway.
+
+## New in town, no coworkers
+
+Start with the people nearest you. Introduce yourself to a neighbor and mention the walk. Put a card on the board at a library or community center, with the day, time, meeting spot and pace. Ask at a class or hobby group you have just joined. Ask your local parks and recreation department whether a walking group already meets, because joining one is a fair way to start.
 
 ## Choose a route and a pace people can talk at
 
@@ -47,13 +50,13 @@ Low numbers early on are normal. Hold the date and walk anyway.
 - **Quieter streets or paths,** with restrooms, benches and bus stops nearby, and a note of any hills, steps or rough ground. The OHSU toolkit suggests a 30 to 45 minute route.
 - **Walk it once yourself first,** and time it.
 - **A café with a step-free entrance** at the end.
-- **A rain route** indoors, such as a mall or community center.
+- **An indoor rain route,** such as a mall.
 
 For pace, use the talk test. The National Park Service says that if you can talk while walking you are at a good pace, and that the slowest walker sets it. The NHS calls a pace brisk if you can talk but not sing; for a social club, aim a notch easier.
 
 ## Make it work for different bodies
 
-People decide before they arrive whether they will fit, so put the details in the invitation.
+Put the details in the invitation, so people can tell whether they will fit.
 
 - **Two distances.** A short loop and a longer one from the same start. A Washington State guide for dementia-friendly walking groups describes this, and says to name the terrain (pavement, gravel, mulch, dirt).
 - **Flat, smooth paths** for wheels and canes, and a note on steps.
@@ -105,7 +108,7 @@ Send it one-to-one.
 - **Agree a rain plan.** Walk in the drizzle, or skip the walk and meet for coffee anyway.
 - **When only one person shows,** walk anyway. Two people is still repeated time together, and it keeps the slot alive.
 
-Attendance fades in almost every group, and it is rarely about you. The OHSU toolkit warns that pressing people to come back does not work, and suggests asking permission first. When someone misses two in a row, send something light: "Missed you Thursday. We are doing the river loop next week if you feel like it, and no worries if not." If she does not reply, leave it a few weeks and ask again.
+Expect attendance to dip, and keep the day fixed. The OHSU toolkit warns that pressing people to come back does not work, and suggests asking permission first. When someone misses two in a row, send something light: "Missed you Thursday. We are doing the river loop next week if you feel like it, and no worries if not." If she does not reply, leave it a few weeks and ask again.
 
 ## Short answers
 
@@ -115,14 +118,12 @@ Attendance fades in almost every group, and it is rarely about you. The OHSU too
 
 **Someone says no.** "No worries at all. I will tell you if we do another one." Then do not chase her.
 
-**Someone never comes back.** Send one friendly message, as above, then let it go.
-
 **Etiquette on shared paths.** Keep to the right and stay out of the middle. A trail guide from Rails-to-Trails advises announcing a pass, "on your left," and stepping a step or two off the path when you stop. The Indiana DNR suggests groups use no more than half the trail, and let others pass.
 
 **Winter.** Move to a lunch hour or a weekend morning, walk an indoor loop, or keep the coffee and skip the walk.
 
-**A second activity.** Once the group is easy with each other, add a picnic, a [clay evening](/journal/air-dry-clay-for-beginners/) or a [mahjong night](/journal/how-to-host-a-mahjong-night/). Walking stays the base.
+**A second activity.** Once the group is easy with each other, add something indoors, such as a [mahjong night](/journal/how-to-host-a-mahjong-night/).
 
-## Make it real
+## Start with one date
 
-You need a date and one person who says yes. The message is already drafted, so choose the Thursday.
+Pick the day, pick the loop and write down the finish time. Everything else can change after the first walk.
