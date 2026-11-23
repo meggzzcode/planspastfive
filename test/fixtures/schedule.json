@@ -1,0 +1,6 @@
+{
+  "enabled": false,
+  "weekdays": ["tue", "fri"],
+  "timezone": "America/New_York",
+  "queue": []
+}

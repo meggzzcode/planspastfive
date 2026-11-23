@@ -175,6 +175,15 @@ export const productSchema = z
     if (p.imageStatus === "approved" && !p.image) ctx.addIssue({ code: "custom", path: ["image"], message: 'imageStatus is "approved" but there is no image' });
   });
 
+// Optional release queue (src/content/schedule.json). Automatic releases are OFF unless enabled is true.
+export const WEEKDAY_IDS = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+export const scheduleSchema = z.object({
+  enabled: z.boolean().default(false),
+  weekdays: z.preprocess((v) => (v == null || v === "" ? [] : v), z.array(z.enum(WEEKDAY_IDS))),
+  timezone: text.default("America/New_York").refine((tz) => { try { new Intl.DateTimeFormat("en", { timeZone: tz }); return true; } catch { return false; } }, "Use a time zone name such as America/New_York"),
+  queue: z.preprocess((v) => (v == null || v === "" ? [] : v), z.array(text.regex(ID_PATTERN, "Use the article's file name without .md"))),
+});
+
 export const settingsSchema = z.object({
   siteName: text.min(1),
   tagline: text,

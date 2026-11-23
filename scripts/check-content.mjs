@@ -8,6 +8,7 @@ import { resolveProduct, isShown, isResearch, productsReferencedBy, MARKER, imag
 import { affiliateSettingsProblems, trackingActive } from "../src/lib/affiliate.mjs";
 import { recordForFile, whyNotApproved, isApproved } from "../src/lib/images.mjs";
 import { verifiedGaps } from "../src/lib/schemas.mjs";
+import { notReadyBecause } from "../src/lib/release.mjs";
 
 // Price rule. Dollar amounts are BLOCKED in product records, article titles/summaries and every built page except
 // article prose; they are ALLOWED in article prose (budget estimates such as "under $25"), but never in a paragraph that
@@ -41,6 +42,17 @@ export function checkContent(root) {
   };
 
   if (c.settings) errors.push(...affiliateSettingsProblems(c.settings));
+
+  // ---- release queue (src/content/schedule.json): every name must be a real article; unready drafts only warn
+  for (const slug of c.schedule?.queue ?? []) {
+    const a = c.articles.find((x) => x.slug === slug);
+    if (!a) { errors.push(`src/content/schedule.json, field "queue": "${slug}" is not an article (use the file name without .md).`); continue; }
+    if (a.data.status === "draft") {
+      const hasPic = (img) => { const hit = recordForFile(c.images, img); return !!hit && isApproved(hit[1]) && exists(imageUrl(img)); };
+      const why = notReadyBecause(a, hasPic);
+      if (why.length) warnings.push(`Queued draft "${slug}" cannot be released yet: ${why.join("; ")}.`);
+    }
+  }
 
   // ---- products: duplicates, file name = id, replacement chains
   const byId = new Map();

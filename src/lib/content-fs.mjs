@@ -2,7 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import YAML from "yaml";
-import { articleSchema, productSchema, settingsSchema, imagesFileSchema, describeIssues } from "./schemas.mjs";
+import { articleSchema, productSchema, settingsSchema, scheduleSchema, imagesFileSchema, describeIssues } from "./schemas.mjs";
 
 const rel = (root, f) => path.relative(root, f).split(path.sep).join("/");
 
@@ -27,6 +27,18 @@ export function loadContent(root) {
     else errors.push(...describeIssues("src/content/settings.json", parsed.error));
   } catch (e) {
     errors.push(`src/content/settings.json: cannot be read as JSON (${e.message})`);
+  }
+
+  const schFile = path.join(root, "src/content/schedule.json");
+  out.schedule = scheduleSchema.parse({});
+  if (fs.existsSync(schFile)) {
+    try {
+      const parsed = scheduleSchema.safeParse(JSON.parse(fs.readFileSync(schFile, "utf8")));
+      if (parsed.success) out.schedule = parsed.data;
+      else errors.push(...describeIssues("src/content/schedule.json", parsed.error));
+    } catch (e) {
+      errors.push(`src/content/schedule.json: cannot be read as JSON (${e.message})`);
+    }
   }
 
   const iFile = path.join(root, "src/content/images.json");

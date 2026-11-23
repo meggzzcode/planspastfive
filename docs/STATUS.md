@@ -5,7 +5,7 @@ Updated 2026-11-23 against `main`. "Unverified" means nobody has confirmed it. T
 ## What the repository holds today
 - 5 published articles (junk journal supplies, your first junk journal spread, air-dry clay, how to host a mahjong night, hobbies for busy women), 15 built pages, 20 product records, 16 rights records and image files (see `docs/IMAGE-RECORDS.md`).
 - Settings: marketplace amazon.com, tracking ID `planspastfive-20`, **tracking OFF**, **launchMode `preview`**. Neither is changed without the owner's go-ahead.
-- Checks run on a clean clone (`npm ci`, `npm run check`, `npm test`, `npm audit`): build passes with 15 pages and the link check, 110 of 110 tests pass, 0 vulnerabilities. An isolated copy with `launchMode` production and tracking on also passes the content check (0 launch blockers).
+- Checks run on a clean clone (`npm ci`, `npm run check`, `npm test`, `npm audit`): build passes with 15 pages and the link check, 129 of 129 tests pass, 0 vulnerabilities. An isolated copy with `launchMode` production and tracking on also passes the content check (0 launch blockers).
 
 ## Products (20 records; 14 shown, 6 not shown)
 Rule (owner, 2026-11-23): the shop pushes only what the activity needs that most readers would not already own. Scissors and ordinary tape are not sold; washi is an optional extra.
@@ -41,6 +41,10 @@ Cowork batch 2 and 3 results: `docs/cowork/BATCH-2-RESULTS.csv` and `BATCH-2-NOT
 
 ## Verified this pass
 Production-mode simulation in an isolated copy, canonical URLs and titles present on every page, sitemap and robots present, security headers file present, no secrets, no stray tracking IDs, no Amazon images stored.
+
+## Release queue (optional, added 2026-11-23)
+- `src/content/schedule.json` holds an optional release queue. Automatic posting is **OFF** and the queue is **empty**. The five published articles are the whole library; no further drafts are stored (owner decision: finish and approve these five first).
+- Buyer guide: `docs/editorial/PUBLISHING-THE-BACKLOG.md`. Logic is tested (`test/release.test.mjs`); the GitHub workflow `release-next.yml` has not run on GitHub yet (Cowork batch 3 Part 4).
 
 ## Blocking launch (owner-gated)
 1. Real Pages CMS and Netlify test (`docs/OWNER-REAL-TEST.md`), best after 2026-12-16 because of Netlify credits.

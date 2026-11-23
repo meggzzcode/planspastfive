@@ -1,0 +1,88 @@
+# Release the next article from the queue (src/content/schedule.json). Two ways to start it:
+#   1. AUTOMATIC: every day at 14:00 UTC the workflow wakes up, but it does nothing unless schedule.json says
+#      "enabled": true AND today is one of its "weekdays". Default: OFF, so nothing is ever published by surprise.
+#   2. MANUAL: the "Release next article now" button in Pages CMS (or Actions > Run workflow) releases the next
+#      ready article immediately, whatever the switch says.
+# Plain-English guide: docs/editorial/PUBLISHING-THE-BACKLOG.md.
+#
+# WHAT IT DOES (the logic is in scripts/release-next.mjs, which has tests): picks the first READY draft in the
+# queue (it has a top picture with an approved rights record, a description), flips ONLY that file from draft to
+# published with today's date, runs the full site check (`npm ci && npm run check`) and, ONLY if everything passes,
+# commits to main with the marker [deploy] so Netlify makes one production deploy (15 credits). If anything fails,
+# main is not changed. It never edits anything except one article file.
+#
+# SAFETY: no secrets; the built-in GITHUB_TOKEN with contents:write only; no third-party actions; the commit
+# message uses only the article's file name (letters, digits, hyphens). GitHub switches off scheduled workflows in
+# a repository with no activity for 60 days: if releases stop, open Actions and re-enable it (see the guide).
+# NOT YET TESTED ON GITHUB: no run has happened; docs/cowork/BATCH-3.md Part 4 includes it.
+name: Release next article
+
+on:
+  schedule:
+    - cron: "0 14 * * *"
+  workflow_dispatch:
+    inputs:
+      payload:
+        description: "Sent by the Pages CMS button. Leave empty when running by hand."
+        required: false
+        default: ""
+        type: string
+
+permissions: {}
+
+concurrency:
+  group: publish-content
+  cancel-in-progress: false
+
+jobs:
+  release:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Get the repository
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          cred="$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)"
+          echo "::add-mask::$cred"
+          git -c "http.extraheader=Authorization: Basic $cred" clone --quiet "https://github.com/$REPO.git" repo
+          cd repo
+          git config --local http.extraheader "Authorization: Basic $cred"
+      - name: Pick the next article
+        id: pick
+        working-directory: repo
+        env:
+          EVENT: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          if [ "$EVENT" = "workflow_dispatch" ]; then node scripts/release-next.mjs --now; else node scripts/release-next.mjs; fi
+      - name: Check everything, then publish
+        if: steps.pick.outputs.released != ''
+        working-directory: repo
+        env:
+          SLUG: ${{ steps.pick.outputs.released }}
+        run: |
+          set -euo pipefail
+          case "$SLUG" in (*[!a-z0-9-]*|"") echo "::error::Unexpected article name"; exit 1;; esac
+          git config user.name  "Plans Past Five publisher"
+          git config user.email "noreply@users.noreply.github.com"
+          if ! (npm ci && npm run check); then
+            git checkout --quiet -- .
+            echo "::error title=Nothing published::The site check failed after releasing $SLUG, so nothing was changed. Fix the article (the list above names the file and field), then run this again."
+            exit 1
+          fi
+          git add "src/content/articles/$SLUG.md"
+          git commit --quiet -m "Release: $SLUG [deploy]"
+          git push --quiet origin HEAD:refs/heads/main
+          echo "### Released $SLUG. Netlify now makes one production deploy." >> "$GITHUB_STEP_SUMMARY"
+      - name: Nothing to release
+        if: steps.pick.outputs.released == ''
+        run: echo "### Nothing released this time (the switch is off, it is not a release day, or no queued draft is ready)." >> "$GITHUB_STEP_SUMMARY"

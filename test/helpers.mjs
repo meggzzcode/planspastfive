@@ -28,6 +28,8 @@ export function makeCopy(label = "ppf") {
   // Settings too: tests run against fixture settings (tracking OFF), so the owner switching tracking on,
   // changing the tag or the launch mode in the real settings file cannot break them.
   fs.copyFileSync(path.join(REPO, "test/fixtures/settings.json"), path.join(dir, "src/content/settings.json"));
+  // The release queue too: the real queue names real drafts that the test copies do not contain.
+  fs.copyFileSync(path.join(REPO, "test/fixtures/schedule.json"), path.join(dir, "src/content/schedule.json"));
   // One pending (unapproved) picture lives only in the fixtures, so the production-mode tests have something to reject.
   const imgPath = path.join(dir, "src/content/images.json");
   fs.writeFileSync(imgPath, JSON.stringify({ ...JSON.parse(fs.readFileSync(imgPath, "utf8")), ...JSON.parse(fs.readFileSync(path.join(REPO, "test/fixtures/images.json"), "utf8")) }, null, 2));

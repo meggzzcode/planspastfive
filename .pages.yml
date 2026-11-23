@@ -28,6 +28,15 @@ actions:
       title: Publish your saved edits to the live website?
       message: "Everything is checked first. If a check fails, nothing changes. Have you looked at the preview?"
       button: Publish now
+  - name: release-next-article
+    label: Release next article now
+    workflow: release-next.yml
+    ref: main
+    cancelable: false
+    confirm:
+      title: Publish the next ready article from the queue?
+      message: "The next article in your release queue that has a top picture goes live today. Everything is checked first; if a check fails, nothing changes."
+      button: Release it
   - name: undo-last-publish
     label: Undo last publish
     workflow: undo-last-publish.yml
@@ -445,3 +454,45 @@ content:
       - name: searchConsoleVerification
         label: Google Search Console verification code (optional)
         type: string
+
+  # ------------------------------------------------------------------ Release queue
+  - name: schedule
+    label: Release queue (optional automatic posting)
+    type: file
+    path: src/content/schedule.json
+    format: json
+    fields:
+      - name: enabled
+        label: Post automatically
+        type: boolean
+        description: "OFF = you publish by hand (Publish site, or Release next article now). ON = the next ready article in the queue goes live on the days chosen below."
+      - name: weekdays
+        label: Release days
+        type: select
+        options:
+          multiple: true
+          values:
+            - name: mon
+              label: Monday
+            - name: tue
+              label: Tuesday
+            - name: wed
+              label: Wednesday
+            - name: thu
+              label: Thursday
+            - name: fri
+              label: Friday
+            - name: sat
+              label: Saturday
+            - name: sun
+              label: Sunday
+        description: "Pick one day for one article a week, two for two a week. Each release costs one Netlify production deploy."
+      - name: timezone
+        label: Time zone (decides which day it is)
+        type: string
+        description: "For example America/New_York or Europe/London."
+      - name: queue
+        label: Queue (article file names, in the order they should go live)
+        type: string
+        list: true
+        description: "Use the article's file name without .md. Only drafts with a top picture and description are released; others are skipped."

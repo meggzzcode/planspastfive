@@ -44,6 +44,8 @@ A product shows only when its `editorialDecision` is `approve` and its status is
 
 `launchMode` in `src/content/settings.json`: `preview` (default) prints a LAUNCH WARNING for unfinished picture rights and provisional products and still builds; `production` fails the build on them. Switch to `production` only when ready; nothing yet ties the Netlify production deploy to it. Details in `docs/OWNER-OPERATIONS.md`.
 
+**Optional release queue (manual or automatic posting):** `docs/editorial/PUBLISHING-THE-BACKLOG.md`.
+
 ## What the Milestone 1 demonstration proves
 
 `npm test` copies a fixture set (`test/fixtures/`) into a temporary folder, not the shipped content, and, in the copy, simulates the owner's CMS edits: publish/unpublish an article, change a hero picture, add and replace products, change or break the tracking tag, and run the publish and undo logic in scratch git repositories. See `test/demo.test.mjs` and `test/workflows.test.mjs`. Screenshots: `docs/milestone-1/screenshots/` (regenerate with `node scripts/screenshots.mjs`; needs Playwright, which is not an npm dependency).
