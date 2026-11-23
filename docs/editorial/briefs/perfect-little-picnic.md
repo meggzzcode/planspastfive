@@ -41,22 +41,29 @@ Sources: added Clemson HGIC, University of Missouri Extension, Mississippi State
 
 PLANNED PICKS (add as {{pick}} at release, not now, product records held until this article releases): fit-fresh-mari-insulated-backpack-cooler (soft 12-can backpack cooler tote, 11.5 x 5 x 12.5 in, easy-clean insulated interior; the listing does not say the main compartment zips or the liner is sealed, so the article must not claim either) and fit-fresh-soft-ice-packs-2pk (2-pack soft gel packs, non-toxic and BPA-free per the listing, 6.5 in wide, fit flat). Place the cards in 'Borrow or buy' and reword the 'we link none yet' sentence then. The 12-can capacity suits a snack bag for two, not a full menu for three or four: at release, either say so or keep the menu cold dishes in small jars. No waterproof, washable blanket verified: do not recommend one.
 
+## Revision notes (round 4)
+Product direction corrected: the audience buys beauty and occasion, not utilities. Deleted the 'no verified products' sentence and the ice-pack and cooler-bag buy framing; 'Borrow or buy' is now 'Make it feel like an occasion' (nothing required, six optional pretty extras with what to look for, no brands, no picks). Food-safety bullet now says a borrowed cooler or a thick insulated lunch bag works. Cut the 'longer version of the hobbies card' intro (opens on the scene); plain per-person quantities with a scaling line for two and four; 30-second methods for orzo, chickpeas and brownies; rain line reduced to one plain line; ending is a line of dialogue plus an invitation; only the hobbies guide and one other guide (mahjong snack ideas) linked; clay link already removed. Owner update: insulated tote or backpack kept as a short, appealing item with criteria (size for group, wipe-clean liner, main zip, shoulder strap); ice packs are NOT recommended for purchase, and a freezer-flat pack or frozen water bottle already owned is suggested (the frozen-bottle idea is common sense, not from a source read).
+
+PLANNED PICKS (add as {{pick}} at release, do not add now): fit-fresh-mari-insulated-backpack-cooler (12 cans, 11.5 x 5 x 12.5 in, easy-clean insulated interior; the listing does not say the main compartment zips, so do not claim it) for two; away-cooler-tote (14.6 x 8.7 x 22.4 in, welded body, waterproof zipper tape) as the larger option for three or four. Drop fit-fresh-soft-ice-packs-2pk.
+
 ## Product Research Brief
 
-No verified picnic products in the catalog. The article carries picks: [] and no {{pick}} or {{product}} markers, and no Shop bundle link (none exists for picnics).
+Article carries picks: [] and no markers. Picks are to be added at release from the listings Cowork is verifying (docs/cowork/BATCH-6.md). Most items readers own; the section is optional and aspirational, not a requirement.
 
-**PRODUCT CANDIDATES (UNVERIFIED), only for items a reader may lack. No ASINs. To be checked on Amazon.com by Cowork.**
-1. Insulated cooler bag, soft, for 2 to 4 people. Criteria: capacity that fits a day's food for two to four; fully sealed liner that wipes clean; zip or tight closure; fits freezer ice packs flat; a shoulder strap or handles for carrying one-handed; reviews that mention keeping cold for hours, not marketing claims. Must not claim a guaranteed hold time that we then repeat.
-2. Reusable gel ice packs (a pair or set). Criteria: flat shape that fits a cooler bag; non-toxic filling stated on the listing; sturdy seals; sizes stated. FDA says frozen gel packs are fine.
-3. Waterproof-backed picnic blanket. Criteria: stated waterproof or water-resistant backing; size big enough for 3 or 4 adults sitting; folds small; machine washable; carry strap. Only for readers with no blanket; do not push if they own one.
-4. Small reusable plates and cutlery set (optional). Criteria: unbreakable; light; stated dishwasher-safe; does not clash with park glass bans.
-5. Insulated food jar for keeping soup or hot food at 140F. Criteria: maker states hot-holding time; wide mouth; leak-proof lid. Only if the editor wants a hot-dish option; the article currently steers to cold dishes.
+**PRODUCT CANDIDATES (UNVERIFIED), no brands or ASINs:**
+0. Soft insulated picnic tote or backpack (planned picks above). Criteria: size for group, wipe-clean liner, main zip, shoulder strap.
+1. Lidded willow picnic basket set for two, with real (not flimsy) plates, cutlery and napkins. Criteria: lid closes; plates sturdy; cutlery secured; stated dimensions; reviews about quality, not just looks.
+2. Picnic blanket in gingham, linen-look or floral, waterproof backing, folds to a strap. Criteria: backing stated; size fits three or four sitting; machine-washable ONLY if the listing states it.
+3. Travel cheese board with knives, carries in a bag or lid. Criteria: knives included and secured; closes flat; wood or bamboo stated; easy to wipe.
+4. Shatterproof stemless tumblers or glasses that do not look like plastic. Criteria: material stated; set of two to four; dishwasher-safe claim only if stated.
+5. Enamel or vintage-look plates and mugs. Criteria: material stated; set size; chip-resistant claims only if stated.
+6. Lidded glass jar or weighted bud vase for flowers. Criteria: lid or weighted base stated; size; leak-proof only if the listing says so.
 
-**Why most items need no link:** per the owner rule in FACTS.md, a blanket, basket, cutlery, wipes, trash bags, sunscreen, repellent and napkins are things people generally own. Linking them would push purchases the activity does not need.
+Why most items need no link: blanket, tote, cutlery, napkins, wipes, sunscreen, repellent and trash bags are usually owned (owner rule).
 
 ## Internal Linking Plan
 
-Used now (all published):
+Used now (all published; cap of two guides, hobbies plus one):
 - /journal/hobbies-for-busy-women/ (twice: the 2-hour picnic card; solo option)
 - /journal/how-to-host-a-mahjong-night/ (anchor: snack ideas; only keeping foods suggested, cheese flagged as perishable)
 - Air-dry clay link removed in revision (place-card idea was forced); related list now hobbies and mahjong only.
@@ -99,13 +106,13 @@ Not fetched successfully (403/404): FDA tips-for-safe-picnics URL, USDA FSIS pag
 - Menu items (tomato mozzarella ciabatta, orzo, chickpea salad, brownies) and quantities are editorial suggestions from the menu guides' general principles, not tested recipes. Wasp and uneven-ground tips are common-sense, unsourced.
 - Body about 1,350 words, just under the editor's 1,400 target.
 
-## Self-Review (round 3, hard marker)
-- Reader appeal (20%): 8. Calm opening and closing image, a concrete menu; still instructional more than evocative.
-- Practical helpfulness (20%): 9. Table plus assembly, five-point safety list, buy criteria, one-liners for rain, wasps, no tap, ground, shade and access, timeline.
-- Research accuracy and source quality (20%): 9. Thirteen sources read in full, FDA plus four extension or state pages on safety, two park pages, CDC and NPS; remaining gap is that park rules cover only two jurisdictions and menu items are editorial.
-- Product fit (15%): 8. No forced links and criteria match the two soon-to-be-verified products, but no cards yet and the 12-can bag is small for a three-person menu.
-- Originality (10%): 8. The menu table with bag position and safe-time note is a copyable device most guides lack.
-- Consistency (10%): 9. Matches the hobbies card, FACTS rules, UV and 2-hour logic reconciled, no first-hand claims or prices.
-- SEO intent and linking (5%): 8. Title in range, intent covered, two published links.
+## Self-Review (round 4, hard marker)
+- Reader appeal (20%): 8. Opens on the scene, ends on a line of dialogue and an invitation, with an occasion section; still guide-shaped.
+- Practical helpfulness (20%): 9. Table, methods, scaling line, safety, one-liners, timeline.
+- Research accuracy and source quality (20%): 9. Thirteen sources read in full; park rules cover two jurisdictions and the menu is editorial.
+- Product fit (15%): 7. Pretty extras fit the audience and are honest and optional, but nothing is verified or linked yet, so no card is possible; picks arrive at release.
+- Originality (10%): 8. Menu table with bag position and safe-time note.
+- Consistency (10%): 9. Matches hobbies card; no prices or first-hand claims.
+- SEO intent and linking (5%): 8.
 
-Weighted total: 0.20x8 + 0.20x9 + 0.20x9 + 0.15x8 + 0.10x8 + 0.10x9 + 0.05x8 = 1.6 + 1.8 + 1.8 + 1.2 + 0.8 + 0.9 + 0.4 = 8.5 out of 10. I will not call it a 9: appeal and product fit are the soft spots, and a fresh reviewer may differ.
+Weighted total: 0.20x8 + 0.20x9 + 0.20x9 + 0.15x7 + 0.10x8 + 0.10x9 + 0.05x8 = 1.6 + 1.8 + 1.8 + 1.05 + 0.8 + 0.9 + 0.4 = 8.35 out of 10. Product fit should rise once real, verified occasion picks are added.

@@ -103,6 +103,17 @@ Cited in the article: NCI, NHS, Common Sense Media, BPL, Chicago, Santa Monica, 
 - Library claim now compares Boston, Chicago and Santa Monica; the article states the pages vary.
 - Eight cited sources, thirteen read in full. Body about 1,380 words. Two shop links.
 
+## Round 4 changes
+
+- Removed the mahjong, clay and cozy mentions; closing now has two guides only, each with a reason (junk journal spread plus its bundle, hobbies guide). No mahjong claim remains, so the "four players" contradiction is gone.
+- Westminster claim softened to "daytime and evening classes are offered, with an online registration button".
+- Boston, Chicago and Santa Monica details cut; the library item is now a "library hour" (browse, one book, one chair) with "photo ID with a local address; check your library's website".
+- "Decision fatigue is usual" rewritten as plain advice ("Choosing is hard by evening").
+- "Charity shop" is now "thrift store or secondhand shop".
+- Common Sense Media removed from the article; only two cited points remain (NHS, NCI). Weak opening lines rewritten.
+- New fix for "not even ten minutes happened". Bath replaced by the library hour; the library-card item replaced by a voice note to a friend.
+- Related front matter trimmed to the two linked guides. Body about 1,310 words; one shop link.
+
 ## Open uncertainties
 
 - The fetch tool returned summaries, not verbatim pages; quotes (NHS, Toronto, Westminster) were taken from those summaries.
@@ -125,4 +136,18 @@ Hard marks after round 3.
 | Consistency | 10% | 9 | Matches FACTS and the published guides; no prices, health promises or testing claims. |
 | SEO intent and linking | 5% | 8 | Chooser and fallback section match the long-tail questions; five published links. |
 
-Weighted total: 1.6 + 1.6 + 1.6 + 1.2 + 0.8 + 0.9 + 0.4 = **8.1 / 10**
+Weighted total: 1.6 + 1.6 + 1.6 + 1.2 + 0.8 + 0.9 + 0.4 = **8.1 / 10** (before round 4; round 4 re-score below)
+
+### Round 4 re-score
+
+| Criterion | Weight | Score | Justification |
+|---|---|---|---|
+| Reader appeal | 20% | 8 | Opening and chooser read well; some cards remain plain. |
+| Practical helpfulness | 20% | 8 | Chooser, fallbacks and the "not even ten minutes" fix; several cards are short. |
+| Research accuracy and source quality | 20% | 8 | Two cited points (NHS, NCI) plus two quoted city pages; the fetch tool returned summaries, not verbatim text. |
+| Product fit | 15% | 8 | One incidental bundle link, no cards. |
+| Originality | 10% | 8 | Fresh ideas absent elsewhere; thrifting and film night are familiar ideas. |
+| Consistency | 10% | 9 | No contradictions found; no prices, health promises or testing claims. |
+| SEO intent and linking | 5% | 7 | Two internal guides and a shop link; planned links are brief-only. |
+
+Weighted total: 1.6 + 1.6 + 1.6 + 1.2 + 0.8 + 0.9 + 0.35 = **8.05 / 10**. Library and Common Sense rows in the sources table are now background only.

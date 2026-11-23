@@ -12,9 +12,9 @@ related:
   - how-to-host-a-mahjong-night
 ---
 
-The easy picnics are the ones packed on Friday evening. By then the salad is in its jar, the ice packs are in the freezer and the blanket is already on top of the tote by the door. On Saturday you only have to carry it, spread it out and sit down.
+The easy picnics are the ones packed on Friday evening. By then the salad is in its jar, something cold is waiting in the freezer and the blanket is already on top of the tote by the door. On Saturday you only have to carry it, spread it out and sit down.
 
-Two to four people, about two hours. This is the longer version of the picnic card in our [hobbies guide](/journal/hobbies-for-busy-women/), which says a blanket, a bag you can carry in one hand and food you already like are enough. It goes a little further: for food that stays safe for a couple of hours, a soft insulated bag joins the tote. Everything else you probably own.
+This guide plans one for two to four people and about two hours at the spot. Nothing here needs special equipment, and the last section is for the pretty extras that make it feel like an occasion.
 
 ## Choose the spot and the hour
 
@@ -26,7 +26,7 @@ For timing, the CDC says ultraviolet rays are strongest between 10 a.m. and 4 p.
 
 ## A picnic for three
 
-Picnic guides agree on the rules: sturdy dishes that hold at cool or room temperature, easy to eat by hand, nothing that goes soggy on the way. This menu follows them. Quantities are our rough estimates for three people, not a standard.
+Picnic guides agree on the rules: sturdy dishes that hold at cool or room temperature, easy to eat by hand, nothing that goes soggy on the way. This menu follows them. The table gives amounts per person: for two, make two portions, and for four, four. The jars scale up and down without fuss.
 
 | Dish | Why it travels | Per person | Goes in the bag | Safe-time note |
 |---|---|---|---|---|
@@ -36,6 +36,8 @@ Picnic guides agree on the rules: sturdy dishes that hold at cool or room temper
 | Brownies | Eaten by hand; often better on day two | 2 squares | In a tin, anywhere | Fine at room temperature |
 | Mint lemonade and water | Made the night before | 2 cups lemonade, 1 bottle water | Separate bag or cooler if you can | Check the park's glass rules |
 
+**Make-ahead, 30 seconds each.** Orzo: boil to the packet time, rinse cold, toss with olive oil, lemon juice and zest, chopped olives, parsley, salt and pepper. Chickpeas: drain and toss with red onion, dill, olive oil and lemon; slice the cucumber at the blanket. Brownies: a box mix or your usual recipe, baked in a square tin and cut in the tin once cool.
+
 **The 60-second assembly:** unwrap the sandwiches, spoon the salads into three small bowls, tear the basil on top, pour the lemonade, open the tin. Nothing else comes out of the bag until someone asks.
 
 Our mahjong night [snack ideas](/journal/how-to-host-a-mahjong-night/) add things to nibble. Nuts, fruit and shortbread keep; cheese is perishable and rides in the cooler like everything else.
@@ -44,26 +46,32 @@ Our mahjong night [snack ideas](/journal/how-to-host-a-mahjong-night/) add thing
 
 Two kinds of source agree here: the US Food and Drug Administration, and several university extension services (Penn State, Clemson, Missouri and Mississippi State).
 
-- Cold food stays at 40°F or below, so use ice or frozen gel packs and pack it cold from the refrigerator. Hot food stays at 140°F or above; otherwise bring cold dishes.
-- Pack the food you will want last at the bottom and what you want first on top. Fill the bag rather than leaving it half empty, and keep drinks separate so the food bag opens less.
+- Cold food stays at 40°F or below, so pack it cold from the refrigerator with ice or something frozen you already own around it. A borrowed cooler works, and so does a thick insulated lunch bag you already own. Hot food stays at 140°F or above; otherwise bring cold dishes.
+- Pack the food you will want last at the bottom and what you want first on top. Fill the cooler or bag rather than leaving it half empty, and keep drinks separate so the food bag opens less.
 - In the car, keep the bag inside rather than in the trunk. At the park, keep it in the shade, closed between servings.
 - Perishable food is out for no more than 2 hours, or 1 hour above 90°F. Throw out what goes past it.
 - Wash hands for 20 seconds before and after handling food. With no tap, bring a water jug, soap and paper towels, or moist towelettes. Rinse produce at home; packaged greens labelled washed need no further rinse.
 
 Throw away perishable leftovers before you leave. This is general guidance for healthy adults, so ask your doctor if pregnancy, an immune condition or an allergy changes the rules for you.
 
-## Borrow or buy
+## Make it feel like an occasion
 
-You almost certainly own the blanket, tote, cutlery and napkins. The insulated bag and ice packs are the only things worth buying if you lack them. We do not link any yet, because we have no picnic products we have verified. What to look for:
+Nothing here is required. A blanket you own and food you like make a perfectly good picnic. If you would like it to feel like an occasion, or you want a gift for a friend who hosts, these are the extras a woman tends to love owning. We have not verified specific listings yet, so here is what to look for:
 
-- **An insulated bag:** sized for your group (a few cans or containers for two, a larger bag for four), an easy-clean liner, a zip or closure you can shut fully, and handles or straps so you can carry it one-handed.
-- **Ice packs:** freezer-flat so they fit around food, non-toxic filling stated on the pack, and a size that fits your bag. Two is a sensible start for a small bag.
-- **A blanket:** if the grass is damp, a waterproof backing is useful, so check whether it can be washed. If yours is not backed, a tablecloth or bin liner underneath does the same job.
+- **A soft insulated picnic tote or backpack.** The practical piece that looks good too. Look for a size that fits your group (smaller for two, a roomier tote for four), a wipe-clean liner, a main zip that closes fully and a shoulder strap. A freezer-flat pack or a frozen water bottle you already own keeps the food cold, so there is nothing else to buy.
+- **A lidded willow basket set with real plates and cutlery for two.** Look for plates that are sturdy enough to carry, cutlery that clips or sits in its own pocket, and a lid that closes properly.
+- **A blanket in gingham, linen-look or florals, with a waterproof backing.** It should fold into a strap, and be machine-washable only if the listing says so.
+- **A travel cheese board with knives.** One that carries in a bag or inside its own lid is the easiest.
+- **Shatterproof stemless tumblers or glasses that do not look like plastic.** Check the park allows glass; if not, these are the answer.
+- **Enamel or vintage-look plates and mugs**, for a table that looks set.
+- **A lidded glass jar or weighted bud vase** for a few flowers from the grocery store, so the blanket has a centre.
+
+One of these is plenty. Borrow the rest.
 
 ## What to bring, in one list
 
 - Blanket, and something to sit against if you have a cushion
-- Insulated bag with the food and ice packs
+- Cooler or insulated bag with the food, kept cold
 - Plates or bowls, cutlery, napkins
 - Wet wipes, or water, soap and paper towels
 - Two bags: one for trash, one for anything wet
@@ -73,7 +81,7 @@ You almost certainly own the blanket, tote, cutlery and napkins. The insulated b
 
 ## Small things, one line each
 
-- **Rain:** name a backup day when you send the invitation, as the hobbies guide suggests, or agree that rain moves the same menu to the living-room floor.
+- **Rain:** if the forecast is wet, the same menu moves to the living-room floor.
 - **Wasps:** keep trash covered and cups lidded; Washington State's health department says covered trash bins deter yellowjackets.
 - **No tap:** wipes, a jug of water and soap, as above.
 - **Uneven ground:** check for bumps before you spread the blanket, or glasses will tip.
@@ -83,7 +91,7 @@ You almost certainly own the blanket, tote, cutlery and napkins. The insulated b
 ## A timeline that works
 
 - **Two days before:** check the parks page, text your friends the date and the rain plan, bake the brownies.
-- **The night before:** make the salads and lemonade, freeze the ice packs, wipe out the bag.
+- **The night before:** make the salads and lemonade, freeze whatever keeps the food cold, wipe out the cooler or bag.
 - **Morning:** assemble the sandwiches and pack the bag full and cold.
 - **4:00:** arrive, find shade, spread the blanket.
 - **4:15:** drinks, then salads.
@@ -91,6 +99,6 @@ You almost certainly own the blanket, tote, cutlery and napkins. The insulated b
 - **5:30:** brownies. Start packing up before the light goes.
 - **6:00:** bin anything that has sat out for 2 hours (1 hour above 90°F), wipe hands, collect every wrapper and head home.
 
-Going alone? The hobbies guide lists a picnic as a solo-with-a-book option too. Halve the menu and keep the safety rules.
+Going alone? Our [hobbies guide](/journal/hobbies-for-busy-women/) lists a picnic as a solo-with-a-book option too. Halve the menu and keep the safety rules.
 
-By six, the ice packs have gone soft, the brownie tin is empty and nobody has mentioned leaving.
+"Same blanket, same spot, next sunny Saturday?" Look at the forecast, pick the afternoon, and ask.

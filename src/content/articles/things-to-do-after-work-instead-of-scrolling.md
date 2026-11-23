@@ -54,7 +54,7 @@ The phone wins because it is already in your hand. Beat it by making the better 
 
 ## If you have a whole evening
 
-**9. A thrifting walk with a limit.** Choose a thrift store or secondhand shop within walking distance, agree a small limit before you go, and browse one section properly: mugs, books or scarves. You are hunting for one small thing you would be glad to see every day, and buying nothing counts. Better with a friend.
+**9. A thrifting walk with a limit.** Choose a thrift store or secondhand shop within walking distance, agree a small limit before you go, and browse one section properly: mugs, books or scarves. You are hunting for one small thing you would be glad to see every day, and buying nothing counts. Bring a tote bag so you do not need a new one, and take a friend if you can, since a second opinion makes browsing fun.
 
 **10. Dinner with a friend, out or in.** Either book an early table within walking distance of one of you and agree on one course each, or make a soup you already cook and text "Come at 7, bring nothing". Early tables are easy to leave, and a pot on the stove lets guests eat at the counter. Send the message while the plan is still easy: "Thursday at 6?"
 
@@ -64,7 +64,7 @@ The phone wins because it is already in your hand. Beat it by making the better 
 
 ## When the commute ate the evening
 
-Use the 10-minute list first. Tea, the postcard or the library card still fit, and a small thing done on purpose beats a big plan you skip. If you are home at 8, the call or the bath is a fine choice, and so is a second cup of tea.
+Use the 10-minute list first. Tea, the postcard or the voice note still fit, and a small thing done on purpose beats a big plan you skip. If you are home at 8, the call or the shelf is a fine choice, and so is a second cup of tea.
 
 ## If it does not work
 

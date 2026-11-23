@@ -1,4 +1,4 @@
-# Brief: How to Start a Walking Club and Actually Make New Friends as an Adult
+# Brief: How to Start a Walking Club: A First-Month Plan
 
 Slug `start-a-walking-club` | Category Better Together | Format experience-guide | Status draft (no publishedAt, no hero) | Body about 1,600 words (revised) | Drafted 2026-11-23, revised same day
 
@@ -46,10 +46,10 @@ No Shop bundle exists for walking, so the article links no bundle (the template 
 
 Used now (all published):
 - `/journal/hobbies-for-busy-women/` (in "Where to find your first members": other ways people already gather).
-- `/journal/how-to-host-a-mahjong-night/` and `/journal/air-dry-clay-for-beginners/` (in "Turning walks into time together": a second activity once the group is easy with each other).
-- `related: [hobbies-for-busy-women, how-to-host-a-mahjong-night, air-dry-clay-for-beginners]`.
+- `/journal/how-to-host-a-mahjong-night/` (one sentence under Short answers, "A second activity").
+- `related: [hobbies-for-busy-women, how-to-host-a-mahjong-night]`.
 
-Not linked: `junk-journal-*` (no fit).
+Not linked: `air-dry-clay-for-beginners` (removed in round 3 to avoid a cross-sell chain), `junk-journal-*` (no fit).
 
 Planned future links (not in the article; add when published):
 - The planned article on making friends as an adult (unpublished): link from the intro and the "Why a walking club helps" section.
@@ -124,16 +124,25 @@ Originality: "Turning walks into time together" is now one short answer (a secon
 
 Consistency: US spelling; no outcome promises (Hall is hedged, NHS friendship line deliberately not used); the first walk is 90 minutes; body is about 1,550 words; description 147 characters.
 
-## Self-Review (hard marker, round 2)
+## Revision round 3 (what changed)
+
+- Title is now "How to Start a Walking Club: A First-Month Plan" (47 characters), with no friendship-outcome promise. The H2 "Why a walking club helps you meet people" is now "Why it takes a few months of Thursdays". The sentence about a reason to keep turning up now describes the mechanism (a standing slot that puts the same people in the same place), not a result.
+- The arithmetic line was dropped. Hall's figures (40 to 60, 80 to 100, over 200 hours) appear once only.
+- "Attendance fades in almost every group, and it is rarely about you" is now "Expect attendance to dip, and keep the day fixed", plus the cited OHSU toolkit point about not pressing people. "Low numbers early on are normal" is now "Expect low numbers at first", plain advice.
+- New short section "New in town, no coworkers" (neighbors, a library or community center board, a class or hobby group, the local parks and recreation department). This is plain practical advice, not a sourced claim; the OHSU toolkit names parks and recreation departments as partners but the article does not cite it for this.
+- Second-activity cross-sell is one sentence linking one published guide (mahjong). Clay link and the `air-dry-clay-for-beginners` related slug were removed; `related` is hobbies-for-busy-women and how-to-host-a-mahjong-night.
+- Glib lines cut ("Make it real", "Walking stays the base", "Someone never comes back" answer folded into the fading-attendance paragraph). The close is now "Start with one date". Body is about 1,590 words.
+
+## Self-Review (hard marker, round 3)
 
 | Criterion | Weight | Score | One-line justification |
 |---|---|---|---|
-| Reader appeal | 20% | 8.5 | Fresh opening, shy-reader answer, copyable invitation, imagined conversation and a first-month table; compact, so less texture than the best features. |
-| Practical helpfulness | 20% | 9 | Every requested item is covered, with scripts, a week-by-week table, rain and dark-evening plans, and a kind follow-up note; no sample route map. |
-| Research accuracy and source quality | 20% | 8 | Claims now map to pages read in full (CDC, NHS, NPS, AAA, WisDOT, state DNR, OHSU toolkit, Hall); still no Ramblers or AHA, and Hall is via a university news release. |
-| Product fit | 15% | 8 | Correctly none; no purchase needed stated; scored for restraint, not product value. |
-| Originality | 10% | 8 | The first-month table, the ask-permission follow-up and the coffee/hours link are not in the guides read; the skeleton is still a walking-club checklist. |
-| Consistency | 10% | 9 | FACTS.md obeyed, published links only, US spelling, 90 minutes consistent, no health claims. |
-| SEO intent and linking | 5% | 7.5 | Title 57 characters, description leads with the invitation, long-tail answers included; the best internal link (making friends as an adult) is unpublished. |
+| Reader appeal | 20% | 8.5 | Honest title, a real new-in-town answer, copyable messages and a first-month table; the voice is tidy more than vivid. |
+| Practical helpfulness | 20% | 9 | Covers every requested item, including new in town, dark evenings and a week-by-week table; no sample route map. |
+| Research accuracy and source quality | 20% | 8 | Claims trace to pages read (CDC, NHS, NPS, AAA, WisDOT, Indiana DNR, Rails-to-Trails, OHSU-hosted toolkit, Hall); unsourced advice is plain; Ramblers and AHA still unread and Hall is a news release. |
+| Product fit | 15% | 8 | Correctly no products and says no purchase is needed; scored for restraint only. |
+| Originality | 10% | 8 | First-month table, ask-permission follow-up and the new-in-town answer are not in the guides read; the skeleton is a standard checklist. |
+| Consistency | 10% | 9 | FACTS.md obeyed, published links only, US spelling, 90-minute first walk, no outcome promises. |
+| SEO intent and linking | 5% | 7.5 | Title carries the "first-month plan" intent, description leads with the invitation, long-tail answers present; the key friendship-article link is unpublished. |
 
-**Weighted total:** 0.20x8.5 + 0.20x9 + 0.20x8 + 0.15x8 + 0.10x8 + 0.10x9 + 0.05x7.5 = 1.70 + 1.80 + 1.60 + 1.20 + 0.80 + 0.90 + 0.375 = **8.4 / 10**. An honest 9 is blocked chiefly by product fit (a no-product article cannot score above its restraint) and the missing Ramblers/AHA pages; independent reviewers may grade differently.
+**Weighted total:** 0.20x8.5 + 0.20x9 + 0.20x8 + 0.15x8 + 0.10x8 + 0.10x9 + 0.05x7.5 = 1.70 + 1.80 + 1.60 + 1.20 + 0.80 + 0.90 + 0.375 = **8.4 / 10**. The product-fit and source-depth ceilings remain; independent scorers may differ.

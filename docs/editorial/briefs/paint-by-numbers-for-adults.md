@@ -1,5 +1,13 @@
 # Brief: Paint by Numbers for Adults
 
+## Revision 5 (round 4, 2026-11-23)
+- Title now "How to Choose a Kit Worth Finishing" (64 chars) so it does not overpromise; description matches.
+- Added a record-only "If you want one answer" paragraph after the worked table (Faber smaller 6 x 8 in start with six paints, one brush, easel; JOOZ 8 x 12 in with frame and easel; oil-title caution). Removed the order-it homework line; closing is now an image.
+- Opening sells the finished result before the scorecard. Cut the "fewer colours" sentence, the "check the reviews" sentence and "Step back a couple of feet". Time section now "Allow more than one evening..." with no figure; the retailer touch-dry figure and the Winsor & Newton day figure removed; drying defers to the kit's instructions.
+- Quick questions expanded: how long, relaxing (no health claim), can I frame it (Camlin, CCI spacer advice), what if I hate the picture (editorial, return terms), draw, what else (hobbies guide only).
+- Removed the clay and junk-journal cross-sell and from `related`; only hobbies-for-busy-women remains. Hosting article not linked or mentioned.
+- Body about 1,500 words. Open: "what if I hate it" and "relaxing" answers are editorial judgement, not sourced.
+
 ## Revision 4 (round 3: sources and originality, 2026-11-23)
 - Added non-retailer sources read: CCI basic care of paintings, CCI Notes on display guidelines, Golden varnish guidelines and OPEN drying page, Kokuyo Camlin canvas board guide; Liquitex and Winsor & Newton (already read) now cited by name.
 - Added the "Before you click buy" scorecard table (check, fine, red flag), a five-question listing checklist and a worked-example table for both kits using only record facts. The article no longer mentions pre-printed brush strokes, wet-on-wet or the hosting article.
@@ -140,16 +148,16 @@ Blocked or failed: plaidonline.com (503), artskills tips page (404), Dick Blick 
 - JOOZ colour count, number size and paint amount still unknown, so the checklist advises readers to check them.
 - Sources are mostly kit sellers, so advice may favour their products.
 
-## Self-Review (revision 4, hard marker)
+## Self-Review (revision 5, hard marker)
 
 | Criterion | Weight | Score | Justification |
 |-----------|--------|-------|---------------|
-| Reader appeal | 20% | 7 | Dialogue opener, first-evening scene and image ending remain, but tables and checklists make the middle more reference than story. |
-| Practical helpfulness | 20% | 9 | A usable listing scorecard, five questions, two worked kits, a walkthrough and display advice; time stays honestly vague. |
-| Research accuracy and source quality | 20% | 8 | Five non-retailer pages read (CCI x2, Golden x2, Camlin) plus Liquitex and W&N; still tool-summarised, and the touch-dry figure is retailer-only and hedged. |
-| Product fit | 15% | 8 | Two verified kits stated strictly from records; JOOZ paint count and area size unknown and flagged. |
-| Originality | 10% | 8 | The scorecard with red flags and a worked example is not in the retailer guides read; the rest is standard. |
-| Consistency | 10% | 8 | Matches FACTS.md and records; no prices, no testing claims, no unpublished mentions; hobbies-guide 2.5-hour wording tension remains outside this article. |
-| SEO intent and linking | 5% | 7 | Query-led headings, table featured snippets potential, three guides plus the bundle linked; no FAQ markup. |
+| Reader appeal | 20% | 7 | Better opener and image ending, but two tables and a checklist keep the middle reference-like. |
+| Practical helpfulness | 20% | 9 | Scorecard, listing questions, a clear one-answer pick, evening walkthrough, framing and display advice. |
+| Research accuracy and source quality | 20% | 8 | Government, maker and manufacturer sources named; tool-summarised reads; no first-party Monet page; two quick answers are editorial. |
+| Product fit | 15% | 8 | Strictly record facts; clear role for each kit; JOOZ paint count unknown. |
+| Originality | 10% | 8 | Red-flag scorecard with worked example is not in the retailer guides read. |
+| Consistency | 10% | 8 | Matches FACTS.md and records; no prices, testing claims or unpublished mentions. |
+| SEO intent and linking | 5% | 7 | Query-led headings and a quick-answers section; only one guide link plus the bundle. |
 
-**Weighted total:** 1.4 + 1.8 + 1.6 + 1.2 + 0.8 + 0.8 + 0.35 = **7.95 / 10**. Honest assessment: not yet a 9; appeal and the retailer-heavy long tail hold it back.
+**Weighted total:** 1.4 + 1.8 + 1.6 + 1.2 + 0.8 + 0.8 + 0.35 = **7.95 / 10**. Not a 9: appeal and sourcing depth hold it back.
