@@ -64,7 +64,7 @@ Keep each piece the same thickness all over. Makers differ on the minimum: Mont 
 4. Smooth cracks with a barely damp fingertip.
 5. Set it on parchment to dry. Once dry, paint it white, then add a cherry-red rim.
 
-<figure class="prose__figure"><img src="/images/clay-cherry-dish.jpg" alt="Illustration of a small white air-dry clay ring dish with a cherry-red painted rim, holding a gold ring on natural linen beside dried flowers." loading="lazy" decoding="async" width="2000" height="1333"><figcaption>Illustrative image (AI-generated): the ring dish idea, not a piece we made</figcaption></figure>
+<figure class="prose__figure"><img src="/images/clay-cherry-dish.jpg" alt="Illustration of a small white air-dry clay ring dish with a cherry-red painted rim, holding a gold ring on natural linen beside dried flowers." loading="lazy" decoding="async" width="2000" height="1333"><figcaption>The ring dish idea, not a piece we made</figcaption></figure>
 
 ## Project 2: scalloped or bow trinket dish
 
@@ -73,7 +73,7 @@ Keep each piece the same thickness all over. Makers differ on the minimum: Mont 
 3. Lift the shape and pinch or roll the edge upward into a shallow curve.
 4. Smooth the edge with a damp fingertip and leave to dry. Paint it blush with a butter-yellow rim.
 
-<figure class="prose__figure"><img src="/images/clay-bow-scalloped-dish.jpg" alt="Illustration of a small blush-pink air-dry clay trinket dish with a gently scalloped edge and a butter-yellow rim, with a gold ring and a cherry sprig on linen." loading="lazy" decoding="async" width="2000" height="1333"><figcaption>Illustrative image (AI-generated): the scalloped dish idea, not a piece we made</figcaption></figure>
+<figure class="prose__figure"><img src="/images/clay-bow-scalloped-dish.jpg" alt="Illustration of a small blush-pink air-dry clay trinket dish with a gently scalloped edge and a butter-yellow rim, with a gold ring and a cherry sprig on linen." loading="lazy" decoding="async" width="2000" height="1333"><figcaption>The scalloped dish idea, not a piece we made</figcaption></figure>
 
 ## Project 3: coil-lip tray
 
@@ -83,7 +83,7 @@ Keep each piece the same thickness all over. Makers differ on the minimum: Mont 
 4. Press a pattern into the base with a toothpick or the back of a spoon.
 5. Leave to dry.
 
-<figure class="prose__figure"><img src="/images/clay-coil-tray.jpg" alt="Illustration of a small sage-green oval air-dry clay tray with a low rolled rim and a pressed fern-leaf pattern in the base, with earrings and a ring beside it." loading="lazy" decoding="async" width="2000" height="1333"><figcaption>Illustrative image (AI-generated): the tray idea, not a piece we made</figcaption></figure>
+<figure class="prose__figure"><img src="/images/clay-coil-tray.jpg" alt="Illustration of a small sage-green oval air-dry clay tray with a low rolled rim and a pressed fern-leaf pattern in the base, with earrings and a ring beside it." loading="lazy" decoding="async" width="2000" height="1333"><figcaption>The tray idea, not a piece we made</figcaption></figure>
 
 Mont Marte publishes a free trinket-dish project for its own clay, a good place to see this shape made.
 

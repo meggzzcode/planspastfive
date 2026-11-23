@@ -43,7 +43,7 @@ const groups = shopGroups(products, settings.launchMode);
           return (
           <section class="shop-group" id={g.id} aria-labelledby={`h-${g.id}`}>
             <div class={rec ? "shop-group__head shop-group__head--with-image" : "shop-group__head"}>
-              {rec && <figure class="shop-group__image"><img src={imageUrl(rec.file)} alt={rec.alt} loading="lazy" decoding="async" /><figcaption>{captionFor(rec)}</figcaption></figure>}
+              {rec && <figure class="shop-group__image"><img src={imageUrl(rec.file)} alt={rec.alt} loading="lazy" decoding="async" />{captionFor(rec) && <figcaption>{captionFor(rec)}</figcaption>}</figure>}
               <div>
                 <h2 id={`h-${g.id}`}>{g.label}</h2>
                 <p class="shop-group__plain">{g.plain}</p>

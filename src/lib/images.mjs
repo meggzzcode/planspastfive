@@ -3,9 +3,9 @@
 import { approvalGaps } from "./schemas.mjs";
 import { imageUrl } from "./catalog.mjs";
 
-/** The caption must say what the picture really is. */
+/** Photo credits stay on the picture. AI illustrations carry no caption: the use of AI imagery is disclosed in About and Terms (owner decision, 2026-11-23). */
 export function captionFor(r) {
-  if (r.kind === "ai-illustration") return "Illustrative image (AI-generated)";
+  if (r.kind === "ai-illustration") return "";
   if (r.kind === "product-photo") return r.credit ? `Product photo: ${r.credit}` : "Product photo";
   return r.credit ? `Photo: ${r.credit}` : "Photo";
 }

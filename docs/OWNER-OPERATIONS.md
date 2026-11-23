@@ -79,7 +79,7 @@ Each picture has **one record** in `src/content/images.json`, matched to the art
 ```
 A record can be `approved` only when commercial use is `yes` and it has the source address, licence name and address, the date the licence was checked, your approval date, and (for photographs and product photos) the credit. Otherwise the build refuses the record. A `rejected` picture fails the build wherever it is used. A `pending` picture used on the site is a warning in preview mode and a failure in production mode.
 
-**Captions** are chosen automatically from the kind: AI illustration = "Illustrative image (AI-generated)"; photograph = "Photo: <credit>"; product photo = "Product photo: <credit>". You do not type them, and an AI picture can never be captioned as a photograph. Only use pictures you have the right to use. Never use Amazon's.
+**Captions** are chosen automatically from the kind: AI illustration = no caption (AI use is disclosed on About, Terms and Privacy); photograph = "Photo: <credit>"; product photo = "Product photo: <credit>". You do not type them, and an AI picture can never be captioned as a photograph. Only use pictures you have the right to use. Never use Amazon's.
 
 ## What you can and cannot say about prices
 Budget estimates are allowed in ordinary article prose ("most of this fits under $25"). Never put a price for a product: not in a product record, an article title or summary, a product card, or in a paragraph that names a product with `{{product:...}}` or `{{pick:...}}` (or sits next to a product card). The words sale, discount, coupon, deal, "current price", "lowest price" and similar are refused everywhere. Star ratings, "we tested it" claims and Amazon addresses or tracking tags are also refused.

@@ -2,7 +2,7 @@
 
 Every picture on the site has one record in `src/content/images.json`, the only place rights are kept (articles and products point to it by key or file name). A record can be `approved` only when commercial use is `yes` and it has a source address, licence name and address, a licence-checked date and approval date (photographs also need a credit). In `launchMode` production a picture a page uses must be approved. `images.json` is not editable in the CMS form: edit it on GitHub or ask the AI or developer (`docs/OWNER-OPERATIONS.md`).
 
-Captions follow the kind: AI illustrations say "Illustrative image (AI-generated)", photographs "Photo: <credit>", product photos "Product photo: <credit>". An illustration is never presented as a tested result or a photo of a product. No Amazon, manufacturer or stock-product images are used.
+Captions follow the kind: AI illustrations carry no caption (the use of AI imagery is disclosed on the About and Terms pages and in the privacy page; owner decision 2026-11-23), photographs "Photo: <credit>", product photos "Product photo: <credit>". An illustration is never presented as a tested result or a photo of a product. No Amazon, manufacturer or stock-product images are used.
 
 ## Inventory (16 used pictures)
 | File | Used on | Kind and tool | Rights status |

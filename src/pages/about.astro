@@ -20,7 +20,7 @@ const photoInUse = Object.values(images).some((r) => r.kind === "photograph");
 
   <figure class="prose__figure">
     <img src={pic.src} alt={pic.alt} loading="lazy" width="1152" height="896" />
-    <figcaption>{pic.caption}</figcaption>
+    {pic.caption && <figcaption>{pic.caption}</figcaption>}
   </figure>
 
   <h2 id="standards">How we work: our editorial standards</h2>

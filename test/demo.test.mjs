@@ -25,7 +25,7 @@ describe("baseline: the real repo content passes every check (item 7)", () => {
   });
   test("article page has hero caption, inline product, pick card, one disclosure BEFORE the first product, shop section", () => {
     const h = distHtml(dir, `journal/${SLUG}/index.html`);
-    assert.match(h, /<figcaption>Illustrative image \(AI-generated\)<\/figcaption>/);
+    assert.doesNotMatch(h, /Illustrative image/, "AI pictures carry no caption");
     assert.match(h, /class="product-mention"/);
     assert.match(h, /class="product-card/);
     assert.match(h, /Our picks from this story/);
@@ -566,8 +566,10 @@ describe("disclosure placement, launchMode, homepage journey and captions in the
     editJson(dir, IMAGES, (j) => { for (const r of Object.values(j)) { r.kind = "ai-illustration"; } });
     assert.ok(npmBuild(dir).ok);
     const h = distHtml(dir, "index.html");
-    assert.match(h, /Illustrative image \(AI-generated\)/);
+    assert.doesNotMatch(h, /Illustrative image/);
     assert.match(distHtml(dir, "about/index.html"), /AI-generated illustrations/);
+    assert.match(distHtml(dir, "terms/index.html"), /Pictures and AI/);
+    assert.match(distHtml(dir, "privacy/index.html"), /AI tools/);
     editJson(dir, IMAGES, (j) => { for (const r of Object.values(j)) { r.kind = "photograph"; r.credit = "Jo Photographer"; } });
     assert.ok(npmBuild(dir).ok);
     assert.match(distHtml(dir, "index.html"), /<span class="illus">Photo: Jo Photographer<\/span>/);

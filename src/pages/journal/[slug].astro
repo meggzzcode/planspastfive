@@ -61,7 +61,7 @@ const kitShelves = [...new Set([...picks.map((p) => p.collection), ...[...shownI
 
     <figure class="article__hero">
       <img src={heroSrc} alt={d.hero.alt || heroRec?.alt || ""} width="1152" height="896" fetchpriority="high" decoding="async" />
-      <figcaption>{heroRec?.caption}</figcaption>
+      {heroRec?.caption && <figcaption>{heroRec.caption}</figcaption>}
     </figure>
 
     <div class="prose">

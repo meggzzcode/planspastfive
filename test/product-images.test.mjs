@@ -83,7 +83,7 @@ describe("product card pictures", () => {
 test("captions differ for photograph, ai-illustration and product-photo and never mix", () => {
   const base = { file: "x.jpg", alt: "x", credit: "Jo" };
   const c = ["photograph", "ai-illustration", "product-photo"].map((kind) => captionFor({ ...base, kind }));
-  assert.deepEqual(c, ["Photo: Jo", "Illustrative image (AI-generated)", "Product photo: Jo"]);
+  assert.deepEqual(c, ["Photo: Jo", "", "Product photo: Jo"]);
   assert.equal(new Set(c).size, 3);
   assert.equal(captionFor({ kind: "product-photo" }), "Product photo");
 });

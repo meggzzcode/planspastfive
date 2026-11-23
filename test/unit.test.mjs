@@ -100,7 +100,7 @@ describe("real repository content", () => {
     const { content } = checkContent(REPO);
     for (const r of Object.values(content.images)) {
       if (r.rightsStatus === "approved") assert.equal(r.commercialUse, "yes");
-      if (r.kind === "ai-illustration") assert.match(captionFor(r), /AI-generated/);
+      if (r.kind === "ai-illustration") assert.equal(captionFor(r), "", "AI images carry no caption; the disclosure is in About and Terms");
     }
   });
 });
@@ -109,7 +109,7 @@ describe("image records and captions", () => {
   const base = { file: "a.jpg", alt: "x", kind: "photograph", credit: "Jo", source: { name: "Jo", url: "https://e.com" }, commercialUse: "yes", transferWithSite: "yes", licenceName: "L", licenceUrl: "https://e.com/l", licenceCheckedOn: "2026-11-20", approvedOn: "2026-11-20", attribution: "none", rightsStatus: "approved" };
   test("captions reflect the real kind of picture", () => {
     assert.equal(captionFor(base), "Photo: Jo");
-    assert.equal(captionFor({ ...base, kind: "ai-illustration" }), "Illustrative image (AI-generated)");
+    assert.equal(captionFor({ ...base, kind: "ai-illustration" }), "");
     assert.equal(captionFor({ ...base, kind: "product-photo", credit: "Tombow" }), "Product photo: Tombow");
     assert.doesNotMatch(captionFor(base), /llustrat/);
     assert.doesNotMatch(captionFor({ ...base, kind: "ai-illustration" }), /Photo/);
