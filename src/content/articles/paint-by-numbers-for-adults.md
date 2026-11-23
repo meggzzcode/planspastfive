@@ -1,7 +1,7 @@
 ---
 title: "Paint by Numbers for Adults: How to Pick a Kit Worth Hanging"
-description: "How to choose a paint-by-numbers kit you will want to hang: canvas, paints, brushes, easel, detail level, two picks and a first evening."
-dek: "A small painting on the shelf, made over a few quiet evenings. Here is what separates a kit that earns its spot on the wall from one that ends up in a drawer."
+description: "How to choose a paint-by-numbers kit you will want to hang: a listing scorecard, two kits worked through it, a first evening and how to display it."
+dek: "A small painting on the shelf, made over a few quiet evenings. Here is how to read a kit listing so the one you buy is the one you finish."
 status: draft
 category: Creative Corner
 format: shopping-edit
@@ -17,72 +17,79 @@ related:
 
 "Wait, you painted that?" The small canvas on the bookshelf has soft blue water and a few pink lilies, and it leans against a row of paperbacks as if it had always lived there. You made it over a few evenings, one number at a time, and nobody needs to know how much of the drawing was done for you.
 
-Whether you end up with that painting or a half-finished canvas in a drawer often comes down to the kit you pick on day one. Here is how to pick well.
+Whether you end up with that painting or a half-finished canvas in a drawer often comes down to the kit you pick on day one. A kit is a picture cut into small numbered areas, with paints numbered to match, so the only thing you supply is patience. The listing tells you more than the box art does, if you know where to look.
 
-## What you are buying
+## Before you click buy
 
-A paint-by-numbers kit gives you a picture already divided into small numbered areas, and paints numbered to match. Nobody asks you to draw. You fill each area with its colour, so the real contribution is patience, and the real question is what kind of picture, and how many tiny shapes, you are signing up for.
+Run any kit through this scorecard. Most of it is on the listing, and the rest is in the reviews.
 
-## What makes a kit worth displaying
+| Check | Fine | Red flag |
+|---|---|---|
+| Canvas size and material | Size given in inches for the canvas itself, and the material named (board, canvas, framed) | Only a package size, or no material |
+| Paint | Acrylic, with the number of colours and the pot size stated | Title and description disagree on the paint type, or no colour count |
+| Brushes | At least one, and a small one if the picture is detailed | None, or one wide brush for a busy picture |
+| Display | An easel, frame or hang tab in the box | Nothing mentioned, so you shop for a frame later |
+| Size of the numbered areas | Reviews or photos show areas and numbers you can read | Reviews mention tiny sections, look-alike numbers or neighbours that share a number |
+| Instructions | A number guide and reference picture included | Reviews mention missing instructions or parts |
+| Contents list | Itemised, so you know what you must supply | Vague, such as "everything you need" |
 
-Start with the picture, because you will look at it for years. Choose a scene you would hang if it arrived framed, in colours that suit the room it will live in.
+Then ask the listing five questions. Is that the size of the canvas or of the box? Do the title and the description agree on the paint? How many colours, and how much paint in each pot? What do reviewers say about the numbers? What do I still have to supply?
 
-Then look at **how fine the numbered areas are**. Complaints in one retailer's reviews included tiny sections, numbers that are hard to read (one reviewer said the 30s look like 20s) and neighbouring areas that share a number. After a day at work, fewer, larger areas are kinder to your eyes, and a simpler kit is far more likely to be finished. If you like detail, a magnifying glass helps, and a toothpick tip will dot a very small area.
+Two judgement calls sit outside the table. Fewer colours are kinder to a first kit, because fewer colours usually means fewer tiny shapes. And a bigger canvas is a better painting and more evenings at the table, so match the size to the evenings you have.
 
-**Canvas size** is a trade. Bigger means a more impressive painting and more evenings at the table; smaller means a quicker finish. Canvas on a board or a pre-stretched frame lies flat, while a rolled canvas needs flattening before you start.
+On material, the maker Kokuyo Camlin describes canvas boards as rigid, light and firm to paint detail on, but less suited to long-term keeping, and stretched canvas as ready to hang and able to be re-stretched. For a small piece to enjoy on a shelf, a board is fine. If you want it to last for years, favour the kit with a proper frame.
 
-**Paints** should be acrylic, which is the usual kit paint, dries quickly and washes out of a brush with water. Check that the kit says the paints are premixed, so every colour you need is in the box, and look for enough in each pot.
+## Two kits, worked through the scorecard
 
-**Brushes** matter less than you would think, as long as there is at least one and it is not too wide for the smallest areas. **An easel or frame** matters more than people expect: with one in the box, the finished painting can go on show the night it dries, and without one you are shopping for a frame later, which is where a lot of projects stall.
-
-## Two kits for the list
-
-Both are acrylic and both come with their own way to display the result. They suit different moods and different amounts of time. [The Cozy Paint Night Bundle](/shop/#cozy) gathers the paint-by-numbers kits we have picked; it is a curated set of separately sold products, not a boxed set.
+Both are acrylic and both include a way to display the result. We read the listings and product records and have not painted them.
 
 {{pick:faber-castell-monet-water-lilies-paint-by-numbers}}
 
-This is the small, soft one: a 6 x 8 in canvas board, six paints, one brush and an easel, in a Monet water lily scene. With six colours and a small canvas, it is a gentle first kit and a quick one. It also means a simpler picture, so expect an impression rather than fine detail, and expect the single brush to ask for care on the small parts.
+On the scorecard, it is small and tidy: a 6 x 8 in canvas board, six 5 ml acrylic pots, one #2 brush, a display easel, a hang tab and a number guide. It has six colours, so expect a simpler picture, and the single brush will ask for care on the small parts. The listing does not tell us how fine the areas are, so check the reviews.
 
 {{pick:jooz-paint-by-numbers-landscape-frame-8x12}}
 
-This is the larger alternative: an 8 x 12 in canvas in a wooden frame, with a tabletop easel and three brushes, in a mountain landscape. Choose it if you want something you can hang right away and you are happy to give it more evenings. One thing to check on the listing: the title says oil, but the description says acrylic, and we treat it as acrylic.
+This is the larger alternative: an 8 x 12 in cotton canvas in a wooden frame, with an adjustable wooden easel, three brushes, acrylic paints and a reference picture, in a mountain landscape. The listing does not show a paint count or pot size, so ask. And its title says oil while its description says acrylic. We treat it as acrylic, so read the listing before buying.
+
+| | Faber-Castell Monet | JOOZ landscape |
+|---|---|---|
+| Canvas | 6 x 8 in board | 8 x 12 in cotton canvas, framed |
+| Paints | Six 5 ml acrylic pots | Acrylic, count not shown |
+| Brushes | One | Three |
+| Display | Easel and hang tab | Frame and adjustable easel |
+
+[The Cozy Paint Night Bundle](/shop/#cozy) gathers the paint-by-numbers kits we have picked. It is a curated set of separately sold products, not a boxed set.
 
 ## A first evening, start to finish
 
-Clear one end of the table and put the lamp where it will not cast your hand's shadow over the canvas. Before you open a single pot, take a photograph of the numbered canvas, because some numbers vanish under paint and the photo tells you what went where. Fill a cup with water and put paper towel beside it. Put on something you do not have to follow.
+Clear one end of the table and put the lamp where it will not throw your hand's shadow over the canvas. Before you open a pot, photograph the numbered canvas, because some numbers vanish under paint and the photo tells you what went where. Fill a cup with water and set paper towel beside it. Put on something you do not have to follow.
 
-Read the kit's own instructions for the order they suggest, since kits differ, and start at the top of the canvas so your hand never rests on wet paint. Open one pot at a time, dip only the tip of the brush and tap off the excess. When a colour is done, press the lid back on firmly and rinse the brush.
+Read the kit's own instructions for the order it suggests, since kits differ, and start at the top so your hand never rests on wet paint. Open one pot at a time, dip only the tip of the brush and tap off the excess. When a colour is done, press the lid on firmly and rinse the brush.
 
 Stop at a natural pause, such as the end of a colour, rather than when your eyes blur. Close every pot and leave the canvas flat to dry. You will not finish in one night, and that is how most kits work.
 
 ## How long it takes
 
-It varies, and any single number would be a guess. Time depends on canvas size, how many colours there are, how small the areas are and how long you wait between coats. One paint-by-numbers retailer's guidance is that a thin layer is touch-dry in about 10 to 20 minutes, with at least an hour before a second coat or painting up against a fresh edge. Plan on a few evenings for a small kit.
+It varies, and any single number would be a guess. Canvas size, colour count, area size and the wait between coats all matter. Golden, an acrylic maker, notes that thinner films set up faster and that cool, humid rooms slow drying. One paint-by-numbers retailer suggests a thin layer is touch-dry in 10 to 20 minutes, with an hour before a second coat or an adjacent edge. Plan on a few evenings for a small kit.
 
 ## Mistakes that are easy to avoid
 
-A loaded brush is the usual culprit: paint that is too wet bleeds into the next area, and paint that is too thick fills small shapes. Dip the tip only, and if a pot thickens, stir in a drop of water at a time. If a number shows through a light colour, let it dry and add a second thin coat instead of one heavy one. Smudges come from painting next to wet areas, so work downward and away from your painting hand and wait for neighbours to dry. A wrong colour is fixable: let it dry fully and paint over it. Keep the pots closed, because acrylic dries quickly once exposed.
+A loaded brush is the usual culprit: paint that is too wet bleeds into the next area, and paint that is too thick fills small shapes. If a pot thickens, stir in a drop of water at a time. If a number shows through a light colour, let it dry and add a second thin coat. Smudges come from painting beside wet areas, so work downward and away from your painting hand. A wrong colour is fixable: let it dry fully and paint over it. Keep the pots closed.
 
-## Before you click buy
-
-- **Does it include a way to display it?** An easel, frame or hang tab means no extra shopping.
-- **Is the canvas size the canvas, not the box?** Some listings give packaging dimensions instead.
-- **Is the paint acrylic and premixed?** Read past the title, since titles and descriptions can disagree.
-- **Are there enough colours but not too many?** Fewer colours are kinder to a first kit.
-- **Skip the extras.** Use the brushes in the box first and buy a finer one only if the areas are too small. Skip varnish for now. It is optional, and it evens the sheen and keeps dust from sticking, but the paint must be fully dry first, which can take up to two weeks (Liquitex).
+Skip extra brushes at first, and skip varnish. Varnish is optional. Liquitex says it evens the sheen and keeps dust from sticking, but it needs fully dry paint, and the makers' waits range from a day for thin acrylic (Winsor & Newton) to a couple of weeks (Liquitex). If you do varnish, use thin coats.
 
 ## Finishing and displaying
 
-Step back a couple of feet and look. Touch up any missed spots and tidy rough edges with a small brush. Prop it on its easel, hang it if the kit has a tab or frame, or lean it on a shelf, a sideboard or the corner of your desk. It does not need a wall.
+Step back a couple of feet, touch up missed spots and tidy rough edges with a small brush. Then choose the spot with care. The Canadian Conservation Institute advises never letting direct sunlight fall on a painting, since daylight is highly damaging and light damage cannot be reversed, and keeping paintings away from windows, radiators and heating vents, from busy hallways and from spots where drinks might splash. The advice is for paintings in general, but a bookshelf out of the sun is a good home for yours.
 
 ## Quick questions
 
 **Do I need to be able to draw?** No. The drawing is done. You are matching numbers and colours.
 
-**Can I do it with friends?** Yes, with a kit each, and a table big enough for two canvases. Pick from [the Cozy Paint Night Bundle](/shop/#cozy). We will cover hosting a paint night separately.
+**Can I do it with friends?** Yes, with a kit each and a table big enough for two canvases. The kits in [the Cozy Paint Night Bundle](/shop/#cozy) each work on their own.
 
 **What is a similar evening?** [Air-dry clay](/journal/air-dry-clay-for-beginners/) and a [first junk journal spread](/journal/your-first-junk-journal-spread/) are the same kind of night, and [more hobbies for busy women](/journal/hobbies-for-busy-women/) are sorted by how much energy you have left.
 
 ## Your next step
 
-Choose the picture first, then the size, and order one kit. When it arrives, photograph the numbered canvas, open the first pot and paint the sky, one small blue patch at a time, with the lamp on and the lid of the pot pressed shut beside you.
+Run one kit through the scorecard and order it. When it arrives, photograph the numbered canvas, open the first pot and paint the sky, one small blue patch at a time, with the lamp on and the lid of the pot pressed shut beside you.

@@ -1,6 +1,6 @@
 # Brief: perfect-little-picnic
 
-Status: draft, revised once 2026-11-23 after reviewers. Body about 1,350 words.
+Status: draft, revised once 2026-11-23 after reviewers. Body about 1,300 words (includes the menu table).
 
 ## Research Brief
 
@@ -35,6 +35,11 @@ What changed: new title (under 65 characters); new opening (no 'Picture it at' f
 
 ## Revision notes (round 2)
 Timeline: 2-hour bin step moved to the 6:00 line. Cut Leave No Trace aside and the 'Small things people forget' section; sun, repellent, water, wasps, uneven ground and take-trash-home folded into the bring list. Intro now 'Two to four people, about two hours.' Opening phrase changed. Closing is the ice-packs-gone-soft image. Borrow or buy now says plainly that the bag and ice packs are the only buys and that we link none (no verified picnic products). Attributions trimmed. Wildlife sentence is NPS-based; the wasp tip is unsourced common sense.
+
+## Revision notes (round 3)
+Sources: added Clemson HGIC, University of Missouri Extension, Mississippi State Extension and Washington State DOH, all read in full, so every food-safety claim now has FDA plus extension support and USDA is no longer needed. Product: 'Borrow or buy' now gives criteria only (group-sized bag, easy-clean liner, closure that shuts fully, freezer-flat non-toxic packs, blanket washability), no brands, says plainly we link nothing yet; no specific blanket recommended. Originality: new 'picnic for three' table (dish, why it travels, per person, where in the bag, safe-time note) plus 60-second assembly. Helpfulness: one-line items for rain, wasps, no tap, uneven ground, shade, trash and spot accessibility (a step-free path and stroller or walker access). Leave No Trace reduced to a single line. Timeline and 'Two to four people, about two hours' kept; no first-hand claims, no prices.
+
+PLANNED PICKS (add as {{pick}} at release, not now, product records held until this article releases): fit-fresh-mari-insulated-backpack-cooler (soft 12-can backpack cooler tote, 11.5 x 5 x 12.5 in, easy-clean insulated interior; the listing does not say the main compartment zips or the liner is sealed, so the article must not claim either) and fit-fresh-soft-ice-packs-2pk (2-pack soft gel packs, non-toxic and BPA-free per the listing, 6.5 in wide, fit flat). Place the cards in 'Borrow or buy' and reword the 'we link none yet' sentence then. The 12-can capacity suits a snack bag for two, not a full menu for three or four: at release, either say so or keep the menu cold dishes in small jars. No waterproof, washable blanket verified: do not recommend one.
 
 ## Product Research Brief
 
@@ -78,10 +83,15 @@ A wide, low angle of a gingham or plain linen blanket on a grassy slope under a 
 7. CDC, Mosquito bite prevention: https://www.cdc.gov/mosquitoes/prevention/index.html . Repellent and clothing. Read in full.
 8. CDC, Skin cancer prevention: https://www.cdc.gov/skin-cancer/prevention/index.html . Sun protection, UV hours. Read in full.
 9. National Park Service, Leave No Trace Seven Principles: https://www.nps.gov/articles/leave-no-trace-seven-principles.htm . Trash, wildlife, planning. Read in full.
+10. Clemson HGIC, Safe Picnics (HGIC 3602): https://hgic.clemson.edu/factsheet/safe-picnics-a-guide-to-preventing-foodborne-illness-at-outdoor-gatherings/ . 40F, danger zone, cooler in shade, drinks separate, not in the trunk. Read in full. Its 1-hour discard line is stricter than FDA and was not used.
+11. University of Missouri Extension, Food safety tips for picnics: https://extension.missouri.edu/news/food-safety-tips-for-picnics . Pack last-needed items at the bottom, shade, 2 hours/1 hour above 90F. Read in full.
+12. Mississippi State Extension, Food Safety: Barbecues and Picnics: https://extension.msstate.edu/publications/food-safety-barbecues-and-picnics . Full cooler stays colder, keep cooler out of sun, hands, washed packaged produce. Read in full.
+13. Washington State Department of Health, Barbecue and Picnic Food Safety: https://doh.wa.gov/tsz/node/5984 . Covered trash bins deter yellowjackets, keep cut produce and prepared salads cold, 2 hours/1 hour at 90F. Read in full.
 Not fetched successfully (403/404): FDA tips-for-safe-picnics URL, USDA FSIS pages, lnt.org, Seattle parks FAQ. Search snippets only (not relied on for claims): USDA press-release summary of the 2-hour rule, Clemson Extension (stricter 1-hour for hot days), generic picnic checklist results (waterproof-backed blanket, found in a snippet: used only as a general hint, not a cited fact).
 
 ## Open uncertainties
-- USDA FSIS pages could not be read; the 2-hour rule is cited to FDA only. Add USDA if the editor wants both agencies.
+- USDA FSIS pages could not be read; the 2-hour rule is now supported by FDA and four extension or state pages instead.
+- Clemson says leftovers are okay if ice remains and discards food after an hour outside; Penn State says throw away perishable leftovers. The article follows FDA and Penn State (the cautious line).
 - Park rules cited from two jurisdictions only; the article tells readers to check their own.
 - "Late afternoon gives softer light" is general advice, not sourced.
 - Rain plan (backup day, indoor floor picnic) is editorial suggestion, not sourced. The "waterproof-backed blanket" point is general common sense backed only by a search snippet.
@@ -89,13 +99,13 @@ Not fetched successfully (403/404): FDA tips-for-safe-picnics URL, USDA FSIS pag
 - Menu items (tomato mozzarella ciabatta, orzo, chickpea salad, brownies) and quantities are editorial suggestions from the menu guides' general principles, not tested recipes. Wasp and uneven-ground tips are common-sense, unsourced.
 - Body about 1,350 words, just under the editor's 1,400 target.
 
-## Self-Review (re-score after revision, hard marker)
-- Reader appeal (20%): 8. Opens on the night-before calm, concrete menu and close; still more guide than story.
-- Practical helpfulness (20%): 9. Named menu with quantities, assembly, five-point safety list, borrow-or-buy criteria, timeline reconciled with UV advice.
-- Research accuracy and source quality (20%): 8. Nine full reads, claims re-checked against pages; USDA unreadable, park rules from two places, menu is editorial.
-- Product fit (15%): 9. No forced links; three buy-worthy items with criteria; candidates unverified in brief.
-- Originality (10%): 7. Park-rules plus 2-hour rule plus rain plan plus concrete menu in one small-group plan, but the genre is familiar.
-- Consistency (10%): 9. One-hand bag tension now stated openly, 2-hour length matches, no clay contradiction, cheese perishability handled.
-- SEO intent and linking (5%): 8. Title in range, natural anchors, two published links.
+## Self-Review (round 3, hard marker)
+- Reader appeal (20%): 8. Calm opening and closing image, a concrete menu; still instructional more than evocative.
+- Practical helpfulness (20%): 9. Table plus assembly, five-point safety list, buy criteria, one-liners for rain, wasps, no tap, ground, shade and access, timeline.
+- Research accuracy and source quality (20%): 9. Thirteen sources read in full, FDA plus four extension or state pages on safety, two park pages, CDC and NPS; remaining gap is that park rules cover only two jurisdictions and menu items are editorial.
+- Product fit (15%): 8. No forced links and criteria match the two soon-to-be-verified products, but no cards yet and the 12-can bag is small for a three-person menu.
+- Originality (10%): 8. The menu table with bag position and safe-time note is a copyable device most guides lack.
+- Consistency (10%): 9. Matches the hobbies card, FACTS rules, UV and 2-hour logic reconciled, no first-hand claims or prices.
+- SEO intent and linking (5%): 8. Title in range, intent covered, two published links.
 
-Round 2 comment: scores stand; round 2 fixes accuracy (timeline) and tightens, not a new level of originality. Weighted total: 0.20x8 + 0.20x9 + 0.20x8 + 0.15x9 + 0.10x7 + 0.10x9 + 0.05x8 = 1.6 + 1.8 + 1.6 + 1.35 + 0.7 + 0.9 + 0.4 = 8.35 out of 10. I will not claim 9: sources are thin on USDA and park rules, and the menu is unsourced editorial.
+Weighted total: 0.20x8 + 0.20x9 + 0.20x9 + 0.15x8 + 0.10x8 + 0.10x9 + 0.05x8 = 1.6 + 1.8 + 1.8 + 1.2 + 0.8 + 0.9 + 0.4 = 8.5 out of 10. I will not call it a 9: appeal and product fit are the soft spots, and a fresh reviewer may differ.

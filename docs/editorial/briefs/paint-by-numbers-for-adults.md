@@ -1,5 +1,13 @@
 # Brief: Paint by Numbers for Adults
 
+## Revision 4 (round 3: sources and originality, 2026-11-23)
+- Added non-retailer sources read: CCI basic care of paintings, CCI Notes on display guidelines, Golden varnish guidelines and OPEN drying page, Kokuyo Camlin canvas board guide; Liquitex and Winsor & Newton (already read) now cited by name.
+- Added the "Before you click buy" scorecard table (check, fine, red flag), a five-question listing checklist and a worked-example table for both kits using only record facts. The article no longer mentions pre-printed brush strokes, wet-on-wet or the hosting article.
+- Display advice now rests on CCI (no direct sunlight; avoid windows, radiators, vents, busy hallways, splash spots). Canvas-board vs stretched advice rests on Camlin, hedged as one maker's view.
+- Removed the "one retailer" Cozy/hosting forward reference. Retailer-only claim kept hedged: touch-dry 10 to 20 minutes.
+- Body about 1,380 words including tables. Table markup is GFM; confirm the site styles tables on mobile.
+- Not verified: Winsor & Newton and Liquitex cure times differ from Golden's (a day or two, then two days to a week, for thin acrylic); the article gives the range rather than one rule.
+
 ## Revision 3 (final round, 2026-11-23)
 - Drying-time attribution now reads "one paint-by-numbers retailer's guidance"; reviewer complaints now attributed to "one retailer's reviews".
 - Cut two checklist bullets that repeated the selection section; Cozy bundle link moved up beside the two kits; opener's "decided before you open the box" replaced; closing now ends on the first action (painting the sky) with no moral; attribution to Liquitex reduced to a parenthetical. Hosting article stays unlinked (planned link only).
@@ -107,6 +115,11 @@ A cosy shelf corner at dusk: a small landscape painting standing on a little woo
 | S8 | https://mymodernmet.com/paint-by-numbers-history-dan-robbins | 2026-11-23 | history, Palmer, Leonardo, critics | Fetched and summarised in full |
 | S9 | https://fabercastell.com/products/paint-by-number-museum-series-the-starry-night-14301 and .../sunflowers-14314 | 2026-11-23 | Faber-Castell series contents, tutorial, ages 8+ | Fetched (sister kits, not Monet) |
 | S10 | https://www.rainbowresource.com/077784.html | 2026-11-23 | Water Lilies kit contents, wet-on-wet and washes | Fetched in full; retailer |
+| S14 | https://www.canada.ca/en/conservation-institute/services/care-objects/fine-art/basic-care-paintings.html | 2026-11-23 | display location, direct sunlight, light damage irreversible, humidity | Fetched and summarised in full; government conservation body |
+| S15 | https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/canadian-conservation-institute-notes/environmental-display-guidelines-paintings.html | 2026-11-23 | light, UV, humidity and temperature guidance (background; only sunlight point used) | Fetched and summarised in full |
+| S16 | https://goldenartistcolors.com/resources/varnish-application-guidelines/ | 2026-11-23 | thin acrylic: a day or two then two days to a week before varnish; thick: a week or two | Fetched and summarised in full; acrylic manufacturer |
+| S17 | https://goldenartistcolors.com/resources/golden-open-acrylics-controlling-drying-times | 2026-11-23 | thinner films set up faster; cool, humid rooms slow drying (OPEN line page, used for the general point only) | Fetched and summarised in full |
+| S18 | https://www.kokuyocamlin.com/camel/techniques/product-guides/canvas-boards-vs-stretched-canvases-which-one-should-you-buy | 2026-11-23 | board vs stretched: rigid, light, less suited to long-term keeping; stretched re-stretchable | Fetched and summarised in full; art-supply maker |
 | S11 | Search results for JOOZ retailer listings (Desertcart, Wood Art Supply, Walmart) | 2026-11-23 | contents, canvas size caveat, brush count varies | Search summary only |
 | S12 | Search summaries: Wikipedia, NPR, Smithsonian, Jackson's Art, Golden varnish guidance | 2026-11-23 | history dates, varnish timing | Snippets only; not cited in article |
 | S13 | Search summaries on "how long does paint by numbers take" (paintingbynumbersshop, davincified, craftybynumbers, wanderpainting) | 2026-11-23 | range of retailer estimates (hours to tens of hours) | Snippets only; no number used |
@@ -127,16 +140,16 @@ Blocked or failed: plaidonline.com (503), artskills tips page (404), Dick Blick 
 - JOOZ colour count, number size and paint amount still unknown, so the checklist advises readers to check them.
 - Sources are mostly kit sellers, so advice may favour their products.
 
-## Self-Review (revision 2, hard marker)
+## Self-Review (revision 4, hard marker)
 
 | Criterion | Weight | Score | Justification |
 |-----------|--------|-------|---------------|
-| Reader appeal | 20% | 7 | Dialogue opener, a first-evening scene and an image ending lift it, but the middle is still advice-dense and the voice is not as vivid as the clay guide. |
-| Practical helpfulness | 20% | 8 | Clear selection criteria, a walkthrough, a buy checklist and honest time answer; no hour figures and little on JOOZ detail. |
-| Research accuracy and source quality | 20% | 6 | Unsourced or snippet-only claims removed, but the base is still retailer and kit-maker pages summarised by a tool, with no first-party Monet kit page. |
-| Product fit | 15% | 8 | Two verified kits with record-only facts and honest limits; JOOZ colours unknown. |
-| Originality | 10% | 6 | A buying-first angle and a no-numbers time answer help; the tips themselves are standard. |
-| Consistency | 10% | 8 | Matches FACTS.md and records; no prices or testing claims; one wording tension with the hobbies guide (2.5-hour paint night) remains. |
-| SEO intent and linking | 5% | 7 | Title 60 chars, description about 135, query-led headings, no links to unpublished pages; no FAQ depth beyond three questions. |
+| Reader appeal | 20% | 7 | Dialogue opener, first-evening scene and image ending remain, but tables and checklists make the middle more reference than story. |
+| Practical helpfulness | 20% | 9 | A usable listing scorecard, five questions, two worked kits, a walkthrough and display advice; time stays honestly vague. |
+| Research accuracy and source quality | 20% | 8 | Five non-retailer pages read (CCI x2, Golden x2, Camlin) plus Liquitex and W&N; still tool-summarised, and the touch-dry figure is retailer-only and hedged. |
+| Product fit | 15% | 8 | Two verified kits stated strictly from records; JOOZ paint count and area size unknown and flagged. |
+| Originality | 10% | 8 | The scorecard with red flags and a worked example is not in the retailer guides read; the rest is standard. |
+| Consistency | 10% | 8 | Matches FACTS.md and records; no prices, no testing claims, no unpublished mentions; hobbies-guide 2.5-hour wording tension remains outside this article. |
+| SEO intent and linking | 5% | 7 | Query-led headings, table featured snippets potential, three guides plus the bundle linked; no FAQ markup. |
 
-**Weighted total:** 1.4 + 1.6 + 1.2 + 1.2 + 0.6 + 0.8 + 0.35 = **7.15 / 10**. Not a 9: source quality is capped by the research base, and the article is competent more than distinctive.
+**Weighted total:** 1.4 + 1.8 + 1.6 + 1.2 + 0.8 + 0.8 + 0.35 = **7.95 / 10**. Honest assessment: not yet a 9; appeal and the retailer-heavy long tail hold it back.

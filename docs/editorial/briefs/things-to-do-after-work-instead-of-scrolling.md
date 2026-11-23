@@ -52,20 +52,26 @@ A window seat at dusk: a half-drunk mug of tea on the sill, a paperback face dow
 
 ## Sources
 
-| URL | Date read | Supports | Read |
-|---|---|---|---|
-| https://www.commonsensemedia.org/articles/control-your-phone-dont-let-it-control-you | 2026-11-23 | Charge phone outside bedroom and use an alarm clock; keep only daily tools on first screen; type app name rather than tap icon; (page last reviewed July 17, 2025) | In full (extracted by fetch tool) |
-| https://www.sleepfoundation.org/technology | 2026-11-23 | Find a spot outside the bedroom to park devices overnight; basic alarm clock instead of phone alarm | In full (extracted) |
-| Positive Psychology Practitioner's Toolkit, "Implementation Intentions" (Noel Lyons), PDF via https://allard.ubc.ca/sites/default/files/2021-10/Implementation%20Intentions.pdf | 2026-11-23 | If-then planning: specifying when, where and how makes goal attainment more likely; commitment to the goal matters; little effect without it | In full (PDF text) |
-| https://www.bpl.org/get-a-library-card/ | 2026-11-23 | eCard sign-up about five minutes with an email; covers online resources (Libby, Palace); physical items need an in-person upgrade; photo ID and proof of residency for a physical card | In full |
-| https://dclibrary.org/getacard | 2026-11-23 | Online sign-up gives temporary card number and PIN; photo ID with current address for permanent card; accepted address alternatives | In full |
-| https://santamonica.gov/process-explainers/how-to-get-a-library-card | 2026-11-23 | Photo ID and proof of residence in person; online digital card for county residents; card provides borrowing, study rooms, online resources | In full |
-| https://kcls.org/faqs/how-do-i-get-a-library-card | 2026-11-23 | Apply online or in person with photo ID and proof of address | In full (short page) |
-| https://www.westminsterco.gov/194/Adult-Pottery | 2026-11-23 | A city parks department offers adult (18+) pottery classes, "Daytime and evening classes are offered", register online or by phone | In full |
-| https://www.npr.org/2026/03/12/nx-s1-5743973/... and two other NPR phone-tip pages (2026-03-20, 2026-05-10) | 2026-11-23 | Intended; fetch returned 503 | NOT read; search snippet only; not cited |
-| Search result summaries (placer.ca.gov, libraries.state.ma.us, Wikipedia and cancercontrol.cancer.gov on implementation intentions, yahoo, calm.com) | 2026-11-23 | Background only | Snippet only; not cited |
+All read 2026-11-23 via the fetch tool, which returned an extracted, summarised version of each page (so "in full" means the whole page text as returned, not a verbatim copy).
 
-Eight sources read in full. Library sources are all US municipal or state systems, so the article says requirements "differ by system."
+| URL | Supports | Read |
+|---|---|---|
+| https://cancercontrol.cancer.gov/brp/research/constructs/implementation-intentions (NCI Behavioral Research Program, Gollwitzer and Sheeran; page says it is no longer maintained) | If-then plans specify when, where and how; vague plans offer little benefit; effect depends on a strong goal. Statistics deliberately not cited. | In full |
+| Positive Psychology Practitioner's Toolkit "Implementation Intentions" PDF (Noel Lyons; via allard.ubc.ca) | Background: specifying when, where and how makes attainment more likely; commitment matters. Not cited. | In full |
+| https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/how-to-fall-asleep-faster-and-sleep-better/ | "Try not to use phones, tablets or computers for an hour before bed." Used only as guidance, no health outcome promised. | In full |
+| https://www.commonsensemedia.org/articles/control-your-phone-dont-let-it-control-you (reviewed 17 July 2025) | First screen of everyday tools; type an app's name instead of tapping its icon; charge outside the bedroom | In full |
+| https://www.sleepfoundation.org/technology | Background: devices outside the bedroom; not cited in the article | In full |
+| https://www.bpl.org/get-a-library-card/ | eCard sign-up about five minutes; online resources only; in-person upgrade; photo ID and proof of residency | In full |
+| https://www.chipublib.org/get-a-library-card/ | Photo ID with local address; temporary card for people gathering documents; no longer issues eCards (as of the page) | In full |
+| https://santamonica.gov/process-explainers/how-to-get-a-library-card | Card provides borrowing, study rooms, online resources; photo ID and proof of residence | In full |
+| https://dclibrary.org/getacard | Photo ID with address; online sign-up gives temporary card; background only | In full |
+| https://kcls.org/faqs/how-do-i-get-a-library-card | Photo ID and proof of address in person; background only | In full (short page) |
+| https://www.toronto.ca/explore-enjoy/parks-recreation/program-activities/arts-hobbies-interests/ | "Find a program near you and drop-in at your convenience"; drop-in map | In full |
+| https://www.westminsterco.gov/194/Adult-Pottery | Adult pottery 18+; "Daytime and evening classes are offered"; register online or by phone | In full |
+| https://bloomington.in.gov/recreation/recreation/live-learn | Background: city adult classes require registration (Soup Together, 50+); not cited | In full |
+| NPR phone-tip pages (3), nhlbi.nih.gov, cdc.gov, nypl.org, spl.org | Attempted; 503, 404 or empty | NOT read, not cited |
+
+Cited in the article: NCI, NHS, Common Sense Media, BPL, Chicago, Santa Monica, Toronto, Westminster (8). Authoritative (government, health agency or institutional): NCI, NHS, five library or city pages, two city parks pages. No blog-only claims remain.
 
 ## What changed in the revision
 
@@ -87,27 +93,36 @@ Eight sources read in full. Library sources are all US municipal or state system
 - Ending is now a specific next action (charger by the door, sticky note).
 - Body about 1,250 words.
 
+## Round 3 changes
+
+- Added a three-row, two-column "Pick your evening" chooser table (time and energy by alone or with someone).
+- Every item now ends in a concrete friction-remover (stamp, timer, "kitchen and phone only" fallback, text script, start time).
+- New "If it does not work" fixes for decision fatigue, starting too late and no plan.
+- Item 11 is now a class night (Toronto drop-in map and Westminster evening classes) replacing "three photos on display"; film night now covers kids and a partner. Social ideas: call, thrifting, dinner, class.
+- Phone section: Common Sense, NHS and NCI (hedged, no statistics).
+- Library claim now compares Boston, Chicago and Santa Monica; the article states the pages vary.
+- Eight cited sources, thirteen read in full. Body about 1,380 words. Two shop links.
+
 ## Open uncertainties
 
-- NPR phone-habit pages could not be fetched (503); not cited.
-- Library claims rest on four US systems; hedged as varying by system. Boston eCard time is attributed in text.
-- The Westminster pottery example was removed from the article; the page was read but is no longer cited. Sleep Foundation and the if-then handout were read but are no longer cited.
-- Thrifting, walk-to dinner, one-pot dinner and film night are editorial ideas with no sources and no claims; nothing here should be read as tested.
-- "Give the same plan three tries" is editorial advice, not a researched number.
-- Item 12 (film night) is the thinnest card.
+- The fetch tool returned summaries, not verbatim pages; quotes (NHS, Toronto, Westminster) were taken from those summaries.
+- The NCI page says it is no longer maintained; used only for the "specific plan" point.
+- Library pages are all North American; UK and other readers may differ.
+- Items 5, 7, 8, 9, 10 and 12 remain editorial ideas without sources. Nothing is claimed as tested.
+- Whether a fixed 20-minute shelf timer, or "7:30, say", suits readers is untested editorial advice.
 
 ## Self-Review
 
-Hard marks after round 2.
+Hard marks after round 3.
 
 | Criterion | Weight | Score | Justification |
 |---|---|---|---|
-| Reader appeal | 20% | 8 | Distinct ideas and social options, tighter prose; voice is still plain and a few cards (shelf, bath) are generic. |
-| Practical helpfulness | 20% | 8 | Concrete first moves and a clear next step; the Feels like / Needs structure is gone, so needs are less scannable. |
-| Research accuracy and source quality | 20% | 7 | Two traceable claims (Common Sense Media, Boston eCard); library evidence is US-centered. |
-| Product fit | 15% | 8 | Two incidental, truthful bundle links; no cards, as intended. |
-| Originality | 10% | 8 | Time-sorted plans differ from the hobbies guide; format is the standard discovery shape. |
-| Consistency | 10% | 9 | Matches FACTS and the commute fix removes the earlier contradiction. |
-| SEO intent and linking | 5% | 7 | Covers the intent with five published links; planned links are brief-only. |
+| Reader appeal | 20% | 8 | Warmer opener, chooser and social variety; prose is still plain and some cards are generic. |
+| Practical helpfulness | 20% | 8 | Chooser, fallbacks and per-item friction removers are the main gain; items are still short. |
+| Research accuracy and source quality | 20% | 8 | Eight read and cited sources, mostly institutional, and all claims hedged or quoted; fetch tool summaries are not verbatim and the NCI page is dated. |
+| Product fit | 15% | 8 | No cards and two incidental, truthful bundle links. |
+| Originality | 10% | 8 | Time-sorted chooser and ideas absent elsewhere on the site; three items still resemble stock lifestyle ideas. |
+| Consistency | 10% | 9 | Matches FACTS and the published guides; no prices, health promises or testing claims. |
+| SEO intent and linking | 5% | 8 | Chooser and fallback section match the long-tail questions; five published links. |
 
-Weighted total: 1.6 + 1.6 + 1.4 + 1.2 + 0.8 + 0.9 + 0.35 = **7.85 / 10**
+Weighted total: 1.6 + 1.6 + 1.6 + 1.2 + 0.8 + 0.9 + 0.4 = **8.1 / 10**
