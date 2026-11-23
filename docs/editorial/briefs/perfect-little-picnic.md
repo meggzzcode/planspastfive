@@ -1,10 +1,10 @@
 # Brief: perfect-little-picnic
 
-Status: draft article written 2026-11-23. Body about 1,800 words (slightly over the 1,100-1,700 target; trim the timeline or touches section if the editor wants it shorter).
+Status: draft, revised once 2026-11-23 after reviewers. Body about 1,350 words.
 
 ## Research Brief
 
-**Working title:** The Perfect Little Picnic: What to Pack for a Beautiful Afternoon Outside
+**Working title:** The Perfect Little Picnic: What to Pack and How to Plan It (shortened from the original working title for the 65-character limit)
 **Slug / category / format:** perfect-little-picnic / The Weekend Edit / experience-guide
 
 **Reader intent:** "how to plan a picnic", "what to bring to a picnic", "picnic food ideas that travel", "picnic food safety". Long-tail questions seen across top results and guides: how long can food sit out; does a picnic need a cooler; what foods do not travel (mayo, delicate greens, ice cream); can I drink in a park; can I bring a grill; what if it rains; best time of day; how to keep bugs away; do I need a permit or shelter reservation. No search-volume numbers gathered. Gaps in what the results offered: most guides are recipe roundups with a safety line bolted on, and the rain plan is almost always missing. This article puts the park rules, the 2-hour/1-hour rule, a rain plan and a timeline in one small-group plan.
@@ -30,6 +30,9 @@ Status: draft article written 2026-11-23. Body about 1,800 words (slightly over 
 
 **Differentiation from existing articles:** hobbies-for-busy-women lists picnicking as a one-paragraph card (2 hours, a friend or alone with a book, free if you own a blanket; name a backup evening). This article is the full guide behind that card and agrees with it. The mahjong article covers hosting indoors; the picnic is the outdoor, no-host counterpart, so we do not repeat its etiquette or timeline format.
 
+## Revision notes (round 1)
+What changed: new title (under 65 characters); new opening (no 'Picture it at' formula); LNT now says three of the seven principles; food safety cut to five bullets plus a sentence naming the FDA, with Penn State extras; park-rules section merged and the grill distance attributed to one city's shelter rules; menu replaced by a named 'picnic for three' with rough quantities (flagged as our estimates) and a 60-second assembly; Leave no trace and Bugs and sun headings folded into 'Small things people forget'; Borrow or buy added with no links; packing list shortened; timeline moved to a 4:00 start to match the CDC 10 to 4 UV window; mahjong link anchor now 'snack ideas' with cheese flagged perishable; clay place-card removed; close varied; one-hand bag tension stated plainly in the intro (a soft insulated bag joins the tote). 'Upset stomach' line replaced by 'safety comes down to temperature and time' because the FDA page does not state a most-common cause. Packaged greens and UV on cloudy days both verified against the FDA and CDC pages read.
+
 ## Product Research Brief
 
 No verified picnic products in the catalog. The article carries picks: [] and no {{pick}} or {{product}} markers, and no Shop bundle link (none exists for picnics).
@@ -47,10 +50,10 @@ No verified picnic products in the catalog. The article carries picks: [] and no
 
 Used now (all published):
 - /journal/hobbies-for-busy-women/ (twice: the 2-hour picnic card; solo option)
-- /journal/how-to-host-a-mahjong-night/ (snack ideas)
-- /journal/air-dry-clay-for-beginners/ (handmade ring dish as a place card or gift, with the decorative-only caveat)
+- /journal/how-to-host-a-mahjong-night/ (anchor: snack ideas; only keeping foods suggested, cheese flagged as perishable)
+- Air-dry clay link removed in revision (place-card idea was forced); related list now hobbies and mahjong only.
 
-Planned future links (not in the article): a flower arranging guide (table touch); a "host your first brunch" or "easy entertaining" piece; a cozy-reading or solo day-out piece for the "alone with a book" variant; a Weekend Edit hub page. No Shop bundle fits; do not link one.
+Planned future links (not in the article): a flower arranging guide (table touch); an air-dry clay trinket could return as a link if a gift idea fits naturally; a "host your first brunch" or "easy entertaining" piece; a cozy-reading or solo day-out piece for the "alone with a book" variant; a Weekend Edit hub page. No Shop bundle fits; do not link one.
 
 ## Fact-Consistency Notes
 - Picnic time labelled 2 hours, company "a friend, or alone with a book", free if you have a blanket, backup evening: kept consistent. Article extends to 2 to 4 people; the timeline runs about 3:00 to 5:15 (2.25 hours), consistent with "2 hours". Prep time is not counted in that figure.
@@ -80,15 +83,16 @@ Not fetched successfully (403/404): FDA tips-for-safe-picnics URL, USDA FSIS pag
 - "Late afternoon gives softer light" is general advice, not sourced.
 - Rain plan (backup day, indoor floor picnic) is editorial suggestion, not sourced. The "waterproof-backed blanket" point is general common sense backed only by a search snippet.
 - Deviled eggs left out because sources conflict on suitability.
-- Body length about 1,800 words, over the stated range.
+- Menu items (tomato mozzarella ciabatta, orzo, chickpea salad, brownies) and quantities are editorial suggestions from the menu guides' general principles, not tested recipes. Wasp and uneven-ground tips are common-sense, unsourced.
+- Body about 1,350 words, just under the editor's 1,400 target.
 
-## Self-Review
-- Reader appeal (20%): 7. Warm scene and an easy timeline, but some sections are list-heavy and the voice is more instructional than the best published pieces.
-- Practical helpfulness (20%): 8. Covers spot, rules, menu, safety, packing, rain, leave-no-trace and a timeline; menu is thinner on specific dishes.
-- Research accuracy and source quality (20%): 7. Nine pages read in full, with government and extension sources; the USDA pages were not readable and the park rules come from just two jurisdictions.
-- Product fit (15%): 8. No forced links and honest candidates list; slight tension with the one-hand bag wording in the hobbies guide.
-- Originality (10%): 6. Safety plus park-rules plus rain plan together is useful, but the structure is conventional picnic-guide fare.
-- Consistency (10%): 8. Agrees with the hobbies card and FACTS.md; length is over target.
-- SEO intent and linking (5%): 7. Matches the main queries and links three published articles naturally; no hub or bundle to link.
+## Self-Review (re-score after revision, hard marker)
+- Reader appeal (20%): 8. Opens on the night-before calm, concrete menu and close; still more guide than story.
+- Practical helpfulness (20%): 9. Named menu with quantities, assembly, five-point safety list, borrow-or-buy criteria, timeline reconciled with UV advice.
+- Research accuracy and source quality (20%): 8. Nine full reads, claims re-checked against pages; USDA unreadable, park rules from two places, menu is editorial.
+- Product fit (15%): 9. No forced links; three buy-worthy items with criteria; candidates unverified in brief.
+- Originality (10%): 7. Park-rules plus 2-hour rule plus rain plan plus concrete menu in one small-group plan, but the genre is familiar.
+- Consistency (10%): 9. One-hand bag tension now stated openly, 2-hour length matches, no clay contradiction, cheese perishability handled.
+- SEO intent and linking (5%): 8. Title in range, natural anchors, two published links.
 
-Weighted total: 0.20x7 + 0.20x8 + 0.20x7 + 0.15x8 + 0.10x6 + 0.10x8 + 0.05x7 = 1.4 + 1.6 + 1.4 + 1.2 + 0.6 + 0.8 + 0.35 = 7.35 out of 10.
+Weighted total: 0.20x8 + 0.20x9 + 0.20x8 + 0.15x9 + 0.10x7 + 0.10x9 + 0.05x8 = 1.6 + 1.8 + 1.6 + 1.35 + 0.7 + 0.9 + 0.4 = 8.35 out of 10. I will not claim 9: sources are thin on USDA and park rules, and the menu is unsourced editorial.

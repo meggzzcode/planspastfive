@@ -1,6 +1,17 @@
 # Brief: host-a-paint-night-at-home
 
-Article: `src/content/articles/host-a-paint-night-at-home.md` (draft, no publishedAt, no hero). Category Better Together, format experience-guide. Body about 1,960 words (a little over the 1,800 target).
+Article: `src/content/articles/host-a-paint-night-at-home.md` (draft, no publishedAt, no hero). Category Better Together, format experience-guide. Body about 1,465 words after the revision round (was 1,960).
+
+## Revision round (what changed)
+
+- Title now 'How to Host a Paint Night at Home: A Plan for 2 to 6 Friends'; description about 150 characters.
+- Structure rebuilt: moment of the evening first, then invitation, who pays, one project or free choice, table, the evening in four moments, snacks, five-line cleanup and what goes home, questions, short close. No 'Picture the table' opener.
+- Fact fix: the reveal is now 'hold up what you have so far'; the article says plainly a kit takes longer than one evening and canvases go home to finish; 'wet or unfinished canvases'; rain-check line is 'rain-check by a week and keep the pot lids closed'.
+- Kit paragraph cut to the Faber-Castell pick plus a pointer to the Cozy Paint Night Bundle; the Jooz kit is no longer mentioned in the article (kit choice belongs to the paint-by-numbers guide).
+- Cost made honest: one kit per painter, including the host, is a step up from a shared pile; the article offers three ways to split (host covers, chip in, shared pile).
+- Added: guest who finishes early or is slower, music, who pays. Cut: the timeline sourcing preface, quoted cute lines, 'how many people' as a Question, most 'one guide says' attributions, disposal detail reduced to two sentences. Removed 'least stressful' and 'we recommend' phrasing.
+- Closing varied (a short reflection, not an invitation).
+- Planned future link, brief only: `/journal/paint-by-numbers-for-adults/` once published, from the kit paragraph.
 
 ## Research Brief
 
@@ -21,7 +32,7 @@ Article: `src/content/articles/host-a-paint-night-at-home.md` (draft, no publish
 
 **Verified products used.**
 - `faber-castell-monet-water-lilies-paint-by-numbers` (card): one per painter; 6 x 8 in canvas, six acrylic pots, one brush, easel, numbered guide, hang tab; ages 8+ (also on the Faber-Castell page, which gives no completion time). Fits the job: a complete kit, no extra supplies, small enough for a shared table.
-- `jooz-paint-by-numbers-landscape-frame-8x12` (inline mention): the larger option; 8 x 12 in canvas, wooden frame, easel, three brushes, acrylic; title/description oil-versus-acrylic discrepancy flagged in the article.
+- `jooz-paint-by-numbers-landscape-frame-8x12`: no longer mentioned in the article after the revision (kit choice belongs to the paint-by-numbers guide); still verified if wanted there.
 - Shop link: Cozy Paint Night Bundle (`/shop/#cozy`), described as individually sold products, not a boxed set.
 
 **Not linked, by owner rule.** Table covers, drop cloths, aprons, paper towels, cups: prose only.
@@ -72,7 +83,7 @@ Dates read: 2026-11-23. All pages fetched via WebFetch (a summarising fetcher re
 7. https://www.liquitex.com/us/knowledge/safety-disposal/ . Hand washing, brush not in mouth, wipe tools, waste container, no sludge down the sink. Read in full.
 8. https://doh.wa.gov/community-and-environment/contaminants/art-hazards/waste-disposal-artists . Not pouring hazardous art wastewater down the drain, check with local health department. Read in full (page does not mention acrylic by name).
 9. https://niaaa.nih.gov/about-niaaa/directors-page/niaaa-directors-blog/support-your-team-and-your-guests-tips-hosting-party-including-guests-who-may-not-be-drinking . Alcohol-free options, label, no explanations. Read in full.
-10. https://www.fabercastell.com/products/paint-by-number-museum-series-water-lilies-14350 . Kit contents, 6 x 8 in, ages 8+, no time stated. Read in full.
+10. https://www.fabercastell.com/products/paint-by-number-museum-series-water-lilies-14350 . My fetch returned a summary naming the same contents as the product record and no completion time. The paint-by-numbers brief says it could not find a first-party Monet page, so treat this page as UNCONFIRMED by a second reader; the article relies on the product record, not on this page.
 11. https://goldenartistcolors.com/videos/waste-water-cleaning-system and https://goldenartistcolors.com/resources/health-and-safety . Crash Paint Solids system exists; health pages are an index only. Read; not used for claims.
 12. Search snippets only (not read in full): bestlifeonline hosting-sober-guests, offbeathome, justpaint.org (404), CBC (403), Jooz maker page (not found/read).
 
@@ -81,21 +92,23 @@ Dates read: 2026-11-23. All pages fetched via WebFetch (a summarising fetcher re
 - No kit finishing time (Faber-Castell does not state it); article avoids a promise.
 - Acrylic drying time on a finished kit is unsourced; article says "if it still feels wet, keep it overnight" and gives no hours.
 - Safe rinse-water disposal for tiny volumes: Liquitex and WA DOH do not agree on specifics; article tells readers to check local rules. Golden's "wipe before rinse" guidance was only in a search summary, not read in full.
-- Jooz maker page was not read; its facts come from the product record only.
+- Jooz maker page was not read; no longer used in the article.
+- First-party Faber-Castell Monet page: my fetch returned content, the paint-by-numbers brief did not find it; the article rests on the product record only.
+- Kit time: an evening is described as 'a start' per the paint-by-numbers draft; no hours are claimed. Acrylic touch-dry time is unsourced, so the article says only 'wet or unfinished' canvases go home carefully.
 - Seven painters on one table is our judgment; the one source says about six with easels.
 - Kits take shipping time: "a week ahead" is from a competitor's kits.
 - The 6:30 to 9:00 clock times are our suggested pacing.
 
-## Self-Review
+## Self-Review (re-scored after revision)
 
 | Criterion | Weight | Score | Justification |
 |---|---|---|---|
-| Reader appeal | 20% | 7 | Opens on a scene and has a copy-ready invite, but the middle is list-heavy and the voice is a little plain. |
-| Practical helpfulness | 20% | 8 | Timeline, kit arithmetic, non-drinkers, cleanup and rain-check are all concrete; no tested finish time. |
-| Research accuracy and source quality | 20% | 6 | Nine pages read, but most are competitor shops; only Liquitex, NIAAA and WA DOH are neutral, and Golden/Jooz were thin. |
-| Product fit | 15% | 8 | One card and one mention, matched to the one-per-guest job, with honest limits. |
-| Originality | 10% | 7 | Rain-check, painters-not-guests and non-drinker sections go beyond competitors; the structure is conventional. |
-| Consistency | 10% | 8 | Matches 2.5-hour label, FACTS and product records; slightly over the word target. |
-| SEO intent and linking | 5% | 7 | Title and headings match the queries; four internal links plus the bundle. |
+| Reader appeal | 20% | 7 | Opens on the real moment and the order follows the host's tasks, but it is still list-heavy in places. |
+| Practical helpfulness | 20% | 8 | Who pays, early and slow finishers, rain-check, cleanup and honest kit arithmetic are all covered; no tested timings. |
+| Research accuracy and source quality | 20% | 6 | Nine pages read, mostly competitor shops; neutral sources are Liquitex, WA DOH and NIAAA; one first-party page unconfirmed. |
+| Product fit | 15% | 8 | One pick as the per-guest default with limits stated, bundle linked, overlap with the buying guide removed. |
+| Originality | 10% | 7 | Moment-first structure, who pays and rain-check go beyond competitors; the content is still a conventional hosting arc. |
+| Consistency | 10% | 9 | Matches the 2.5-hour label, FACTS and product records; no testing claims. |
+| SEO intent and linking | 5% | 8 | Title 60 characters with the audience in it; four internal links plus the bundle. |
 
-**Weighted total:** 0.2x7 + 0.2x8 + 0.2x6 + 0.15x8 + 0.1x7 + 0.1x8 + 0.05x7 = 1.4 + 1.6 + 1.2 + 1.2 + 0.7 + 0.8 + 0.35 = **7.25 / 10**
+**Weighted total:** 1.4 + 1.6 + 1.2 + 1.2 + 0.7 + 0.9 + 0.4 = **7.4 / 10**. A 9 is not honest while the source base is mostly retailers and nothing was first-hand.

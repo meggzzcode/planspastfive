@@ -16,14 +16,14 @@ Title: 12 Things to Do After Work Instead of Scrolling on Your Phone. Category A
 |---|---|---|
 | Sort key | Energy (nothing / a little / ready for plans), with budget and company labels | Time available: 10 min, 30 min, a whole evening |
 | Unit | 12 hobbies | 12 small plans, mostly non-hobby (tea, doorstep walk, note, library card, shelf, call, bath, slow dinner, recipe cards) |
-| Overlap | junk journal, air-dry clay, mahjong (3 of 12) | same three, each reframed as a one-evening plan and linked, not re-explained |
-| Per item | time, company, buying, need, first step | what it feels like, what it needs, first step |
-| Extra | quick filters, "pick the smallest step" | how to make the switch (phone, if-then planning, set-out, default) |
-| Not repeated | reading, embroidery, crochet, watercolor, flowers, picnic, pickleball, tennis | none of these as cards |
+| Overlap | junk journal, air-dry clay, mahjong (3 of 12) | none as cards now; each existing guide is mentioned once in a closing "If you want something longer" paragraph |
+| Per item | time, company, buying, need, first step | varied shapes: some bulleted (feels like / needs / first step), some short paragraphs |
+| Extra | quick filters, "pick the smallest step" | switch mechanics (three bullets), commute-ate-the-evening section, kids-or-partner section, two social ideas plus a friend option on thrifting |
+| Not repeated | reading, embroidery, crochet, watercolor, flowers, picnic, pickleball, tennis | same |
 
 ## Product Research Brief
 
-No product cards: this is an inspiration article, picks: []. Most ideas need nothing the reader does not own, and FACTS.md says tape, pens, notebooks, scissors and blankets get prose only. Shop bundle links used (all exist and are truthful): #paper (junk journal, item 9), #creative (clay, item 11), #hosting (mahjong, item 12), #cozy (paint-by-numbers kits, one sentence near the end). No new product claims.
+No product cards: this is an inspiration article, picks: []. Most ideas need nothing the reader does not own (FACTS: tape, pens, notebooks, scissors, blankets get prose only). Shop links now limited to two, both in the closing "longer" paragraph where they are incidental: #paper (junk journal) and #creative (clay). Mahjong and #cozy bundle links were removed on review. No new product claims.
 
 PRODUCT CANDIDATES (UNVERIFIED), none are required, and none should be added without a later Amazon.com check by Cowork:
 - A simple analog alarm clock (for the "phone charges outside the bedroom" tip). Criteria: battery or plug, dim or no backlight, plain face, no screen. Currently the article does not recommend one.
@@ -32,19 +32,19 @@ PRODUCT CANDIDATES (UNVERIFIED), none are required, and none should be added wit
 
 ## Internal Linking Plan
 
-**Used now:** hobbies-for-busy-women (intro, for the hobby sort); your-first-junk-journal-spread and junk-journal-supplies-for-beginners (item 9); air-dry-clay-for-beginners (item 11); how-to-host-a-mahjong-night (item 12); /shop/#paper, #creative, #hosting, #cozy. Front matter related lists all five.
+**Used now (published only):** your-first-junk-journal-spread, junk-journal-supplies-for-beginners, air-dry-clay-for-beginners, how-to-host-a-mahjong-night, hobbies-for-busy-women (all once, in the closing paragraph); /shop/#paper and /shop/#creative. Front matter related lists the five.
 
-**Planned, not linked (unpublished):** a reading/library-habit guide (items 4 and 10 and the hobbies guide's reading card); a "how to host a craft or paint night" guide; a screen-free evening routine/ritual piece; a "cozy dinner for one" piece for item 8; a picnic/doorstep-adventure article. Once published, add links from items 4, 8, 10 and the closing. Also link this article back from hobbies-for-busy-women ("short on time? see small plans") after release.
+**Planned, not linked (unpublished):** start-a-walking-club (items 2 and 9, thrifting or neighborhood walks); perfect-little-picnic (item 10 or 11 as an outdoors variant); host-a-paint-night-at-home (replaces the removed #cozy mention for an evening with friends); a library/reading-habit guide (items 4); a cozy dinner-for-one or hosting-simple-dinners piece (items 8, 11). Add each once published. Also link this article from hobbies-for-busy-women once released.
 
 ## Fact-Consistency Notes
 
-- Junk journal: article says first spread takes about 45 minutes (matches FACTS) and puts it in the evening section; "ticket, receipt, tea-bag tag" is consistent with the spread guide's piles.
-- Clay: "pinch a ring dish tonight and let it dry as the pack says" is consistent with the clay guide and hobbies guide (about an hour over two evenings); no drying numbers repeated, no food-safe claims, no maker figures.
-- Mahjong: guide is American mahjong; the article only says "three friends", a set and a table, and does not state a duration. The hobbies guide says about 3 hours; the mahjong guide timeline is about three hours. Not contradicted.
-- Cozy Paint Night Bundle described as paint-by-numbers kits (FACTS).
-- Bundle described as gathering products "in one place", not as a boxed kit.
-- No prices, no testing claims, no health claims. The article uses "feels like" language as general description, not first-hand claims.
-- New facts for FACTS.md (if the editor agrees): none that must be shared; library-card requirements are stated as "vary by system" with Boston's eCard figure attributed in-text.
+- Junk journal: closing paragraph says first spread takes about 45 minutes and that a heavy-paper book matters because thin notebooks ripple under glue (supplies guide); no longer lists an old notebook or glue stick as supplies.
+- Clay: closing says a drying night in between, for adults, decorative only; no kids suggestion; no drying numbers or maker figures.
+- Mahjong: only "three friends round a table"; no set advice or bundle link.
+- Postcard card now says the stamp is the one thing you may not have.
+- "Ten dollars" thrifting limit is an editorial suggestion, not a product price.
+- No testing claims, no health claims, no prices on products. "The ones we read" refers to library pages read for research, not experience.
+- Nothing new to add to FACTS.md.
 
 ## Hero image idea
 
@@ -67,28 +67,36 @@ A window seat at dusk: a half-drunk mug of tea on the sill, a paperback face dow
 
 Eight sources read in full. Library sources are all US municipal or state systems, so the article says requirements "differ by system."
 
+## What changed in the revision
+
+- Items 9 to 12 replaced with fresh ideas (thrifting walk with a limit, walk-to dinner with a friend, one-pot dinner for a friend, film night with a plan); postcard replaces the handwritten note; junk journal, clay and mahjong moved to one short closing paragraph.
+- Shop links cut from four to two; mahjong and cozy removed.
+- Phone-habit section cut to three bullets; the if-then citation was removed and only Common Sense Media is cited.
+- Added commute and kids-or-partner sections; two further social plans; varied card shapes (bulleted on 3, 8 and 11 only).
+- Closing rewritten without the kettle line and the "sitting still counts" line. Opening starts with a scene but not "Picture it".
+- Word count about 1,350 (body, including markup).
+
 ## Open uncertainties
 
-- NPR phone-habit pages could not be fetched; re-read later and consider quoting a specific tip if wanted.
-- Library claims rest on four US systems; UK or Canadian readers may see different rules. Article hedges.
-- The if-then claim comes from a practitioner toolkit handout summarising Gollwitzer's work, not the primary papers; hedged ("makes acting more likely", "works best when you want the goal"). Consider reading Gollwitzer 1999 for a stronger citation.
-- The Colorado pottery example is one city; the article does not state its name or fees. A more local or national example could be added.
-- "The first try may feel a little flat" is editorial common sense, not sourced; kept as advice, with no claim that it is a general finding.
-- Bath, call, walk and tea cards are editorial suggestions with no sourced claims, deliberately without health benefits.
-- Hobbies guide reading card says "put the phone on charge in another room"; consistent.
+- NPR phone-habit pages could not be fetched (503); not cited.
+- Library claims rest on four US systems; hedged as varying by system. Boston eCard time is attributed in text.
+- The Westminster pottery example was removed from the article; the page was read but is no longer cited. Sleep Foundation and the if-then handout were read but are no longer cited.
+- Thrifting, walk-to dinner, one-pot dinner and film night are editorial ideas with no sources and no claims; nothing here should be read as tested.
+- "Give the same plan three tries" is editorial advice, not a researched number.
+- Item 12 (film night) is the thinnest card.
 
 ## Self-Review
 
-Hard marks.
+Hard marks after revision.
 
 | Criterion | Weight | Score | Justification |
 |---|---|---|---|
-| Reader appeal | 20% | 7 | Warm opening, time-based sort is fresh and scannable; some cards lean on stock cozy ideas and the voice is a little uniform. |
-| Practical helpfulness | 20% | 8 | Each plan has a concrete first step and the switch mechanics are actionable; slow-dinner and bath cards are thin on specifics. |
-| Research accuracy and source quality | 20% | 6 | Claims are few, hedged and traceable to pages read, but the phone-habit set is two organisations plus a practitioner handout and the NPR reads failed. |
-| Product fit | 15% | 8 | No cards is correct for an inspiration piece; bundle links are truthful and only where relevant; cozy bundle link is slightly bolted on. |
-| Originality | 10% | 7 | Time-sorted micro-plans differ clearly from the hobbies guide; format still follows the discovery template. |
-| Consistency | 10% | 9 | Matches FACTS on times, bundles and no-claims rules; no conflicts found. |
-| SEO intent and linking | 5% | 7 | Title and long-tail questions are covered, five internal links and four bundle links; no planned links live yet and no FAQ schema. |
+| Reader appeal | 20% | 8 | Fresher ideas, social options and the commute and household sections answer real situations; voice is still a little restrained. |
+| Practical helpfulness | 20% | 8 | Concrete first steps and limits; film night and shelf cards are thin. |
+| Research accuracy and source quality | 20% | 7 | Few claims, all traceable (Common Sense, Boston); no research hedging needed; library claim is US-centered. |
+| Product fit | 15% | 8 | No cards, two incidental bundle links, truthful; fine for an inspiration piece. |
+| Originality | 10% | 8 | Time-sorted plans with ideas not found elsewhere on the site; format is still the discovery template. |
+| Consistency | 10% | 9 | Matches FACTS and published guides; no conflicts. |
+| SEO intent and linking | 5% | 7 | Title and intent covered, five internal links used; planned links not live. |
 
-Weighted total: 0.20x7 + 0.20x8 + 0.20x6 + 0.15x8 + 0.10x7 + 0.10x9 + 0.05x7 = 1.4 + 1.6 + 1.2 + 1.2 + 0.7 + 0.9 + 0.35 = **7.35 / 10**
+Weighted total: 1.6 + 1.6 + 1.4 + 1.2 + 0.8 + 0.9 + 0.35 = **7.85 / 10**

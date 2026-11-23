@@ -1,5 +1,14 @@
 # Brief: Paint by Numbers for Adults
 
+## Revision 2 (what changed, 2026-11-23)
+- Title cut to 60 characters; description cut to about 135 characters.
+- Removed: "add some UV protection", the Dan Robbins/Leonardo history, the "more than 30 colours" tip, "pre-printed brush strokes" and "wet-on-wet and washes" (retailer-only claims), the "light before dark / dark first" disagreement paragraph (now: follow the kit's own order).
+- Added: a roughly 150-word first-evening walkthrough (photograph first, one pot at a time, cover pots, stop at a natural pause), a prose "mistakes" paragraph, one merged "Before you click buy" checklist (replaces "What to skip" and "Where kits disappoint"), "How long it takes" kept as "varies" with one attributed drying figure.
+- Opener now starts with a line of dialogue; closing now ends on an image.
+- Attributions reduced to two: a kit maker's drying times, and Liquitex on varnish.
+- The "friends" answer links only the Cozy bundle and promises separate hosting coverage. The article owns kit selection and solo painting.
+- `related` is now hobbies-for-busy-women, air-dry-clay-for-beginners, your-first-junk-journal-spread.
+
 Article: `src/content/articles/paint-by-numbers-for-adults.md` (draft, no date, no hero). Written 2026-11-23.
 
 ## Research Brief
@@ -44,7 +53,7 @@ Article: `src/content/articles/paint-by-numbers-for-adults.md` (draft, no date, 
 - Role: essential (primary pick for beginners).
 - Limits (from record): small 6 x 8 in canvas, one brush and six paints, so detail takes patience; fewer colours mean a simpler picture (inference from the six-paint count, worded as such).
 - Evidence: product record (specsEvidence, listingChecked 2026-11-23); Rainbow Resource page (S10) corroborates canvas size, paints, brush, easel, hang tab, wet-on-wet and washes. Faber-Castell's own pages (S9) describe sister kits in the same series.
-- Statement used in article that comes from S10 not the record: "pre-printed brush strokes" and "teach wet-on-wet painting and washes" (attributed to a retailer's description).
+- (Revision 2) No claims from S10 beyond the product record are used in the article.
 
 **jooz-paint-by-numbers-landscape-frame-8x12**
 - Why: the larger alternative; framed and on an easel so it can be displayed straight away.
@@ -62,8 +71,8 @@ Article: `src/content/articles/paint-by-numbers-for-adults.md` (draft, no date, 
 
 ## Internal Linking Plan
 
-Links used now: `/journal/hobbies-for-busy-women/` (paint nights card, who to share the evening with), `/journal/how-to-host-a-mahjong-night/` (livelier evening), `/journal/air-dry-clay-for-beginners/`, `/journal/your-first-junk-journal-spread/` (same kind of evening), `/shop/#cozy`.
-Planned future links (not in the article): a "how to host a paint night" guide; a "gift ideas for a friend who loves crafts" or "cozy night in" article; a "how to frame and display small art at home" guide; a "junk journal supplies" cross link can be added to the related list (junk-journal-supplies-for-beginners exists but is not linked here).
+Links used now: `/journal/air-dry-clay-for-beginners/`, `/journal/your-first-junk-journal-spread/`, `/journal/hobbies-for-busy-women/` (all in the "similar evening" answer only; the friends answer deliberately links no guide), and `/shop/#cozy` (twice). `how-to-host-a-mahjong-night` was removed from the article and from `related`.
+Planned future links (unpublished, NOT in the article): `host-a-paint-night-at-home` (replace "We will cover hosting a paint night separately" with a link; that article should link back here for kit choice), `things-to-do-after-work-instead-of-scrolling`, `start-a-walking-club` and `perfect-little-picnic` (only if a natural "other small adventures" line is wanted), a framing/displaying small art guide, and `junk-journal-supplies-for-beginners` (exists, unlinked).
 
 ## Fact-Consistency Notes
 
@@ -104,22 +113,25 @@ Blocked or failed: plaidonline.com (503), artskills tips page (404), Dick Blick 
 - Faber-Castell's own page for the Monet kit was not found; Monet kit facts rest on the product record and Rainbow Resource.
 - JOOZ colour count, number size and paint quantity are unknown. Cowork could check on the listing.
 - Total time for each kit is unknown; article says it varies and gives no hours.
-- The "30 colours for a first attempt" suggestion comes from a search-result summary of a retailer guide that was not fetched; the article attributes it vaguely to "one guide". Verify or remove before publishing.
+- (Resolved) The 30-colour tip was removed. The article now says only that fewer colours are kinder to a first kit, which is our editorial judgement, not a sourced claim.
 - Paint order (light first vs dark first) has no authoritative answer; article defers to the kit.
-- Dan Robbins dates: "early 1950s" supported by S8 and snippets. Verify the Leonardo anecdote against his memoir if it is kept.
-- Whether the Faber kit has "pre-printed brush strokes" depends on one retailer's text (S10).
+- History was removed from the article; S8 is now background only.
+- Faber-Castell wet-on-wet and brush-stroke claims (S10) are not used in the article.
+- The first-evening walkthrough and "mistakes" paragraph are advice assembled from S3 to S6; the specific ordering (photograph first, top down, stop at a colour's end) is editorial synthesis, not a quote from one source.
+- "Keep the lamp where it will not shadow your hand", music and "stop at a natural pause" are editorial suggestions.
+- JOOZ colour count, number size and paint amount still unknown, so the checklist advises readers to check them.
 - Sources are mostly kit sellers, so advice may favour their products.
 
-## Self-Review
+## Self-Review (revision 2, hard marker)
 
 | Criterion | Weight | Score | Justification |
 |-----------|--------|-------|---------------|
-| Reader appeal | 20% | 7 | Warm opening scene and clear structure, but mid-article is checklist-heavy and the voice is less distinctive than the clay guide. |
-| Practical helpfulness | 20% | 8 | Concrete selection criteria, sourced mistakes and fixes, and finishing advice; time stays honestly vague. |
-| Research accuracy and source quality | 20% | 6 | Ten fetched pages, but most are retailers, tool summaries were not raw reads, the Monet kit lacked a first-party page, and one claim (30 colours) comes from a snippet. |
-| Product fit | 15% | 8 | Two verified kits, with different sizes and honest limits; JOOZ colour detail is missing. |
-| Originality | 10% | 6 | Buy-before-you-paint framing and the order-disagreement note differ from tip lists, but the content overlaps common guides. |
-| Consistency | 10% | 8 | Obeys FACTS.md, no prices or testing claims; small tension with the hobbies guide wording noted above. |
-| SEO intent and linking | 5% | 7 | Covers main queries and links four guides plus the bundle; no FAQ schema-style depth. |
+| Reader appeal | 20% | 7 | Dialogue opener, a first-evening scene and an image ending lift it, but the middle is still advice-dense and the voice is not as vivid as the clay guide. |
+| Practical helpfulness | 20% | 8 | Clear selection criteria, a walkthrough, a buy checklist and honest time answer; no hour figures and little on JOOZ detail. |
+| Research accuracy and source quality | 20% | 6 | Unsourced or snippet-only claims removed, but the base is still retailer and kit-maker pages summarised by a tool, with no first-party Monet kit page. |
+| Product fit | 15% | 8 | Two verified kits with record-only facts and honest limits; JOOZ colours unknown. |
+| Originality | 10% | 6 | A buying-first angle and a no-numbers time answer help; the tips themselves are standard. |
+| Consistency | 10% | 8 | Matches FACTS.md and records; no prices or testing claims; one wording tension with the hobbies guide (2.5-hour paint night) remains. |
+| SEO intent and linking | 5% | 7 | Title 60 chars, description about 135, query-led headings, no links to unpublished pages; no FAQ depth beyond three questions. |
 
-**Weighted total:** 0.20x7 + 0.20x8 + 0.20x6 + 0.15x8 + 0.10x6 + 0.10x8 + 0.05x7 = 1.4 + 1.6 + 1.2 + 1.2 + 0.6 + 0.8 + 0.35 = **7.15 / 10**
+**Weighted total:** 1.4 + 1.6 + 1.2 + 1.2 + 0.6 + 0.8 + 0.35 = **7.15 / 10**. Not a 9: source quality is capped by the research base, and the article is competent more than distinctive.

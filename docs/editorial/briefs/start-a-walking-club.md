@@ -1,6 +1,14 @@
 # Brief: How to Start a Walking Club and Actually Make New Friends as an Adult
 
-Slug `start-a-walking-club` | Category Better Together | Format experience-guide | Status draft (no publishedAt, no hero) | Body about 1,800 words | Drafted 2026-11-23
+Slug `start-a-walking-club` | Category Better Together | Format experience-guide | Status draft (no publishedAt, no hero) | Body about 1,600 words (revised) | Drafted 2026-11-23, revised same day
+
+## Revision round 1 (what changed)
+
+Facts: title now "How to Start a Walking Club (and Meet People as an Adult)" (57 characters, no outcome promised). The first walk is stated as about 90 minutes (45 walking plus coffee). The "public-health agencies suggest posters" line is now "A UK walking guide suggests noticeboards, libraries and work intranets" (Travelwest, read). The Washington source is named once, accurately, as a guide for dementia-friendly walking groups, and used only for two distances and terrain description. Cut: NPS "especially in hot weather" (the water line is now just "Bring some"), all "waivers/first-aid/formal group" claims, the Toronto-based Q&A, the Partnership-guide "leaders at different pace" detail. Spelling is US throughout (center, favoring, neighbors).
+
+SEO: description is 154 characters and leads with the copyable invitation, script and only-one-shows plan. `related` is hobbies-for-busy-women, how-to-host-a-mahjong-night, air-dry-clay-for-beginners (all published).
+
+Editorial: new opening (the unsent text message) instead of "Picture a Thursday"; the research section opens with a short scene and condenses Hall to one mention of about 80 words, with the single "our arithmetic" sentence kept inside that paragraph and removed from the Q&A; attributions cut to Hall, a UK walking guide, NPS hiking guidance (twice), the Washington dementia-friendly guide (once) and CDC; the etiquette checklist is replaced by a paragraph on fading attendance with a sample follow-up note (path etiquette folded into one sentence in the route section); "What if I am shy?" is a real answer with a sample message; new short answers for talks too much, says no, never comes back, winter and dark evenings; a new "Turning walks into time together" section (second activity); an imagined three-line conversation (labelled imagined); glib lines cut ("The plan does the talking"); the close is a callback to the unsent message, not "send it".
 
 ## Research Brief
 
@@ -38,14 +46,15 @@ No Shop bundle exists for walking, so the article links no bundle (the template 
 
 Used now (all published):
 - `/journal/hobbies-for-busy-women/` (in "Where to find your first members": other ways people already gather).
-- `/journal/how-to-host-a-mahjong-night/` (in "How it can grow": the next step once the walkers are friends).
-- `related: [hobbies-for-busy-women, how-to-host-a-mahjong-night]`.
+- `/journal/how-to-host-a-mahjong-night/` and `/journal/air-dry-clay-for-beginners/` (in "Turning walks into time together": a second activity once the group is easy with each other).
+- `related: [hobbies-for-busy-women, how-to-host-a-mahjong-night, air-dry-clay-for-beginners]`.
 
-Not linked: `air-dry-clay-for-beginners` (no natural fit; forcing it would read as filler). `junk-journal-*` (no fit).
+Not linked: `junk-journal-*` (no fit).
 
 Planned future links (not in the article; add when published):
 - The planned article on making friends as an adult (unpublished): link from the intro and the "Why a walking club helps" section.
-- Any future picnic, pickleball or craft-night guide (the hobbies guide lists them as planned) as ideas for "what to do after" or a seasonal swap when it is too dark or cold to walk.
+- `perfect-little-picnic` and `things-to-do-after-work-instead-of-scrolling` (briefs exist; not published, so not linked): picnic as a second activity, and after-work ideas.
+- Any future pickleball or craft-night guide (the hobbies guide lists them as planned) as ideas for "what to do after" or a seasonal swap when it is too dark or cold to walk.
 - A future "things to do after work instead of scrolling" or "perfect little picnic" article if published (briefs exist for both in docs/editorial/briefs/; confirm status before linking).
 
 ## Fact-Consistency Notes
@@ -59,7 +68,8 @@ Planned future links (not in the article; add when published):
   - NPS: "if you can talk while walking, you're at a good pace"; the slowest hiker sets the pace.
   - CDC: walk facing traffic where sidewalks are missing; bright/reflective clothing and lights when dark.
   - Spelling: published articles mix US and UK forms ("centre", "favouring", but also "neighborhood"). The draft uses "neighbors/neighborhood" with "centre" and "favouring". The editor may want to normalize.
-- Description is 153 characters, one sentence, no em dashes in the article.
+- Description is 154 characters, one sentence, no em dashes in the article. US spelling throughout the revised draft.
+- The draft's invented names (Dee, Sam, Priya) and the three-line conversation are labelled as imagined illustration, not experience.
 
 ## Hero image idea
 
@@ -90,20 +100,22 @@ Sources read in full: 9 (nos. 1, 2, 3, 5, 6, 7, 8, 9 and 10; nos. 9 and 10 are c
 - Hall's numbers are survey averages from recent movers and students; the study is not about walking. The article says so. The KU article date is inconsistent (March 6 in URL vs March 28 in text).
 - "Ninety minutes a week" and "48 weeks" are our assumptions, not data; the claim is marked as our arithmetic.
 - "Meet first in a public place in daylight and tell a friend" for people met through a community page is common-sense editorial advice, not tied to a source I read.
-- Spelling convention (US vs UK) across the site is unresolved.
-- Local specifics (sunset times, park rules, whether groups need permits or insurance for larger events) vary by town; the article only says larger formal groups may need waivers and first-aid training (Toronto, DSHS).
+- Spelling: the revised draft is US; the older published articles mix UK forms, so the site convention is still the editor's call.
+- Unsourced editorial advice in the revised draft (not tied to a page read): walk the route once first; meet new contacts in a public place in daylight; a rain plan of meeting for coffee anyway (the Washington guide's partial-cancellation idea is similar); the follow-up-note wording; the "talks too much" and "says no" scripts; indoor loop at a mall or community center in winter (the Partnership guide names malls and indoor tracks as weather alternatives).
+- The second-activity ideas (picnic, craft night, dinner) are suggestions, not sourced claims.
+- Local specifics (sunset times, park rules) vary by town; the revised article no longer makes any claim about waivers, permits or insurance.
 - No peer-reviewed evidence read that walking groups themselves create friendships; the article makes no such claim.
 
 ## Self-Review (hard marker)
 
 | Criterion | Weight | Score | One-line justification |
 |---|---|---|---|
-| Reader appeal | 20% | 7 | Warm scene, copyable invitation and script, honest about outcomes; but the voice is more instructional than the mahjong guide, and there are no distinctive details a reader would remember. |
-| Practical helpfulness | 20% | 8 | Covers every requested item with specifics (two distances, step-free coffee, one-person chat rule, rain plan, only-one-shows); no map or template for a real sample route. |
-| Research accuracy and source quality | 20% | 6 | Hall and NPS/CDC/Toronto/Washington State claims are faithful and hedged; several key pages (Ramblers, AHA, AARP, NHTSA) were unreadable and the Hall piece is a news write-up, not the paper; some sources are tangential (dementia program, hiking). |
-| Product fit | 15% | 8 | Correctly no products and states no purchase needed; scored high for restraint, not for any product value; no Shop bundle link to match the template. |
-| Originality | 10% | 6 | Combining friendship-hours with a coffee step and a chat rule is useful and not in the guides read, but the structure follows common walking-club checklists. |
-| Consistency | 10% | 8 | Obeys FACTS.md, links only published articles, no em dashes; the spelling mix and ~1,800 word length at the cap are minor flags. |
-| SEO intent and linking | 5% | 6 | Matches the how-to and long-tail intents and has a useful questions block; only two internal links, and the best one (making friends as an adult) is unpublished. |
+| Reader appeal | 20% | 8 | A fresh opening, a real shy-reader answer, a short imagined conversation and copyable messages; still not as rich in sensory detail as the best published guides. |
+| Practical helpfulness | 20% | 8.5 | Invitation, script, chat rule, rain plan, only-one-shows, fading-attendance note, winter plan, second activity and a short-answers block; no worked sample route. |
+| Research accuracy and source quality | 20% | 7 | Claims are now tied to pages actually read and hedged, unsourced claims cut; the best organization (Ramblers) and AHA/AARP stayed unreadable and Hall comes from a news write-up. |
+| Product fit | 15% | 8 | Correctly none; no purchase needed stated; rated for restraint only. |
+| Originality | 10% | 7 | Coffee-as-hours link, copy-paste scripts and a written answer for hesitant friends are not in the guides read; the skeleton is still a standard walking-club checklist. |
+| Consistency | 10% | 9 | FACTS.md obeyed, published links only, US spelling, no em dashes, 90-minute timing consistent throughout. |
+| SEO intent and linking | 5% | 7 | Title 57 characters, description leads with the invitation, long-tail questions answered; the high-value internal link (making friends as an adult) is unpublished. |
 
-**Weighted total:** 0.20x7 + 0.20x8 + 0.20x6 + 0.15x8 + 0.10x6 + 0.10x8 + 0.05x6 = 1.4 + 1.6 + 1.2 + 1.2 + 0.6 + 0.8 + 0.3 = **7.1 / 10**
+**Weighted total:** 0.20x8 + 0.20x8.5 + 0.20x7 + 0.15x8 + 0.10x7 + 0.10x9 + 0.05x7 = 1.6 + 1.7 + 1.4 + 1.2 + 0.7 + 0.9 + 0.35 = **7.85 / 10**. A 9 is out of reach with these sources: it would need the Ramblers and AHA walking-club guidance read in full and first-hand material, which we cannot invent.
