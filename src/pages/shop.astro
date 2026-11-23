@@ -49,7 +49,7 @@ const groups = shopGroups(products, settings.launchMode);
                 <p class="shop-group__plain">{g.plain}</p>
               </div>
             </div>
-            {g.extras.length > 0 && <h3 class="shop-group__tier">Start here</h3>}
+            {g.showStartHeading && <h3 class="shop-group__tier">Start here</h3>}
             <div class="pick-list pick-list--grid">{g.start.map(entry)}</div>
             {g.extras.length > 0 && (<>
               <h3 class="shop-group__tier">{g.extrasLabel}</h3>

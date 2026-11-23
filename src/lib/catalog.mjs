@@ -52,7 +52,7 @@ export function shopGroups(products, mode = "production") {
       const alternatives = new Map();
       for (const p of inGroup.filter(isAlt)) alternatives.set(p.choiceOf, [...(alternatives.get(p.choiceOf) || []), p]);
       const all = inGroup.filter((p) => !isAlt(p));
-      return { id, alternatives, label: c.name, plain: c.plain, image: c.image, extrasLabel: c.extras || "Nice to have", products: all, start: all.filter((p) => p.shopTier !== "extras"), extras: all.filter((p) => p.shopTier === "extras") };
+      return { id, alternatives, label: c.name, plain: c.plain, image: c.image, extrasLabel: c.extras || "Nice to have", products: all, start: all.filter((p) => p.shopTier !== "extras"), extras: all.filter((p) => p.shopTier === "extras"), get showStartHeading() { return this.start.length > 0 && this.extras.length > 0; } };
     })
     .filter((g) => g.products.length > 0);
 }

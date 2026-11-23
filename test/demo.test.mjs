@@ -28,7 +28,7 @@ describe("baseline: the real repo content passes every check (item 7)", () => {
     assert.match(h, /<figcaption>Illustrative image \(AI-generated\)<\/figcaption>/);
     assert.match(h, /class="product-mention"/);
     assert.match(h, /class="product-card/);
-    assert.match(h, /Shop this story/);
+    assert.match(h, /Our picks from this story/);
     assert.equal((h.match(/class="disclosure"/g) || []).length, 1, "exactly one disclosure block in an article that shows its product inline");
     // the disclosure comes before the first product mention, which comes before the card
     assert.ok(h.indexOf('class="disclosure"') < h.indexOf("product-mention"));

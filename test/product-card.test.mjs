@@ -67,3 +67,11 @@ test("check-content rejects a bad choiceOf and accepts a good one", () => {
     assert.ok(checkContentCli(dir).ok);
   } finally { cleanup(dir); }
 });
+
+test("the Start here heading shows only when a shelf has both starters and extras", () => {
+  const only = shopGroups([mk("a", { shopTier: "extras" })])[0];
+  assert.equal(only.showStartHeading, false);
+  const both = shopGroups([mk("a"), mk("b", { shopTier: "extras" })])[0];
+  assert.equal(both.showStartHeading, true);
+  assert.equal(shopGroups([mk("a")])[0].showStartHeading, false);
+});

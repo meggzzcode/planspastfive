@@ -22,7 +22,7 @@ Scores are judgement, not measurement; no conversion claim is made. C, D and E a
 
 ## How readers shop
 1. An article shows the finished result, then the supplies, with a card per product: a "Start here" or "Optional extra" label, a "Best for..." line, one reason, one honest caveat and a button reading "See It on Amazon" (it opens that product on Amazon).
-2. The end of each article has "Shop this story" (every mentioned product) and a "See the whole kit: <shelf>" button that goes to the shelf in our Shop, not to Amazon.
+2. The end of each article has "Our picks from this story" (the recommended products; alternatives are on the shelf) and a "See the whole kit: <shelf>" button that goes to the shelf in our Shop, not to Amazon.
 3. The Shop shelf lists essentials ("Start here"), then extras. Where taste matters, a product has a "choose one" block under it (label for how it differs: prettier, budget-friendly, premium, different style, mix-your-own). Alternatives are never presented as extra purchases.
 4. Each button goes to one Amazon page. No button claims to buy everything.
 

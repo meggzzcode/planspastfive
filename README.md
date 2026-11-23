@@ -4,7 +4,7 @@
 
 A small, static lifestyle magazine with a short, curated Amazon shop. Built with Astro (static output), plain CSS and no client-side JavaScript (except an optional analytics snippet). Content is edited in the browser with [Pages CMS](https://pagescms.org) and published through GitHub to Netlify.
 
-**Milestone 1 status:** the site, checks, CMS configuration, publish workflows and a local end-to-end demonstration are done. The real CMS login, a real Netlify deploy and a real GitHub Actions run have **not** been tested; they need the owner's accounts (`docs/OWNER-REAL-TEST.md`).
+**Milestone 1 status:** the site, checks, CMS configuration, publish workflows and a local end-to-end demonstration are done. A Netlify branch deploy of the `preview` branch has built, but the real CMS login, the Publish and Undo workflows (no GitHub Actions run has happened yet) and a production deploy have **not** been tested; they need the owner's accounts (`docs/OWNER-REAL-TEST.md`, `docs/cowork/BATCH-3.md`).
 
 ## Setup
 

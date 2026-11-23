@@ -72,8 +72,8 @@ const kitShelves = [...new Set([...picks.map((p) => p.collection), ...[...shownI
       {picks.length > 0 && (
         <section class="shop-story" aria-labelledby="shop-this-story">
           <p class="eyebrow">The short list</p>
-          <h2 id="shop-this-story">Shop this story</h2>
-          <p class="section-lede">Everything mentioned above, in one place, with a link to each.</p>
+          <h2 id="shop-this-story">Our picks from this story</h2>
+          <p class="section-lede">The products we recommend above, in one place, with a link to each.</p>
           {!inlineDisclosed && <Fragment set:html={disclosureHtml(settings)} />}
           <div class="pick-list">
             {picks.map((p) => <Fragment set:html={productCardHtml(p, settings, { compact: shownInline.has(p.id), ctx: { article: entry.id }, placement: "story-end", images })} />)}

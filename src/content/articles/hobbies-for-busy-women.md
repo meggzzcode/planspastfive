@@ -108,7 +108,7 @@ These take an evening or an afternoon and, mostly, a second person. They are the
 
 ### Mahjong
 
-- **Time:** 2 hours
+- **Time:** about 3 hours
 - **Company:** friends
 - **Buying commitment:** borrow a set first; buying one is an equipment investment
 - **You need:** a set (borrow one if anyone in your circle has it), a table and a beginner card or rules sheet
