@@ -41,9 +41,7 @@ Wear shoes you can slip on, skip the route and the playlist, and go once around 
 
 ### 3. A postcard to someone you miss
 
-- **Feels like:** small, a bit old-fashioned and easy to enjoy.
-- **Needs:** a card or postcard, a pen and a stamp. The stamp is the one thing you may not have, so buy a few next time you are at the post office or the grocery store.
-- **First step:** three lines. Where you saw something that made you think of them, and that you would like to see them soon. Leave it by the front door so it goes out with you tomorrow.
+Write three lines: where you saw something that made you think of them, and that you would like to see them soon. You need a card or postcard, a pen and a stamp, and the stamp is the one thing you may not have, so pick up a few next time you are at the post office or the grocery store. Leave it by the front door so it goes out with you tomorrow.
 
 ### 4. A library card
 
@@ -65,42 +63,40 @@ Decide the extras before you run the water: a paperback on a tray, a speaker pla
 
 ### 8. Dinner, slower
 
-- **Feels like:** cooking as the evening's activity, not the chore in front of it.
-- **Needs:** something you already know how to make, and a song or a radio station.
-- **First step:** choose one step to do properly that you normally rush, such as dicing the onion evenly or toasting the spices, and set the table with a real napkin. Eat sitting down.
+Cook something you already know how to make, with a song or the radio on. Choose one step to do properly that you normally rush, such as dicing the onion evenly or toasting the spices, and set the table with a real napkin. Eat sitting down.
 
 ## If you have a whole evening
 
 ### 9. A thrifting walk with a limit
 
-Choose a charity shop, a secondhand store or a flea market within walking distance and agree on a small limit before you go, ten dollars is plenty. Browse one section properly: the mugs, the books, the scarves. You are hunting for one small thing you would be glad to see every day. Going with a friend turns it into a social plan, and buying nothing counts as a good outcome.
+Choose a charity shop, a secondhand store or a flea market within walking distance and agree on a small limit before you go. Browse one section properly: the mugs, the books, the scarves. You are hunting for one small thing you would be glad to see every day. Going with a friend turns it into a social plan, and buying nothing counts as a good outcome.
 
-### 10. A walk-to dinner with a friend
+### 10. Dinner with a friend, out or in
 
-Pick a place within walking distance of one of you, book it for an early table, and agree on one course each. The point is the conversation, not the meal, and early tables are easy to leave. Suggest it while the plan is still easy: "Thursday at 6, the noodle place?"
+Either book an early table within walking distance of one of you and agree on one course each, or make a soup or stew you already cook and text "Come at 7, bring nothing". Early tables are easy to leave, and a pot on the stove lets guests eat at the counter. Send the message while the plan is still easy: "Thursday at 6?"
 
-### 11. A one-pot dinner for a friend
+### 11. Three photos on display
 
-- **Feels like:** hosting without the pressure of a dinner party.
-- **Needs:** one pot, bread, and a friend who does not mind eating at the counter.
-- **First step:** choose a soup or stew you already cook, make it the night before if the evening is short, and text "Come at 7, bring nothing". Serve it in mugs if the table is covered in post.
+Pick three photos you like, from a drawer, an old album or ones you print. Put them where you will see them every day: propped on a shelf, taped inside a cupboard door, leaned against the bathroom mirror. Choose the spot first and stop at three.
 
 ### 12. A film night with a plan
 
-Choose the film at lunch, set the phone to charge in the hallway and decide the snack in advance. Watch it from the sofa with the lights low and no second screen. If it is a sequel, a classic or something you have been meaning to see, say so out loud and it becomes an appointment.
+Choose the film at lunch, set the phone to charge in the hallway and decide the snack in advance. Watch it from the sofa with the lights low and no second screen. Make it feel like an outing: put the popcorn in a bowl and agree the start time (7:30, say) with whoever is home.
 
 ## When the commute has eaten the evening
 
-Use the 10-minute list and nothing else. Tea in the window seat, the postcard or the library card still fit, and a small thing done on purpose beats a big plan you skip. If you are home at 8, choose the call or the bath and call that a win.
+Use the 10-minute list first. Tea in the window seat, the postcard or the library card still fit, and a small thing done on purpose beats a big plan you skip. If you are home at 8, the call or the bath is a fine choice, and so is a second cup of tea.
 
 ## When kids or a partner are home
 
-Tea, the doorstep walk and the slower dinner all work as shared plans, and a walk-to dinner can include a partner or a kid if the place is relaxed. The dinner-for-a-friend idea works as a household event: everyone has a job. For solo time, agree a handover ("I take the bath, you take bedtime") and put it on the calendar like an appointment.
+Tea, the doorstep walk and the slower dinner all work as shared plans, and the dinner idea can include a partner or a kid if the place is relaxed or everyone has a job at home. For solo time, agree a handover ("I take the bath, you take bedtime") and put it on the calendar like an appointment.
 
 ## If you want something longer
 
-The twelve above are deliberately light. When an idea sticks and you want a longer project, there is more on the site. A [first junk journal spread](/journal/your-first-junk-journal-spread/) takes about 45 minutes and turns the evening's tickets and receipts into one page. A heavy-paper book matters, since thin notebooks ripple under glue, and the [supplies list](/journal/junk-journal-supplies-for-beginners/) explains the rest, with [the Junk Journal Starter Bundle](/shop/#paper) if you would like it gathered in one place. [Air-dry clay](/journal/air-dry-clay-for-beginners/) is a pinch-pot project that needs a drying night in between, for adults, decorative only, with [the Air-Dry Clay Starter Bundle](/shop/#creative) as a starting point. [Hosting a mahjong night](/journal/how-to-host-a-mahjong-night/) is the one for when you want three friends round a table, and the [hobbies guide](/journal/hobbies-for-busy-women/) sorts twelve longer-term hobbies by energy, budget and company.
+- [Your first junk journal spread](/journal/your-first-junk-journal-spread/) gives you three layouts and takes about 45 minutes; the [supplies list](/journal/junk-journal-supplies-for-beginners/) says why a heavy-paper book matters (thin notebooks ripple under glue), and [the Junk Journal Starter Bundle](/shop/#paper) gathers the basics.
+- [Air-dry clay for beginners](/journal/air-dry-clay-for-beginners/) covers three small decorative projects for adults, with a drying night in between, and [the Air-Dry Clay Starter Bundle](/shop/#creative) holds the clay and paint.
+- [How to host a mahjong night](/journal/how-to-host-a-mahjong-night/) is the plan for three friends round a table, and the [hobbies guide](/journal/hobbies-for-busy-women/) sorts twelve longer-term hobbies by energy, budget and company.
 
-## Pick one
+## Your next step
 
-Choose one plan for this week and set it out tomorrow morning. Put the phone on its charger in the hallway before you take your shoes off. The first evening may feel a little flat, so give the same plan three tries before you decide it is not for you.
+Tomorrow morning, plug the charger in by the front door and write the plan on a sticky note: "Tea, window seat." That is the whole job for tonight.

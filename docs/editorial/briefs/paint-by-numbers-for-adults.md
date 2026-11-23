@@ -1,5 +1,10 @@
 # Brief: Paint by Numbers for Adults
 
+## Revision 3 (final round, 2026-11-23)
+- Drying-time attribution now reads "one paint-by-numbers retailer's guidance"; reviewer complaints now attributed to "one retailer's reviews".
+- Cut two checklist bullets that repeated the selection section; Cozy bundle link moved up beside the two kits; opener's "decided before you open the box" replaced; closing now ends on the first action (painting the sky) with no moral; attribution to Liquitex reduced to a parenthetical. Hosting article stays unlinked (planned link only).
+- Re-score unchanged in total: 7.2 (helpfulness and consistency steady; research capped at 6 by retailer-based sources; originality 6).
+
 ## Revision 2 (what changed, 2026-11-23)
 - Title cut to 60 characters; description cut to about 135 characters.
 - Removed: "add some UV protection", the Dan Robbins/Leonardo history, the "more than 30 colours" tip, "pre-printed brush strokes" and "wet-on-wet and washes" (retailer-only claims), the "light before dark / dark first" disagreement paragraph (now: follow the kit's own order).

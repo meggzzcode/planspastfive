@@ -13,7 +13,12 @@ Article: `src/content/articles/host-a-paint-night-at-home.md` (draft, no publish
 - Closing varied (a short reflection, not an invitation).
 - Planned future link, brief only: `/journal/paint-by-numbers-for-adults/` once published, from the kit paragraph.
 
-## Research Brief
+### Round 2 edits
+- 'Waste bin you can seal' (Liquitex wording) replaces 'lidded'; 8:00 'back to the canvases' added between break and 8:30 hold-up.
+- Removed 'guides we read recommend' and cover attribution; kept essential attributions only (Liquitex, WA DOH, NIAAA). Lemons now explained as a simple subject; 'rain-check' became 'reschedule'.
+- New closing scene (the left-behind canvas). Body about 1,495 words. Planned link to `/journal/paint-by-numbers-for-adults/` stays in this brief only.
+- Re-score: 7.5/10 (consistency and appeal up a little; source base unchanged).
+
 
 **Search intent.** Informational and planning: "how to host a paint night at home", "paint and sip at home", "paint party for adults at home". Long-tail questions found in the top guides and answered here: how many people fit at a table; what supplies each person needs; how long a paint night lasts; how to protect the table; what to do if guests say they can't paint; how to keep snacks and drinks off the paint; what non-drinkers get; how to clean up; what to do with wet paintings; what to write in the invitation; what if it falls through.
 
@@ -111,4 +116,4 @@ Dates read: 2026-11-23. All pages fetched via WebFetch (a summarising fetcher re
 | Consistency | 10% | 9 | Matches the 2.5-hour label, FACTS and product records; no testing claims. |
 | SEO intent and linking | 5% | 8 | Title 60 characters with the audience in it; four internal links plus the bundle. |
 
-**Weighted total:** 1.4 + 1.6 + 1.2 + 1.2 + 0.7 + 0.9 + 0.4 = **7.4 / 10**. A 9 is not honest while the source base is mostly retailers and nothing was first-hand.
+**Weighted total:** 1.4 + 1.6 + 1.2 + 1.2 + 0.7 + 0.9 + 0.4 = 7.4; round 2 adds a little appeal, giving **7.5 / 10**. A 9 is not honest while the source base is mostly retailers and nothing was first-hand.

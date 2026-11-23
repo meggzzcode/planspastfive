@@ -25,7 +25,7 @@ Send it about a week ahead, with the date, the start time and three plain facts:
 
 > Paint night at mine, Friday at 6:30. There will be a small canvas and everything you need at your seat, and no painting skill required. Wear something you do not mind marking. I will have snacks and plenty of drinks without alcohol. If the date falls through we will move it a week, so just say so early.
 
-That last line is your rain-check plan, and it works better said up front than invented on the day. If someone cancels the night before, rain-check by a week and keep the pot lids closed.
+That last line is your reschedule plan, and it works better said up front than invented on the day. If it falls through, reschedule by a week and keep the pot lids closed.
 
 ## Decide who pays
 
@@ -39,7 +39,7 @@ A guided kit for every painter is a real step up from a shared pile, because it 
 
 ## One project or free choice
 
-Everyone paints the same guided project, or everyone paints whatever she likes. Avoid mixing them. A guided project, a numbered guide or a traceable template, gives a nervous guest a place to start. Several of the hosting guides we read recommend a template for exactly that reason. Free choice is lovely for a group that already paints, and it can leave a beginner staring at a blank canvas. If you go free, put a bowl of lemons on the table and say aloud that nothing is graded.
+Everyone paints the same guided project, or everyone paints whatever she likes. Avoid mixing them. A numbered guide or a traceable template gives a nervous guest a place to start. Free choice is lovely for a group that already paints, and it can leave a beginner staring at a blank canvas. If you go free, set out a simple object, such as a bowl of lemons, as a subject, and say aloud that nothing is graded.
 
 Whichever you pick, paint the project once beforehand, so you know where people get stuck.
 
@@ -51,7 +51,7 @@ It holds a 6 x 8 in canvas board, six acrylic paint pots, one brush, a small eas
 
 ## Set the table
 
-Cover it. An old flat sheet, a shower curtain liner, kraft paper or a plastic tablecloth will do, and most of us own one. Host guides recommend a disposable or washable cover, and a plate or two of paper towels per end of the table is plenty. Wear old shirts; keep a spare by the door.
+Cover it. An old flat sheet, a shower curtain liner, kraft paper or a plastic tablecloth will do, and most of us own one. Pick something you can fold up wet or throw away, and keep a roll of paper towels at each end of the table. Wear old shirts; keep a spare by the door.
 
 Give each person elbow room. One home-party guide fits about six easels around a 5 x 3 foot dining table, so for six friends plus you, put two tables together or add a counter. At each place, set a canvas, a cup of water, a paper towel and a paper plate for mixing, and tie a ribbon on the water cup so nobody mistakes it for a drink.
 
@@ -67,7 +67,9 @@ This pacing runs two and a half hours, the same as the "craft and paint nights" 
 
 **7:00, paint.** Start with the biggest areas and let the music and chat fill the quiet. Check in once with each guest, then leave her alone. If she says she cannot paint, tell her nothing here is graded, and that a wrong colour becomes a different picture. If someone finishes early, hand her a second canvas, or ask her to help a friend pick a color. If someone is much slower, nobody waits; the group eats at the break either way.
 
-**7:45, break.** Brushes into the water cups, everyone washes her hands, and snacks come out. Painters should wash hands before eating and keep brushes in water, not in their mouths. Liquitex gives that advice for acrylic painters.
+**7:45, break.** Brushes into the water cups, everyone washes her hands, and snacks come out. Wash before eating, and keep brushes in water, not in mouths, as Liquitex advises for acrylic painters.
+
+**8:00, back to the canvases.** Short stretches now: finish an area, step back, look. The talk gets quieter and the pictures get braver.
 
 **8:30, hold up what you have so far.** This is the reveal, and it is a half-finished one. Everyone holds her canvas up, the group says one kind thing each, and you take the photo. The first evening is a start. Canvases go home to finish.
 
@@ -83,8 +85,8 @@ Treat the non-drinkers as guests, not afterthoughts. NIAAA advice for hosts is t
 
 Five lines, in this order:
 
-1. Wipe brushes and mixing plates with a paper towel before you rinse. Liquitex says to keep paint sludge and dirty wipes out of the sink and in a lidded waste container.
-2. Rinse water: the Washington State Department of Health says not to pour hazardous art wastewater down the drain and to ask your local health department if unsure. With small kit pots there is little left, so check local rules and rinse sparingly.
+1. Wipe brushes and mixing plates with a paper towel before you rinse. Keep paint sludge and dirty wipes out of the sink and in a waste bin you can seal.
+2. Rinse water: the Washington State Department of Health advises not to pour hazardous art wastewater down the drain and to ask your local health department if unsure. With small kit pots there is little left, so check local rules and rinse sparingly.
 3. Close every pot lid firmly, so the paint is still usable when guests finish at home.
 4. Roll up the sheet with the paint side in, and wipe the table.
 5. Send wet or unfinished canvases home flat in a box or tote bag, or keep any wet one overnight and hand it over the next day. Remind guests that a kit is theirs to finish at their own pace.
@@ -102,6 +104,6 @@ Use two tables or split into two nights. A cramped table is the main thing that 
 **Can I skip the kits?**
 Yes. The night works with a shared pile of paints and a few small canvases. A kit just takes the planning off your shoulders.
 
-## One last thing
+## After the last goodbye
 
-The evening is not about the paintings. When the last guest has gone and the sheet is folded, the thing you will remember is who laughed hardest at her own green. Plan for that, and the table takes care of itself.
+Roll the sheet up with the paint side in, carry it to the porch and turn off the lamp at the far end. On the sideboard sits one small canvas nobody collected, a pond of uneven blues with a name pencilled on the back. Text its owner, "kept safe, finish it whenever," and you have your next paint night half planned.

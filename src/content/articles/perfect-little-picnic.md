@@ -12,9 +12,9 @@ related:
   - how-to-host-a-mahjong-night
 ---
 
-A good picnic is mostly decided the night before. By Friday evening the salad is in its jar, the ice packs are in the freezer and the blanket is already on top of the tote by the door. On Saturday you only have to carry it, spread it out and sit down.
+The easy picnics are the ones packed on Friday evening. By then the salad is in its jar, the ice packs are in the freezer and the blanket is already on top of the tote by the door. On Saturday you only have to carry it, spread it out and sit down.
 
-This guide is for two to four people and about two hours at the spot, which is how our [hobbies guide](/journal/hobbies-for-busy-women/) describes picnicking. That card says a blanket, a bag you can carry in one hand and food you already like are enough. This is the longer version, and it goes a little further: once you want food that stays safe for a couple of hours, a soft insulated bag joins the tote. Everything else you probably own.
+Two to four people, about two hours. This is the longer version of the picnic card in our [hobbies guide](/journal/hobbies-for-busy-women/), which says a blanket, a bag you can carry in one hand and food you already like are enough. It goes a little further: for food that stays safe for a couple of hours, a soft insulated bag joins the tote. Everything else you probably own.
 
 ## Choose the spot and the hour
 
@@ -42,7 +42,7 @@ Deviled eggs, layer cakes, ice cream and anything fragile are the usual casualti
 
 ## Keeping food safe
 
-Safety here comes down to temperature and time. The US Food and Drug Administration's guidance on eating outdoors says:
+Safety here comes down to temperature and time. From the US Food and Drug Administration's guidance on eating outdoors:
 
 - Keep cold food at 40°F or below, with ice or frozen gel packs, and fill the cooler instead of leaving it half empty.
 - Keep hot food at 140°F or above, or skip it and bring cold dishes.
@@ -50,15 +50,15 @@ Safety here comes down to temperature and time. The US Food and Drug Administrat
 - Pack drinks separately so the food bag is opened less, and serve cold dishes in small portions.
 - Wash hands for at least 20 seconds before and after handling food. With no tap, bring a water jug, soap and paper towels, or moist towelettes.
 
-Produce is best rinsed at home; the FDA says packaged greens labelled washed need no further rinse. Penn State Extension adds two habits worth stealing: pack small amounts to cut leftovers, and throw away perishable leftovers before you leave. This is general guidance for healthy adults. Ask your doctor if pregnancy, an immune condition or an allergy means different rules for you.
+Rinse produce at home; packaged greens labelled washed need no further rinse. Penn State Extension adds two habits: pack small amounts to cut leftovers, and throw away perishable leftovers before you leave. This is general guidance for healthy adults. Ask your doctor if pregnancy, an immune condition or an allergy means different rules for you.
 
 ## Borrow or buy
 
-You almost certainly own the blanket, the tote, the cutlery and the napkins. If you are missing something, three things are worth buying; everything else can be borrowed or skipped.
+You almost certainly own the blanket, the tote, the cutlery and the napkins. If you are missing something, the insulated bag and ice packs are the only things really worth buying, and a wipe-clean blanket if your grass is often damp. We do not link any yet, because we have no verified picnic products. Everything else can be borrowed or skipped.
 
 - **A soft insulated bag.** Look for one that fits a day's food for three, with a wipe-clean liner, a closure that seals and handles you can carry one-handed.
 - **Reusable ice packs.** Flat ones fit a bag better than bricks. Freeze them overnight.
-- **A wipe-clean or waterproof-backed blanket**, if your grass is often damp. It should fit three sitting and fold small. If you own a blanket, put a bin liner or a tablecloth underneath instead.
+- **A wipe-clean or waterproof-backed blanket.** It should fit three sitting and fold small. If you own a blanket, put a bin liner or a tablecloth underneath instead.
 
 ## What to bring, in one list
 
@@ -67,14 +67,11 @@ You almost certainly own the blanket, the tote, the cutlery and the napkins. If 
 - Plates or bowls, cutlery, napkins
 - Wet wipes or water, soap and paper towels
 - Two bags: one for trash, one for anything wet
-- Sunscreen, a hat and repellent
+- Sunscreen (broad-spectrum, SPF 15 or higher), a wide-brimmed hat and an EPA-registered repellent. Put sunscreen on first, repellent second; UV reaches you on cloudy days too
+- Your own water, in case the park has no tap
 - Lemon and a small knife, if the menu uses them
 
-Pack so the blanket comes out first, heavy things sit at the bottom and perishables are in the bag already cold.
-
-## Small things people forget
-
-Sweet drinks and open food attract wasps, so keep cups covered. Uneven ground tips glasses, so check the grass before you spread the blanket. The CDC advises shade, covered arms and legs, a wide-brimmed hat and a broad-spectrum sunscreen of SPF 15 or higher, and notes that UV can reach you on cloudy days. For bugs, it recommends EPA-registered repellents, such as those with DEET or picaridin; use sunscreen first, repellent second. A park without a tap is common, so bring your own water. Carry a spare bag for what you cannot finish. Of the National Park Service's seven Leave No Trace principles, three suit a picnic: learn the rules before you go, pack out all trash and leftover food, and never feed animals, which also means keeping food covered.
+Pack so the blanket comes out first, heavy things sit at the bottom and perishables are in the bag already cold. Check the grass for bumps before you spread the blanket, keep cups covered so wasps stay away, and take any trash home with you. Wildlife should never be fed.
 
 ## If it rains
 
@@ -87,9 +84,9 @@ Settle the plan when you send the invitation. Either name a backup day, as our h
 - **Morning:** assemble the sandwiches and pack the bag full and cold.
 - **4:00:** arrive, find shade, spread the blanket.
 - **4:15:** drinks, then salads.
-- **4:45:** sandwiches. Anything perishable that has sat out for 2 hours (1 hour above 90°F) goes in the bin.
+- **4:45:** sandwiches.
 - **5:30:** brownies. Start packing up before the light goes.
-- **6:00:** wipe hands, collect every wrapper and head home.
+- **6:00:** bin anything that has sat out for 2 hours (1 hour above 90°F), wipe hands, collect every wrapper and head home.
 
 ## Questions
 
@@ -97,4 +94,4 @@ Settle the plan when you send the invitation. Either name a backup day, as our h
 
 **Can I go alone?** Yes. The hobbies guide lists a picnic as a solo-with-a-book option too. Halve the menu and keep the safety rules.
 
-By six, the ice packs have gone soft, the brownie tin is empty and nobody has mentioned leaving. That is how you know it worked.
+By six, the ice packs have gone soft, the brownie tin is empty and nobody has mentioned leaving.

@@ -33,6 +33,9 @@ Status: draft, revised once 2026-11-23 after reviewers. Body about 1,350 words.
 ## Revision notes (round 1)
 What changed: new title (under 65 characters); new opening (no 'Picture it at' formula); LNT now says three of the seven principles; food safety cut to five bullets plus a sentence naming the FDA, with Penn State extras; park-rules section merged and the grill distance attributed to one city's shelter rules; menu replaced by a named 'picnic for three' with rough quantities (flagged as our estimates) and a 60-second assembly; Leave no trace and Bugs and sun headings folded into 'Small things people forget'; Borrow or buy added with no links; packing list shortened; timeline moved to a 4:00 start to match the CDC 10 to 4 UV window; mahjong link anchor now 'snack ideas' with cheese flagged perishable; clay place-card removed; close varied; one-hand bag tension stated plainly in the intro (a soft insulated bag joins the tote). 'Upset stomach' line replaced by 'safety comes down to temperature and time' because the FDA page does not state a most-common cause. Packaged greens and UV on cloudy days both verified against the FDA and CDC pages read.
 
+## Revision notes (round 2)
+Timeline: 2-hour bin step moved to the 6:00 line. Cut Leave No Trace aside and the 'Small things people forget' section; sun, repellent, water, wasps, uneven ground and take-trash-home folded into the bring list. Intro now 'Two to four people, about two hours.' Opening phrase changed. Closing is the ice-packs-gone-soft image. Borrow or buy now says plainly that the bag and ice packs are the only buys and that we link none (no verified picnic products). Attributions trimmed. Wildlife sentence is NPS-based; the wasp tip is unsourced common sense.
+
 ## Product Research Brief
 
 No verified picnic products in the catalog. The article carries picks: [] and no {{pick}} or {{product}} markers, and no Shop bundle link (none exists for picnics).
@@ -56,7 +59,7 @@ Used now (all published):
 Planned future links (not in the article): a flower arranging guide (table touch); an air-dry clay trinket could return as a link if a gift idea fits naturally; a "host your first brunch" or "easy entertaining" piece; a cozy-reading or solo day-out piece for the "alone with a book" variant; a Weekend Edit hub page. No Shop bundle fits; do not link one.
 
 ## Fact-Consistency Notes
-- Picnic time labelled 2 hours, company "a friend, or alone with a book", free if you have a blanket, backup evening: kept consistent. Article extends to 2 to 4 people; the timeline runs about 3:00 to 5:15 (2.25 hours), consistent with "2 hours". Prep time is not counted in that figure.
+- Picnic time labelled 2 hours, company "a friend, or alone with a book", free if you have a blanket, backup evening: kept consistent. Article extends to 2 to 4 people; the timeline runs 4:00 to 6:00 (2 hours), consistent with "2 hours". Prep time is not counted in that figure.
 - Hobbies guide says "a bag you can carry in one hand"; the article mentions a cooler bag, a tote and a cooler. A full cooler may not be one-hand portable. Minor tension; the article says a tote and cooler do the job. Editor may wish to align.
 - Air-dry clay: article states decorative only, not a plate. Consistent with FACTS.md. It does not repeat the Crayola or Mont Marte figures.
 - No prices, no testing claims, no health promises (food safety stated as general guidance with a note about pregnancy, immune conditions and allergies).
@@ -95,4 +98,4 @@ Not fetched successfully (403/404): FDA tips-for-safe-picnics URL, USDA FSIS pag
 - Consistency (10%): 9. One-hand bag tension now stated openly, 2-hour length matches, no clay contradiction, cheese perishability handled.
 - SEO intent and linking (5%): 8. Title in range, natural anchors, two published links.
 
-Weighted total: 0.20x8 + 0.20x9 + 0.20x8 + 0.15x9 + 0.10x7 + 0.10x9 + 0.05x8 = 1.6 + 1.8 + 1.6 + 1.35 + 0.7 + 0.9 + 0.4 = 8.35 out of 10. I will not claim 9: sources are thin on USDA and park rules, and the menu is unsourced editorial.
+Round 2 comment: scores stand; round 2 fixes accuracy (timeline) and tightens, not a new level of originality. Weighted total: 0.20x8 + 0.20x9 + 0.20x8 + 0.15x9 + 0.10x7 + 0.10x9 + 0.05x8 = 1.6 + 1.8 + 1.6 + 1.35 + 0.7 + 0.9 + 0.4 = 8.35 out of 10. I will not claim 9: sources are thin on USDA and park rules, and the menu is unsourced editorial.

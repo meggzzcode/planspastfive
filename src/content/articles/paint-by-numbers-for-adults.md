@@ -17,7 +17,7 @@ related:
 
 "Wait, you painted that?" The small canvas on the bookshelf has soft blue water and a few pink lilies, and it leans against a row of paperbacks as if it had always lived there. You made it over a few evenings, one number at a time, and nobody needs to know how much of the drawing was done for you.
 
-Whether you get that painting or a half-finished canvas in a drawer is mostly decided before you open the box. Here is how to choose.
+Whether you end up with that painting or a half-finished canvas in a drawer often comes down to the kit you pick on day one. Here is how to pick well.
 
 ## What you are buying
 
@@ -27,7 +27,7 @@ A paint-by-numbers kit gives you a picture already divided into small numbered a
 
 Start with the picture, because you will look at it for years. Choose a scene you would hang if it arrived framed, in colours that suit the room it will live in.
 
-Then look at **how fine the numbered areas are**. The most common complaints about kits are tiny sections, numbers that are hard to read (one reviewer said the 30s look like 20s) and neighbouring areas that share a number. After a day at work, fewer, larger areas are kinder to your eyes, and a simpler kit is far more likely to be finished. If you like detail, a magnifying glass helps, and a toothpick tip will dot a very small area.
+Then look at **how fine the numbered areas are**. Complaints in one retailer's reviews included tiny sections, numbers that are hard to read (one reviewer said the 30s look like 20s) and neighbouring areas that share a number. After a day at work, fewer, larger areas are kinder to your eyes, and a simpler kit is far more likely to be finished. If you like detail, a magnifying glass helps, and a toothpick tip will dot a very small area.
 
 **Canvas size** is a trade. Bigger means a more impressive painting and more evenings at the table; smaller means a quicker finish. Canvas on a board or a pre-stretched frame lies flat, while a rolled canvas needs flattening before you start.
 
@@ -37,7 +37,7 @@ Then look at **how fine the numbered areas are**. The most common complaints abo
 
 ## Two kits for the list
 
-Both are acrylic and both come with their own way to display the result. They suit different moods and different amounts of time.
+Both are acrylic and both come with their own way to display the result. They suit different moods and different amounts of time. [The Cozy Paint Night Bundle](/shop/#cozy) gathers the paint-by-numbers kits we have picked; it is a curated set of separately sold products, not a boxed set.
 
 {{pick:faber-castell-monet-water-lilies-paint-by-numbers}}
 
@@ -46,8 +46,6 @@ This is the small, soft one: a 6 x 8 in canvas board, six paints, one brush and 
 {{pick:jooz-paint-by-numbers-landscape-frame-8x12}}
 
 This is the larger alternative: an 8 x 12 in canvas in a wooden frame, with a tabletop easel and three brushes, in a mountain landscape. Choose it if you want something you can hang right away and you are happy to give it more evenings. One thing to check on the listing: the title says oil, but the description says acrylic, and we treat it as acrylic.
-
-[The Cozy Paint Night Bundle](/shop/#cozy) gathers the paint-by-numbers kits we have picked. It is a curated set of separately sold products, not a boxed set.
 
 ## A first evening, start to finish
 
@@ -59,7 +57,7 @@ Stop at a natural pause, such as the end of a colour, rather than when your eyes
 
 ## How long it takes
 
-It varies, and any single number would be a guess. Time depends on canvas size, how many colours there are, how small the areas are and how long you wait between coats. One kit maker's guidance is that a thin layer is touch-dry in about 10 to 20 minutes, with at least an hour before a second coat or painting up against a fresh edge. Plan on a few evenings for a small kit.
+It varies, and any single number would be a guess. Time depends on canvas size, how many colours there are, how small the areas are and how long you wait between coats. One paint-by-numbers retailer's guidance is that a thin layer is touch-dry in about 10 to 20 minutes, with at least an hour before a second coat or painting up against a fresh edge. Plan on a few evenings for a small kit.
 
 ## Mistakes that are easy to avoid
 
@@ -67,13 +65,11 @@ A loaded brush is the usual culprit: paint that is too wet bleeds into the next 
 
 ## Before you click buy
 
-- **Is the picture one you would hang?** If you are lukewarm now, you will be lukewarm at hour six.
-- **Are the numbered areas big enough to read?** Tiny sections and look-alike numbers are where kits disappoint most.
 - **Does it include a way to display it?** An easel, frame or hang tab means no extra shopping.
 - **Is the canvas size the canvas, not the box?** Some listings give packaging dimensions instead.
 - **Is the paint acrylic and premixed?** Read past the title, since titles and descriptions can disagree.
 - **Are there enough colours but not too many?** Fewer colours are kinder to a first kit.
-- **Skip the extras.** Use the brushes in the box first and buy a finer one only if the areas are too small. Skip varnish for now. It is optional, and Liquitex says it evens the sheen and keeps dust from sticking, but the paint must be fully dry first, which can take up to two weeks.
+- **Skip the extras.** Use the brushes in the box first and buy a finer one only if the areas are too small. Skip varnish for now. It is optional, and it evens the sheen and keeps dust from sticking, but the paint must be fully dry first, which can take up to two weeks (Liquitex).
 
 ## Finishing and displaying
 
@@ -89,4 +85,4 @@ Step back a couple of feet and look. Touch up any missed spots and tidy rough ed
 
 ## Your next step
 
-Choose the picture first, then the size, and order one kit. When it arrives, photograph the numbered canvas, open the first pot and paint the first colour. Three weeks from now, the little painting is leaning on the bookshelf, and a friend is asking where you found it.
+Choose the picture first, then the size, and order one kit. When it arrives, photograph the numbered canvas, open the first pot and paint the sky, one small blue patch at a time, with the lamp on and the lid of the pot pressed shut beside you.

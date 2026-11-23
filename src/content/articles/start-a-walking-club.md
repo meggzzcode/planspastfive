@@ -19,7 +19,7 @@ This guide is for the person who sends it. It covers starting tiny, finding firs
 
 ## Why a walking club helps you meet people
 
-By the third walk you know Dee's commute and her opinion of the café's scones, and not much else. That in-between stage is where most adult friendships sit for a long while, and it is a time problem more than a personality problem.
+By the third walk you know Dee's commute and her opinion of the café's scones, and not much else. That in-between stage can last a while, and it can feel like a time problem more than a personality problem.
 
 University of Kansas researcher Jeffrey Hall put numbers on it in 2018, surveying 355 adults who had recently moved and 112 first-year students. His combined estimates were roughly 40 to 60 hours together to go from acquaintance to casual friend, 80 to 100 to become a friend, and over 200 for a close friend. Time spent hanging out counted; time spent working together counted far less. These are self-reported averages, and the study was not about walking. Our arithmetic: a 45-minute walk plus coffee is about 90 minutes, and meeting most weeks gives roughly 70 hours a year. A club cannot promise friendship. It gives people a reason to keep turning up.
 
@@ -63,7 +63,7 @@ People decide before they arrive whether they will fit, so put the details in th
 
 ## Safety basics
 
-None of this is medical advice. Walk a distance that is comfortable for you, and ask your own clinician if you are unsure about activity.
+Walk a distance that is comfortable for you, and ask your own clinician if you are unsure about activity.
 
 - **Daylight.** Check sunset and finish before it. Park Service guidance advises setting a turnaround time and allowing for the return.
 - **Tell someone.** Text a friend who is not coming the route, the start time and when you expect to be back.
@@ -85,7 +85,6 @@ An imagined stretch of conversation, to show the register:
 
 > "Is this your regular route?" "It is now. I used to just go straight home." "What do you do when it rains?" "Honestly, nothing. Maybe that's the point of this."
 
-Small, a little funny, no pressure. That is the level to aim for.
 
 ### An invitation you can copy
 

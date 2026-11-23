@@ -76,6 +76,17 @@ Eight sources read in full. Library sources are all US municipal or state system
 - Closing rewritten without the kettle line and the "sitting still counts" line. Opening starts with a scene but not "Picture it".
 - Word count about 1,350 (body, including markup).
 
+## Round 2 changes
+
+- Commute advice now consistent ("10-minute list first"; call or bath or a second cup of tea if home at 8).
+- Removed the "ten dollars" amount from the thrifting item (no-prices rule).
+- Dropped the Feels like / Needs / First step card from all items; every item is now a short paragraph with a varied rhythm.
+- Merged the walk-to dinner and one-pot dinner into one item; new item 11 is "three photos on display".
+- Film night: concrete start time and bowl of popcorn instead of "appointment".
+- Closing "longer" paragraph replaced by three short link lines saying what each guide gives; still two shop links.
+- Ending is now a specific next action (charger by the door, sticky note).
+- Body about 1,250 words.
+
 ## Open uncertainties
 
 - NPR phone-habit pages could not be fetched (503); not cited.
@@ -87,16 +98,16 @@ Eight sources read in full. Library sources are all US municipal or state system
 
 ## Self-Review
 
-Hard marks after revision.
+Hard marks after round 2.
 
 | Criterion | Weight | Score | Justification |
 |---|---|---|---|
-| Reader appeal | 20% | 8 | Fresher ideas, social options and the commute and household sections answer real situations; voice is still a little restrained. |
-| Practical helpfulness | 20% | 8 | Concrete first steps and limits; film night and shelf cards are thin. |
-| Research accuracy and source quality | 20% | 7 | Few claims, all traceable (Common Sense, Boston); no research hedging needed; library claim is US-centered. |
-| Product fit | 15% | 8 | No cards, two incidental bundle links, truthful; fine for an inspiration piece. |
-| Originality | 10% | 8 | Time-sorted plans with ideas not found elsewhere on the site; format is still the discovery template. |
-| Consistency | 10% | 9 | Matches FACTS and published guides; no conflicts. |
-| SEO intent and linking | 5% | 7 | Title and intent covered, five internal links used; planned links not live. |
+| Reader appeal | 20% | 8 | Distinct ideas and social options, tighter prose; voice is still plain and a few cards (shelf, bath) are generic. |
+| Practical helpfulness | 20% | 8 | Concrete first moves and a clear next step; the Feels like / Needs structure is gone, so needs are less scannable. |
+| Research accuracy and source quality | 20% | 7 | Two traceable claims (Common Sense Media, Boston eCard); library evidence is US-centered. |
+| Product fit | 15% | 8 | Two incidental, truthful bundle links; no cards, as intended. |
+| Originality | 10% | 8 | Time-sorted plans differ from the hobbies guide; format is the standard discovery shape. |
+| Consistency | 10% | 9 | Matches FACTS and the commute fix removes the earlier contradiction. |
+| SEO intent and linking | 5% | 7 | Covers the intent with five published links; planned links are brief-only. |
 
 Weighted total: 1.6 + 1.6 + 1.4 + 1.2 + 0.8 + 0.9 + 0.35 = **7.85 / 10**

@@ -47,7 +47,7 @@ These need a surface the size of a tray and about 45 minutes. None of them asks 
 - **Time:** 45 minutes
 - **Company:** solo
 - **Buying commitment:** free if you already have the basics; a small supply purchase if not
-- **You need:** an old notebook, a glue stick and a drawer of paper scraps
+- **You need:** a sturdy book that can take glue (a thin notebook will ripple), a glue stick or dry adhesive and a drawer of paper scraps
 - **First step:** empty your bag and wallet, pick three bits from this week (a ticket, a receipt, a coffee sleeve) and make one page. It will look chaotic. That is the format. Our [first junk journal spread guide](/journal/your-first-junk-journal-spread/) has three layouts to copy, and the [supplies guide](/journal/junk-journal-supplies-for-beginners/) lists what to buy, with everything together on [the Junk Journal Starter Bundle](/shop/#paper).
 
 ### Embroidery
