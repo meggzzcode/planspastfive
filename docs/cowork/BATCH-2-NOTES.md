@@ -1,6 +1,6 @@
 # Batch 2 notes (read 2026-11-23, read-only)
 
-Link Checker was run on `https://www.amazon.com/dp/<ASIN>?tag=planspastfive-20` for all 28 ASINs in the CSV; all returned "Success: The link tags to a valid tag or sub-tag for your Associate ID." The result text was read 4 seconds after each click (one panel screenshot kept: `batch2-B09XWJV6T5-link-checker.png`). It only checks tag format, not commission eligibility. Not run on B00251LX1C (mentioned as an alternative only). No prices, ratings or review counts recorded. Image descriptions quoted as "AI image descriptions" are Amazon's own auto-generated alt text, not seller text.
+Link Checker was run on `https://www.amazon.com/dp/<ASIN>?tag=planspastfive-20` for all 27 ASINs in the CSV; all returned "Success: The link tags to a valid tag or sub-tag for your Associate ID." The result text was read 4 seconds after each click (one panel screenshot kept: `batch2-B09XWJV6T5-link-checker.png`). It only checks tag format, not commission eligibility. Not run on B00251LX1C (mentioned as an alternative only). No prices, ratings or review counts recorded. Image descriptions quoted as "AI image descriptions" are Amazon's own auto-generated alt text, not seller text.
 
 ## Not READY / needs a decision first
 - **Strathmore tan B0767X3D34 (HOLD):** no "In Stock" line; "FREE delivery December 12 - 23 for Prime members". Sold by Amazon.com, Add to Cart present.
