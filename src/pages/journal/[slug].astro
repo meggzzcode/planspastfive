@@ -5,6 +5,7 @@ import ArticleCard from "../../components/ArticleCard.astro";
 import { settings, images, recordFor, abs, fmtDate, isoDate, readMinutes } from "../../lib/site.mjs";
 import { resolveProduct, imageUrl, categorySlug } from "../../lib/catalog.mjs";
 import { productCardHtml, disclosureHtml } from "../../lib/render-product.mjs";
+import { COLLECTIONS } from "../../lib/schemas.mjs";
 
 export async function getStaticPaths() {
   const all = await getCollection("articles");
@@ -47,6 +48,7 @@ const jsonLd = [{
   publisher: { "@type": "Organization", name: settings.siteName },
   mainEntityOfPage: url,
 }];
+const kitShelves = [...new Set([...picks.map((p) => p.collection), ...[...shownInline].map((id) => byId.get(id)?.collection)])].filter((id) => COLLECTIONS[id]).map((id) => [id, COLLECTIONS[id]]);
 ---
 <Base title={d.title} description={d.description} path={`/journal/${entry.id}/`} image={heroSrc} type="article" jsonLd={jsonLd}>
   <article class="article">
@@ -76,6 +78,12 @@ const jsonLd = [{
           <div class="pick-list">
             {picks.map((p) => <Fragment set:html={productCardHtml(p, settings, { compact: shownInline.has(p.id), ctx: { article: entry.id }, placement: "story-end", images })} />)}
           </div>
+        </section>
+      )}
+
+      {kitShelves.length > 0 && (
+        <section class="shop-story shop-story--kit" aria-label="Shop the kit">
+          <p class="shop-story__kit">{kitShelves.map(([id, c], i) => <>{i > 0 && " "}<a class="button button--ghost" href={`/shop/#${id}`}>See the whole kit: {c.name}</a></>)}</p>
         </section>
       )}
 
