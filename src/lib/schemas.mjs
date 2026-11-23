@@ -5,7 +5,7 @@ import { z } from "astro/zod";
 export const COLLECTIONS = {
   paper: { name: "Junk Journal Starter Bundle", plain: "Beautiful journal pages without a drawer full of supplies", own: "tape and scissors", image: "junk-journal-spread-leaves-collage", extras: "Optional extras" },
   creative: { name: "Air-Dry Clay Starter Bundle", plain: "Little handmade dishes and a pretty palette to paint them", own: "a rolling pin or bottle, a butter knife, a toothpick and a damp cloth", image: "clay-three-projects-hero", extras: "Nice to have" },
-  cozy: { name: "Cozy Paint Night Bundle", plain: "A finished little painting in one slow evening", image: "cozy-corner", extras: "Nice to have" },
+  cozy: { name: "Cozy Paint Night Bundle", plain: "A finished little painting in one slow evening", image: "cozy-paint-evening", extras: "Nice to have" },
   hosting: { name: "Host Your First Mahjong Night", plain: "A set and a card for a first American mahjong night", image: "american-mahjong-table-tiles-and-racks", extras: "Nice to have" },
   sporty: { name: "The Sporty Edit", plain: "Moving a little more" },
   "little-adventures": { name: "The Little Adventures Edit", plain: "Days out and small trips" },
