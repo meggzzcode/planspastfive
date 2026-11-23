@@ -9,16 +9,15 @@ featured: false
 picks: []
 related:
   - hobbies-for-busy-women
-  - how-to-host-a-mahjong-night
 ---
 
 The hardest part of a walking club is a text message. It is four lines long, you have rewritten it three times, and your thumb is over the send button while a small voice asks what happens if everyone says no.
 
 This guide is for the person who sends it, and no purchase is needed. Shoes you already own, a phone and a water bottle are the kit.
 
-## Why it takes a few months of Thursdays
+## Why it takes a long run of Thursdays
 
-By the third walk you know Dee's commute and her opinion of the café's scones, and not much else. That in-between stage can last a while, and what moves it along is repeated time together.
+By the third walk you know Dee's commute and her opinion of the café's scones, and not much else. That in-between stage lasts longer than a month, and what moves it along is repeated time together.
 
 University of Kansas researcher Jeffrey Hall estimated in 2018, from surveys of recent movers and first-year students, that it takes roughly 40 to 60 hours together to go from acquaintance to casual friend, 80 to 100 to become a friend, and over 200 for a close friend. Hanging-out time counted; working together counted far less. These are self-reported averages, and the study was not about walking. A club cannot promise friendship. What it provides is a standing slot that puts the same people in the same place week after week.
 
@@ -122,7 +121,7 @@ Expect attendance to dip, and keep the day fixed. The OHSU toolkit warns that pr
 
 **Winter.** Move to a lunch hour or a weekend morning, walk an indoor loop, or keep the coffee and skip the walk.
 
-**A second activity.** Once the group is easy with each other, add something indoors, such as a [mahjong night](/journal/how-to-host-a-mahjong-night/).
+**A second activity.** Once the group is easy with each other, add something indoors, such as a dinner at someone's place or a craft evening.
 
 ## Start with one date
 

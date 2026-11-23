@@ -39,7 +39,7 @@ On material, the maker Kokuyo Camlin describes canvas boards as rigid, light and
 
 ## Two kits, worked through the scorecard
 
-Both are acrylic and both include a way to display the result. We read the listings and product records and have not painted them.
+Both are acrylic and both include a way to display the result.
 
 {{pick:faber-castell-monet-water-lilies-paint-by-numbers}}
 
@@ -47,7 +47,7 @@ On the scorecard, it is small and tidy: a 6 x 8 in canvas board, six 5 ml acryli
 
 {{pick:jooz-paint-by-numbers-landscape-frame-8x12}}
 
-This is the larger alternative: an 8 x 12 in cotton canvas in a wooden frame, with an adjustable wooden easel, three brushes, acrylic paints and a reference picture, in a mountain landscape. The listing does not show a paint count or pot size, so ask. And its title says oil while its description says acrylic. We treat it as acrylic, so read the listing before buying.
+This is the larger alternative: an 8 x 12 in cotton canvas in a wooden frame, with an adjustable wooden easel, three brushes, acrylic paints and a reference picture, in a mountain landscape. The listing does not show a paint count or pot size, so check the questions above before you order. And its title says oil while its description says acrylic. We treat it as acrylic, so read the listing before buying.
 
 | | Faber-Castell Monet | JOOZ landscape |
 |---|---|---|
@@ -80,7 +80,7 @@ Skip extra brushes at first, and skip varnish. Varnish is optional. Liquitex say
 
 ## Finishing and displaying
 
-Before you display it, let the painting dry completely and check for any missed spots. Then choose the spot with care. The Canadian Conservation Institute advises never letting direct sunlight fall on a painting, since daylight is highly damaging and light damage cannot be reversed, and keeping paintings away from windows, radiators and heating vents, from busy hallways and from spots where drinks might splash. The advice is for paintings in general, but a bookshelf out of the sun is a good home for yours.
+Let the painting dry completely and check for missed spots before it goes up, then choose the spot with care. The Canadian Conservation Institute advises never letting direct sunlight fall on a painting, since daylight is highly damaging and light damage cannot be reversed, and keeping paintings away from windows, radiators and heating vents, from busy hallways and from spots where drinks might splash. The advice is for paintings in general, but a bookshelf out of the sun is a good home for yours.
 
 ## Quick questions
 

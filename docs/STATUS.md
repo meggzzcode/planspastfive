@@ -65,15 +65,17 @@ The Shop's main section is **Ready-to-Start Bundles**: our curated collections o
 - Still owner-gated: Part D (real CMS and release-queue test, costs credits), Part G (launch), Bundle Lists steps 9 to 11 (not needed now, since the decision is not to use Lists).
 
 ## Articles in progress: batch 1 (2026-11-23; all `status: draft`, not built, not queued, no heroes)
-Written by one dedicated agent each, then reviewed twice by independent fact, editorial and SEO reviewers and revised twice. Briefs, sources and logs: `docs/editorial/briefs/`. Shared facts: `docs/editorial/FACTS.md`.
-| Draft | Words | Last independent verdict | Still needed before release |
-|---|---|---|---|
-| `start-a-walking-club` | about 1,570 | Editorial 9s (publish-ready), facts READY | Hero image; owner approval |
-| `perfect-little-picnic` | about 1,265 | Facts READY; editorial light revisions, since applied | Hero; owner approval; Cowork checks for the insulated bag, ice packs, blanket |
-| `host-a-paint-night-at-home` | about 1,490 | Facts fix-first items since applied; editorial light revisions, since applied | Hero; owner approval; link to the paint-by-numbers guide when both publish together |
-| `things-to-do-after-work-instead-of-scrolling` | about 1,250 | Contradiction fixed; editorial revisions applied | Hero; owner approval; link-backs |
-| `paint-by-numbers-for-adults` | about 1,330 | Attribution fixes applied | Hero; owner approval; Cowork claim checks and a possible third kit |
-The writers' own honest scores are 7.15 to 8.35 out of 10 (the 9 target is not met by self-scoring); the independent editorial re-review rated the walking club 9 and the others 6 to 8 before the last edits, which have not had a third full review. Treat only the walking club as near-ready; everything needs a hero image and the owner's approval. Sources are mostly retailers and public agencies; nothing was tested first-hand and none is claimed.
+Each written by a dedicated agent, then reviewed and revised four times against independent fact, editorial, SEO and weighted-score reviews. Briefs, sources, change logs: `docs/editorial/briefs/`. Shared facts: `docs/editorial/FACTS.md`.
+**None has reached the owner's bar of a true 9.** Independent weighted totals, latest round (two scorers; lower first): paint by numbers 7.5 to 7.65, picnic 6.9 to 7.5, walking club 7.4 to 8.1, paint night 7.3 to 8.0, after-work 7.0 to 7.55. Their own honest self-scores are 7.95 to 8.4.
+| Draft | Words | What is still holding it back |
+|---|---|---|
+| `start-a-walking-club` | about 1,590 | Closest. No commercial angle (product fit); heroes; owner read |
+| `host-a-paint-night-at-home` | about 1,520 | Moderate originality (structure resembles the mahjong guide); only one product; hero |
+| `paint-by-numbers-for-adults` | about 1,500 | Reads like a reference sheet in the middle; only two kits; sources mostly retailer pages |
+| `perfect-little-picnic` | about 1,490 | Product section waits on Cowork batch 6 (pretty picnic pieces; the insulated bag is approved in principle); hero |
+| `things-to-do-after-work-instead-of-scrolling` | about 1,320 | Thinnest research; partly re-sorts the hobbies guide; hero |
+Set-level notes from the scorers: do not publish paint night and the mahjong guide in the same month; four drafts end on the same "one small next action" move and use a Quick-questions block (vary when revising); cross-link chains were trimmed.
+What would close the gap, honestly: real products that suit this audience (Cowork batch 6), a product or bundle angle for the walking club, stronger non-retailer sources for the after-work and paint-by-numbers drafts, hero images, and the owner's own read. No first-hand testing may be claimed, which caps the originality score.
 
 ## Blocking launch (owner-gated)
 1. Real Pages CMS and Netlify test (`docs/OWNER-REAL-TEST.md`), best after 2026-12-16 because of Netlify credits.

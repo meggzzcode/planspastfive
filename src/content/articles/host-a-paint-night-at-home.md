@@ -13,7 +13,7 @@ related:
   - hobbies-for-busy-women
 ---
 
-Every paint night has one moment. Around 7:15, someone leans back from her canvas and says, "I did warn you, I cannot paint." Then she looks again, and the blue she just laid down is rather good, and she stops apologising. A host cannot make that happen, but she can set the evening up so it has room to.
+Somewhere around 7:15, someone leans back from her canvas and says, "I did warn you, I cannot paint." Then she looks again, and the blue she just laid down is rather good, and she stops apologising. A host cannot make that happen, but she can set the evening up so it has room to.
 
 This guide is for two to six friends around one table, nobody expected to have held a brush since school. The order is the order you will do things: invite, settle who pays, set the table, run the evening, send everyone home.
 
@@ -23,13 +23,13 @@ Etiquette guidance from the Emily Post Institute says an invitation should carry
 
 > Paint night at mine, Friday at 6:30. There will be a small canvas, paints and brushes at your seat, and no painting skill required. My treat, so just bring yourself. Wear something you do not mind marking. I will have snacks and plenty of drinks without alcohol. If the date falls through we will move it a week, so tell me early.
 
-That last line is your reschedule plan, and it works better said up front than invented on the day. If it falls through, we will move it a week.
+That last line is your reschedule plan, and it works better said up front than invented on the day.
 
 ## Decide who pays, and count honestly
 
 Guests should not meet a surprise bill. Pick one of these before you send the invitation:
 
-- **You cover it**, the way you would a dinner. The sample invitation below assumes this.
+- **You cover it**, the way you would a dinner. The sample invitation above assumes this.
 - **Everyone chips in** for her own kit. Then change the invitation's "my treat" line to "kits are shared out at cost, I will send the amount."
 - **A shared pile.** Each guest brings a canvas or paints she already owns, and you supply brushes and water. This is the cheapest route, and it suits friends who already paint a little.
 
@@ -57,7 +57,7 @@ It holds a 6 x 8 in canvas board, six 5 ml acrylic pots, one brush, a small ease
 
 ## Set the table
 
-Cover it with something you can fold up wet or throw away: an old flat sheet, a shower curtain liner, kraft paper. Ask guests to wear old shirts, and keep a spare by the door. At each place put a canvas, a cup of water, a paper towel and a paper plate for mixing. Tie a ribbon on the water cup so nobody mistakes it for a drink.
+Cover it with something you can fold up wet or throw away: an old flat sheet, a shower curtain liner, kraft paper. Ask guests to wear old shirts, and keep a spare by the door. At each place put a kit, a cup of water and a paper towel. Tie a ribbon on the water cup so nobody mistakes it for a drink. Nothing else is needed, but cloth napkins, a bunch of grocery-store flowers in a jar and a lamp at each end make the table look like an occasion.
 
 Light helps more than you would expect. Use a window while it is bright, then lamps at both ends, not one overhead bulb that throws every hand into shadow. Keep any candle far from sheets and paper. Make a playlist beforehand, low enough to talk over, and skip anything with lyrics that pulls people out of a sentence. Seat the most nervous guest beside the friend who will cheer her on.
 

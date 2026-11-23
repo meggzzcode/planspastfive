@@ -14,7 +14,7 @@ related:
 
 The easy picnics are the ones packed on Friday evening. By then the salad is in its jar, something cold is waiting in the freezer and the blanket is already on top of the tote by the door. On Saturday you only have to carry it, spread it out and sit down.
 
-This guide plans one for two to four people and about two hours at the spot. Nothing here needs special equipment, and the last section is for the pretty extras that make it feel like an occasion.
+This guide plans one for two to four people and about two hours at the spot. Nothing here needs special equipment, and a later section is for the pretty extras that make it feel like an occasion.
 
 ## Choose the spot and the hour
 
@@ -26,7 +26,7 @@ For timing, the CDC says ultraviolet rays are strongest between 10 a.m. and 4 p.
 
 ## A picnic for three
 
-Picnic guides agree on the rules: sturdy dishes that hold at cool or room temperature, easy to eat by hand, nothing that goes soggy on the way. This menu follows them. The table gives amounts per person: for two, make two portions, and for four, four. The jars scale up and down without fuss.
+Choose dishes that hold at cool or room temperature, eat easily by hand and do not go soggy on the way. This menu follows those rules. The table gives amounts per person: for two, make two portions, and for four, four. The jars scale up and down without fuss.
 
 | Dish | Why it travels | Per person | Goes in the bag | Safe-time note |
 |---|---|---|---|---|
@@ -56,17 +56,15 @@ Throw away perishable leftovers before you leave. This is general guidance for h
 
 ## Make it feel like an occasion
 
-Nothing here is required. A blanket you own and food you like make a perfectly good picnic. If you would like it to feel like an occasion, or you want a gift for a friend who hosts, these are the extras a woman tends to love owning. We have not verified specific listings yet, so here is what to look for:
+Nothing here is required. A blanket you own and food you like make a perfectly good picnic. If you would like it to feel like an occasion, or you want a gift for a friend who hosts, these are the pieces that make a blanket look set, and what to look for in each:
 
 - **A soft insulated picnic tote or backpack.** The practical piece that looks good too. Look for a size that fits your group (smaller for two, a roomier tote for four), a wipe-clean liner, a main zip that closes fully and a shoulder strap. A freezer-flat pack or a frozen water bottle you already own keeps the food cold, so there is nothing else to buy.
 - **A lidded willow basket set with real plates and cutlery for two.** Look for plates that are sturdy enough to carry, cutlery that clips or sits in its own pocket, and a lid that closes properly.
 - **A blanket in gingham, linen-look or florals, with a waterproof backing.** It should fold into a strap, and be machine-washable only if the listing says so.
 - **A travel cheese board with knives.** One that carries in a bag or inside its own lid is the easiest.
 - **Shatterproof stemless tumblers or glasses that do not look like plastic.** Check the park allows glass; if not, these are the answer.
-- **Enamel or vintage-look plates and mugs**, for a table that looks set.
-- **A lidded glass jar or weighted bud vase** for a few flowers from the grocery store, so the blanket has a centre.
 
-One of these is plenty. Borrow the rest.
+Pick the piece that excites you most, and let the rest wait.
 
 ## What to bring, in one list
 
@@ -92,7 +90,7 @@ One of these is plenty. Borrow the rest.
 
 - **Two days before:** check the parks page, text your friends the date and the rain plan, bake the brownies.
 - **The night before:** make the salads and lemonade, freeze whatever keeps the food cold, wipe out the cooler or bag.
-- **Morning:** assemble the sandwiches and pack the bag full and cold.
+- **Morning:** slice the cucumber, make the sandwiches last, and pack the bag full and cold.
 - **4:00:** arrive, find shade, spread the blanket.
 - **4:15:** drinks, then salads.
 - **4:45:** sandwiches.

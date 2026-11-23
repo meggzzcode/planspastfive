@@ -29,7 +29,7 @@ Most lists of alternatives are lists of hobbies, and a hobby asks for a decision
 The phone wins because it is already in your hand. Beat it by making the better option just as close.
 
 - **Put the phone out of reach before you sit.** Charge it in the hallway, not on the sofa arm. For bedtime, the NHS advises trying not to use phones, tablets or computers for an hour before bed.
-- **Write an if-then plan.** "If I am home by 6, then I make tea and sit in the window seat." A US National Cancer Institute reference page on if-then plans says they spell out when, where and how, and that vague plans offer little benefit.
+- **Write an if-then plan.** "If I am home by 6, then I make tea and sit in the window seat." A US National Cancer Institute reference page on if-then plans (the page is archived) says they spell out when, where and how, and that vague plans offer little benefit.
 - **Set it out and keep a default.** A mug on the counter, a card on the cushion, one plan you fall back on whenever you cannot choose.
 
 ## If you have 10 minutes
@@ -48,7 +48,7 @@ The phone wins because it is already in your hand. Beat it by making the better 
 
 **6. A call with a time on it.** Text in the morning: "Can I call you at 6:30? Twenty minutes, tops." A set time and a set length make it easy to say yes and easy to end. Fold laundry or stir a pan while you talk.
 
-**7. A library hour.** Go in with no list. Most libraries ask adults for a photo ID with a local address for a card, so check your library's website first. Browse one shelf you never visit, pick one book, and sit in one chair for twenty minutes before you leave. Ask at the desk whether your card also opens ebooks, which means the next book needs no trip.
+**7. A library hour.** Go in with no list. Library card rules vary, so check your library's website first. Browse one shelf you never visit, pick one book, and sit in one chair for twenty minutes before you leave. Ask at the desk whether your card also opens ebooks, which means the next book needs no trip.
 
 **8. Dinner, slower.** Cook something you already know with a song on, and pick one step to do properly that you normally rush, such as dicing the onion evenly. Set the table with a real napkin and eat sitting down. Only the kitchen and the phone? Put the phone in the cupboard and the radio on.
 
