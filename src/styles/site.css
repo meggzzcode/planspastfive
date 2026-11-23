@@ -307,3 +307,5 @@ ul.plain { list-style: none; padding: 0; margin: 0; }
 .energy-guide p { margin: 0; }
 .energy-guide__label { font-family: var(--serif); font-size: 1.15rem; font-weight: 600; color: var(--cherry); margin-bottom: 0.2rem !important; }
 @media (min-width: 760px) { .energy-guide { grid-template-columns: repeat(3, 1fr); } }
+
+.product-card__best { font-size: 0.85rem; font-weight: 700; color: var(--cherry); margin: 0.1rem 0 0.4rem; }

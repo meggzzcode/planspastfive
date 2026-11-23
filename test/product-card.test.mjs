@@ -11,14 +11,15 @@ const p = {
 };
 const settings = { amazonTag: "", trackingEnabled: false, launchMode: "demo" };
 
-test("card shows name, one reason, one caveat and the button; no extras", () => {
+test("card shows name, best-use label, one reason, one caveat and the button; no extras", () => {
   const h = productCardHtml(p, settings, {});
   assert.match(h, /Demo Pen/);
   assert.match(h, /Writes cleanly on glued paper\./);
   assert.doesNotMatch(h, /second sentence|More detail/);
   assert.match(h, /Worth knowing:<\/strong> Not refillable\./);
   assert.match(h, /class="button"/);
-  for (const hidden of ["Best for captions", "long original description", "Private", "<dl", "product-card__media"]) assert.doesNotMatch(h, new RegExp(hidden));
+  assert.match(h, /product-card__best">Best for captions</);
+  for (const hidden of ["long original description", "Private", "<dl", "product-card__media"]) assert.doesNotMatch(h, new RegExp(hidden));
 });
 
 test("compact card is just name and button", () => {
