@@ -314,8 +314,8 @@ content:
           values:
             - name: See It on Amazon
               label: See It on Amazon
-            - name: Explore This Starter Kit
-              label: Explore This Starter Kit
+            - name: Explore This Starter Bundle
+              label: Explore This Starter Bundle
             - name: Shop the Supplies
               label: Shop the Supplies
             - name: See Our Pick

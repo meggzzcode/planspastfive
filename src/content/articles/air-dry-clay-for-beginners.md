@@ -34,7 +34,7 @@ These pieces are **decorative only**. Air-dry clay is not food-safe, and it is n
 
 ## What you need
 
-**Essential:** clay and paint. **From home:** a rolling pin or smooth bottle, a paper template, a toothpick, a damp cloth and soft brushes. **Optional:** a clear finish. See the clay, the paint and the alternative together on [the creative shelf in the Shop](/shop/#creative).
+**Essential:** clay and paint. **From home:** a rolling pin or smooth bottle, a paper template, a toothpick, a damp cloth and soft brushes. **Optional:** a clear finish. See the clay, the paint and the alternative together on [the Air-Dry Clay Starter Bundle in the Shop](/shop/#creative).
 
 **Clay.** Look for a white, air-hardening clay, and follow the drying and painting instructions on its pack. White takes soft colours best. By our rough estimate, which we have not tested, the tray takes about half a kilo and the two small dishes need roughly the rest, so a 1 kg block should cover all three if you keep them close to the sizes here. Larger dishes, or making a project twice, will need a second block. Leftover clay dries out fast, so wrap it tightly. Our pick is a white 1 kg block from DAS, a long-established art-supply name:
 

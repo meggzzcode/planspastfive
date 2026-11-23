@@ -329,3 +329,6 @@ ul.plain { list-style: none; padding: 0; margin: 0; }
 .site-footer ul.plain a, .share__links a, a.more, .eyebrow a, .disclosure a { display: inline-block; padding: 0.6rem 0; }
 .disclosure a { white-space: normal; }
 .chips a { padding: 0.65rem 1.1rem; }
+.shop-bundles__title { margin: 1.6rem 0 0.4rem; }
+.shop-bundles__lede { margin: 0 0 1rem; max-width: 46rem; }
+.bundle__glance { margin: 0.5rem 0 0; font-size: 0.95rem; }

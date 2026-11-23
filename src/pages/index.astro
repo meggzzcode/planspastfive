@@ -89,7 +89,7 @@ const jsonLd = [{ "@context": "https://schema.org", "@type": "WebSite", name: se
               <p class="teaser__brand">{p.brand}</p>
               <p>{p.descriptionOriginal}</p>
               <p class="teaser__links">
-                <a class="more" href={`/shop/#${p.group.id}`}>Shop {p.group.label} <span aria-hidden="true">&rarr;</span></a>
+                <a class="more" href={`/shop/#${p.group.id}`}>See the {p.group.label} <span aria-hidden="true">&rarr;</span></a>
                 {(usedIn.get(p.id) || []).slice(0, 1).map((a) => <a class="more" href={`/journal/${a.id}/`}>See where it appears<span class="sr-only">: {a.title}</span></a>)}
               </p>
             </li>

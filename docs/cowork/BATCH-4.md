@@ -11,10 +11,10 @@ Open the Netlify branch preview `https://preview--plans-past-five.netlify.app` (
 At **desktop width (about 1280)** and **phone width (about 390; use the browser's device mode)**, scroll top to bottom on: Home, The Journal, each of the five articles (Junk Journal Supplies, Your First Junk Journal Spread, Air-Dry Clay, How to Host a Mahjong Night, Hobbies for Busy Women), The Shop, About, Affiliate Disclosure, Privacy, Terms. For each page report:
 1. Do all images load (no empty boxes)? Any text overlapping, cut off, or too small to read? Any sideways scrolling on the phone?
 2. Is the disclosure sentence present before the first product link, and does the footer carry Amazon's required sentence "As an Amazon Associate I earn from qualifying purchases." (tracking is on in the preview)?
-3. On the Shop: do the three shelves (Paper, Creative, Hosting) and the Cozy shelf read clearly? Is the main pick obviously the main pick, and do the "choose one" alternatives look secondary? Does each card show its label, "In the box" line and "Worth knowing" line? Anything confusing?
-4. On each article: does "See the whole kit in our Shop" go to the right shelf (the page scrolls to it)? Do the "Our picks from this story" cards match what the article recommended?
+3. On the Shop: do the four bundles (Junk Journal Starter, Air-Dry Clay Starter, Cozy Paint Night, Host Your First Mahjong Night) read clearly, and does the page make clear a bundle is a collection of separately sold products? Is the main pick obviously the main pick, and do the "choose one" alternatives look secondary? Does each card show its label, "In the box" line and "Worth knowing" line? Anything confusing?
+4. On each article: does "See the whole bundle in our Shop" go to the right bundle (the page scrolls to it)? Do the "Our picks from this story" cards match what the article recommended?
 5. Click every **See It on Amazon** button once (it opens a new tab; do NOT add to cart or buy). Record for each: the product name on our card, the Amazon page title you land on, and whether the address is plain `amazon.com/dp/<ASIN>` ending in `?tag=planspastfive-20` (expected now that tracking is on in the preview). Do not buy anything through these links: purchases made by the Associate do not qualify and the click alone proves nothing. Report any mismatch or "currently unavailable" page.
-6. Take one phone screenshot each of Home, the junk journal article's closing section, and the Shop's paper shelf.
+6. Take one phone screenshot each of Home, the junk journal article's closing section, and the Shop's Junk Journal Starter Bundle.
 Also give an honest reader's impression in three sentences: would a woman looking for an after-work hobby stay, and would she click a product?
 
 ## Part B. Associates account status (read-only)
@@ -57,6 +57,9 @@ Claude Code makes the repository changes; Cowork does the account and browser st
 7. **Search Console (owner yes):** verify the domain (DNS TXT record via Namecheap), then submit `https://planspastfive.com/sitemap-index.xml`, and request indexing of the home page.
 8. Pinterest (owner yes): claim the website if the account exists; no pins are created by Cowork.
 9. Day 1 and day 7: Cowork reports Search Console indexing status and, if analytics is on, the GA4 realtime and event counts (look for `amazon_click`). Do not click your own product buttons repeatedly.
+
+## Part H. Amazon Lists for our Bundles (separate assignment)
+Follow `docs/cowork/AMAZON-BUNDLE-LISTS-LIVE-VERIFICATION.md` exactly (it has its own owner gates). Results go to `cowork/bundle-lists`.
 
 ## Not for Cowork (owner only)
 Applying to or changing the Associates account, paying anything, connecting the domain, a lawyer or trademark review, making the repository private, and the decision to launch.

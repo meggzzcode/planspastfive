@@ -1,6 +1,6 @@
 # Shopping strategy decision (2026-11-23)
 
-**Decision: curated "Shop the Kit" shelves on our own site, each product with its own tagged Amazon link, plus at most one or two "choose one" alternatives where taste matters.** Amazon Lists, Idea Lists and cart links are not used.
+**Decision: curated **Ready-to-Start Bundles** on our own site (collections of individually sold products, not prepackaged boxes), each product with its own tagged Amazon link, plus at most one or two "choose one" alternatives where taste matters.** Amazon Lists, Idea Lists and cart links are not used.
 
 ## Evidence (Amazon's own pages, read 2026-11-23; no amazon.com product page was fetched)
 - Tagged Special Links may be displayed once you have applied (Program Policies, Participation 2(a)). Three qualifying sales within 180 days trigger the final review (Application Review Process help page).
@@ -13,7 +13,7 @@
 | Approach | Audience appeal 25% | Compliance and attribution 20% | Likely qualified clicks 20% | Transferability 15% | Editorial and SEO 10% | Simplicity and cost 10% | Total |
 |---|---|---|---|---|---|---|---|
 | A. Individual links only | 3 | 5 | 4 | 5 | 3 | 5 | 4.0 |
-| **B/F. Kit shelves on our site, individual links, limited alternatives** | **5** | **5** | **4** | **5** | **5** | **4** | **4.7** |
+| **B/F. Bundles on our site, individual links, limited alternatives** | **5** | **5** | **4** | **5** | **5** | **4** | **4.7** |
 | C. Amazon List | 3 | 2 (not verified) | 3 | 1 (tied to a personal account) | 1 | 3 | 2.4 |
 | D. Influencer Idea Lists | 4 | 2 (eligibility unverified) | 3 | 1 | 1 | 2 | 2.6 |
 | E. Cart links | 2 | 1 (status unconfirmed) | 3 | 3 | 1 | 2 | 2.0 |
@@ -22,12 +22,15 @@ Scores are judgement, not measurement; no conversion claim is made. C, D and E a
 
 ## How readers shop
 1. An article shows the finished result, then the supplies, with a card per product: a "Start here" or "Optional extra" label, a "Best for..." line, one reason, one honest caveat and a button reading "See It on Amazon" (it opens that product on Amazon).
-2. The end of each article has "Our picks from this story" (the recommended products; alternatives are on the shelf) and a "See the whole kit in our Shop: <shelf>" button that goes to the shelf in our Shop, not to Amazon.
-3. The Shop shelf lists essentials ("Start here"), then extras. Where taste matters, a product has a "choose one" block under it (label for how it differs: prettier, budget-friendly, premium, different style, mix-your-own). Alternatives are never presented as extra purchases.
+2. The end of each article has "Our picks from this story" (the recommended products; alternatives are in the bundle) and a "See the whole bundle in our Shop: <bundle>" button that goes to the shelf in our Shop, not to Amazon.
+3. Each Shop bundle lists essentials ("Start here"), then extras. Where taste matters, a product has a "choose one" block under it (label for how it differs: prettier, budget-friendly, premium, different style, mix-your-own). Alternatives are never presented as extra purchases.
 4. Each button goes to one Amazon page. No button claims to buy everything.
 
-## Kits
-Paper Edit (junk journaling), Creative Edit (air-dry clay), Hosting Edit (American mahjong). A fourth, a cozy craft-night project, is held until a candidate is verified (Cowork batch 2, `docs/cowork/BATCH-2.md`). Three good kits beat eight thin ones.
+## Bundles
+Junk Journal Starter Bundle, Air-Dry Clay Starter Bundle, Cozy Paint Night Bundle (paint-by-numbers) and Host Your First Mahjong Night (American mahjong). A fourth, a cozy craft-night project, is held until a candidate is verified (Cowork batch 2, `docs/cowork/BATCH-2.md`). Three good kits beat eight thin ones.
+
+## Amazon Lists: status after a second look (2026-11-23)
+The earlier rejection was right to be cautious and is now narrower. Official pages (Program Policies updated 2026-04-14, Operating Agreement updated 2025-10-15) say Special Links may not be placed **inside** Wish Lists or other customer-generated content on Amazon (clause 4(p)). **Nothing official was found that allows or forbids a tagged link from an independent site to a public List**, documents a List URL format or `tag=` behaviour, or says whether purchases from a List count. Clause 2(b) (extra original content when linking to "pages with Product lists") may or may not cover Lists. Also not found: List sections, alternatives of one item, signed-out visibility rules, new-account restrictions, Influencer requirements. Attribution rules in general (24-hour click, 89-day cart) exist but are not tied to Lists. The tag and the agreement cannot be transferred, and nothing says Lists can be. So **"Shop the Full Bundle on Amazon" is not on the site.** `docs/cowork/AMAZON-BUNDLE-LISTS-LIVE-VERIFICATION.md` tells Cowork exactly what to test in a live browser; the site works fully without Lists.
 
 ## What the shop sells
 Only what the activity needs that most readers would not already own (owner rule, 2026-11-23). Scissors and ordinary tape are not sold; washi is an optional extra. Articles mention such items in prose without a link.

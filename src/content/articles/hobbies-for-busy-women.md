@@ -48,7 +48,7 @@ These need a surface the size of a tray and about 45 minutes. None of them asks 
 - **Company:** solo
 - **Buying commitment:** free if you already have the basics; a small supply purchase if not
 - **You need:** an old notebook, a glue stick and a drawer of paper scraps
-- **First step:** empty your bag and wallet, pick three bits from this week (a ticket, a receipt, a coffee sleeve) and make one page. It will look chaotic. That is the format. Our [first junk journal spread guide](/journal/your-first-junk-journal-spread/) has three layouts to copy, and the [supplies guide](/journal/junk-journal-supplies-for-beginners/) lists what to buy, with everything together on [the paper shelf](/shop/#paper).
+- **First step:** empty your bag and wallet, pick three bits from this week (a ticket, a receipt, a coffee sleeve) and make one page. It will look chaotic. That is the format. Our [first junk journal spread guide](/journal/your-first-junk-journal-spread/) has three layouts to copy, and the [supplies guide](/journal/junk-journal-supplies-for-beginners/) lists what to buy, with everything together on [the Junk Journal Starter Bundle](/shop/#paper).
 
 ### Embroidery
 
@@ -84,7 +84,7 @@ You can set something up and put it away again. Thirty to sixty minutes, one fla
 - **Company:** solo or a friend
 - **Buying commitment:** small supply purchase
 - **You need:** a pack of air-dry clay, something to roll it with, and later a pot of paint and a brush
-- **First step:** roll a ball, press your thumb in and pinch a ring dish. Clay needs time to dry, so follow the instructions on the pack and paint it another night. Our [air-dry clay guide](/journal/air-dry-clay-for-beginners/) has three small projects, and [the creative shelf](/shop/#creative) has the clay and paint.
+- **First step:** roll a ball, press your thumb in and pinch a ring dish. Clay needs time to dry, so follow the instructions on the pack and paint it another night. Our [air-dry clay guide](/journal/air-dry-clay-for-beginners/) has three small projects, and [the Air-Dry Clay Starter Bundle](/shop/#creative) has the clay and paint.
 
 ### Flower arranging
 
@@ -104,7 +104,7 @@ These take an evening or an afternoon and, mostly, a second person. They are the
 - **Company:** friends
 - **Buying commitment:** shared supplies, split between you
 - **You need:** one agreed craft and a share of the supplies, split between you. Check whether your library or community centre runs a craft night first
-- **First step:** pick the craft before you invite anybody (bracelets are the classic) so the invitation names a plan. If you would rather paint than make bracelets, [the cozy shelf](/shop/#cozy) has a complete paint-by-numbers kit. You are the host, so choose something that survives a crowded table and a glass of wine.
+- **First step:** pick the craft before you invite anybody (bracelets are the classic) so the invitation names a plan. If you would rather paint than make bracelets, [the Cozy Paint Night Bundle](/shop/#cozy) has a complete paint-by-numbers kit. You are the host, so choose something that survives a crowded table and a glass of wine.
 
 ### Mahjong
 
@@ -112,7 +112,7 @@ These take an evening or an afternoon and, mostly, a second person. They are the
 - **Company:** friends
 - **Buying commitment:** borrow a set first; buying one is an equipment investment
 - **You need:** a set (borrow one if anyone in your circle has it), a table and a beginner card or rules sheet
-- **First step:** plan the first night as practice with the tiles face up. It has a real learning curve, and nobody minds once they know that going in. Our [mahjong night guide](/journal/how-to-host-a-mahjong-night/) walks through hosting it, and [the hosting shelf](/shop/#hosting) has a set and a card.
+- **First step:** plan the first night as practice with the tiles face up. It has a real learning curve, and nobody minds once they know that going in. Our [mahjong night guide](/journal/how-to-host-a-mahjong-night/) walks through hosting it, and [the Host Your First Mahjong Night bundle](/shop/#hosting) has a set and a card.
 
 ### Picnicking
 

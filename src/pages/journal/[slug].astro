@@ -82,8 +82,8 @@ const kitShelves = [...new Set([...picks.map((p) => p.collection), ...[...shownI
       )}
 
       {kitShelves.length > 0 && (
-        <section class="shop-story shop-story--kit" aria-label="Shop the kit">
-          <p class="shop-story__kit">{kitShelves.map(([id, c], i) => <>{i > 0 && " "}<a class="button button--ghost" href={`/shop/#${id}`}>See the whole kit in our Shop: {c.name}</a></>)}</p>
+        <section class="shop-story shop-story--kit" aria-label="Shop the bundle">
+          <p class="shop-story__kit">{kitShelves.map(([id, c], i) => <>{i > 0 && " "}<a class="button button--ghost" href={`/shop/#${id}`}>See the whole bundle in our Shop: {c.name}</a></>)}</p>
         </section>
       )}
 

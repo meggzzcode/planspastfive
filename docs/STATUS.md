@@ -12,26 +12,26 @@ Rule (owner, 2026-11-23): the shop pushes only what the activity needs that most
 
 | Product | ASIN | Status | Role and decision |
 |---|---|---|---|
-| Canson Graduate Mixed Media 5.5 x 8.5 book | B0CN7B82NG | verified | Paper shelf, Start here |
-| Tombow MONO permanent adhesive | B000XAHF7S | verified | Paper shelf, Start here |
-| Staedtler Pigment Liner black 3-pack | B0C4VRJ1XP | verified | Paper shelf, Start here (new; beginner starter, sold by Amazon) |
+| Canson Graduate Mixed Media 5.5 x 8.5 book | B0CN7B82NG | verified | Junk Journal Starter Bundle, Start here |
+| Tombow MONO permanent adhesive | B000XAHF7S | verified | Junk Journal Starter Bundle, Start here |
+| Staedtler Pigment Liner black 3-pack | B0C4VRJ1XP | verified | Junk Journal Starter Bundle, Start here (new; beginner starter, sold by Amazon) |
 | Staedtler Pigment Liner black 8-pack | B0C922C7WT | verified | Choose-one alternative ("Larger set") |
 | Scotch Expressions washi, Whimsical 15 rolls | B09HN34X72 | verified | Optional extra. Cowork (batch 3): a warm, busy mix of stripes, leaves, leopard print and foil; florals are a minority, so it is described as playful, not romantic |
 | Scotch Expressions washi, Abstract Modern 8 rolls | B09HN2PR9K | verified | Choose-one alternative ("Different style"); listing names no colours |
 | Tim Holtz Idea-ology Snippets | B06VTCRXBC | verified | Optional extra for Shoebox Post; SKU TH93564 and 111 pieces confirmed |
-| DAS air-hardening clay, white, 2.2 lb | B001GAP4YA | verified | Creative shelf, Start here; listing gives no drying time or non-toxic wording, so the article does not claim them |
-| Winsor & Newton Galeria 20 x 12 ml | B08NJZPZG6 | verified | Creative shelf, Start here; includes white, pale rose blush, pale lemon, olive green and red |
+| DAS air-hardening clay, white, 2.2 lb | B001GAP4YA | verified | Air-Dry Clay Starter Bundle, Start here; listing gives no drying time or non-toxic wording, so the article does not claim them |
+| Winsor & Newton Galeria 20 x 12 ml | B08NJZPZG6 | verified | Air-Dry Clay Starter Bundle, Start here; includes white, pale rose blush, pale lemon, olive green and red |
 | Liquitex BASICS 12 x 22 ml | B07VSZM41G | verified | Choose-one alternative ("Mix-your-own"); 12 colours read from the chart (has white, no pink) |
-| YMI Sapphire American mahjong set | B09VGX38JV | verified | Hosting shelf; listing confirms tiles, 4 racks with pushers, dice, scoring coins and a zippered blue case |
-| NMJL 2026 large-print four-pack | B0GRCBQ3Y2 | verified | Hosting shelf; 2026 edition, no 2027 edition mentioned; replace each year |
+| YMI Sapphire American mahjong set | B09VGX38JV | verified | Host Your First Mahjong Night bundle; listing confirms tiles, 4 racks with pushers, dice, scoring coins and a zippered blue case |
+| NMJL 2026 large-print four-pack | B0GRCBQ3Y2 | verified | Host Your First Mahjong Night bundle; 2026 edition, no 2027 edition mentioned; replace each year |
 | Fiskars micro-tip scissors | B0DLFLZFGK | held | Removed: people already own scissors |
 | Rifle Paper Co. planner stickers | B0BWSHLP2T | held | Removed: bright, playful, many text labels, not vintage-botanical; count contradicts itself |
 | Strathmore 400 tan journal | B0767X3D34 | held | No in-stock line, delivery Dec 12-23; replaced by Canson |
 | NMJL 2026 standard four-pack | B0GRCCTYJ5 | held | Not shown |
 | Sculpd pottery kit | B09HL286VM | held | Not shown |
 | Mont Marte clay 500 g | B00Y5EOHRY | candidate | Not shown |
-| Faber-Castell Monet Water Lilies paint-by-numbers | B08DGL3R8K | verified | Cozy shelf, Start here: 6 x 8 in canvas, six acrylic pots, one brush, easel, guide |
-| JOOZ landscape paint-by-numbers with frame | B0D6VHXD88 | verified | Cozy shelf, "Larger set" choice: 8 x 12 in canvas, wooden frame and easel, acrylic (only the title says oil) |
+| Faber-Castell Monet Water Lilies paint-by-numbers | B08DGL3R8K | verified | Cozy Paint Night Bundle, Start here: 6 x 8 in canvas, six acrylic pots, one brush, easel, guide |
+| JOOZ landscape paint-by-numbers with frame | B0D6VHXD88 | verified | Cozy Paint Night Bundle, "Larger set" choice: 8 x 12 in canvas, wooden frame and easel, acrylic (only the title says oil) |
 
 Floral washi: Whaline 24 rolls (B0GYSNFN78) looks right but is sold by a third party and low stock, so it is not added; no sold-by-Amazon blush floral set was found. DAS: the listing and manual give no drying time or non-toxic wording, so the site makes no such claim.
 
@@ -45,6 +45,10 @@ Production-mode simulation in an isolated copy, canonical URLs and titles presen
 ## Release queue (optional, added 2026-11-23)
 - `src/content/schedule.json` holds an optional release queue. Automatic posting is **OFF** and the queue is **empty**. The five published articles are the whole library; no further drafts are stored (owner decision: finish and approve these five first).
 - Buyer guide: `docs/editorial/PUBLISHING-THE-BACKLOG.md`. Logic is tested (`test/release.test.mjs`); the GitHub workflow `release-next.yml` has not run on GitHub yet (Cowork batch 3 Part 4).
+
+## Ready-to-Start Bundles (renamed from shelves, 2026-11-23)
+The Shop's main section is **Ready-to-Start Bundles**: our curated collections of individually sold products (not prepackaged boxes). Four are live: Junk Journal Starter Bundle, Air-Dry Clay Starter Bundle, Cozy Paint Night Bundle, Host Your First Mahjong Night. Each shows what is in it, what you probably already own, choose-one alternatives and optional extras. Product names that contain "kit" (a paint-by-numbers kit) are unchanged.
+**"Shop the Full Bundle on Amazon" is NOT shown.** A public Amazon List destination and its commission eligibility are unverified: official pages checked on 2026-11-23 neither allow nor forbid a tagged link from our site to a List (`docs/SHOPPING-STRATEGY.md`). The live verification assignment for Cowork is `docs/cowork/AMAZON-BUNDLE-LISTS-LIVE-VERIFICATION.md`.
 
 ## Blocking launch (owner-gated)
 1. Real Pages CMS and Netlify test (`docs/OWNER-REAL-TEST.md`), best after 2026-12-16 because of Netlify credits.

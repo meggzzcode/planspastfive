@@ -10,7 +10,7 @@ A small, static lifestyle magazine with a curated Amazon shop, built with Astro,
 |---|---|
 | Website source | Astro site, plain CSS, 15 built pages, tests (134 automated), content and link checks, no database, no client-side shopping code |
 | Articles | 5 published (junk journal supplies, first junk journal spread, air-dry clay, mahjong night, hobbies for busy women): a shopping guide, two starter guides, an experience guide and a discovery pillar |
-| Shop | 4 shelves (paper, creative, cozy, hosting); 20 product records of which 14 are shown (essentials, optional extras, and "choose one" alternatives); text-only cards with a verified "In the box" line, a "Worth knowing" caveat and a clear button |
+| Shop | 4 Ready-to-Start Bundles (curated collections of individually sold products: junk journal, air-dry clay, cozy paint night, mahjong night); 20 product records of which 14 are shown (essentials, optional extras, and "choose one" alternatives); text-only cards with a verified "In the box" line, a "Worth knowing" caveat and a clear button |
 | Product system | One JSON file per product with status, evidence and approval controls; links are built centrally from the ASIN and your tracking ID; unverified products cannot appear in production |
 | Publishing | Pages CMS forms, a Publish button with checks, Undo, an optional release queue (manual or automatic posting, off by default), Netlify build rule that spends credits only on `[deploy]` commits |
 | Pictures | 16 pictures with a rights record each: 12 AI-generated (11 Canva, 1 Lovable) and 4 Pexels photographs, plus the red "5" site icon |

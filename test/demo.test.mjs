@@ -43,8 +43,8 @@ describe("baseline: the real repo content passes every check (item 7)", () => {
   });
   test("shop shows only collections that have verified products", () => {
     const s = distHtml(dir, "shop/index.html");
-    assert.match(s, /The Paper Edit/); assert.match(s, /The Hosting Edit/);
-    assert.doesNotMatch(s, /The Cozy Edit|The Sporty Edit|Little Adventures|The Creative Edit/);
+    assert.match(s, /Junk Journal Starter Bundle/); assert.match(s, /Host Your First Mahjong Night/);
+    assert.doesNotMatch(s, /Cozy Paint Night Bundle|The Sporty Edit|Little Adventures|Air-Dry Clay Starter Bundle/);
   });
 });
 
@@ -182,7 +182,7 @@ describe("(3) add a product, then replace a product", () => {
     assert.match(shop, /Demo Washi Tape/);
     assert.ok(amazonLinks(shop).includes("https://www.amazon.com/dp/B0TESTAAAA?tag=planspastfive-20"));
     assert.match(distHtml(dir, `journal/${SLUG}/index.html`), /dp\/B0TESTAAAA\?tag=planspastfive-20/);
-    assert.match(shop, /The Creative Edit/, "a new group appears when it gets its first verified product");
+    assert.match(shop, /Air-Dry Clay Starter Bundle/, "a new group appears when it gets its first verified product");
   });
   test("replace a product: new id, old one discontinued with replacedBy; every reference shows the new product", () => {
     addProduct(dir, newProduct({ id: "washi-tape-demo-2", name: "Demo Washi Tape Mk2", asin: "B0TESTBBBB", ...verifiedFields() }));
@@ -431,7 +431,7 @@ describe("shell rules from the owner's master brief", () => {
     assert.ok(r.ok, r.out);
     const h = distHtml(dir, "index.html");
     assert.doesNotMatch(h, /A little shopping inspiration|Shop Our Favorites/);
-    assert.doesNotMatch(distHtml(dir, "shop/index.html"), /product-card|The Paper Edit/);
+    assert.doesNotMatch(distHtml(dir, "shop/index.html"), /product-card|Junk Journal Starter Bundle/);
   });
   test("analytics: off by default (no Google script, no click handler); on only with an ID, with one click event carrying product, article and placement", () => {
     fresh();
@@ -486,7 +486,7 @@ describe("disclosure placement, launchMode, homepage journey and captions in the
     const teaser = h.slice(h.indexOf("A little shopping inspiration"), h.indexOf("Our story"));
     assert.equal((teaser.match(/<li class="teaser">/g) || []).length, 2, "one item per shop collection that has products");
     assert.equal((teaser.match(/href="\/shop\/#\w+"/g) || []).length, 2);
-    assert.match(teaser, /Shop The Paper Edit/); assert.match(teaser, new RegExp(`href="/journal/${SLUG}/">See where it appears`));
+    assert.match(teaser, /See the Junk Journal Starter Bundle/); assert.match(teaser, new RegExp(`href="/journal/${SLUG}/">See where it appears`));
     assert.match(distHtml(dir, "shop/index.html"), /<h1>The Good Stuff, Already Found<\/h1>/);
     assert.doesNotMatch(distHtml(dir, "shop/index.html"), /Small on purpose/);
   });

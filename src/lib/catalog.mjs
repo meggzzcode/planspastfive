@@ -53,7 +53,9 @@ export function shopGroups(products, mode = "production") {
       for (const p of inGroup.filter(isAlt)) alternatives.set(p.choiceOf, [...(alternatives.get(p.choiceOf) || []), p]);
       // an alternative whose main product is not shown becomes an ordinary product, without its alternative badge
       const all = inGroup.filter((p) => !isAlt(p)).map((p) => (p.choiceOf ? { ...p, choiceOf: undefined, choiceLabel: undefined } : p));
-      return { id, alternatives, label: c.name, plain: c.plain, image: c.image, extrasLabel: c.extras || "Nice to have", products: all, start: all.filter((p) => p.shopTier !== "extras"), extras: all.filter((p) => p.shopTier === "extras"), get showStartHeading() { return this.start.length > 0 && this.extras.length > 0; } };
+      const noun = (p) => (p.buttonLabel || "").replace(/^See the /, "").replace(/ on Amazon$/, "") || p.name;
+      const glance = { essentials: all.filter((p) => p.shopTier !== "extras").map(noun), optional: all.filter((p) => p.shopTier === "extras").map(noun), own: c.own || "" };
+      return { id, alternatives, glance, label: c.name, plain: c.plain, image: c.image, extrasLabel: c.extras || "Nice to have", products: all, start: all.filter((p) => p.shopTier !== "extras"), extras: all.filter((p) => p.shopTier === "extras"), get showStartHeading() { return this.start.length > 0 && this.extras.length > 0; } };
     })
     .filter((g) => g.products.length > 0);
 }

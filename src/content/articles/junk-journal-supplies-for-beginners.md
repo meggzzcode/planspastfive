@@ -24,7 +24,7 @@ Picture the page. A cream envelope tucked under a ticket stub, one strip of tape
 
 That is a junk journal, and it takes four things to begin: a sturdy book, something to stick with, a pen and a roll of tape (you probably own the tape). Pick a mood for inspiration, buy one small basket of essentials, and your first page feels like the start of a collection.
 
-**The kit at a glance.** Essentials: a heavy-paper book, dry adhesive and a black pen, plus tape and scissors you probably own already. Optional: a washi assortment for colour and aged paper pieces for a finishing touch. See all of it together on [the paper shelf in the Shop](/shop/#paper).
+**The bundle at a glance.** Essentials: a heavy-paper book, dry adhesive and a black pen, plus tape and scissors you probably own already. Optional: a washi assortment for colour and aged paper pieces for a finishing touch. See all of it together in [the Junk Journal Starter Bundle in the Shop](/shop/#paper).
 
 ## Choose your look
 

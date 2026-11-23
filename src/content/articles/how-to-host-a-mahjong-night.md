@@ -107,7 +107,7 @@ Racks matched to the tiles save the most fuss on the night, and a case means the
 
 {{pick:nmjl-2026-large-print-cards-four-pack}}
 
-See the set and the card together on [the hosting shelf in the Shop](/shop/#hosting). The evening works without either product on this page. A borrowed set and a card from the League are enough.
+See the set and the card together in [the Host Your First Mahjong Night bundle in the Shop](/shop/#hosting). The evening works without either product on this page. A borrowed set and a card from the League are enough.
 
 ## Questions
 

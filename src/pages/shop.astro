@@ -22,8 +22,10 @@ const groups = shopGroups(products, settings.launchMode);
     ) : (
       <>
         <Fragment set:html={disclosureHtml(settings)} />
+        <h2 class="shop-bundles__title">Ready-to-Start Bundles</h2>
+        <p class="shop-bundles__lede">A bundle here is our curated collection of individually sold products, not a prepackaged box. You buy each item separately on Amazon, and we mark what is essential, what is a choose-one alternative and what is optional.</p>
         {groups.length > 1 && (
-          <nav class="chips" aria-label="Shop sections">
+          <nav class="chips" aria-label="Bundles">
             <ul class="plain">{groups.map((g) => <li><a href={`#${g.id}`}>{g.label}</a></li>)}</ul>
           </nav>
         )}
@@ -47,7 +49,8 @@ const groups = shopGroups(products, settings.launchMode);
               <div>
                 <h2 id={`h-${g.id}`}>{g.label}</h2>
                 <p class="shop-group__plain">{g.plain}</p>
-                {g.start.length > 0 && <p class="shop-group__count">The starter kit: {g.start.length} {g.start.length === 1 ? "thing" : "things"} to buy. Everything else is optional.</p>}
+                {g.start.length > 0 && <p class="shop-group__count">The starter bundle: {g.start.length} {g.start.length === 1 ? "thing" : "things"} to buy. Everything else is optional.</p>}
+                <p class="bundle__glance"><strong>In this bundle:</strong> {g.glance.essentials.join(", ")}.{g.glance.optional.length > 0 && <> <strong>Optional:</strong> {g.glance.optional.join(", ")}.</>}{g.glance.own && <> <strong>You probably have:</strong> {g.glance.own}.</>}</p>
               </div>
             </div>
             {g.showStartHeading && <h3 class="shop-group__tier">Start here</h3>}

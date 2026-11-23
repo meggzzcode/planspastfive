@@ -9,13 +9,13 @@ Captions follow the kind: AI illustrations carry no caption (the use of AI image
 |---|---|---|---|
 | `girls-night-crafts.jpg` | Home hero | AI (Lovable) | approved 2026-11-20 |
 | `cozy-corner.jpg` | Home story band, hobbies article hero | AI (Canva) | approved 2026-11-20 |
-| `junk-journal-spread-leaves-collage.jpg` | Junk journal supplies hero; Shop paper shelf | Photo (Pexels) | approved 2026-11-20 |
+| `junk-journal-spread-leaves-collage.jpg` | Junk journal supplies hero; Junk Journal Starter Bundle in the Shop | Photo (Pexels) | approved 2026-11-20 |
 | `junk-journal-floral-handmade-book.jpg` | Tutorial hero | Photo (Pexels) | approved 2026-11-20 |
-| `clay-ring-dish-painted-blossoms.jpg` | About page; Shop creative shelf | Photo (Pexels) | approved 2026-11-20 |
+| `clay-ring-dish-painted-blossoms.jpg` | About page; About page only (the Air-Dry Clay bundle uses the clay hero) | Photo (Pexels) | approved 2026-11-20 |
 | `junk-journal-shoebox-post.jpg` | Supplies article (Shoebox Post) | AI (Canva) | approved 2026-11-20 |
 | `clay-cherry-dish.jpg` | Clay article (Project 1) | AI (Canva) | approved 2026-11-20 |
 | `friends-mahjong-night.jpg` | Mahjong article hero | AI (Canva) | approved 2026-11-23 |
-| `american-mahjong-table-tiles-and-racks.jpg` | Mahjong article inline; Shop hosting shelf | Photo (Pexels) | approved 2026-11-20 |
+| `american-mahjong-table-tiles-and-racks.jpg` | Mahjong article inline; Host Your First Mahjong Night bundle in the Shop | Photo (Pexels) | approved 2026-11-20 |
 | `clay-three-projects-hero.jpg` | Clay article hero | AI (Canva) | approved 2026-11-20 |
 | `junk-journal-garden-press.jpg` | Supplies article (Garden Press) | AI (Canva) | approved 2026-11-20 |
 | `junk-journal-tea-rose.jpg` | Supplies article (Tea Rose) | AI (Canva) | approved 2026-11-20 |
@@ -35,5 +35,5 @@ Captions follow the kind: AI illustrations carry no caption (the use of AI image
 ## Replace or remove a picture (no developer needed)
 1. Put the new JPEG (about 2000 px wide) in `public/images/` (GitHub: Add file > Upload).
 2. Add a record for it in `src/content/images.json` (copy an existing one; set kind, credit, source, licence, dates).
-3. In the article's Top picture field, or in the Markdown figure, point to the new file name. Pictures on Home, About and the Shop shelves are chosen by the record key in `src/pages/index.astro`, `about.astro` and `COLLECTIONS` in `src/lib/schemas.mjs`.
+3. In the article's Top picture field, or in the Markdown figure, point to the new file name. Pictures on Home, About and the Shop bundles are chosen by the record key in `src/pages/index.astro`, `about.astro` and `COLLECTIONS` in `src/lib/schemas.mjs`.
 4. Delete the old file and record. `npm run check` fails if anything still points to a missing picture.
