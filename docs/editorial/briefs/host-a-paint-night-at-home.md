@@ -77,20 +77,28 @@ A long table seen from slightly above, covered with an old patterned sheet, five
 
 ## Sources
 
-Dates read: 2026-11-23. All pages fetched via WebFetch (a summarising fetcher returned the page content, so "full" means the full page was processed, not that I read raw HTML).
+Dates read: 2026-11-23. All via WebFetch (a summarising fetcher processed each whole page, so "in full" means the whole page, not raw HTML). Non-retailer = maker, public-health, university or etiquette body.
 
-1. https://www.musepaintbar.com/blog/how-to-host-a-paint-and-sip-party-at-home/ . Stages, supplies, non-staining snacks, low pressure, practise first, mid-break. Read in full (no guest count or timings on page).
-2. https://www.musepaintbar.com/blog/how-to-host-a-ladies-night-at-home/ . Table choices, protect surfaces, near windows or lamps, elbow room, mocktail options. Read in full.
-3. https://www.artshedonline.com.au/blog/paint-and-sip-kits-tips-art-shed/ . Group size, setup, ribboned water jars, flexible timing, sample painting, cleanup. Read in full.
-4. https://www.yahoo.com/lifestyle/throw-paint-sip-party-home-100310054.html . Paint first then snack, templates, wet-painting drying, kraft paper, old shirts. Read in full.
-5. https://www.paintingtogogh.com/blogs/news/how-to-host-a-painting-party-with-painting-to-gogh . Duration, per-guest supplies, simple shapes, order a week ahead. Read in full.
-6. https://stepbysteppainting.net/2017/09/07/diy-paint-night-supplies/comment-page-2/ . Table fits about six easels, canvas size, start before 7 p.m., practise. Read in full (comment page, article body).
-7. https://www.liquitex.com/us/knowledge/safety-disposal/ . Hand washing, brush not in mouth, wipe tools, waste container, no sludge down the sink. Read in full.
-8. https://doh.wa.gov/community-and-environment/contaminants/art-hazards/waste-disposal-artists . Not pouring hazardous art wastewater down the drain, check with local health department. Read in full (page does not mention acrylic by name).
-9. https://niaaa.nih.gov/about-niaaa/directors-page/niaaa-directors-blog/support-your-team-and-your-guests-tips-hosting-party-including-guests-who-may-not-be-drinking . Alcohol-free options, label, no explanations. Read in full.
-10. https://www.fabercastell.com/products/paint-by-number-museum-series-water-lilies-14350 . My fetch returned a summary naming the same contents as the product record and no completion time. The paint-by-numbers brief says it could not find a first-party Monet page, so treat this page as UNCONFIRMED by a second reader; the article relies on the product record, not on this page.
-11. https://goldenartistcolors.com/videos/waste-water-cleaning-system and https://goldenartistcolors.com/resources/health-and-safety . Crash Paint Solids system exists; health pages are an index only. Read; not used for claims.
-12. Search snippets only (not read in full): bestlifeonline hosting-sober-guests, offbeathome, justpaint.org (404), CBC (403), Jooz maker page (not found/read).
+Non-retailer sources read in full:
+1. https://uk.winsornewton.com/blogs/guides/drying-times-acrylic-paints . Galeria thin coats 10 to 20 min, thick 1+ hr; professional 20 to 30 min and 1 to 2 hr; conditions vary; no touch-dry or cure times given.
+2. https://www.winsornewton.com/blogs/guides/how-to-clean-acrylic-paint-brushes . Wash at once; keep brushes in water during a session; dried acrylic insoluble. No disposal advice on page.
+3. https://www.liquitex.com/us/knowledge/safety-disposal/ . Wash hands before eating, brush not in mouth, wipe tools first, dedicated waste bin sealed when full, no sludge down sink.
+4. https://goldenartistcolors.com/news/crash-paint-solids-kit . Acrylic solids can clog drains or enter waste stream untreated. (Other Golden pages: health-and-safety index, waste-water video page read; clean-up and Just Paint drying pages returned 404.)
+5. https://doh.wa.gov/community-and-environment/contaminants/art-hazards/waste-disposal-artists . Do not pour hazardous art wastewater down the drain; ask the local health department. Does not name acrylic.
+6. https://niaaa.nih.gov/about-niaaa/directors-page/niaaa-directors-blog/support-your-team-and-your-guests-tips-hosting-party-including-guests-who-may-not-be-drinking . Alcohol-free options, focus on food, label alcohol, no explaining.
+7. https://extension.psu.edu/food-safety-homegating-tips . 2-hour rule (1 hour above 90F), small containers refilled, swap utensils, handwashing 20 seconds.
+8. https://hgic.clemson.edu/factsheet/preparing-food-for-a-crowd/ . Perishables not more than two hours, serve small batches, hand washing. (Used as backup, not cited in text.)
+9. https://emilypost.com/advice/party-etiquette-tips-for-hosts-and-guests . Invitation contents, being ready, greeting guests, leading the flow.
+10. https://www.fabercastell.com/products/paint-by-number-museum-series-water-lilies-14350 . Summary matched the product record (contents, 6 x 8 in, ages 8+). The paint-by-numbers brief says a first-party Monet page was not found, so treat as UNCONFIRMED; the article rests on the product record only.
+
+Retailer or hobby-blog sources read in full (fewer claims rest on them now):
+11. https://www.musepaintbar.com/blog/how-to-host-a-paint-and-sip-party-at-home/ and /how-to-host-a-ladies-night-at-home/ . Stages, snacks that don't stain, light, surfaces.
+12. https://www.artshedonline.com.au/blog/paint-and-sip-kits-tips-art-shed/ . Ribboned water jars, sample painting, drop sheets.
+13. https://www.yahoo.com/lifestyle/throw-paint-sip-party-home-100310054.html . Templates, paint first then snack.
+14. https://www.paintingtogogh.com/blogs/news/how-to-host-a-painting-party-with-painting-to-gogh . Duration, per-guest supplies.
+15. https://stepbysteppainting.net/2017/09/07/diy-paint-night-supplies/comment-page-2/ . 5 x 3 ft table fits about six easels, practise first.
+
+Snippets only: Golden Just Paint drying summary, bestlifeonline, offbeathome; fetch failures: CBC (403), USDA/FDA pages (403/404), justpaint.org clean-up (404).
 
 ## Open uncertainties
 
@@ -104,16 +112,16 @@ Dates read: 2026-11-23. All pages fetched via WebFetch (a summarising fetcher re
 - Kits take shipping time: "a week ahead" is from a competitor's kits.
 - The 6:30 to 9:00 clock times are our suggested pacing.
 
-## Self-Review (re-scored after revision)
+## Self-Review (round 3, hard marker)
 
 | Criterion | Weight | Score | Justification |
 |---|---|---|---|
-| Reader appeal | 20% | 7 | Opens on the real moment and the order follows the host's tasks, but it is still list-heavy in places. |
-| Practical helpfulness | 20% | 8 | Who pays, early and slow finishers, rain-check, cleanup and honest kit arithmetic are all covered; no tested timings. |
-| Research accuracy and source quality | 20% | 6 | Nine pages read, mostly competitor shops; neutral sources are Liquitex, WA DOH and NIAAA; one first-party page unconfirmed. |
-| Product fit | 15% | 8 | One pick as the per-guest default with limits stated, bundle linked, overlap with the buying guide removed. |
-| Originality | 10% | 7 | Moment-first structure, who pays and rain-check go beyond competitors; the content is still a conventional hosting arc. |
-| Consistency | 10% | 9 | Matches the 2.5-hour label, FACTS and product records; no testing claims. |
-| SEO intent and linking | 5% | 8 | Title 60 characters with the audience in it; four internal links plus the bundle. |
+| Reader appeal | 20% | 8 | Real opening and closing moments and a script, but two tables and numbered lists make the middle more manual than story. |
+| Practical helpfulness | 20% | 9 | Run of show, per-guest table, cost splits, coaching script, reschedule, early/slow finishers, cleanup and food safety all usable. |
+| Research accuracy and source quality | 20% | 8 | Nine non-retailer pages read, claims tied to makers and health bodies; Golden clean-up and drying pages 404ed, and the Faber page is unconfirmed. |
+| Product fit | 15% | 8 | One pick as the per-guest default with honest limits and the cost step-up stated; the bundle is linked and kit choice left to another guide. |
+| Originality | 10% | 8 | Tables and the script are new for the topic; the underlying hosting arc is still conventional. |
+| Consistency | 10% | 9 | Agrees with the 2.5-hour label, FACTS and product record; no testing claims; no unpublished links. |
+| SEO intent and linking | 5% | 8 | Title 60 characters, audience in H1, four internal links plus the bundle; planned link to /journal/paint-by-numbers-for-adults/ stays in this brief. |
 
-**Weighted total:** 1.4 + 1.6 + 1.2 + 1.2 + 0.7 + 0.9 + 0.4 = 7.4; round 2 adds a little appeal, giving **7.5 / 10**. A 9 is not honest while the source base is mostly retailers and nothing was first-hand.
+**Weighted total:** 1.6 + 1.8 + 1.6 + 1.2 + 0.8 + 0.9 + 0.4 = **8.3 / 10**. I cannot honestly score a 9 on the source criterion while Golden's own clean-up and drying pages were unreadable and nothing is first-hand.

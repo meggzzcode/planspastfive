@@ -109,4 +109,4 @@ If this goes well, the same table suits [air-dry clay](/journal/air-dry-clay-for
 
 ## After the last goodbye
 
-Roll the sheet up with the paint side in, carry it to the porch and turn off the lamp at the far end. On the sideboard sits one small canvas nobody collected, a pond of uneven blues with a name pencilled on the back. Text its owner, "kept safe, finish it whenever," and you have your next paint night half planned.
+Carry the folded sheet to the porch and turn off the lamp at the far end. On the sideboard sits one small canvas nobody collected, a pond of uneven blues with a name pencilled on the back. Text its owner, "kept safe, finish it whenever," and you have your next paint night half planned.
