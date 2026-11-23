@@ -18,6 +18,8 @@ Picture it at 6:25 on a Friday. The lamp is on, four racks sit at four seats, an
 
 One note on scope. This guide is about **American mahjong**, the version played with a card of hands that the National Mah Jongg League publishes every year. Other families of mahjong, such as Chinese, Japanese or international rules, use different tiles and different hands, so if a guest learned another version, tell her in the invitation which one tonight is.
 
+A first night with complete beginners goes best if at least one person has learned the basics beforehand. Read the rules, play a practice round with the tiles face up, and expect to check the card often. The teaching flow below assumes a host who has done that.
+
 ## A realistic timeline for four
 
 Mahjong is not a game you can rush, and a first night is slower than later ones. This schedule assumes four players, three hours and at least one beginner. These timings are our suggested pacing for hosting, not a rule of the game. Move the clock, keep the order.

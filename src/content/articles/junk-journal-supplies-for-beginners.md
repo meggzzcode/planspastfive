@@ -1,7 +1,7 @@
 ---
 title: "Junk Journal Supplies for Beginners: A Small, Pretty Starter List"
-description: "What to buy for your first junk journal: a thick book, dry adhesive, a black pen and tape, dressed in one of three looks, plus a seven-step first spread."
-dek: "A thick book, a runner of dry adhesive, a black pen and a roll of tape, dressed in a mood you love. Choose your look, gather the four basics and make a first page tonight."
+description: "What to buy for your first junk journal: a thick book, dry adhesive and a black pen, dressed in one of three looks, plus a seven-step first spread."
+dek: "A thick book, a runner of dry adhesive and a black pen, plus the tape from your drawer, dressed in a mood you love. Choose your look, gather the basics and make a first page tonight."
 publishedAt: 2026-11-20
 status: published
 category: Creative Corner
@@ -22,7 +22,7 @@ related:
 
 Picture the page. A cream envelope tucked under a ticket stub, one strip of tape in a colour that makes you smile, a line of your own handwriting underneath. Turn it over and the next page is just as full. The corners have gone soft, and it looks like something loved for a year, although it has only been a month.
 
-That is a junk journal, and it takes four things to begin: a sturdy book, something to stick with, a pen and a roll of tape. Pick a mood for inspiration, buy one small basket of essentials, and your first page feels like the start of a collection.
+That is a junk journal, and it takes four things to begin: a sturdy book, something to stick with, a pen and a roll of tape (you probably own the tape). Pick a mood for inspiration, buy one small basket of essentials, and your first page feels like the start of a collection.
 
 **The kit at a glance.** Essentials: a heavy-paper book, dry adhesive and a black pen, plus tape and scissors you probably own already. Optional: a washi assortment for colour and aged paper pieces for a finishing touch. See all of it together on [the paper shelf in the Shop](/shop/#paper).
 
@@ -74,7 +74,7 @@ Three widths are plenty to start. If you want more tip sizes, {{product:staedtle
 
 Write your captions last, once everything is stuck down, so the words fit the gaps. Date every spread.
 
-### 4. Tape that sets the colour
+### 4. Tape, for colour (optional)
 
 Any tape you already own will do to start, and a washi assortment adds colour:
 

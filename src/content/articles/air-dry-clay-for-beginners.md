@@ -40,7 +40,7 @@ These pieces are **decorative only**. Air-dry clay is not food-safe, and it is n
 
 {{pick:das-air-hardening-clay-white-1kg}}
 
-**Paint.** Ordinary acrylics do the job, applied once the clay is completely dry. For soft shades with no mixing, we like this set:
+**Paint.** Ordinary acrylics do the job, applied once the clay is completely dry. For soft shades with no mixing, we like this set. It includes white, a pale rose blush, a pale lemon yellow, an olive green and a red, close to the shades used in the three dishes above:
 
 {{pick:winsor-newton-galeria-acrylic-set}}
 
