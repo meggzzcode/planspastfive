@@ -1,0 +1,31 @@
+{
+  "name": "Picnic Basket with Table, Picnic Basket Set for 2, Leaf",
+  "brand": "WILLOW WEAVE",
+  "asin": "B0BF9NCG9P",
+  "order": 1,
+  "shopTier": "start",
+  "buttonLabel": "See the Picnic Basket on Amazon",
+  "bestUse": "Best for a two-person picnic that feels like a gift",
+  "inTheBox": "A willow basket (15 x 11 x 9.5 in) with a fold-out bamboo table lid, two glass wine glasses, two ceramic plates, two stainless cutlery sets, two linen napkins, a corkscrew and a waterproof-backed blanket.",
+  "descriptionOriginal": "A natural willow picnic basket for two with plates, glasses, cutlery, napkins and a blanket, with a small bamboo table that folds out as the lid.",
+  "whyWeLikeIt": "Everything for a picnic for two is in one pretty basket, and the lid folds out into a little table with glass slots, which is what makes it feel like an occasion. It is also a gift a friend would keep.",
+  "limitations": "The glasses are real glass and the plates ceramic, so it is lovely but breakable. The listing does not give the blanket's size, and stock was low when checked.",
+  "haveItAlready": "Already own a basket and a blanket? Borrow the idea and pack what you have.",
+  "listingChecked": {
+    "checkedOn": "2026-11-23",
+    "variant": "Leaf, for 2",
+    "listingAvailable": "yes",
+    "sellerType": "brand",
+    "affiliateLinkEligible": "yes"
+  },
+  "specsEvidence": "Amazon listing (Cowork, 2026-11-23): natural willow basket 15 x 11 x 9.5 in (10.25 in with table); removable bamboo wine and snack table lid with fold-able metal legs and 2 glass slots; canvas flap usable as a cushion; waterproof-backed picnic blanket (size not shown); 2 ceramic plates (7 in); 2 stainless cutlery sets; 2 glass wine glasses; 2 linen napkins (12 x 12 in); corkscrew; PU leather straps hold the tableware; cotton shoulder strap; leaf-pattern linen lining with PU trim. Sold by the brand; only 17 left when checked.",
+  "suitability": "A complete picnic basket set for two people, in a natural willow look.",
+  "verificationSource": "Listing read by Cowork on the owner's account, 2026-11-23 (docs/cowork/BATCH-6-RESULTS.csv, branch cowork/batch-6): sold by the brand (WILLOW WEAVE), low stock. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID'; that validates the tag only, and real commission is confirmed only in Associates reports.",
+  "id": "willow-weave-picnic-basket-for-2-leaf",
+  "status": "verified",
+  "editorialDecision": "hold",
+  "statusReason": "Held until the picnic article is released: verified and ready, but it must not appear in the Shop before its article exists. At release, set editorialDecision to approve and add it to the article.",
+  "collection": "picnic",
+  "cta": "See It on Amazon",
+  "imageStatus": "none"
+}

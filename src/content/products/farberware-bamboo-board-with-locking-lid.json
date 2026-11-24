@@ -1,0 +1,31 @@
+{
+  "name": "11 x 14 Inch Bamboo Cutting Board with Clear Locking Lid",
+  "brand": "Farberware",
+  "asin": "B0CV9KDQX9",
+  "order": 4,
+  "shopTier": "extras",
+  "buttonLabel": "See the Cheese Board on Amazon",
+  "bestUse": "Best for carrying a prepared cheese board to the park",
+  "inTheBox": "One 11 x 14 in bamboo board with a raised edge, recessed handles and a clear locking lid. No knives are included.",
+  "descriptionOriginal": "A reversible bamboo board with a clear locking lid, so a prepared board can travel.",
+  "whyWeLikeIt": "Build the board at home, lock the lid and carry it to the park: the lid is the point. The warm bamboo looks right on a blanket.",
+  "limitations": "No knives are included, and the board is hand wash only. The lid is clear plastic.",
+  "haveItAlready": "Already have a board or a platter with a cover? Use it.",
+  "listingChecked": {
+    "checkedOn": "2026-11-23",
+    "variant": "11 x 14 in bamboo with locking lid",
+    "listingAvailable": "yes",
+    "sellerType": "amazon",
+    "affiliateLinkEligible": "yes"
+  },
+  "specsEvidence": "Amazon listing (Cowork, 2026-11-23): 11 x 14 in bamboo board with raised edge; recessed side handles; clear locking lid (plastic); reversible for cutting; no knives listed; hand wash. Sold by Amazon.com.",
+  "suitability": "A bamboo board with a locking lid for carrying a prepared spread.",
+  "verificationSource": "Listing read by Cowork on the owner's account, 2026-11-23 (docs/cowork/BATCH-6-RESULTS.csv, branch cowork/batch-6): sold by Amazon.com, stock not shown. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID'; that validates the tag only, and real commission is confirmed only in Associates reports.",
+  "id": "farberware-bamboo-board-with-locking-lid",
+  "status": "verified",
+  "editorialDecision": "hold",
+  "statusReason": "Held until the picnic article is released: verified and ready, but it must not appear in the Shop before its article exists. At release, set editorialDecision to approve and add it to the article.",
+  "collection": "picnic",
+  "cta": "See It on Amazon",
+  "imageStatus": "none"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Montecito Picnic Blanket with Harness, Large 60 x 70 in, Beige Gingham",
+  "brand": "Picnic Time",
+  "asin": "B0BCSF4FNJ",
+  "order": 3,
+  "shopTier": "start",
+  "buttonLabel": "See the Picnic Blanket on Amazon",
+  "bestUse": "Best for a vintage-looking blanket that rolls up with straps",
+  "inTheBox": "One 60 x 70 in picnic blanket in a cream-and-tan gingham, with a carry harness, corner loops for stakes and a water-resistant backing.",
+  "descriptionOriginal": "A large gingham picnic blanket with a woven cotton top, a water-resistant backing and a carry harness.",
+  "whyWeLikeIt": "A warm cream-and-tan gingham with leather-look straps gives a picnic a vintage look, and the listing says it is fully machine washable and folds into a carry sack.",
+  "limitations": "The listing contradicts itself on the top fabric (woven cotton in the title, soft fleece in one bullet) and calls the backing water-resistant in the title but waterproof in the bullets, so check the page before you order. Stock was low when checked.",
+  "haveItAlready": "Already have a blanket you love? Use it; the rest of the picnic matters more.",
+  "listingChecked": {
+    "checkedOn": "2026-11-23",
+    "variant": "Montecito, beige gingham, 60 x 70 in",
+    "listingAvailable": "yes",
+    "sellerType": "amazon",
+    "affiliateLinkEligible": "yes"
+  },
+  "specsEvidence": "Amazon listing (Cowork, 2026-11-23): 60 x 70 in; woven cotton top per the title; water-resistant poly duck backing (the title says water-resistant, the bullets say waterproof); the listing says fully machine washable; folds into a carry sack with handle; corner loops for stakes; lifetime guarantee. The listing is inconsistent on the top fabric. Sold by Amazon.com; only 14 left when checked.",
+  "suitability": "A large gingham picnic blanket for two to four people.",
+  "verificationSource": "Listing read by Cowork on the owner's account, 2026-11-23 (docs/cowork/BATCH-6-RESULTS.csv, branch cowork/batch-6): sold by Amazon.com, low stock. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID'; that validates the tag only, and real commission is confirmed only in Associates reports.",
+  "id": "picnic-time-montecito-gingham-picnic-blanket",
+  "status": "verified",
+  "editorialDecision": "hold",
+  "statusReason": "Held until the picnic article is released: verified and ready, but it must not appear in the Shop before its article exists. At release, set editorialDecision to approve and add it to the article.",
+  "collection": "picnic",
+  "cta": "See It on Amazon",
+  "imageStatus": "none"
+}

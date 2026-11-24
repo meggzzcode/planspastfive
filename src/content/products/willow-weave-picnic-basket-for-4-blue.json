@@ -1,0 +1,31 @@
+{
+  "name": "Insulated Willow Picnic Basket for 4, Blue",
+  "brand": "WILLOW WEAVE",
+  "asin": "B0B63F9B38",
+  "order": 2,
+  "choiceOf": "willow-weave-picnic-basket-for-2-leaf",
+  "choiceLabel": "Larger set",
+  "buttonLabel": "See the Basket for Four on Amazon",
+  "bestUse": "Best for four friends who want something unbreakable",
+  "inTheBox": "A wicker basket (16 x 12 x 7.5 in) with a built-in insulated compartment and removable insulated wine cooler, four melamine plates, four plastic wine glasses, four stainless cutlery sets, four napkins, salt and pepper shakers, a corkscrew and a waterproof blanket.",
+  "descriptionOriginal": "An insulated wicker picnic basket for four with melamine plates, plastic glasses, cutlery and a blanket.",
+  "whyWeLikeIt": "Everything for four is in the basket, with an insulated compartment, and the blue check lining looks fresh and classic. The melamine plates and plastic glasses travel without worry.",
+  "limitations": "Plastic glasses are less special than glass, and the listing does not describe the closure or the lining beyond the insulated compartment.",
+  "listingChecked": {
+    "checkedOn": "2026-11-23",
+    "variant": "Blue, for 4",
+    "listingAvailable": "yes",
+    "sellerType": "brand",
+    "affiliateLinkEligible": "yes"
+  },
+  "specsEvidence": "Amazon listing (Cowork, 2026-11-23): natural buff wicker 16 x 12 x 7.5 in; 4 melamine plates (7 in); 4 plastic wine glasses; 4 stainless forks, knives and spoons; 2 salt and pepper shakers; 1 corkscrew; 4 napkins; waterproof picnic blanket (cotton and polyester top); built-in insulated compartment and removable insulated wine cooler. Sold by the brand, in stock.",
+  "suitability": "A complete picnic basket set for four people with an insulated compartment.",
+  "verificationSource": "Listing read by Cowork on the owner's account, 2026-11-23 (docs/cowork/BATCH-6-RESULTS.csv, branch cowork/batch-6): sold by the brand (WILLOW WEAVE), in stock. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID'; that validates the tag only, and real commission is confirmed only in Associates reports.",
+  "id": "willow-weave-picnic-basket-for-4-blue",
+  "status": "verified",
+  "editorialDecision": "hold",
+  "statusReason": "Held until the picnic article is released: verified and ready, but it must not appear in the Shop before its article exists. At release, set editorialDecision to approve and add it to the article.",
+  "collection": "picnic",
+  "cta": "See It on Amazon",
+  "imageStatus": "none"
+}

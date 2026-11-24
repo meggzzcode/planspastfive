@@ -1,0 +1,31 @@
+{
+  "name": "100% Pure Linen Napkins, Light Flax, 20 x 20 in, Set of 4",
+  "brand": "Solino Home",
+  "asin": "B0GP6L5LB7",
+  "order": 5,
+  "shopTier": "extras",
+  "buttonLabel": "See the Linen Napkins on Amazon",
+  "bestUse": "Best for a small, pretty upgrade to any table or blanket",
+  "inTheBox": "Four 20 x 20 in napkins in light flax linen with a hemstitched border.",
+  "descriptionOriginal": "Four soft flax-coloured linen napkins with an open hemstitch border.",
+  "whyWeLikeIt": "Real linen in a soft flax tone looks vintage and natural next to gingham, and the listing says they machine wash.",
+  "limitations": "Linen creases, which the listing says is normal.",
+  "haveItAlready": "Already own cloth napkins? Use them.",
+  "listingChecked": {
+    "checkedOn": "2026-11-23",
+    "variant": "Light Flax, 20 x 20 in, set of 4",
+    "listingAvailable": "yes",
+    "sellerType": "brand",
+    "affiliateLinkEligible": "yes"
+  },
+  "specsEvidence": "Amazon listing (Cowork, 2026-11-23): 4 napkins, 20 x 20 in, 100% linen, hemstitched border, OEKO-TEX certified, machine washable; creases are normal per the listing. Sold by the brand, in stock.",
+  "suitability": "Linen napkins for a picnic or any table.",
+  "verificationSource": "Listing read by Cowork on the owner's account, 2026-11-23 (docs/cowork/BATCH-6-RESULTS.csv, branch cowork/batch-6): sold by the brand (Solino Home), in stock. Associates Link Checker returned 'Success: The link tags to a valid tag or sub-tag for your Associate ID'; that validates the tag only, and real commission is confirmed only in Associates reports.",
+  "id": "solino-home-linen-napkins-set-of-4",
+  "status": "verified",
+  "editorialDecision": "hold",
+  "statusReason": "Held until the picnic article is released: verified and ready, but it must not appear in the Shop before its article exists. At release, set editorialDecision to approve and add it to the article.",
+  "collection": "picnic",
+  "cta": "See It on Amazon",
+  "imageStatus": "none"
+}
